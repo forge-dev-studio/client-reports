@@ -46,7 +46,8 @@ td.top3 b{color:var(--gold);font-weight:700}
 .legend{display:flex;flex-wrap:wrap;gap:14px;margin:14px 2px 0;font-size:13px;color:var(--muted);align-items:center}
 .dotk{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:6px;vertical-align:-1px}
 .bars{margin-top:16px}
-.bar{display:grid;grid-template-columns:180px 1fr 3ch;align-items:center;gap:12px;margin:9px 0;font-size:14.5px}
+.bar{display:grid;grid-template-columns:minmax(190px,max-content) 1fr 3ch;align-items:center;gap:12px;margin:9px 0;font-size:14.5px}
+.bar .rr{color:var(--muted);font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums}
 .bar .track{background:var(--card);border:1px solid var(--line);border-radius:6px;height:22px;position:relative;overflow:hidden}
 .bar .fill{position:absolute;inset:0;background:var(--gold);opacity:.85;border-radius:5px 0 0 5px}
 .bar .v{font-variant-numeric:tabular-nums;color:var(--muted);text-align:right}
@@ -112,15 +113,15 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-si
   <h2>Who else shows up</h2>
   <p class="sub lede">How many of the 20 searches each competitor appears in, anywhere in the top 3. This is who you share the map with.</p>
   <div class="bars">
-    <div class="bar"><span>River Arts Venue</span><span class="track"><span class="fill" style="width:85%"></span></span><span class="v">17</span></div>
-    <div class="bar"><span>Screen 417</span><span class="track"><span class="fill" style="width:70%;opacity:.45"></span></span><span class="v">14</span></div>
-    <div class="bar"><span>Grace Events</span><span class="track"><span class="fill" style="width:40%;opacity:.45"></span></span><span class="v">8</span></div>
-    <div class="bar"><span>Taylor Estate</span><span class="track"><span class="fill" style="width:35%;opacity:.45"></span></span><span class="v">7</span></div>
-    <div class="bar"><span>Willow Springs Farm</span><span class="track"><span class="fill" style="width:20%;opacity:.45"></span></span><span class="v">4</span></div>
-    <div class="bar"><span>The Forrest Place</span><span class="track"><span class="fill" style="width:20%;opacity:.45"></span></span><span class="v">4</span></div>
-    <div class="bar"><span>Burk Farm</span><span class="track"><span class="fill" style="width:15%;opacity:.45"></span></span><span class="v">3</span></div>
+    <div class="bar"><span>River Arts Venue <span class="rr">5.0★ / 6 reviews</span></span><span class="track"><span class="fill" style="width:85%"></span></span><span class="v">17</span></div>
+    <div class="bar"><span>Screen 417 <span class="rr">5.0★ / 46 reviews</span></span><span class="track"><span class="fill" style="width:70%;opacity:.45"></span></span><span class="v">14</span></div>
+    <div class="bar"><span>Grace Events <span class="rr">5.0★ / 11 reviews</span></span><span class="track"><span class="fill" style="width:40%;opacity:.45"></span></span><span class="v">8</span></div>
+    <div class="bar"><span>Taylor Estate <span class="rr">4.9★ / 71 reviews</span></span><span class="track"><span class="fill" style="width:35%;opacity:.45"></span></span><span class="v">7</span></div>
+    <div class="bar"><span>Willow Springs Farm <span class="rr">4.8★ / 10 reviews</span></span><span class="track"><span class="fill" style="width:20%;opacity:.45"></span></span><span class="v">4</span></div>
+    <div class="bar"><span>The Forrest Place <span class="rr">4.5★ / 31 reviews</span></span><span class="track"><span class="fill" style="width:20%;opacity:.45"></span></span><span class="v">4</span></div>
+    <div class="bar"><span>Burk Farm <span class="rr">4.8★ / 107 reviews</span></span><span class="track"><span class="fill" style="width:15%;opacity:.45"></span></span><span class="v">3</span></div>
   </div>
-  <p class="method" style="margin-top:10px">Screen 417 is the one to watch: it trails you nearly everywhere and leads on birthday parties, corporate events, and meeting rooms. The farm venues (Taylor Estate, Burk Farm, Willow Springs) only really beat you in one lane: weddings.</p>
+  <p class="method" style="margin-top:10px">Screen 417 is the one to watch: it trails you nearly everywhere and leads on birthday parties, corporate events, and meeting rooms. The farm venues (Taylor Estate, Burk Farm, Willow Springs) only really beat you in one lane: weddings. Worth noting: you hold this board with the fewest reviews on it. The wedding leaders carry 71 and 107 reviews to your 6, which is exactly why the review plan below matters.</p>
 
   <h2>What to do next, in order</h2>
   <ol class="actions">
