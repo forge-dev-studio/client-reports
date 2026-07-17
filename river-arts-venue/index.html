@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>River Arts Venue — Local Search Audit</title>
+<style>
+:root{
+  --paper:#FAF8F4; --ink:#1C1917; --muted:#6B6459; --gold:#A17C1A; --line:#E4DED2;
+  --card:#FFFFFF; --g1:#0F6B33; --g23:#3F9142; --amb:#9A6A00; --red:#B3261E; --pend:#8A8377;
+  --chipink:#FFFFFF;
+}
+@media (prefers-color-scheme: dark){:root{
+  --paper:#14120F; --ink:#EDE8DF; --muted:#A29A8C; --gold:#D4AF4A; --line:#2E2A22;
+  --card:#1C1915; --g1:#2F8B4C; --g23:#52A566; --amb:#B5850F; --red:#DE5A50; --pend:#6E675C;
+}}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif;margin:0;padding:0}
+.wrap{max-width:880px;margin:0 auto;padding:48px 24px 72px}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:600}
+h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(30px,5vw,44px);line-height:1.12;margin:10px 0 6px;text-wrap:balance;font-weight:700}
+h2{font-family:Georgia,serif;font-size:24px;margin:52px 0 6px;text-wrap:balance}
+h2 + p.lede{margin-top:6px}
+.sub{color:var(--muted);margin:0 0 8px}
+.rule{height:1px;background:var(--line);border:0;margin:28px 0}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:26px 0 6px}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+.tile .n{font-family:Georgia,serif;font-size:34px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1.1}
+.tile .l{font-size:13px;color:var(--muted);margin-top:4px;line-height:1.35}
+.tile.gold .n{color:var(--gold)}
+p.lede{max-width:64ch}
+.note{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:8px;padding:14px 18px;margin:20px 0;font-size:15px;max-width:70ch}
+.tablebox{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--card);margin-top:18px}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:14.5px}
+th{position:sticky;top:0;background:var(--card);text-align:left;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:12px 14px;border-bottom:1px solid var(--line)}
+td{padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}
+td.num{color:var(--muted);font-variant-numeric:tabular-nums;width:2ch}
+td.kw{font-weight:600;white-space:nowrap}
+td.kw .rg{color:var(--muted);font-weight:400}
+.chip{display:inline-block;min-width:44px;text-align:center;padding:3px 10px;border-radius:999px;color:var(--chipink);font-weight:700;font-size:13px;font-variant-numeric:tabular-nums}
+.c1{background:var(--g1)} .c23{background:var(--g23)} .c410{background:var(--amb)} .cabs{background:var(--red)}
+td.top3{color:var(--muted)}
+td.top3 b{color:var(--gold);font-weight:700}
+.legend{display:flex;flex-wrap:wrap;gap:14px;margin:14px 2px 0;font-size:13px;color:var(--muted);align-items:center}
+.dotk{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:6px;vertical-align:-1px}
+.bars{margin-top:16px}
+.bar{display:grid;grid-template-columns:180px 1fr 3ch;align-items:center;gap:12px;margin:9px 0;font-size:14.5px}
+.bar .track{background:var(--card);border:1px solid var(--line);border-radius:6px;height:22px;position:relative;overflow:hidden}
+.bar .fill{position:absolute;inset:0;background:var(--gold);opacity:.85;border-radius:5px 0 0 5px}
+.bar .v{font-variant-numeric:tabular-nums;color:var(--muted);text-align:right}
+ol.actions{padding-left:22px;max-width:70ch}
+ol.actions li{margin:14px 0}
+ol.actions b{display:block}
+.method{font-size:13.5px;color:var(--muted);max-width:74ch}
+footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-size:13px;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">Local Search Audit · Forge Dev Studio</div>
+  <h1>River Arts Venue</h1>
+  <p class="sub">How Rome, Georgia finds its event venue on Google · Measured July 17, 2026 · 252 N 5th Ave, Rome GA</p>
+
+  <div class="tiles">
+    <div class="tile gold"><div class="n">12<span style="font-size:20px"> of 20</span></div><div class="l">searches where River Arts is the <b>#1 map result</b> in Rome</div></div>
+    <div class="tile"><div class="n">17<span style="font-size:20px"> of 20</span></div><div class="l">searches where it shows in the <b>top 3</b> (the "map pack" customers see first)</div></div>
+    <div class="tile"><div class="n">#6</div><div class="l">lowest position measured, on "wedding venue rome ga"</div></div>
+    <div class="tile"><div class="n">5.0★</div><div class="l">Google rating (6 reviews) on audit day</div></div>
+  </div>
+
+  <p class="lede">Bottom line: for the everyday searches that fill a calendar, showers, parties, meetings, coworking, and general event space, <b>River Arts Venue is already the most visible venue in Rome</b>. The gaps worth working are the wedding lane, which farm venues currently own, and the website itself, which does not yet appear in the regular (non-map) results.</p>
+
+  <h2>Where you rank, search by search</h2>
+  <p class="sub lede">The 20 most common ways people look for a venue, each searched exactly as written, with "rome ga" on the end. "Your position" is where River Arts Venue appears in Google's local results list, ads excluded. Positions 1 to 3 are the map pack shown at the top of the page.</p>
+
+  <div class="tablebox"><table>
+    <thead><tr><th>#</th><th>Search</th><th>Your position</th><th>Who holds the top 3</th></tr></thead>
+    <tbody>
+      <tr><td class="num">1</td><td class="kw">wedding venue <span class="rg">rome ga</span></td><td><span class="chip c410">#6</span></td><td class="top3">Taylor Estate · Burk Farm · Willow Springs Farm</td></tr>
+      <tr><td class="num">2</td><td class="kw">event venue <span class="rg">rome ga</span></td><td><span class="chip c1">#1</span></td><td class="top3"><b>River Arts Venue</b> · Taylor Estate · Screen 417</td></tr>
+      <tr><td class="num">3</td><td class="kw">event space <span class="rg">rome ga</span></td><td><span class="chip c1">#1</span></td><td class="top3"><b>River Arts Venue</b> · Screen 417 · Grace Events</td></tr>
+      <tr><td class="num">4</td><td class="kw">party venue <span class="rg">rome ga</span></td><td><span class="chip c1">#1</span></td><td class="top3"><b>River Arts Venue</b> · Screen 417 · Taylor Estate</td></tr>
+      <tr><td class="num">5</td><td class="kw">banquet hall <span class="rg">rome ga</span></td><td><span class="chip c23">#2</span></td><td class="top3">The Forrest Place · <b>River Arts Venue</b> · The Vogue</td></tr>
+      <tr><td class="num">6</td><td class="kw">reception venue <span class="rg">rome ga</span></td><td><span class="chip c1">#1</span></td><td class="top3"><b>River Arts Venue</b> · Taylor Estate · Burk Farm</td></tr>
+      <tr><td class="num">7</td><td class="kw">small event space <span class="rg">rome ga</span></td><td><span class="chip c1">#1</span></td><td class="top3"><b>River Arts Venue</b> · Screen 417 · Taylor Estate</td></tr>
+      <tr><td class="num">8</td><td class="kw">birthday party venue <span class="rg">rome ga</span></td><td><span class="chip c410">#5</span></td><td class="top3">Screen 417 · Grace Events · Burk Farm</td></tr>
+      <tr><td class="num">9</td><td class="kw">baby shower venue <span class="rg">rome ga</span></td><td><span class="chip c23">#2</span></td><td class="top3">Willow Springs Farm · <b>River Arts Venue</b> · Grace Events</td></tr>
+      <tr><td class="num">10</td><td class="kw">bridal shower venue <span class="rg">rome ga</span></td><td><span class="chip c1">#1</span></td><td class="top3"><b>River Arts Venue</b> · Willow Springs Farm · Taylor Estate</td></tr>
+      <tr><td class="num">11</td><td class="kw">corporate event venue <span class="rg">rome ga</span></td><td><span class="chip c23">#2</span></td><td class="top3">Screen 417 · <b>River Arts Venue</b> · Grace Events</td></tr>
+      <tr><td class="num">12</td><td class="kw">meeting room rental <span class="rg">rome ga</span></td><td><span class="chip c23">#2</span></td><td class="top3">Screen 417 · <b>River Arts Venue</b> · Grace Events</td></tr>
+      <tr><td class="num">13</td><td class="kw">conference room rental <span class="rg">rome ga</span></td><td><span class="chip c23">#3</span></td><td class="top3">Grace Events · Screen 417 · <b>River Arts Venue</b></td></tr>
+      <tr><td class="num">14</td><td class="kw">meeting space <span class="rg">rome ga</span></td><td><span class="chip c1">#1</span></td><td class="top3"><b>River Arts Venue</b> · The Forrest Place · Screen 417</td></tr>
+      <tr><td class="num">15</td><td class="kw">coworking space <span class="rg">rome ga</span></td><td><span class="chip c1">#1</span></td><td class="top3"><b>River Arts Venue</b> · Screen 417 · HOTWORX</td></tr>
+      <tr><td class="num">16</td><td class="kw">quinceanera venue <span class="rg">rome ga</span></td><td><span class="chip c1">#1</span></td><td class="top3"><b>River Arts Venue</b> · Willow Springs Farm · The Forrest Place</td></tr>
+      <tr><td class="num">17</td><td class="kw">graduation party venue <span class="rg">rome ga</span></td><td><span class="chip c1">#1</span></td><td class="top3"><b>River Arts Venue</b> · Screen 417 · Grace Events</td></tr>
+      <tr><td class="num">18</td><td class="kw">rehearsal dinner venue <span class="rg">rome ga</span></td><td><span class="chip c410">#5</span></td><td class="top3">Grace Events · Taylor Estate · Screen 417</td></tr>
+      <tr><td class="num">19</td><td class="kw">event hall <span class="rg">rome ga</span></td><td><span class="chip c1">#1</span></td><td class="top3"><b>River Arts Venue</b> · Plush Event Hall · Screen 417</td></tr>
+      <tr><td class="num">20</td><td class="kw">venue rental <span class="rg">rome ga</span></td><td><span class="chip c1">#1</span></td><td class="top3"><b>River Arts Venue</b> · Screen 417 · The Forrest Place</td></tr>
+    </tbody>
+  </table></div>
+  <div class="legend">
+    <span><span class="dotk" style="background:var(--g1)"></span>#1</span>
+    <span><span class="dotk" style="background:var(--g23)"></span>#2 to #3 (in the map pack)</span>
+    <span><span class="dotk" style="background:var(--amb)"></span>#4 to #10 (one scroll away)</span>
+    <span><span class="dotk" style="background:var(--red)"></span>Not found in the list</span>
+  </div>
+
+  <div class="note"><b>Two different scoreboards.</b> Google shows venues in two places: the <b>map results</b> (driven by your Google Business Profile) and the <b>regular website results</b> below them. River Arts wins the map. The website, riverartsvenue.com, is not yet on page one of the regular results for the big searches. That shelf space is held by directories and the tourism bureau: PartySlate, Eventective, The Knot, romegeorgia.org, and the City of Rome site. Getting River Arts listed and polished on those pages puts you inside the results that do rank. One more note: no AI answer boxes appeared on any of these searches yet, so the map pack is still the whole game in Rome.</div>
+
+  <h2>Who else shows up</h2>
+  <p class="sub lede">How many of the 20 searches each competitor appears in, anywhere in the top 3. This is who you share the map with.</p>
+  <div class="bars">
+    <div class="bar"><span>River Arts Venue</span><span class="track"><span class="fill" style="width:85%"></span></span><span class="v">17</span></div>
+    <div class="bar"><span>Screen 417</span><span class="track"><span class="fill" style="width:70%;opacity:.45"></span></span><span class="v">14</span></div>
+    <div class="bar"><span>Grace Events</span><span class="track"><span class="fill" style="width:40%;opacity:.45"></span></span><span class="v">8</span></div>
+    <div class="bar"><span>Taylor Estate</span><span class="track"><span class="fill" style="width:35%;opacity:.45"></span></span><span class="v">7</span></div>
+    <div class="bar"><span>Willow Springs Farm</span><span class="track"><span class="fill" style="width:20%;opacity:.45"></span></span><span class="v">4</span></div>
+    <div class="bar"><span>The Forrest Place</span><span class="track"><span class="fill" style="width:20%;opacity:.45"></span></span><span class="v">4</span></div>
+    <div class="bar"><span>Burk Farm</span><span class="track"><span class="fill" style="width:15%;opacity:.45"></span></span><span class="v">3</span></div>
+  </div>
+  <p class="method" style="margin-top:10px">Screen 417 is the one to watch: it trails you nearly everywhere and leads on birthday parties, corporate events, and meeting rooms. The farm venues (Taylor Estate, Burk Farm, Willow Springs) only really beat you in one lane: weddings.</p>
+
+  <h2>What to do next, in order</h2>
+  <ol class="actions">
+    <li><b>Go after the wedding lane.</b> "Wedding venue" is the highest value search on this list and the only one where you sit outside the top 5. The farms own it because their profiles are saturated with wedding photos and wedding reviews. Countermove: add a wedding photo set to the profile, ask every wedding and reception client for a review that uses the word "wedding", and keep the wedding page on the site growing. Your pitch is the one thing farms cannot offer: downtown, indoor, rain proof, with a full kitchen.</li>
+    <li><b>Turn events into reviews, by name.</b> You have 6 reviews; Google reads the words inside them. A review that says "birthday party" lifts birthday searches. After each event, send the host one review ask that names their event type. This directly attacks the three amber rows (weddings, birthdays, rehearsal dinners).</li>
+    <li><b>Claim the directory shelf space.</b> Page one of the regular website results belongs to PartySlate, Eventective, The Knot, and romegeorgia.org. Create or complete the River Arts listing on each so the pages that outrank you still sell you.</li>
+    <li><b>Keep the profile momentum.</b> The 26 services and the first post went live July 17. Hold the cadence: one post and a few fresh photos each month. Google rewards active profiles, and every service you listed matches a search on this scoreboard.</li>
+    <li><b>Re-measure in mid August.</b> Same 20 searches, so movement is visible line by line.</li>
+  </ol>
+
+  <hr class="rule">
+  <p class="method"><b>How this was measured.</b> Every search was run literally as written (for example "banquet hall rome ga") against Google's local results on July 17, 2026, positions counted top to bottom with ads excluded. Local rankings naturally wobble by a spot day to day, so treat one position moves as noise and trends as signal. No AI Overview answer boxes appeared on any measured search this run.</p>
+
+  <footer><span>Prepared by Forge Dev Studio for River Arts Venue</span><span>July 17, 2026</span></footer>
+</div>
+</body>
+</html>
