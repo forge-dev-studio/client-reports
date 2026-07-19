@@ -1,0 +1,2 @@
+User-agent: *
+Disallow: /bni-2026/

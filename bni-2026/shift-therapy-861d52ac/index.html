@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Shift Therapy and Wellness — Local Search Audit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&display=swap" rel="stylesheet">
+<style>:root{
+  --brand:#dc3536;
+  --brand-tint:#dc353614;
+  --brand-line:#dc353644;
+  --ink:#333333;
+  --muted:#5b6270;
+  --line:#dfe3ea;
+  --paper:#ffffff;
+  --pack:#1a7f45; --pack-bg:#e7f4ec;
+  --near:#8a6200; --near-bg:#fbf3df;
+  --deep:#6a707c; --deep-bg:#f2f4f7;
+  --gone:#a33227; --gone-bg:#fbecea;
+  --head:'Archivo', "Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --body:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:940px;margin:0 auto;padding:0 28px}
+h1,h2,h3{font-family:var(--head);line-height:1.2;margin:0;font-weight:700}
+h2{font-size:1.45rem;margin:2.4rem 0 .5rem;padding-bottom:.4rem;border-bottom:2px solid var(--brand)}
+h3{font-size:1.05rem;margin:1.6rem 0 .4rem}
+p{margin:.7rem 0}
+a{color:var(--brand)}
+small,.small{font-size:.83rem;color:var(--muted)}
+
+header.rpt{border-top:6px solid var(--brand);padding:30px 0 22px;margin-bottom:6px}
+header.rpt .eyebrow{font-family:var(--head);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--brand);font-weight:700}
+header.rpt h1{font-size:2.1rem;margin:.35rem 0 .3rem}
+header.rpt .sub{color:var(--muted);font-size:1rem}
+.factbar{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:16px;padding:14px 18px;background:var(--brand-tint);border-left:4px solid var(--brand);border-radius:3px}
+.fact{display:flex;flex-direction:column}
+.fact .l{font-size:.66rem;letter-spacing:.09em;text-transform:uppercase;color:var(--brand);font-weight:700}
+.fact .v{font-weight:600;font-size:.95rem}
+
+.callout{background:var(--brand-tint);border-left:4px solid var(--brand);padding:14px 18px;border-radius:3px;margin:1.2rem 0}
+
+table{border-collapse:collapse;width:100%;font-size:.86rem;margin:1rem 0}
+th,td{border:1px solid var(--line);padding:6px 9px;text-align:left}
+thead th{background:#f6f7f9;font-family:var(--head);font-size:.7rem;text-transform:uppercase;letter-spacing:.05em;font-weight:700;white-space:nowrap}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+
+table.matrix{font-size:.72rem;table-layout:fixed}
+table.matrix th,table.matrix td{padding:4px 2px;text-align:center}
+table.matrix th.mk,table.matrix td.mk{text-align:left;white-space:nowrap;width:104px;font-weight:600}
+table.matrix td.mi{width:38px;color:var(--muted);font-size:.68rem;text-align:right}
+table.matrix thead th{writing-mode:vertical-rl;transform:rotate(180deg);height:96px;vertical-align:bottom;padding:4px 1px;font-size:.66rem;letter-spacing:.02em}
+table.matrix thead th.mk,table.matrix thead th.mi,table.matrix thead th.tot{writing-mode:horizontal-tb;transform:none;height:auto;vertical-align:middle}
+td.pack{background:var(--pack-bg);color:var(--pack);font-weight:700}
+td.near{background:var(--near-bg);color:var(--near);font-weight:600}
+td.deep{background:var(--deep-bg);color:var(--deep)}
+td.gone{background:var(--gone-bg);color:var(--gone)}
+td.nopack{background:#fff;color:#9aa0ab;font-style:italic}
+td.na{color:#c2c7d0}
+td.tot{font-weight:700;background:#f6f7f9}
+
+.legend{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:.76rem;margin:.6rem 0 0}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:13px;height:13px;border-radius:2px;display:inline-block;border:1px solid var(--line)}
+
+.recs{counter-reset:rec}
+.rec{position:relative;padding:16px 18px 16px 62px;border:1px solid var(--line);border-left:4px solid var(--brand);border-radius:3px;margin:14px 0;background:#fcfcfd}
+.rec::before{counter-increment:rec;content:counter(rec);position:absolute;left:18px;top:15px;width:30px;height:30px;border-radius:50%;background:var(--brand);color:#fff;font-family:var(--head);font-weight:700;display:flex;align-items:center;justify-content:center;font-size:.95rem}
+.rec h3{margin:0 0 .3rem}
+
+footer.rpt{margin-top:2.6rem;padding:18px 0 34px;border-top:2px solid var(--brand);color:var(--muted);font-size:.82rem}
+footer.rpt b{color:var(--ink)}
+
+/* ---------- PRINT ----------------------------------------------------------
+   None of the prior report builders had any print CSS and all shipped a dark
+   theme. These 14 are going on paper, so print is the primary target here. */
+@page{size:letter portrait;margin:0.55in}
+@page landscape{size:letter landscape;margin:0.45in}
+@media print{
+  html,body{background:#fff}
+  .wrap{max-width:none;padding:0}
+  body{font-size:10.5pt;line-height:1.45}
+  h2{font-size:13pt;margin:16pt 0 4pt;break-after:avoid}
+  h3{font-size:11pt;break-after:avoid}
+  p,li{orphans:3;widows:3}
+  a{color:inherit;text-decoration:none}
+  /* Keep tables readable across breaks: repeat the header, never split a row. */
+  thead{display:table-header-group}
+  tr{break-inside:avoid}
+  table{font-size:8.5pt}
+  .matrix-page{page:landscape;break-before:page;break-after:page}
+  table.matrix{font-size:7pt}
+  table.matrix thead th{height:70px}
+  .rec,.callout,.factbar{break-inside:avoid}
+  .no-print{display:none!important}
+  footer.rpt{break-inside:avoid}
+  /* Colour-coded cells must survive greyscale, so each class also carries weight/style. */
+  td.pack{font-weight:700}
+  td.gone{font-style:italic}
+}</style>
+</head><body><div class="wrap">
+
+<header class="rpt">
+  <div class="eyebrow">Local Search Audit</div>
+  <h1>Shift Therapy and Wellness</h1>
+  <div class="sub">Prepared for Lindsey Bellcase · July 19, 2026</div>
+  <div class="factbar">
+    <div class="fact"><span class="l">Searches measured</span><span class="v">320</span></div>
+    <div class="fact"><span class="l">Keywords</span><span class="v">20</span></div>
+    <div class="fact"><span class="l">Markets</span><span class="v">16</span></div>
+    <div class="fact"><span class="l">In the map pack</span><span class="v">55</span></div>
+    <div class="fact"><span class="l">Ranked #1</span><span class="v">25</span></div>
+    <div class="fact"><span class="l">Google rating</span><span class="v">5 / 351 reviews</span></div>
+  </div>
+</header>
+
+<div class="callout"><p><strong>You own the Rome core, your Cartersville office is already paying for itself, and your reputation is the strongest in the region.</strong> Across 320 searches you hold a top-three spot in 55 and rank first in 25. Two things stand out in the data. Your specialty services travel much further than the words "physical therapy" do, and where you are missing, it is almost never for the reason people assume.</p></div>
+
+<h2>How this was measured</h2>
+<p>Every number here comes from Google's local search results, the list a customer actually sees when
+they search from a given town. We ran 320 individual searches across 20 terms and
+16 markets within about 30 miles, measured against your listing at 314 E 1st Ave Ste 701, Rome, GA 30161.</p>
+<p><strong>Positions 1 to 3 are the map pack</strong>, the three businesses Google shows before a
+searcher has to click anything. That is where the phone calls come from. Positions 4 and beyond are
+real but far less valuable, and they tell us how close you are to breaking in.</p>
+<p class="small">This deliberately uses Google's search results rather than the Maps app. Maps ranks
+heavily by how close you are to the person searching, which flatters a business in its own town and
+hides the true picture everywhere else. Rankings also drift by a position or so day to day, so treat
+any single number as a reading, not a verdict.</p>
+
+<div class="matrix-page">
+<h2>Where you rank, term by term and town by town</h2>
+<div class="legend">
+  <span><i style="background:var(--pack-bg);border-color:var(--pack)"></i> 1–3, in the map pack</span>
+  <span><i style="background:var(--near-bg);border-color:var(--near)"></i> 4–10, just outside</span>
+  <span><i style="background:var(--deep-bg)"></i> 11–20, present but deep</span>
+  <span><i style="background:var(--gone-bg);border-color:var(--gone)"></i> not in the results</span>
+  <span><i style="background:#fff"></i> np = Google showed no local results</span>
+</div>
+<table class="matrix"><thead><tr><th class="mk">Market</th><th class="mi">Mi</th><th title="physical therapy">PT</th><th title="physical therapist">PS</th><th title="physical therapy clinic">PC</th><th title="outpatient physical therapy">OP</th><th title="rehabilitation clinic">RC</th><th title="back pain physical therapy">BP</th><th title="knee pain physical therapy">KP</th><th title="shoulder pain physical therapy">SP</th><th title="sports injury physical therapy">SI</th><th title="post surgery rehab">PR</th><th title="dry needling">DN</th><th title="occupational therapy">OT</th><th title="occupational therapist">OS</th><th title="manual therapy">MT</th><th title="sports medicine physical therapy">SM</th><th title="pain management clinic">PM</th><th title="physical therapy for athletes">PA</th><th title="fall prevention therapy">FP</th><th title="work injury physical therapy">WI</th><th title="senior physical therapy">SR</th><th class="tot">Pack</th></tr></thead><tbody><tr><td class="mk">Rome</td><td class="mi">0</td><td class="near">4</td><td class="pack">3</td><td class="near">4</td><td class="near">4</td><td class="deep">13</td><td class="pack">3</td><td class="pack">1</td><td class="pack">1</td><td class="pack">1</td><td class="deep">11</td><td class="pack">1</td><td class="pack">2</td><td class="pack">2</td><td class="pack">1</td><td class="pack">3</td><td class="deep">20</td><td class="near">4</td><td class="pack">1</td><td class="pack">1</td><td class="pack">3</td><td class="tot">13/20</td></tr>
+<tr><td class="mk">Lindale</td><td class="mi">4.4</td><td class="near">5</td><td class="pack">1</td><td class="near">5</td><td class="deep">15</td><td class="gone">–</td><td class="pack">2</td><td class="pack">1</td><td class="pack">1</td><td class="pack">2</td><td class="deep">11</td><td class="pack">1</td><td class="near">6</td><td class="near">7</td><td class="pack">1</td><td class="near">4</td><td class="gone">–</td><td class="near">4</td><td class="pack">3</td><td class="pack">2</td><td class="pack">3</td><td class="tot">10/20</td></tr>
+<tr><td class="mk">Shannon</td><td class="mi">7.6</td><td class="pack">1</td><td class="pack">2</td><td class="gone">–</td><td class="near">7</td><td class="gone">–</td><td class="pack">3</td><td class="pack">2</td><td class="pack">1</td><td class="pack">1</td><td class="near">4</td><td class="pack">1</td><td class="pack">2</td><td class="pack">3</td><td class="pack">1</td><td class="pack">2</td><td class="gone">–</td><td class="pack">2</td><td class="pack">1</td><td class="pack">1</td><td class="pack">1</td><td class="tot">15/20</td></tr>
+<tr><td class="mk">Cave Spring</td><td class="mi">14.2</td><td class="pack">3</td><td class="pack">1</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="deep">15</td><td class="deep">15</td><td class="deep">12</td><td class="deep">12</td><td class="pack">3</td><td class="pack">3</td><td class="near">4</td><td class="deep">20</td><td class="near">10</td><td class="deep">17</td><td class="gone">–</td><td class="gone">–</td><td class="deep">17</td><td class="gone">–</td><td class="gone">–</td><td class="tot">4/20</td></tr>
+<tr><td class="mk">Euharlee</td><td class="mi">15.1</td><td class="near">10</td><td class="pack">3</td><td class="near">5</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="near">6</td><td class="near">5</td><td class="near">5</td><td class="gone">–</td><td class="pack">3</td><td class="gone">–</td><td class="gone">–</td><td class="pack">3</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="pack">1</td><td class="gone">–</td><td class="gone">–</td><td class="tot">4/20</td></tr>
+<tr><td class="mk">Adairsville</td><td class="mi">15.5</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="near">5</td><td class="gone">–</td><td class="near">6</td><td class="gone">–</td><td class="gone">–</td><td class="near">5</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="tot">0/20</td></tr>
+<tr><td class="mk">Aragon</td><td class="mi">15.9</td><td class="gone">–</td><td class="deep">14</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="near">8</td><td class="gone">–</td><td class="gone">–</td><td class="deep">14</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="pack">1</td><td class="gone">–</td><td class="gone">–</td><td class="tot">1/20</td></tr>
+<tr><td class="mk">Cedartown</td><td class="mi">17.5</td><td class="gone">–</td><td class="near">8</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="deep">16</td><td class="deep">15</td><td class="deep">13</td><td class="near">10</td><td class="gone">–</td><td class="pack">3</td><td class="deep">13</td><td class="near">6</td><td class="deep">11</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="deep">12</td><td class="gone">–</td><td class="deep">18</td><td class="tot">1/20</td></tr>
+<tr><td class="mk">Summerville</td><td class="mi">18.6</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="tot">0/20</td></tr>
+<tr><td class="mk">Rockmart</td><td class="mi">18.7</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="near">8</td><td class="gone">–</td><td class="gone">–</td><td class="near">5</td><td class="gone">–</td><td class="deep">12</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="tot">0/20</td></tr>
+<tr><td class="mk">Calhoun</td><td class="mi">21</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="deep">15</td><td class="gone">–</td><td class="gone">–</td><td class="deep">14</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="deep">16</td><td class="gone">–</td><td class="gone">–</td><td class="tot">0/20</td></tr>
+<tr><td class="mk">Cartersville</td><td class="mi">21.5</td><td class="near">4</td><td class="near">4</td><td class="near">6</td><td class="near">7</td><td class="deep">15</td><td class="pack">3</td><td class="near">4</td><td class="pack">1</td><td class="near">4</td><td class="deep">11</td><td class="pack">2</td><td class="near">7</td><td class="near">7</td><td class="pack">1</td><td class="near">5</td><td class="gone">–</td><td class="pack">3</td><td class="near">7</td><td class="pack">2</td><td class="near">4</td><td class="tot">6/20</td></tr>
+<tr><td class="mk">Trion</td><td class="mi">21.5</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="near">4</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="pack">2</td><td class="gone">–</td><td class="gone">–</td><td class="tot">1/20</td></tr>
+<tr><td class="mk">Cedar Bluff <small>(AL)</small></td><td class="mi">25</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="deep">14</td><td class="deep">20</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="deep">18</td><td class="gone">–</td><td class="gone">–</td><td class="tot">0/20</td></tr>
+<tr><td class="mk">Centre <small>(AL)</small></td><td class="mi">29.2</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="tot">0/20</td></tr>
+<tr><td class="mk">Dallas</td><td class="mi">29.8</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="gone">–</td><td class="tot">0/20</td></tr></tbody></table>
+<p class="small"><strong>PT</strong> physical therapy · <strong>PS</strong> physical therapist · <strong>PC</strong> physical therapy clinic · <strong>OP</strong> outpatient physical therapy · <strong>RC</strong> rehabilitation clinic · <strong>BP</strong> back pain physical therapy · <strong>KP</strong> knee pain physical therapy · <strong>SP</strong> shoulder pain physical therapy · <strong>SI</strong> sports injury physical therapy · <strong>PR</strong> post surgery rehab · <strong>DN</strong> dry needling · <strong>OT</strong> occupational therapy · <strong>OS</strong> occupational therapist · <strong>MT</strong> manual therapy · <strong>SM</strong> sports medicine physical therapy · <strong>PM</strong> pain management clinic · <strong>PA</strong> physical therapy for athletes · <strong>FP</strong> fall prevention therapy · <strong>WI</strong> work injury physical therapy · <strong>SR</strong> senior physical therapy</p>
+</div>
+
+<h2>Which search terms carry you furthest</h2>
+<table><thead><tr><th>Search term</th><th class="num">#1</th><th class="num">In pack</th>
+    <th class="num">Top 10</th><th class="num">Not present</th><th class="num">No pack shown</th></tr></thead><tbody><tr><td>physical therapy</td><td class="num">1</td><td class="num">2</td>
+      <td class="num">6</td><td class="num">10</td><td class="num">–</td></tr><tr><td>physical therapist</td><td class="num">2</td><td class="num">5</td>
+      <td class="num">7</td><td class="num">8</td><td class="num">–</td></tr><tr><td>physical therapy clinic</td><td class="num">0</td><td class="num">0</td>
+      <td class="num">4</td><td class="num">12</td><td class="num">–</td></tr><tr><td>outpatient physical therapy</td><td class="num">0</td><td class="num">0</td>
+      <td class="num">3</td><td class="num">12</td><td class="num">–</td></tr><tr><td>rehabilitation clinic</td><td class="num">0</td><td class="num">0</td>
+      <td class="num">0</td><td class="num">14</td><td class="num">–</td></tr><tr><td>back pain physical therapy</td><td class="num">0</td><td class="num">4</td>
+      <td class="num">5</td><td class="num">9</td><td class="num">–</td></tr><tr><td>knee pain physical therapy</td><td class="num">2</td><td class="num">3</td>
+      <td class="num">5</td><td class="num">9</td><td class="num">–</td></tr><tr><td>shoulder pain physical therapy</td><td class="num">4</td><td class="num">4</td>
+      <td class="num">7</td><td class="num">7</td><td class="num">–</td></tr><tr><td>sports injury physical therapy</td><td class="num">2</td><td class="num">3</td>
+      <td class="num">6</td><td class="num">9</td><td class="num">–</td></tr><tr><td>post surgery rehab</td><td class="num">0</td><td class="num">1</td>
+      <td class="num">2</td><td class="num">11</td><td class="num">–</td></tr><tr><td>dry needling</td><td class="num">3</td><td class="num">7</td>
+      <td class="num">10</td><td class="num">5</td><td class="num">–</td></tr><tr><td>occupational therapy</td><td class="num">0</td><td class="num">2</td>
+      <td class="num">6</td><td class="num">9</td><td class="num">–</td></tr><tr><td>occupational therapist</td><td class="num">0</td><td class="num">2</td>
+      <td class="num">5</td><td class="num">8</td><td class="num">–</td></tr><tr><td>manual therapy</td><td class="num">4</td><td class="num">5</td>
+      <td class="num">6</td><td class="num">6</td><td class="num">–</td></tr><tr><td>sports medicine physical therapy</td><td class="num">0</td><td class="num">2</td>
+      <td class="num">4</td><td class="num">11</td><td class="num">–</td></tr><tr><td>pain management clinic</td><td class="num">0</td><td class="num">0</td>
+      <td class="num">0</td><td class="num">15</td><td class="num">–</td></tr><tr><td>physical therapy for athletes</td><td class="num">0</td><td class="num">2</td>
+      <td class="num">4</td><td class="num">12</td><td class="num">–</td></tr><tr><td>fall prevention therapy</td><td class="num">4</td><td class="num">6</td>
+      <td class="num">7</td><td class="num">5</td><td class="num">–</td></tr><tr><td>work injury physical therapy</td><td class="num">2</td><td class="num">4</td>
+      <td class="num">4</td><td class="num">12</td><td class="num">–</td></tr><tr><td>senior physical therapy</td><td class="num">1</td><td class="num">3</td>
+      <td class="num">4</td><td class="num">11</td><td class="num">–</td></tr></tbody></table>
+
+<h2>Market by market</h2>
+<table><thead><tr><th>Market</th><th class="num">Mi</th><th class="num">Pack cells</th><th class="num">Best</th><th>Read</th></tr></thead><tbody><tr><td>Rome</td><td class="num">0</td><td class="num">13/20</td>
+        <td class="num">1</td><td>Stronghold, in the pack on most terms</td></tr><tr><td>Lindale</td><td class="num">4.4</td><td class="num">10/20</td>
+        <td class="num">1</td><td>Contested, real pack presence with gaps by term</td></tr><tr><td>Shannon</td><td class="num">7.6</td><td class="num">15/20</td>
+        <td class="num">1</td><td>Stronghold, in the pack on most terms</td></tr><tr><td>Cave Spring</td><td class="num">14.2</td><td class="num">4/20</td>
+        <td class="num">1</td><td>Contested, real pack presence with gaps by term</td></tr><tr><td>Euharlee</td><td class="num">15.1</td><td class="num">4/20</td>
+        <td class="num">1</td><td>Contested, real pack presence with gaps by term</td></tr><tr><td>Adairsville</td><td class="num">15.5</td><td class="num">0/20</td>
+        <td class="num">5</td><td>Just outside, a position or two from the pack</td></tr><tr><td>Aragon</td><td class="num">15.9</td><td class="num">1/20</td>
+        <td class="num">1</td><td>Contested, real pack presence with gaps by term</td></tr><tr><td>Cedartown</td><td class="num">17.5</td><td class="num">1/20</td>
+        <td class="num">3</td><td>Contested, real pack presence with gaps by term</td></tr><tr><td>Summerville</td><td class="num">18.6</td><td class="num">0/20</td>
+        <td class="num">–</td><td>Absent on every measured term</td></tr><tr><td>Rockmart</td><td class="num">18.7</td><td class="num">0/20</td>
+        <td class="num">5</td><td>Just outside, a position or two from the pack</td></tr><tr><td>Calhoun</td><td class="num">21</td><td class="num">0/20</td>
+        <td class="num">14</td><td>Present but deep, well below the pack</td></tr><tr><td>Cartersville</td><td class="num">21.5</td><td class="num">6/20</td>
+        <td class="num">1</td><td>Contested, real pack presence with gaps by term</td></tr><tr><td>Trion</td><td class="num">21.5</td><td class="num">1/20</td>
+        <td class="num">2</td><td>Contested, real pack presence with gaps by term</td></tr><tr><td>Cedar Bluff</td><td class="num">25</td><td class="num">0/20</td>
+        <td class="num">14</td><td>Present but deep, well below the pack</td></tr><tr><td>Centre</td><td class="num">29.2</td><td class="num">0/20</td>
+        <td class="num">–</td><td>Absent on every measured term</td></tr><tr><td>Dallas</td><td class="num">29.8</td><td class="num">0/20</td>
+        <td class="num">–</td><td>Absent on every measured term</td></tr></tbody></table>
+
+<h2>Who is holding the spots you are not</h2>
+<table><thead><tr><th>Business</th><th class="num">Rating</th><th class="num">Searches held</th><th>Markets</th></tr></thead><tbody><tr><td>Advance Rehabilitation</td><td class="num">5/219</td>
+        <td class="num">131</td><td class="small">Rome, Shannon, Cave Spring, Adairsville +6</td></tr><tr><td>Performance Physical Therapy &amp; Sports Medicine</td><td class="num">5/12</td>
+        <td class="num">30</td><td class="small">Rome, Lindale, Cave Spring, Euharlee +2</td></tr><tr><td>Atrium Health Floyd Physical Therapy &amp; Rehabilitation Rockmart</td><td class="num">5/34</td>
+        <td class="num">28</td><td class="small">Aragon, Cedartown, Rockmart</td></tr><tr><td>Atrium Health Floyd Physical Therapy &amp; Rehabilitation Summerville</td><td class="num">5/28</td>
+        <td class="num">26</td><td class="small">Summerville, Trion</td></tr><tr><td>Drayer Physical Therapy Institute</td><td class="num">4.9/49</td>
+        <td class="num">21</td><td class="small">Cedar Bluff, Centre</td></tr><tr><td>Rehab Partners</td><td class="num">4.5/17</td>
+        <td class="num">21</td><td class="small">Cedar Bluff, Centre</td></tr><tr><td>PT Solutions of Adairsville</td><td class="num">4.8/58</td>
+        <td class="num">19</td><td class="small">Adairsville</td></tr><tr><td>Atrium Health Floyd Physical Therapy &amp; Rehabilitation Cedartown</td><td class="num">4.8/40</td>
+        <td class="num">19</td><td class="small">Cedartown, Rockmart</td></tr><tr><td>PT Solutions of New Hope</td><td class="num">4.9/200</td>
+        <td class="num">19</td><td class="small">Dallas</td></tr><tr><td>PT Solutions of Calhoun</td><td class="num">4.7/160</td>
+        <td class="num">17</td><td class="small">Calhoun</td></tr><tr><td>PT Solutions of Cartersville</td><td class="num">4.8/125</td>
+        <td class="num">16</td><td class="small">Euharlee, Cartersville</td></tr><tr><td>AdventHealth Sports Med and Rehab Cedartown</td><td class="num">4.4/5</td>
+        <td class="num">15</td><td class="small">Cave Spring, Cedartown</td></tr></tbody></table>
+<h3>Businesses winning these towns from farther away than you are</h3>
+  <p>These are the ones worth a second look. Each is holding top spots in towns you are physically
+  closer to, across more than one search. That means those spots are not being decided by distance.
+  They are being decided by which businesses have told Google they cover the area.</p>
+  <table><thead><tr><th>Who holds it</th><th class="num">Searches</th><th>Example town</th><th class="num">Their distance</th><th class="num">Your distance</th></tr></thead><tbody><tr><td>Sawdust Occupational Therapy LLC</td><td class="num">7</td><td>Euharlee</td>
+      <td class="num">24.7 mi</td><td class="num">15.2 mi</td></tr><tr><td>Restore Mobile PT</td><td class="num">7</td><td>Aragon</td>
+      <td class="num">37.3 mi</td><td class="num">15.5 mi</td></tr><tr><td>PT Authority - Performance Therapy Services</td><td class="num">7</td><td>Adairsville</td>
+      <td class="num">66.4 mi</td><td class="num">16.3 mi</td></tr><tr><td>Occupational Therapy Services</td><td class="num">4</td><td>Centre</td>
+      <td class="num">50.7 mi</td><td class="num">28.6 mi</td></tr><tr><td>BenchMark Physical Therapy</td><td class="num">4</td><td>Cave Spring</td>
+      <td class="num">51 mi</td><td class="num">13.4 mi</td></tr><tr><td>PT Solutions of Villa Rica</td><td class="num">3</td><td>Aragon</td>
+      <td class="num">23.5 mi</td><td class="num">15.5 mi</td></tr><tr><td>MovementX Physical Therapy</td><td class="num">3</td><td>Aragon</td>
+      <td class="num">57 mi</td><td class="num">15.5 mi</td></tr><tr><td>Align Right Physical Therapy, LLC</td><td class="num">2</td><td>Rockmart</td>
+      <td class="num">24.5 mi</td><td class="num">18.3 mi</td></tr></tbody></table>
+
+<h2>What this means</h2>
+<h3>Your home markets are strong, and one of them is a surprise</h3><p>Rome puts you in the top three on 13 of 20 searches and you appear in all 20. Lindale is 10 of 20. Your single best market anywhere is Shannon at 15 of 20, a community of about 1,900 people that most practices would never think to check.</p><p>Cartersville deserves its own line. You appear in 19 of 20 searches there and hold the top three in six, which beats several towns physically closer to your Rome clinic. That is your second office doing exactly what a second office should do, and the numbers say it was a good decision.</p><h3>Reviews are not what is holding you back</h3><p>You are at 5.0 stars on 351 reviews. Every single business that outranks you on the broad terms has fewer: Advance Rehabilitation at 219, the Atrium Health Floyd locations between 28 and 150, Performance Physical Therapy at 12, Rehab Partners at 17.</p><p>This matters because "get more reviews" is the standard advice, and in your case the data says it is the wrong lever. You already won that contest. Something else is deciding these searches.</p><h3>Your weakest terms are the broadest ones</h3><p>Three searches return no top-three placement anywhere across all 16 markets: "physical therapy clinic", "outpatient physical therapy" and "rehabilitation clinic". Meanwhile "dry needling" puts you in the top three in seven towns, "fall prevention therapy" in six, "manual therapy" and "physical therapist" in five.</p><p>Worth noting that your Business Profile is already categorised as a Physical therapy clinic, so this is not a case of being filed under the wrong heading. The broad phrases are simply where the hospital systems and multi-site chains concentrate, and where a single practice has the least room. Your specialty terms are open ground by comparison.</p><p>One term, "pain management clinic", was included on purpose as a control. It returns one appearance and no top-three spots, which is the correct result: those searches belong to interventional pain physicians who do injections and spinal procedures. It is not a gap, and it is not worth pursuing.</p><h3>The outlying towns split into two very different groups</h3><p>Results thin out past about 14 miles, but the reason differs town by town, and that difference decides whether a town is worth pursuing.</p><p>In <strong>Cedartown, Rockmart, Calhoun, Cartersville, Adairsville, Summerville and Dallas</strong>, more than 90 percent of the businesses holding the top three are based inside that town. PT Solutions has a clinic in Adairsville and another in Calhoun. Atrium Health Floyd has Cedartown and Rockmart locations. These are competitors with a front door on the same street as the patient, in a service people attend twice a week. No profile setting out-ranks a building.</p><p>In <strong>Aragon, Cave Spring, Cedar Bluff and Centre</strong>, the picture reverses. In Aragon, 62 percent of the businesses holding those spots are reaching in from 15 to 45 miles away, and several are mobile or in-home providers such as Restore Mobile PT and MovementX. Cave Spring is 43 percent, the two Alabama towns 36 percent each. Nobody has a building there either, which means those spots are being won on declared coverage rather than on proximity, and that is a contest you can enter.</p><p>Separately, in 21 of the 320 searches Google could not assemble a local pack at all and filled it with businesses well outside the region. Those are not losses. They are searches with no established local answer yet.</p>
+
+<h2>Three things that would move the needle</h2>
+<div class="recs"><div class="rec"><h3>Lead with the services that already travel</h3><p>Dry needling reaches the top three in seven towns. Fall prevention reaches six. Manual therapy and shoulder work reach five and four. The plain phrase "physical therapy" manages two. Most practices lead with the category and tuck the specialties onto a sub-page, and your numbers say that is backwards. Making these the front door of how the practice presents itself aligns your visibility with what is already working. Fall prevention is worth particular attention, since it reaches six towns and speaks to an older patient who searches on their own before asking anyone for a referral.</p></div><div class="rec"><h3>Claim the four towns that are actually open</h3><p>Aragon, Cave Spring, Cedar Bluff and Centre are being served largely by providers reaching in from 15 to 45 miles away, several of them mobile therapists with no local premises. That is a very different situation from Cedartown or Calhoun, and it means those top-three spots are being decided by which businesses declare they cover the area rather than by who is nearest. You are closer to all four than most of the providers currently ranking there. This is the cheapest opportunity in the report and it does not require opening anything.</p></div><div class="rec"><h3>Stop spending on the towns that are locked, and stop buying reviews you do not need</h3><p>Cedartown, Rockmart, Calhoun, Adairsville, Summerville and Dallas are each held by clinics physically located in the town, and your own Rockmart and Cartersville numbers prove the pattern: the farther town where you have an office massively outperforms the nearer one where you do not. Chasing those through profile work will not move them, and your review count is already ahead of every competitor beating you. If those towns matter commercially, the route is referral relationships with the physicians and employers who send patients, or eventually a location. Cedartown is the one to watch, since you already appear in 11 searches there with no building at all.</p></div></div>
+
+<footer class="rpt">
+  <p><b>320 searches recorded on July 19, 2026.</b> Google's local rankings move by a
+  position or so day to day, so this is a snapshot with a margin, not a fixed score. Re-measuring the
+  same grid later shows movement cleanly, because the baseline was taken before any changes.</p>
+  <p>Prepared by <b>Eric Kirby</b> · Forge, AI &amp; Web Design · Synergy Telecom &amp; Medical Systems
+  · Rome, GA · <b>Eric@synergytelecom.org</b> · 706-234-0000</p>
+  <p class="small">Shared privately with Lindsey Bellcase as a fellow member of BNI Community Connectors.</p>
+</footer>
+
+</div></body></html>
