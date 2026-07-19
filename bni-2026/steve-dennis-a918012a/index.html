@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Where Steve Dennis Coaching ranks across Northwest Georgia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;600;700&display=swap" rel="stylesheet">
+<style>:root{
+  --paper:#F5F1EB; --ink:#2C2C2C; --muted:#777; --accent:#0077d4; --accent-d:#0077d4;
+  --line:#D9D3C7; --card:#FFF; --text:#3A3A3A;
+  --pack:#1F6F3D; --near:#9A6A00; --far:#8A8377; --gone:#B3261E;
+}
+@media (prefers-color-scheme:dark){:root{
+  --paper:#17150F; --ink:#EFEAE0; --muted:#A39B8C;
+  --line:#302B22; --card:#1E1B15; --text:#DDD7CB;
+  --pack:#3F9A5E; --near:#C08E13; --far:#7C7568; --gone:#E0625A;
+}}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--text);font:16px/1.65 'Sen',system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;margin:0}
+.wrap{max-width:1000px;margin:0 auto;padding:40px 22px 72px}
+.eyebrow{font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);font-weight:700}
+h1{font-size:clamp(28px,5vw,42px);line-height:1.1;margin:8px 0 6px;color:var(--ink);font-weight:700;text-wrap:balance}
+h2{font-size:25px;margin:54px 0 8px;color:var(--ink);font-weight:700;text-wrap:balance}
+h3{font-size:19px;margin:32px 0 6px;color:var(--ink);font-weight:600}
+h3.band{font-size:17px;margin:30px 0 8px}
+h3.band .bandn{color:var(--muted);font-weight:400;font-size:14px;margin-left:8px}
+.sub{color:var(--muted);margin:0 0 6px}
+p{max-width:72ch}
+.rule{height:1px;background:var(--line);border:0;margin:30px 0}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:26px 0 8px}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:15px 17px}
+.tile .n{font-size:33px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1.1;color:var(--ink)}
+.tile .n small{font-size:17px;color:var(--muted);font-weight:600}
+.tile .l{font-size:13px;color:var(--muted);margin-top:4px;line-height:1.35}
+.tile.accent .n{color:var(--accent)}
+.note{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:14px 18px;margin:20px 0;font-size:15px;max-width:74ch}
+.tablebox{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--card);margin-top:12px}
+table{border-collapse:collapse;width:100%;font-size:14.5px}
+table.grid{min-width:620px}
+th{text-align:left;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding:11px 13px;border-bottom:1px solid var(--line);font-weight:700}
+td{padding:10px 13px;border-bottom:1px solid var(--line);vertical-align:top}
+tbody th{text-transform:none;letter-spacing:0;font-size:14px;color:var(--text);white-space:nowrap;font-weight:500}
+tr:last-child td,tr:last-child th{border-bottom:0}
+table.grid td{text-align:center;font-variant-numeric:tabular-nums;font-weight:500}
+table.grid th .mi{display:block;font-weight:400;font-size:11px;color:var(--muted);text-transform:none;letter-spacing:0}
+.pack{color:var(--pack);font-weight:700}
+.near{color:var(--near)}
+.far{color:var(--far)}
+.gone{color:var(--gone)}
+.na{color:var(--muted)}
+tr.fam th{font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);padding-top:16px;font-weight:700}
+tr.totals th,tr.totals td{border-top:2px solid var(--line);font-weight:700;background:color-mix(in srgb,var(--accent) 6%,transparent)}
+.pill{display:inline-block;font-size:11.5px;font-weight:700;padding:3px 9px;border-radius:999px;white-space:nowrap}
+.pill.good{background:color-mix(in srgb,var(--pack) 15%,transparent);color:var(--pack)}
+.pill.mid{background:color-mix(in srgb,var(--near) 18%,transparent);color:var(--near)}
+.pill.bad{background:color-mix(in srgb,var(--gone) 12%,transparent);color:var(--gone)}
+.legend{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:13px;color:var(--muted);margin:10px 2px 0}
+.legend b{font-weight:700}
+.recs{counter-reset:rec;margin-top:14px}
+.rec{position:relative;background:var(--card);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:18px 20px 18px 62px;margin:14px 0}
+.rec::before{counter-increment:rec;content:counter(rec);position:absolute;left:18px;top:18px;width:28px;height:28px;border-radius:50%;background:var(--accent);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:14px}
+.rec h3{margin:0 0 6px;font-size:17px}
+.rec p{margin:.4rem 0}
+footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:13.5px}
+footer b{color:var(--text)}
+@media print{
+  body{background:#fff}
+  .tablebox{overflow:visible}
+  tr,.rec,.tile{break-inside:avoid}
+  thead{display:table-header-group}
+}</style>
+</head><body><div class="wrap">
+
+<div class="eyebrow">Local search audit · measured July 19, 2026</div>
+<h1>Where Steve Dennis Coaching ranks<br>across Northwest Georgia</h1>
+<p class="sub">20 searches × 16 markets · 320 measured results</p>
+
+<div class="tiles">
+  <div class="tile accent"><div class="n">0</div><div class="l">searches where you rank <b>first</b></div></div>
+  <div class="tile"><div class="n">11</div><div class="l">searches in the top 3</div></div>
+  <div class="tile"><div class="n">15<small>/16</small></div><div class="l">markets where you appear at all</div></div>
+  <div class="tile"><div class="n">0</div><div class="l">markets effectively owned</div></div>
+</div>
+
+<p class="lede">Every number in this report is one real Google search, the keyword plus the town, exactly
+as a customer would type it. We ran all 20 searches in each of 16 communities
+within about 30 miles. What follows
+is where you show up, and who is standing in front of you where you do not.</p>
+
+<h2>The short version</h2><p><strong>Your Google listing is named exactly right, and one search term is doing almost half your work.</strong> Across 320 searches you appear in 72 and hold a top-three spot in 11, which is real traction for a listing carrying 8 reviews. John Maxwell coach accounts for 5 of those 11 top-three placements and sits at fourth in four more towns. The single most striking result in the whole report is that Rome itself returns only one local business for that search, and it is a company 64 miles away.</p>
+
+<h2>Who is holding these searches now</h2>
+
+<div class="tablebox"><table>
+    <tr><th>Business</th><th>Rating</th><th>Searches they hold</th><th>Where</th></tr><tr><th scope="row">Dale Carnegie Training of Atlanta</th>
+        <td>5 <span style="color:var(--muted)">(114)</span></td>
+        <td>25</td>
+        <td style="color:var(--muted);font-size:13.5px">Lindale, Shannon, Euharlee, Adairsville +6</td></tr><tr><th scope="row">Guardian Leadership</th>
+        <td>5 <span style="color:var(--muted)">(57)</span></td>
+        <td>22</td>
+        <td style="color:var(--muted);font-size:13.5px">Lindale, Shannon, Cave Spring, Euharlee +8</td></tr><tr><th scope="row">Rock Bottom Coaching LLC</th>
+        <td>5 <span style="color:var(--muted)">(1)</span></td>
+        <td>22</td>
+        <td style="color:var(--muted);font-size:13.5px">Shannon, Cave Spring, Euharlee, Summerville +4</td></tr><tr><th scope="row">Launch From Within Life Coaching</th>
+        <td>5 <span style="color:var(--muted)">(7)</span></td>
+        <td>21</td>
+        <td style="color:var(--muted);font-size:13.5px">Lindale, Shannon, Cave Spring, Euharlee +6</td></tr><tr><th scope="row">Darryl Bumpass Sr ( Keynote Speaker ) Life Coach</th>
+        <td>5 <span style="color:var(--muted)">(2)</span></td>
+        <td>18</td>
+        <td style="color:var(--muted);font-size:13.5px">Rome, Lindale, Shannon, Euharlee +8</td></tr><tr><th scope="row">WinShape Leadership</th>
+        <td>5 <span style="color:var(--muted)">(61)</span></td>
+        <td>16</td>
+        <td style="color:var(--muted);font-size:13.5px">Rome, Lindale, Shannon, Cave Spring +3</td></tr><tr><th scope="row">Celebs7L Retreat Lodge</th>
+        <td>—</td>
+        <td>14</td>
+        <td style="color:var(--muted);font-size:13.5px">Rome, Lindale, Shannon, Cave Spring +10</td></tr><tr><th scope="row">FocalPoint Leadership Training of Atlanta, GA</th>
+        <td>5 <span style="color:var(--muted)">(6)</span></td>
+        <td>14</td>
+        <td style="color:var(--muted);font-size:13.5px">Lindale, Shannon, Euharlee, Adairsville +6</td></tr><tr><th scope="row">Moore 2 Life Consultants, LLC - Executive Coaching, Career Coaching, and Life Coach Firm</th>
+        <td>5 <span style="color:var(--muted)">(13)</span></td>
+        <td>13</td>
+        <td style="color:var(--muted);font-size:13.5px">Lindale, Cave Spring, Euharlee, Adairsville +4</td></tr><tr><th scope="row">Game Changer Leadership Coaching, Keynote Speaker, Consulting - Rennie Curran</th>
+        <td>4.9 <span style="color:var(--muted)">(20)</span></td>
+        <td>11</td>
+        <td style="color:var(--muted);font-size:13.5px">Lindale, Shannon, Adairsville, Aragon +3</td></tr></table></div>
+
+<h2>Businesses winning towns you are closer to</h2>
+  <p>Each of these holds top spots, across more than one search, in a town you are physically nearer to.
+  That means those spots are not being decided by distance. They are being decided by which businesses
+  have told Google they cover the area.</p><div class="tablebox"><table>
+    <tr><th>Business</th><th>Searches they hold</th><th>Example town</th><th>Their distance</th><th>Your distance</th></tr><tr><th scope="row">Dale Carnegie Training of Atlanta</th><td>23</td><td>Cartersville</td>
+      <td>31.5 mi</td><td class="pack">8.7 mi</td></tr><tr><th scope="row">Guardian Leadership</th><td>17</td><td>Cartersville</td>
+      <td>36 mi</td><td class="pack">8.7 mi</td></tr><tr><th scope="row">Launch From Within Life Coaching</th><td>16</td><td>Cartersville</td>
+      <td>25 mi</td><td class="pack">8.7 mi</td></tr><tr><th scope="row">Darryl Bumpass Sr ( Keynote Speaker ) Life Coach</th><td>16</td><td>Cartersville</td>
+      <td>36 mi</td><td class="pack">8.7 mi</td></tr><tr><th scope="row">Celebs7L Retreat Lodge</th><td>13</td><td>Cartersville</td>
+      <td>32 mi</td><td class="pack">8.7 mi</td></tr><tr><th scope="row">FocalPoint Leadership Training of Atlanta, GA</th><td>12</td><td>Summerville</td>
+      <td>40.3 mi</td><td class="pack">34.3 mi</td></tr><tr><th scope="row">Game Changer Leadership Coaching, Keynote Speaker, Consulting - Rennie Curran</th><td>11</td><td>Rockmart</td>
+      <td>40.6 mi</td><td class="pack">25.9 mi</td></tr><tr><th scope="row">Moore 2 Life Consultants, LLC - Executive Coaching, Career Coaching, and Life Coach Firm</th><td>10</td><td>Rockmart</td>
+      <td>35.1 mi</td><td class="pack">25.9 mi</td></tr></table></div>
+
+<h2>Every market at a glance</h2>
+<div class="tablebox"><table>
+    <tr><th>Market</th><th>Miles</th><th>Population</th><th>In top 3</th><th>Best spot</th><th>Standing</th></tr>
+    <tr><th scope="row">Rome</th>
+      <td>0</td><td>37,713</td>
+      <td class="pack">2/20</td>
+      <td>#2</td>
+      <td><span class="pill mid">Foothold</span></td></tr><tr><th scope="row">Lindale</th>
+      <td>4.4</td><td>4,283</td>
+      <td class="gone">0/20</td>
+      <td>#4</td>
+      <td><span class="pill mid">On the edge</span></td></tr><tr><th scope="row">Shannon</th>
+      <td>7.6</td><td>1,919</td>
+      <td class="pack">2/20</td>
+      <td>#2</td>
+      <td><span class="pill mid">Foothold</span></td></tr><tr><th scope="row">Cave Spring</th>
+      <td>14.2</td><td>1,174</td>
+      <td class="pack">1/18</td>
+      <td>#3</td>
+      <td><span class="pill mid">Foothold</span></td></tr><tr><th scope="row">Euharlee</th>
+      <td>15.1</td><td>4,268</td>
+      <td class="gone">0/20</td>
+      <td>#4</td>
+      <td><span class="pill mid">On the edge</span></td></tr><tr><th scope="row">Adairsville</th>
+      <td>15.5</td><td>4,878</td>
+      <td class="pack">2/20</td>
+      <td>#3</td>
+      <td><span class="pill mid">Foothold</span></td></tr><tr><th scope="row">Aragon</th>
+      <td>15.9</td><td>1,440</td>
+      <td class="gone">0/20</td>
+      <td>#4</td>
+      <td><span class="pill mid">On the edge</span></td></tr><tr><th scope="row">Cedartown</th>
+      <td>17.5</td><td>10,190</td>
+      <td class="pack">2/20</td>
+      <td>#3</td>
+      <td><span class="pill mid">Foothold</span></td></tr><tr><th scope="row">Summerville</th>
+      <td>18.6</td><td>4,435</td>
+      <td class="gone">0/20</td>
+      <td>#5</td>
+      <td><span class="pill mid">On the edge</span></td></tr><tr><th scope="row">Rockmart</th>
+      <td>18.7</td><td>4,732</td>
+      <td class="pack">1/20</td>
+      <td>#2</td>
+      <td><span class="pill mid">Foothold</span></td></tr><tr><th scope="row">Calhoun</th>
+      <td>21</td><td>16,949</td>
+      <td class="gone">0/20</td>
+      <td>#5</td>
+      <td><span class="pill mid">On the edge</span></td></tr><tr><th scope="row">Cartersville</th>
+      <td>21.5</td><td>23,187</td>
+      <td class="gone">0/20</td>
+      <td>#12</td>
+      <td><span class="pill bad">Buried</span></td></tr><tr><th scope="row">Trion</th>
+      <td>21.5</td><td>1,960</td>
+      <td class="pack">1/17</td>
+      <td>#2</td>
+      <td><span class="pill mid">Foothold</span></td></tr><tr><th scope="row">Cedar Bluff, AL</th>
+      <td>25</td><td>1,845</td>
+      <td class="gone">0/20</td>
+      <td>#5</td>
+      <td><span class="pill mid">On the edge</span></td></tr><tr><th scope="row">Centre, AL</th>
+      <td>29.2</td><td>3,587</td>
+      <td class="gone">0/20</td>
+      <td>—</td>
+      <td><span class="pill bad">No presence</span></td></tr><tr><th scope="row">Dallas</th>
+      <td>29.8</td><td>14,042</td>
+      <td class="gone">0/20</td>
+      <td>#4</td>
+      <td><span class="pill mid">On the edge</span></td></tr></table></div>
+<div class="legend">
+  <span><span class="pill good">Owned</span> top 3 for most searches</span>
+  <span><span class="pill mid">Foothold</span> top 3 sometimes</span>
+  <span><span class="pill mid">On the edge</span> 4th or 5th, reachable</span>
+  <span><span class="pill bad">Buried</span> only well down the list</span>
+  <span><span class="pill bad">No presence</span> does not appear</span>
+</div>
+
+<h2>Every search, town by town</h2>
+<p>Each number is your position in Google's local results for that search in that town.
+<b class="pack">Green</b> is the top three, the block of businesses shown before a customer has to click
+anything. A dash means you did not appear at all, and <b>np</b> means Google showed no local results for
+that search.</p>
+<h3 class="band">Home ring — inside 10 miles<span class="bandn">3 markets</span></h3>
+  <div class="tablebox"><table class="grid"><tr><th>The search</th><th>Rome<span class="mi">0 mi</span></th><th>Lindale<span class="mi">4.4 mi</span></th><th>Shannon<span class="mi">7.6 mi</span></th></tr><tr class="fam"><th colspan="4">Coaching</th></tr><tr><th scope="row">Leadership Coach</th><td class="near">5</td><td class="gone">—</td><td class="far">14</td></tr><tr><th scope="row">Executive Coach</th><td class="pack">2</td><td class="near">9</td><td class="pack">2</td></tr><tr><th scope="row">Business Coach</th><td class="far">16</td><td class="far">16</td><td class="far">11</td></tr><tr><th scope="row">Life Coach</th><td class="near">9</td><td class="gone">—</td><td class="gone">—</td></tr><tr><th scope="row">Certified Coach</th><td class="near">6</td><td class="far">17</td><td class="far">16</td></tr><tr class="fam"><th colspan="4">Speaking</th></tr><tr><th scope="row">Keynote Speaker</th><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td></tr><tr><th scope="row">Motivational Speaker</th><td class="pack">3</td><td class="far">13</td><td class="gone">—</td></tr><tr><th scope="row">Leadership Speaker</th><td class="near">5</td><td class="near">6</td><td class="far">20</td></tr><tr><th scope="row">Corporate Speaker</th><td class="gone">—</td><td class="near">10</td><td class="gone">—</td></tr><tr><th scope="row">Conference Speaker</th><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td></tr><tr class="fam"><th colspan="4">Training</th></tr><tr><th scope="row">Leadership Training</th><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td></tr><tr><th scope="row">Corporate Training</th><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td></tr><tr><th scope="row">Team Building Training</th><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td></tr><tr><th scope="row">Leadership Development Program</th><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td></tr><tr><th scope="row">Management Training</th><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td></tr><tr class="fam"><th colspan="4">Maxwell &amp; Workshops</th></tr><tr><th scope="row">John Maxwell Coach</th><td class="gone">—</td><td class="near">4</td><td class="pack">2</td></tr><tr><th scope="row">Leadership Workshop</th><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td></tr><tr><th scope="row">Executive Retreat</th><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td></tr><tr><th scope="row">Communication Skills Training</th><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td></tr><tr><th scope="row">Personal Development Coach</th><td class="near">9</td><td class="far">20</td><td class="near">4</td></tr><tr class="totals"><th>In the top 3</th><td class="pack">2<span class="mi">of 20</span></td><td class="gone">0<span class="mi">of 20</span></td><td class="pack">2<span class="mi">of 20</span></td></tr></table></div>
+<h3 class="band">Near ring — 10 to 20 miles<span class="bandn">7 markets</span></h3>
+  <div class="tablebox"><table class="grid"><tr><th>The search</th><th>Cave Spring<span class="mi">14.2 mi</span></th><th>Euharlee<span class="mi">15.1 mi</span></th><th>Adairsville<span class="mi">15.5 mi</span></th><th>Aragon<span class="mi">15.9 mi</span></th><th>Cedartown<span class="mi">17.5 mi</span></th><th>Summerville<span class="mi">18.6 mi</span></th><th>Rockmart<span class="mi">18.7 mi</span></th></tr><tr class="fam"><th colspan="8">Coaching</th></tr><tr><th scope="row">Leadership Coach</th><td class="far">15</td><td class="far">17</td><td class="gone">—</td><td class="gone">—</td><td class="far">16</td><td class="far">14</td><td class="far">13</td></tr><tr><th scope="row">Executive Coach</th><td class="far">11</td><td class="far">11</td><td class="near">5</td><td class="far">13</td><td class="near">8</td><td class="near">5</td><td class="near">8</td></tr><tr><th scope="row">Business Coach</th><td class="gone">—</td><td class="gone">—</td><td class="far">11</td><td class="gone">—</td><td class="far">14</td><td class="gone">—</td><td class="gone">—</td></tr><tr><th scope="row">Life Coach</th><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="far">16</td></tr><tr><th scope="row">Certified Coach</th><td class="near">10</td><td class="gone">—</td><td class="far">12</td><td class="gone">—</td><td class="gone">—</td><td class="far">18</td><td class="far">14</td></tr><tr class="fam"><th colspan="8">Speaking</th></tr><tr><th scope="row">Keynote Speaker</th><td class="na">np</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td></tr><tr><th scope="row">Motivational Speaker</th><td class="gone">—</td><td class="gone">—</td><td class="near">4</td><td class="near">10</td><td class="near">6</td><td class="far">11</td><td class="far">18</td></tr><tr><th scope="row">Leadership Speaker</th><td class="na">np</td><td class="gone">—</td><td class="pack">3</td><td class="gone">—</td><td class="pack">3</td><td class="gone">—</td><td class="gone">—</td></tr><tr><th scope="row">Corporate Speaker</th><td class="near">7</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td></tr><tr><th scope="row">Conference Speaker</th><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td></tr><tr class="fam"><th colspan="8">Training</th></tr><tr><th scope="row">Leadership Training</th><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td></tr><tr><th scope="row">Corporate Training</th><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td></tr><tr><th scope="row">Team Building Training</th><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td></tr><tr><th scope="row">Leadership Development Program</th><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td></tr><tr><th scope="row">Management Training</th><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td></tr><tr class="fam"><th colspan="8">Maxwell &amp; Workshops</th></tr><tr><th scope="row">John Maxwell Coach</th><td class="pack">3</td><td class="near">4</td><td class="pack">3</td><td class="near">4</td><td class="pack">3</td><td class="gone">—</td><td class="pack">2</td></tr><tr><th scope="row">Leadership Workshop</th><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td></tr><tr><th scope="row">Executive Retreat</th><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td></tr><tr><th scope="row">Communication Skills Training</th><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td></tr><tr><th scope="row">Personal Development Coach</th><td class="gone">—</td><td class="far">14</td><td class="near">6</td><td class="gone">—</td><td class="gone">—</td><td class="far">13</td><td class="far">17</td></tr><tr class="totals"><th>In the top 3</th><td class="pack">1<span class="mi">of 18</span></td><td class="gone">0<span class="mi">of 20</span></td><td class="pack">2<span class="mi">of 20</span></td><td class="gone">0<span class="mi">of 20</span></td><td class="pack">2<span class="mi">of 20</span></td><td class="gone">0<span class="mi">of 20</span></td><td class="pack">1<span class="mi">of 20</span></td></tr></table></div>
+<h3 class="band">Outer ring — 20 to 30 miles<span class="bandn">6 markets</span></h3>
+  <div class="tablebox"><table class="grid"><tr><th>The search</th><th>Calhoun<span class="mi">21 mi</span></th><th>Cartersville<span class="mi">21.5 mi</span></th><th>Trion<span class="mi">21.5 mi</span></th><th>Cedar Bluff <span class="mi">AL</span><span class="mi">25 mi</span></th><th>Centre <span class="mi">AL</span><span class="mi">29.2 mi</span></th><th>Dallas<span class="mi">29.8 mi</span></th></tr><tr class="fam"><th colspan="7">Coaching</th></tr><tr><th scope="row">Leadership Coach</th><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td></tr><tr><th scope="row">Executive Coach</th><td class="gone">—</td><td class="far">12</td><td class="pack">2</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td></tr><tr><th scope="row">Business Coach</th><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="near">10</td><td class="gone">—</td><td class="gone">—</td></tr><tr><th scope="row">Life Coach</th><td class="near">8</td><td class="gone">—</td><td class="gone">—</td><td class="near">9</td><td class="gone">—</td><td class="gone">—</td></tr><tr><th scope="row">Certified Coach</th><td class="gone">—</td><td class="gone">—</td><td class="near">9</td><td class="far">11</td><td class="gone">—</td><td class="gone">—</td></tr><tr class="fam"><th colspan="7">Speaking</th></tr><tr><th scope="row">Keynote Speaker</th><td class="gone">—</td><td class="gone">—</td><td class="na">np</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td></tr><tr><th scope="row">Motivational Speaker</th><td class="near">5</td><td class="gone">—</td><td class="gone">—</td><td class="near">5</td><td class="gone">—</td><td class="gone">—</td></tr><tr><th scope="row">Leadership Speaker</th><td class="gone">—</td><td class="gone">—</td><td class="na">np</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td></tr><tr><th scope="row">Corporate Speaker</th><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td></tr><tr><th scope="row">Conference Speaker</th><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td></tr><tr class="fam"><th colspan="7">Training</th></tr><tr><th scope="row">Leadership Training</th><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td></tr><tr><th scope="row">Corporate Training</th><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td></tr><tr><th scope="row">Team Building Training</th><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td></tr><tr><th scope="row">Leadership Development Program</th><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td></tr><tr><th scope="row">Management Training</th><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td></tr><tr class="fam"><th colspan="7">Maxwell &amp; Workshops</th></tr><tr><th scope="row">John Maxwell Coach</th><td class="gone">—</td><td class="gone">—</td><td class="na">np</td><td class="gone">—</td><td class="gone">—</td><td class="near">4</td></tr><tr><th scope="row">Leadership Workshop</th><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td></tr><tr><th scope="row">Executive Retreat</th><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td></tr><tr><th scope="row">Communication Skills Training</th><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td></tr><tr><th scope="row">Personal Development Coach</th><td class="gone">—</td><td class="far">16</td><td class="near">7</td><td class="gone">—</td><td class="gone">—</td><td class="gone">—</td></tr><tr class="totals"><th>In the top 3</th><td class="gone">0<span class="mi">of 20</span></td><td class="gone">0<span class="mi">of 20</span></td><td class="pack">1<span class="mi">of 17</span></td><td class="gone">0<span class="mi">of 20</span></td><td class="gone">0<span class="mi">of 20</span></td><td class="gone">0<span class="mi">of 20</span></td></tr></table></div>
+
+<h2>Which searches carry you furthest</h2>
+<p>Not all twenty searches behave the same way. These are ranked by how many towns each one puts you
+in the top three, which is usually the fastest guide to what to lead with.</p>
+<div class="tablebox"><table>
+    <tr><th>The search</th><th>Towns where you are #1</th><th>Towns in the top 3</th><th>Towns you appear at all</th></tr><tr><th scope="row">John Maxwell Coach</th>
+      <td class="na">0</td>
+      <td class="pack">5</td>
+      <td>9 <span class="mi" style="color:var(--muted)">of 15</span></td></tr><tr><th scope="row">Executive Coach</th>
+      <td class="na">0</td>
+      <td class="pack">3</td>
+      <td>12 <span class="mi" style="color:var(--muted)">of 16</span></td></tr><tr><th scope="row">Leadership Speaker</th>
+      <td class="na">0</td>
+      <td class="pack">2</td>
+      <td>5 <span class="mi" style="color:var(--muted)">of 14</span></td></tr><tr><th scope="row">Motivational Speaker</th>
+      <td class="na">0</td>
+      <td class="pack">1</td>
+      <td>9 <span class="mi" style="color:var(--muted)">of 16</span></td></tr><tr><th scope="row">Certified Coach</th>
+      <td class="na">0</td>
+      <td class="gone">0</td>
+      <td>9 <span class="mi" style="color:var(--muted)">of 16</span></td></tr><tr><th scope="row">Personal Development Coach</th>
+      <td class="na">0</td>
+      <td class="gone">0</td>
+      <td>9 <span class="mi" style="color:var(--muted)">of 16</span></td></tr><tr><th scope="row">Leadership Coach</th>
+      <td class="na">0</td>
+      <td class="gone">0</td>
+      <td>7 <span class="mi" style="color:var(--muted)">of 16</span></td></tr><tr><th scope="row">Business Coach</th>
+      <td class="na">0</td>
+      <td class="gone">0</td>
+      <td>6 <span class="mi" style="color:var(--muted)">of 16</span></td></tr><tr><th scope="row">Life Coach</th>
+      <td class="na">0</td>
+      <td class="gone">0</td>
+      <td>4 <span class="mi" style="color:var(--muted)">of 16</span></td></tr><tr><th scope="row">Corporate Speaker</th>
+      <td class="na">0</td>
+      <td class="gone">0</td>
+      <td>2 <span class="mi" style="color:var(--muted)">of 16</span></td></tr><tr><th scope="row">Keynote Speaker</th>
+      <td class="na">0</td>
+      <td class="gone">0</td>
+      <td>0 <span class="mi" style="color:var(--muted)">of 14</span></td></tr><tr><th scope="row">Conference Speaker</th>
+      <td class="na">0</td>
+      <td class="gone">0</td>
+      <td>0 <span class="mi" style="color:var(--muted)">of 16</span></td></tr><tr><th scope="row">Leadership Training</th>
+      <td class="na">0</td>
+      <td class="gone">0</td>
+      <td>0 <span class="mi" style="color:var(--muted)">of 16</span></td></tr><tr><th scope="row">Corporate Training</th>
+      <td class="na">0</td>
+      <td class="gone">0</td>
+      <td>0 <span class="mi" style="color:var(--muted)">of 16</span></td></tr><tr><th scope="row">Team Building Training</th>
+      <td class="na">0</td>
+      <td class="gone">0</td>
+      <td>0 <span class="mi" style="color:var(--muted)">of 16</span></td></tr><tr><th scope="row">Leadership Development Program</th>
+      <td class="na">0</td>
+      <td class="gone">0</td>
+      <td>0 <span class="mi" style="color:var(--muted)">of 16</span></td></tr><tr><th scope="row">Management Training</th>
+      <td class="na">0</td>
+      <td class="gone">0</td>
+      <td>0 <span class="mi" style="color:var(--muted)">of 16</span></td></tr><tr><th scope="row">Leadership Workshop</th>
+      <td class="na">0</td>
+      <td class="gone">0</td>
+      <td>0 <span class="mi" style="color:var(--muted)">of 16</span></td></tr><tr><th scope="row">Executive Retreat</th>
+      <td class="na">0</td>
+      <td class="gone">0</td>
+      <td>0 <span class="mi" style="color:var(--muted)">of 16</span></td></tr><tr><th scope="row">Communication Skills Training</th>
+      <td class="na">0</td>
+      <td class="gone">0</td>
+      <td>0 <span class="mi" style="color:var(--muted)">of 16</span></td></tr></table></div>
+
+<h2>What this means</h2><h3>Your listing name is not the problem, and that is worth confirming</h3><p>There was a reasonable concern going in that your Business Profile might be listed under Motivation Unlimited rather than the name people search for. The data settles it: the profile reads <strong>Steve Dennis Coaching</strong>, and that is the name Google shows on every placement captured in these results. No name mismatch exists. That is one fewer thing to fix.</p><p>The profile does carry one setting worth a look. Its category is <strong>Life coach</strong>. Life coach is your weakest term in this entire report: no top-three placements anywhere, appearances in only 4 of 16 markets, and ninth place in Rome. Executive coach, by contrast, appears in 12 markets and takes second in Rome, Shannon and Trion. The searches you win and the category your listing carries are describing two different practices.</p><h3>John Maxwell coach is your signature term, and Rome is wide open on it</h3><p>This term is the standout. You hold the top three for it in five towns: second in Shannon, second in Rockmart, and third in Cave Spring, Adairsville and Cedartown. You sit at fourth in four more, Lindale, Euharlee, Aragon and Dallas. That is nine markets where you are visible or nearly visible on a term that describes a certification you actually hold.</p><p>Then there is Rome. The search John Maxwell coach in Rome returns <strong>one single local result</strong>, and it is not you. It is The John Maxwell Company, carrying 2 reviews, located 64.3 miles away. There is no crowd to break into and no established local competitor. One result, and a space beside it.</p><h3>Coaching is a category where local packs are often thin or absent</h3><p>This needs saying before anything is read as a shortfall. Local search does not treat coaching the way it treats plumbers or dentists, where Google reliably assembles a full list of nearby businesses.</p><p>In 5 of your 320 searches Google rendered no local pack at all: keynote speaker and leadership speaker in Cave Spring, and John Maxwell coach, keynote speaker and leadership speaker in Trion. In another 31 searches it produced three results or fewer, against the 20 it produces for a typical local trade. Keynote speaker and conference speaker return no appearances for you anywhere, and keynote speaker produced no pack at all in two markets.</p><p>These are not losses and they should not be counted as gaps. They are searches where the local pack is not the route buyers take, and no amount of profile work changes that.</p><h3>The training terms belong to national and Atlanta firms</h3><p>Five terms in this set describe corporate training: leadership training, corporate training, team building training, leadership development program and management training. Across all 80 of those searches you do not appear once. Unlike the speaker terms, the packs here are full, so this is a genuine competitive picture rather than an empty category.</p><p>The holders explain it. Dale Carnegie Training of Atlanta takes 27 of those spots, Warrior Leadership 20, Guardian Leadership 14, Do Teambuilding 12, The Collaborative Training Company 12, T.A.P. Leadership Development Group 12, and FocalPoint Leadership Training of Atlanta 10. Of the 378 pack positions across these searches, 132 are held by businesses more than 30 miles from the town being searched. This is a lane occupied by national training brands and Atlanta firms reaching outward.</p><p>Rome does have local presence here worth knowing about: WinShape Leadership at 6.2 miles with 61 reviews, WorkPlay Solutions at 5.7 miles with 61 reviews, and CmP Training Rome at 0.1 miles. These are the nearby names in that space.</p><h3>Distance is not what is keeping you out</h3><p>This is the clearest signal in the report. In <strong>221 of 320 searches</strong>, a business ranks in a town while sitting further from it than you do. That is more than two thirds of everything measured, and it appears in all 16 markets.</p><p>Some of the gaps are dramatic. FocalPoint Leadership Training of Atlanta holds second place in Cartersville from 74.3 miles away, where you are 8.7 miles out. The Collaborative Training Company holds first in Trion from 75 miles. Bison View Lodge holds first in Calhoun for executive retreat from 71 miles, where you are 16 miles out. Whatever is deciding these results, proximity is not it.</p><h3>Where Google places you on the map</h3><p>Your profile has no public street address, which is normal and correct for a coach who travels to clients. Google still works from a map pin, and the pin on your listing currently reads about <strong>22 miles from downtown Rome</strong>. It reads 8.7 miles from Cartersville, 9.2 from Adairsville, 14.1 from Euharlee and 16 from Calhoun.</p><p>In other words, the map treats you as an east-side business closer to Bartow and Gordon counties than to Rome. That is worth knowing given that Rome is where your name, your chapter and your referral network actually sit. It also fits the pattern in the results: your Rome performance is respectable at 8 appearances and 2 top-three spots, but Shannon, Adairsville, Cedartown and Rockmart all convert as well or better despite being smaller.</p><h3>Reviews are part of this, but not the deciding factor</h3><p>You carry a 5.0 rating on 8 reviews. Of the businesses ranking above you across these searches, 132 have 8 reviews or fewer and 172 have more. Roughly two in five of the businesses outranking you have no more reputation to point at than you do.</p><p>Two examples make the point. In Rome for executive coach, you sit second behind EmpowHer Rome at 16 reviews, and third place goes to a business with 1 review. In Rome for leadership coach you sit fifth, and fourth place is held by a firm 52.1 miles away with 5 reviews. Growing the review count would help, as it always does, but the data does not support it as the main thing standing between you and better placement.</p>
+
+<h2>Three things that would move the needle</h2>
+<div class="recs"><div class="rec"><h3>Take the John Maxwell searches in your own town</h3><p>This is the most concrete opening in the report. The search John Maxwell coach in Rome returns exactly one local result, The John Maxwell Company, with 2 reviews, from 64.3 miles away. You are a certified John Maxwell coach based in the area, and you already hold the top three for that same term in Shannon, Rockmart, Cave Spring, Adairsville and Cedartown.</p><p>Four more towns have you at fourth place on it: Lindale, Euharlee, Aragon and Dallas. Making the Maxwell certification an explicit, prominent part of how your profile and site describe you addresses all ten markets at once. It is the single term where you have both a defensible credential and almost no competition, and Rome is the least contested of the ten.</p></div><div class="rec"><h3>Match your listing's category to the executive work</h3><p>Your Business Profile is categorised as Life coach. The results show that is not the lane you compete in. Life coach returns no top-three placement in any of the 16 markets and puts you ninth in Rome. Executive coach appears in 12 markets and puts you second in Rome, Shannon and Trion. Leadership coach reaches 7 markets and fifth in Rome.</p><p>Category is one of the strongest signals Google uses to decide which searches a business belongs in, and yours is currently pointing at the general wellness and personal-life side of coaching rather than the executive and leadership side where your placements actually come from. This is a settings change you can make yourself in an afternoon, and it costs nothing to correct.</p></div><div class="rec"><h3>Anchor your listing to the Rome side of your territory</h3><p>Because your profile carries no street address, Google positions you entirely from a map pin, and that pin currently reads about 22 miles from downtown Rome while reading 8.7 miles from Cartersville and 9.2 from Adairsville. The map is treating you as a Bartow-side business.</p><p>This matters more than it sounds, because 221 of your 320 searches are being won by businesses further from the town than you are, which means these packs are decided by stated coverage rather than by who is nearest. Reviewing what your profile says about where you are based and which areas you serve is the mechanism for correcting that, and it is worth doing before anything else geographic. Rome is where your name and your referral relationships already are, and the listing should reflect that.</p></div></div>
+
+<footer>
+  <p><b>320 searches recorded on July 19, 2026.</b> Google's local rankings
+  move by a position or so from day to day, so this is a snapshot with a margin rather than a fixed score.
+  Re-measuring the same searches later shows movement cleanly, because this baseline was taken first.</p>
+  <p>Prepared by <b>Eric Kirby</b> · Forge, AI &amp; Web Design · Synergy Telecom &amp; Medical Systems ·
+  Rome, GA · <b>Eric@synergytelecom.org</b> · 706-234-0000</p>
+  <p>Shared privately with Steve Dennis as a fellow member of BNI Community Connectors.</p>
+</footer>
+
+</div></body></html>
