@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Cochran Motor Company &middot; Local Search Baseline &amp; Work Plan</title>
+<style>
+:root{
+  --gold:#c5a14e; --gold-deep:#8a6a20; --gold-bright:#d9b869;
+  --paper:#faf8f4; --card:#ffffff; --line:#e5e0d6; --text:#1a1d21; --muted:#635c50;
+  --pack:#2f8b4c; --near:#b5850f; --far:#8d8578; --gone:#c2564d;
+  --packbg:#e9f4ec; --nearbg:#fdf3dc; --farbg:#f1efea; --gonebg:#faeceb;
+  --head:Georgia,'Times New Roman',serif;
+  --body:ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;
+  --accent-text:var(--gold-deep);
+}
+@media (prefers-color-scheme:dark){:root{
+  --paper:#12100d; --card:#1b1815; --line:#2e2a24; --text:#ece7dd; --muted:#a49b8b;
+  --pack:#52a566; --near:#d9a520; --far:#8a8378; --gone:#de7a72;
+  --packbg:#16281c; --nearbg:#2a2311; --farbg:#201d19; --gonebg:#2c1a18;
+  --accent-text:var(--gold-bright);
+}}
+:root[data-theme="dark"]{
+  --paper:#12100d; --card:#1b1815; --line:#2e2a24; --text:#ece7dd; --muted:#a49b8b;
+  --pack:#52a566; --near:#d9a520; --far:#8a8378; --gone:#de7a72;
+  --packbg:#16281c; --nearbg:#2a2311; --farbg:#201d19; --gonebg:#2c1a18;
+  --accent-text:var(--gold-bright);
+}
+:root[data-theme="light"]{
+  --paper:#faf8f4; --card:#ffffff; --line:#e5e0d6; --text:#1a1d21; --muted:#635c50;
+  --pack:#2f8b4c; --near:#b5850f; --far:#8d8578; --gone:#c2564d;
+  --packbg:#e9f4ec; --nearbg:#fdf3dc; --farbg:#f1efea; --gonebg:#faeceb;
+  --accent-text:var(--gold-deep);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--text);font-family:var(--body);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+.narrow{max-width:68ch;margin-inline:auto}
+h1,h2,h3{font-family:var(--head);line-height:1.15;text-wrap:balance;margin:0;font-weight:700}
+h1{font-size:clamp(2rem,5vw,3.1rem)}
+h2{font-size:clamp(1.45rem,3vw,2rem);margin:0 0 .5rem}
+h3{font-size:1.2rem;margin:2.2rem 0 .2rem}
+p{margin:0 0 1rem}
+a{color:var(--accent-text)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+header{border-bottom:1px solid var(--line);padding:38px 0 30px;background:var(--card)}
+.mark{font-family:var(--head);font-size:1.45rem;font-weight:700;letter-spacing:.02em}
+.mark i{color:var(--gold);font-style:normal}
+.mark small{display:block;font-family:var(--body);font-size:.58rem;letter-spacing:.34em;color:var(--muted);font-weight:600;margin-top:2px}
+.eyebrow{font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;color:var(--accent-text);font-weight:700;margin:26px 0 10px}
+header .sub{color:var(--muted);max-width:62ch;margin-top:14px}
+section{padding:52px 0;border-bottom:1px solid var(--line)}
+section.tight{padding:38px 0}
+.lede{color:var(--muted);max-width:68ch}
+h2+.lede{margin-top:0}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;margin:30px 0 0}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+.stat>b{display:block;font-family:var(--head);font-size:2.3rem;line-height:1;font-variant-numeric:tabular-nums}
+.stat>span{display:block;font-size:.86rem;color:var(--muted);margin-top:7px;line-height:1.4}
+.stat>span b{font-weight:700;color:var(--text)}
+.stat.good>b{color:var(--pack)} .stat.bad>b{color:var(--gone)} .stat.warn>b{color:var(--near)}
+.scroll{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--card);margin-top:18px}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{padding:9px 10px;text-align:center;border-bottom:1px solid var(--line);white-space:nowrap}
+thead th{position:sticky;top:0;background:var(--card);font-size:.68rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);font-weight:700;z-index:2}
+th.kw,td.q{text-align:left;font-weight:600;white-space:nowrap}
+td.q{font-size:13.5px;font-weight:600}
+td.vol{color:var(--muted);font-variant-numeric:tabular-nums;font-size:12.5px}
+td.pack{background:var(--packbg);color:var(--pack);font-weight:700}
+td.near{background:var(--nearbg);color:var(--near);font-weight:600}
+td.far{background:var(--farbg);color:var(--far)}
+td.gone{background:var(--gonebg);color:var(--gone);font-weight:600}
+td.n{color:var(--muted)}
+td.hold{text-align:left;white-space:nowrap;font-size:13px}
+td.hold i{font-style:normal;color:var(--muted);font-size:11.5px;margin-left:3px}
+.mi{font-family:var(--body);font-size:.78rem;font-weight:500;color:var(--muted);letter-spacing:0}
+table.town td{text-align:center}
+table.town td.q{text-align:left}
+.tag{display:inline-block;padding:2px 9px;border-radius:999px;font-size:12.5px;font-weight:700;white-space:nowrap}
+.tag.pack{background:var(--packbg);color:var(--pack)}
+.tag.near{background:var(--nearbg);color:var(--near)}
+.tag.far{background:var(--farbg);color:var(--far)}
+.tag.gone{background:var(--gonebg);color:var(--gone)}
+.you{color:var(--accent-text);font-weight:700}
+.key{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px;font-size:13.5px}
+.key span{display:flex;align-items:center;gap:7px;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:5px 11px}
+.sw{width:22px;height:16px;border-radius:4px;display:inline-block}
+.callout{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:10px;padding:18px 22px;margin:22px 0}
+.callout h3{margin:0 0 .3rem;font-size:1.05rem}
+.find{max-width:74ch}
+.find h3{font-family:var(--head);font-size:1.25rem;margin:2.6rem 0 .35rem}
+.find h3 span{color:var(--gold);margin-right:.4rem}
+ol.next{max-width:70ch;padding-left:20px}
+ol.next li{margin:1.15rem 0}
+ol.next b{display:block;font-family:var(--head);font-size:1.08rem;margin-bottom:.2rem}
+ul.need{list-style:none;padding:0;max-width:70ch}
+ul.need li{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:10px 0}
+ul.need b{display:block;font-family:var(--head);font-size:1.02rem;margin-bottom:.15rem}
+ul.need span{color:var(--muted);font-size:.92rem}
+footer{padding:30px 0 60px;color:var(--muted);font-size:.86rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+
+<body>
+<header><div class="wrap">
+  <div class="mark">COCHRAN <i>MOTOR</i><small>COMPANY &middot; ROME GA</small></div>
+  <div class="eyebrow">Local Search Baseline &amp; Work Plan &middot; July 2026</div>
+  <h1>Where Cochran shows up<br>when people search</h1>
+  <p class="sub">Every number below is a real Google search, run one at a time across
+  <b>26 towns within 40 miles</b> and <b>20 ways people look for a used vehicle</b>. 520 searches in all,
+  measured 19 July 2026, paired with how often each search actually gets used.</p>
+  <p class="sub">This is the starting line, recorded before the website rebuild and search work begin,
+  so progress can be measured rather than argued.</p>
+</div></header>
+
+<section><div class="wrap">
+  <div class="stats">
+    <div class="stat bad"><b>0<span style="font-size:1.1rem">/520</span></b><span>searches where Cochran appears in the <b>map pack</b></span></div>
+    <div class="stat bad"><b>0<span style="font-size:1.1rem">/19</span></b><span>map pack appearances in <b>Rome itself</b></span></div>
+    <div class="stat warn"><b>9<span style="font-size:1.1rem">/520</span></b><span>searches where the <b>website</b> appears at all, positions 9 to 18</span></div>
+    <div class="stat good"><b>1,190</b><span>monthly searches for <b>"buy here pay here"</b>, the biggest term in the market</span></div>
+  </div>
+</div></section>
+
+<section><div class="wrap narrow">
+  <h2>What this measures</h2>
+  <p class="lede">When someone searches for a car dealer, Google shows a small map with three businesses on it.
+  That block, the "map pack", is where the calls and the lot visits come from. This report answers one question:
+  <b>for each search, in each town, is Cochran Motor Company in that block?</b></p>
+  <p class="lede">Each search was localised to the town it names, so the Cartersville column reflects what a
+  person in Cartersville sees, not a national average. Alongside each term is its real monthly search volume,
+  so position can be weighed against how much demand it represents.</p>
+  <p class="lede">Google Maps rankings were deliberately not used. Maps orders results by how close you are
+  standing to each business, which flatters a dealer inside his own town and does not match what a real
+  searcher sees. Everything here comes from the search results page.</p>
+  <div class="key">
+    <span><i class="sw" style="background:var(--packbg);border:1px solid var(--pack)"></i> <b>1 to 3</b> in the map pack</span>
+    <span><i class="sw" style="background:var(--nearbg);border:1px solid var(--near)"></i> 4 to 10 just below it</span>
+    <span><i class="sw" style="background:var(--farbg);border:1px solid var(--far)"></i> 11 to 20 far down</span>
+    <span><i class="sw" style="background:var(--gonebg);border:1px solid var(--gone)"></i> not shown at all</span>
+  </div>
+</div></section>
+
+<section><div class="wrap narrow">
+  <h2>Stated plainly: the limits of this data</h2>
+  <ul class="lede">
+    <li><b>Rankings drift by about one position day to day.</b> Any single number here is a snapshot.
+    The patterns across 520 searches are the reliable part, not any one cell.</li>
+    <li><b>52 of the 520 searches returned no map pack at all.</b> Google does not show a map block for
+    every phrase. Those are recorded as "no pack" rather than counted as a loss.</li>
+    <li><b>"Near me" searches cannot be measured town by town.</b> They follow the phone, not the words.
+    They were priced but left out of the grid rather than reported as a number that cannot be stood behind.</li>
+    <li><b>This was checked against hand measurement.</b> The same Rome terms were captured by hand in a
+    live browser on 16 July. Both methods agree on the finding that matters: Cochran sat outside the top
+    three then and sits outside it now.</li>
+  </ul>
+</div></section>
+
+<section><div class="wrap">
+  <h2>The headline</h2>
+  <p class="lede narrow"><b>Across 520 searches in 26 markets, Cochran Motor Company appears in the map pack
+  zero times.</b> Not in Cartersville, not in Calhoun, not in Cedartown, and not in Rome.</p>
+  <p class="lede narrow">This is consistent with the July check rather than a contradiction of it. That check
+  placed Cochran fourth and fifth on four Rome terms. Only the top three make the pack, so fourth place means
+  what this wider study now shows everywhere: just outside the door.</p>
+  <div class="callout narrow">
+    <h3>The important part is where the door is</h3>
+    <p style="margin:0">Rome is the largest market in this study at 37,713 people, and the lot sits a mile from
+    the middle of it. The pack there is being lost to three named competitors, not to distance. That is a
+    fixable problem, and it is where the work starts.</p>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Rome, term by term</h2>
+  <p class="lede narrow">Nineteen of the twenty terms produced a map pack in Rome. This is who is in those
+  blocks, with their star rating and review count, followed by where Cochran sits in the longer local list
+  and where the website lands in the ordinary web results.</p>
+  <div class="scroll"><table>
+    <thead><tr>
+      <th class="kw">Search term</th><th>Vol/mo</th>
+      <th>Map pack #1</th><th>Map pack #2</th><th>Map pack #3</th>
+      <th>Cochran<br><span class="mi">local list</span></th><th>Website<br><span class="mi">web results</span></th>
+    </tr></thead>
+    <tbody>
+      <tr><td class="q">buy here pay here</td><td class="vol">1,190</td><td class="hold">Easy Auto <i>4.8 / 969</i></td><td class="hold">Trinity Motorcar <i>4.6 / 995</i></td><td class="hold">SRI Auto Brokers <i>3.9 / 34</i></td><td class="far">#20</td><td class="far">#17</td></tr>
+      <tr><td class="q">used cars</td><td class="vol">1,060</td><td class="hold">Easy Auto <i>4.8 / 969</i></td><td class="hold">Sherold Salmon <i>4.5 / 145</i></td><td class="hold">Trinity Motorcar <i>4.6 / 995</i></td><td class="far">#12</td><td class="far">#14</td></tr>
+      <tr><td class="q">cars for sale</td><td class="vol">1,010</td><td class="hold">Easy Auto <i>4.8 / 969</i></td><td class="hold">Sherold Salmon <i>4.5 / 145</i></td><td class="hold">Trinity Motorcar <i>4.6 / 995</i></td><td class="far">#19</td><td class="gone">not shown</td></tr>
+      <tr><td class="q">used cars for sale</td><td class="vol">750</td><td class="hold">Easy Auto <i>4.8 / 969</i></td><td class="hold">Sherold Salmon <i>4.5 / 145</i></td><td class="hold">Trinity Motorcar <i>4.6 / 995</i></td><td class="far">#20</td><td class="far">#18</td></tr>
+      <tr><td class="q">used car sales</td><td class="vol">750</td><td class="hold" colspan="3"><i>no map pack shown for this term</i></td><td class="far">#11</td><td class="far">#11</td></tr>
+      <tr><td class="q">trucks for sale</td><td class="vol">420</td><td class="hold">Sherold Salmon <i>4.5 / 145</i></td><td class="hold">Welborn Chevrolet <i>4.5 / 3,000</i></td><td class="hold">Trinity Motorcar <i>4.6 / 995</i></td><td class="gone">not shown</td><td class="gone">not shown</td></tr>
+      <tr><td class="q">car dealership</td><td class="vol">370</td><td class="hold">Welborn Chevrolet <i>4.5 / 3,000</i></td><td class="hold">Easy Auto <i>4.8 / 969</i></td><td class="hold">Sherold Salmon <i>4.5 / 145</i></td><td class="far">#11</td><td class="far">#13</td></tr>
+      <tr><td class="q">car dealer</td><td class="vol">370</td><td class="hold">Trinity Motorcar <i>4.6 / 995</i></td><td class="hold">Easy Auto <i>4.8 / 969</i></td><td class="hold">Sherold Salmon <i>4.5 / 145</i></td><td class="near">#10</td><td class="far">#13</td></tr>
+      <tr><td class="q">used trucks for sale</td><td class="vol">310</td><td class="hold">Sherold Salmon <i>4.5 / 145</i></td><td class="hold">Trinity Motorcar <i>4.6 / 995</i></td><td class="hold">Cartersville Trucks <i>4.8 / 972</i></td><td class="gone">not shown</td><td class="gone">not shown</td></tr>
+      <tr><td class="q">used car dealership</td><td class="vol">250</td><td class="hold">Easy Auto <i>4.8 / 969</i></td><td class="hold">Sherold Salmon <i>4.5 / 145</i></td><td class="hold">Trinity Motorcar <i>4.6 / 995</i></td><td class="near">#6</td><td class="gone">not shown</td></tr>
+      <tr><td class="q">buy here pay here car lots</td><td class="vol">210</td><td class="hold">Easy Auto <i>4.8 / 969</i></td><td class="hold">Trinity Motorcar <i>4.6 / 995</i></td><td class="hold">SRI Auto Brokers <i>3.9 / 34</i></td><td class="gone">not shown</td><td class="far">#14</td></tr>
+      <tr><td class="q">sell my car</td><td class="vol">210</td><td class="hold">Sherold Salmon <i>4.5 / 145</i></td><td class="hold">Easy Auto <i>4.8 / 969</i></td><td class="hold">Georgia Auto Brokers <i>4.9 / 33</i></td><td class="far">#12</td><td class="gone">not shown</td></tr>
+      <tr><td class="q">auto financing</td><td class="vol">180</td><td class="hold">Easy Auto <i>4.8 / 969</i></td><td class="hold">Trinity Motorcar <i>4.6 / 995</i></td><td class="hold">Sherold Salmon <i>4.5 / 145</i></td><td class="gone">not shown</td><td class="gone">not shown</td></tr>
+      <tr><td class="q">suvs for sale</td><td class="vol">170</td><td class="hold">Easy Auto <i>4.8 / 969</i></td><td class="hold">Sherold Salmon <i>4.5 / 145</i></td><td class="hold">Courtesy Ford <i>4.7 / 2,000</i></td><td class="far">#19</td><td class="gone">not shown</td></tr>
+      <tr><td class="q">used car dealer</td><td class="vol">160</td><td class="hold">Easy Auto <i>4.8 / 969</i></td><td class="hold">Sherold Salmon <i>4.5 / 145</i></td><td class="hold">Global Auto Sales <i>4.8 / 228</i></td><td class="near">#7</td><td class="gone">not shown</td></tr>
+      <tr><td class="q">car lots</td><td class="vol">150</td><td class="hold">Easy Auto <i>4.8 / 969</i></td><td class="hold">Sherold Salmon <i>4.5 / 145</i></td><td class="hold">Trinity Motorcar <i>4.6 / 995</i></td><td class="near">#7</td><td class="near">#9</td></tr>
+      <tr><td class="q">cheap cars for sale</td><td class="vol">150</td><td class="hold">Easy Auto <i>4.8 / 969</i></td><td class="hold">Sherold Salmon <i>4.5 / 145</i></td><td class="hold">Trinity Motorcar <i>4.6 / 995</i></td><td class="far">#20</td><td class="far">#18</td></tr>
+      <tr><td class="q">used suv for sale</td><td class="vol">130</td><td class="hold">Easy Auto <i>4.8 / 969</i></td><td class="hold">Sherold Salmon <i>4.5 / 145</i></td><td class="hold">Courtesy Ford <i>4.7 / 2,000</i></td><td class="gone">not shown</td><td class="gone">not shown</td></tr>
+      <tr><td class="q">no credit check car dealership</td><td class="vol">130</td><td class="hold">Easy Auto <i>4.8 / 969</i></td><td class="hold">Welborn Toyota <i>4.6 / 4,000</i></td><td class="hold">Greenway CDJR <i>4.2 / 985</i></td><td class="far">#20</td><td class="gone">not shown</td></tr>
+      <tr><td class="q">cars under 10000</td><td class="vol">130</td><td class="hold">Easy Auto <i>4.8 / 969</i></td><td class="hold">Global Auto Sales <i>4.8 / 228</i></td><td class="hold">Mayflower Motor Co <i>4.7 / 126</i></td><td class="gone">not shown</td><td class="gone">not shown</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Three businesses own Rome</h3>
+  <div class="scroll" style="max-width:640px"><table>
+    <thead><tr><th class="kw">Dealer</th><th>Pack appearances</th><th>Rating and reviews</th></tr></thead>
+    <tbody>
+      <tr><td class="q">Easy Auto, Rome</td><td class="pack">17 of 19</td><td class="n">4.8 &middot; 969</td></tr>
+      <tr><td class="q">Sherold Salmon Auto Superstore</td><td class="pack">15 of 19</td><td class="n">4.5 &middot; 145</td></tr>
+      <tr><td class="q">Trinity Motorcar Company</td><td class="pack">12 of 19</td><td class="n">4.6 &middot; 995</td></tr>
+      <tr><td class="q you">Cochran Motor Company</td><td class="gone">0 of 19</td><td class="n">5.0 &middot; 21</td></tr>
+    </tbody>
+  </table></div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>All 26 markets</h2>
+  <p class="lede narrow">"Median holder distance" is the middle value of how far the businesses holding that
+  town's map pack are actually based from that town. It is the clearest measure of how local this trade is
+  in each market, and it is what decides where the effort is worth spending.</p>
+  <div class="scroll"><table class="town">
+    <thead><tr>
+      <th class="kw">Market</th><th>Miles</th><th>Population</th><th>Packs shown</th>
+      <th>Cochran in pack</th><th>Best local position</th><th>Median holder distance</th><th>Read</th>
+    </tr></thead>
+    <tbody>
+      <tr><td class="q">Rome</td><td class="n">1</td><td class="n">37,713</td><td class="n">19/20</td><td class="gone">0</td><td class="near">#6</td><td class="n">2.4 mi</td><td><span class="tag near">reachable, held from 22 mi</span></td></tr>
+      <tr><td class="q">Lindale</td><td class="n">6</td><td class="n">4,088</td><td class="n">10/20</td><td class="gone">0</td><td class="near">#4</td><td class="n">7.1 mi</td><td><span class="tag near">reachable, held from 42 mi</span></td></tr>
+      <tr><td class="q">Adairsville</td><td class="n">15</td><td class="n">4,878</td><td class="n">19/20</td><td class="gone">0</td><td class="n">not shown</td><td class="n">12.4 mi</td><td><span class="tag near">reachable, held from 50 mi</span></td></tr>
+      <tr><td class="q">Euharlee</td><td class="n">16</td><td class="n">4,344</td><td class="n">18/20</td><td class="gone">0</td><td class="n">not shown</td><td class="n">8.2 mi</td><td><span class="tag far">hyper local</span></td></tr>
+      <tr><td class="q">Summerville</td><td class="n">18</td><td class="n">4,436</td><td class="n">19/20</td><td class="gone">0</td><td class="n">not shown</td><td class="n">2.5 mi</td><td><span class="tag near">reachable, held from 34 mi</span></td></tr>
+      <tr><td class="q">Cedartown</td><td class="n">19</td><td class="n">10,190</td><td class="n">19/20</td><td class="gone">0</td><td class="far">#14</td><td class="n">0.8 mi</td><td><span class="tag far">hyper local</span></td></tr>
+      <tr><td class="q">Rockmart</td><td class="n">20</td><td class="n">4,732</td><td class="n">17/20</td><td class="gone">0</td><td class="n">not shown</td><td class="n">1.7 mi</td><td><span class="tag far">hyper local</span></td></tr>
+      <tr><td class="q">Calhoun</td><td class="n">20</td><td class="n">16,949</td><td class="n">18/20</td><td class="gone">0</td><td class="n">not shown</td><td class="n">1.9 mi</td><td><span class="tag near">reachable, held from 23 mi</span></td></tr>
+      <tr><td class="q">Cartersville</td><td class="n">22</td><td class="n">23,187</td><td class="n">20/20</td><td class="gone">0</td><td class="n">not shown</td><td class="n">1.1 mi</td><td><span class="tag far">hyper local</span></td></tr>
+      <tr><td class="q">Centre, AL</td><td class="n">30</td><td class="n">3,588</td><td class="n">17/20</td><td class="gone">0</td><td class="n">not shown</td><td class="n">1.7 mi</td><td><span class="tag far">hyper local</span></td></tr>
+      <tr><td class="q">Dallas</td><td class="n">30</td><td class="n">14,042</td><td class="n">18/20</td><td class="gone">0</td><td class="n">not shown</td><td class="n">3.9 mi</td><td><span class="tag far">hyper local</span></td></tr>
+      <tr><td class="q">LaFayette</td><td class="n">31</td><td class="n">6,888</td><td class="n">19/20</td><td class="gone">0</td><td class="n">not shown</td><td class="n">3.0 mi</td><td><span class="tag far">hyper local</span></td></tr>
+      <tr><td class="q">Acworth</td><td class="n">31</td><td class="n">22,440</td><td class="n">19/20</td><td class="gone">0</td><td class="n">not shown</td><td class="n">5.7 mi</td><td><span class="tag far">hyper local</span></td></tr>
+      <tr><td class="q">Fort Payne, AL</td><td class="n">34</td><td class="n">14,877</td><td class="n">20/20</td><td class="gone">0</td><td class="n">not shown</td><td class="n">1.2 mi</td><td><span class="tag far">hyper local</span></td></tr>
+      <tr><td class="q">Piedmont, AL</td><td class="n">35</td><td class="n">4,220</td><td class="n">16/20</td><td class="gone">0</td><td class="n">not shown</td><td class="n">55.9 mi</td><td><span class="tag near">thin market, pulls from far</span></td></tr>
+      <tr><td class="q">Hiram</td><td class="n">36</td><td class="n">4,929</td><td class="n">19/20</td><td class="gone">0</td><td class="n">not shown</td><td class="n">3.1 mi</td><td><span class="tag far">hyper local</span></td></tr>
+      <tr><td class="q">Kennesaw</td><td class="n">36</td><td class="n">33,036</td><td class="n">18/20</td><td class="gone">0</td><td class="n">not shown</td><td class="n">2.5 mi</td><td><span class="tag near">reachable, held from 45 mi</span></td></tr>
+      <tr><td class="q">Dalton</td><td class="n">36</td><td class="n">34,417</td><td class="n">18/20</td><td class="gone">0</td><td class="n">not shown</td><td class="n">1.7 mi</td><td><span class="tag far">hyper local</span></td></tr>
+      <tr><td class="q">Tallapoosa</td><td class="n">37</td><td class="n">3,204</td><td class="n">19/20</td><td class="gone">0</td><td class="n">not shown</td><td class="n">8.9 mi</td><td><span class="tag near">reachable, held from 43 mi</span></td></tr>
+      <tr><td class="q">Temple</td><td class="n">38</td><td class="n">5,089</td><td class="n">14/20</td><td class="gone">0</td><td class="n">not shown</td><td class="n">11.0 mi</td><td><span class="tag near">reachable, held from 46 mi</span></td></tr>
+      <tr><td class="q">Bremen</td><td class="n">38</td><td class="n">7,185</td><td class="n">18/20</td><td class="gone">0</td><td class="n">not shown</td><td class="n">2.1 mi</td><td><span class="tag far">hyper local</span></td></tr>
+      <tr><td class="q">Canton</td><td class="n">39</td><td class="n">32,973</td><td class="n">20/20</td><td class="gone">0</td><td class="n">not shown</td><td class="n">3.0 mi</td><td><span class="tag far">hyper local</span></td></tr>
+      <tr><td class="q">Woodstock</td><td class="n">39</td><td class="n">35,065</td><td class="n">20/20</td><td class="gone">0</td><td class="n">not shown</td><td class="n">2.5 mi</td><td><span class="tag far">hyper local</span></td></tr>
+      <tr><td class="q">Holly Springs</td><td class="n">40</td><td class="n">16,216</td><td class="n">16/20</td><td class="gone">0</td><td class="n">not shown</td><td class="n">8.5 mi</td><td><span class="tag near">reachable, held from 50 mi</span></td></tr>
+      <tr><td class="q">Powder Springs</td><td class="n">40</td><td class="n">16,887</td><td class="n">19/20</td><td class="gone">0</td><td class="n">not shown</td><td class="n">6.4 mi</td><td><span class="tag far">hyper local</span></td></tr>
+      <tr><td class="q">Villa Rica</td><td class="n">40</td><td class="n">16,970</td><td class="n">19/20</td><td class="gone">0</td><td class="n">not shown</td><td class="n">1.7 mi</td><td><span class="tag far">hyper local</span></td></tr>
+    </tbody>
+  </table></div>
+  <p class="lede" style="margin-top:14px">Cochran appears anywhere in the longer local list in only <b>27 of 519</b>
+  measured searches, and those are confined to Rome, Lindale and Cedartown.</p>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Every term, across all 26 markets</h2>
+  <div class="scroll"><table class="town">
+    <thead><tr><th class="kw">Search term</th><th>Searches/mo</th><th>Markets showing a pack</th><th>Cochran in pack</th><th>Best position anywhere</th></tr></thead>
+    <tbody>
+      <tr><td class="q">buy here pay here</td><td class="vol">1,190</td><td class="n">26 / 26</td><td class="gone">0</td><td class="far">#20</td></tr>
+      <tr><td class="q">used cars</td><td class="vol">1,060</td><td class="n">26 / 26</td><td class="gone">0</td><td class="near">#4</td></tr>
+      <tr><td class="q">cars for sale</td><td class="vol">1,010</td><td class="n">25 / 26</td><td class="gone">0</td><td class="far">#11</td></tr>
+      <tr><td class="q">used cars for sale</td><td class="vol">750</td><td class="n">25 / 26</td><td class="gone">0</td><td class="near">#10</td></tr>
+      <tr><td class="q">used car sales</td><td class="vol">750</td><td class="n">13 / 26</td><td class="gone">0</td><td class="far">#11</td></tr>
+      <tr><td class="q">trucks for sale</td><td class="vol">420</td><td class="n">23 / 26</td><td class="gone">0</td><td class="far">#16</td></tr>
+      <tr><td class="q">car dealership</td><td class="vol">370</td><td class="n">23 / 26</td><td class="gone">0</td><td class="far">#11</td></tr>
+      <tr><td class="q">car dealer</td><td class="vol">370</td><td class="n">25 / 26</td><td class="gone">0</td><td class="near">#10</td></tr>
+      <tr><td class="q">used trucks for sale</td><td class="vol">310</td><td class="n">25 / 26</td><td class="gone">0</td><td class="far">#20</td></tr>
+      <tr><td class="q">used car dealership</td><td class="vol">250</td><td class="n">25 / 26</td><td class="gone">0</td><td class="near">#6</td></tr>
+      <tr><td class="q">buy here pay here car lots</td><td class="vol">210</td><td class="n">25 / 26</td><td class="gone">0</td><td class="gone">not shown</td></tr>
+      <tr><td class="q">sell my car</td><td class="vol">210</td><td class="n">14 / 26</td><td class="gone">0</td><td class="far">#12</td></tr>
+      <tr><td class="q">auto financing</td><td class="vol">180</td><td class="n">22 / 26</td><td class="gone">0</td><td class="gone">not shown</td></tr>
+      <tr><td class="q">suvs for sale</td><td class="vol">170</td><td class="n">24 / 26</td><td class="gone">0</td><td class="far">#14</td></tr>
+      <tr><td class="q">used car dealer</td><td class="vol">160</td><td class="n">26 / 26</td><td class="gone">0</td><td class="near">#4</td></tr>
+      <tr><td class="q">car lots</td><td class="vol">150</td><td class="n">24 / 26</td><td class="gone">0</td><td class="near">#7</td></tr>
+      <tr><td class="q">cheap cars for sale</td><td class="vol">150</td><td class="n">24 / 26</td><td class="gone">0</td><td class="near">#6</td></tr>
+      <tr><td class="q">used suv for sale</td><td class="vol">130</td><td class="n">26 / 26</td><td class="gone">0</td><td class="near">#5</td></tr>
+      <tr><td class="q">no credit check car dealership</td><td class="vol">130</td><td class="n">26 / 26</td><td class="gone">0</td><td class="far">#20</td></tr>
+      <tr><td class="q">cars under 10000</td><td class="vol">130</td><td class="n">21 / 26</td><td class="gone">0</td><td class="gone">not shown</td></tr>
+    </tbody>
+  </table></div>
+  <p class="lede" style="margin-top:14px">Total measured demand: <b>8,100 searches per month</b>. A further
+  <b>3,230 per month</b> sit in "near me" phrasings that cannot be tracked town by town. That demand is real,
+  and it is won through the Google Business Profile rather than through website pages.</p>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Who holds the packs across the whole area</h2>
+  <div class="scroll"><table class="town">
+    <thead><tr><th class="kw">Dealer</th><th>Rating and reviews</th><th>Pack slots held</th><th>Markets</th><th>Miles from Cochran</th></tr></thead>
+    <tbody>
+      <tr><td class="q">Hardy Superstore</td><td class="n">4.4 &middot; 452</td><td class="pack">37</td><td class="n">7</td><td class="n">33</td></tr>
+      <tr><td class="q">Cherokee Auto Sales</td><td class="n">4.0 &middot; 1,303</td><td class="pack">33</td><td class="n">5</td><td class="n">36</td></tr>
+      <tr><td class="q">Carl Black Hiram Auto Superstore</td><td class="n">4.5 &middot; 724</td><td class="pack">29</td><td class="n">3</td><td class="n">35</td></tr>
+      <tr><td class="q">Big O Used Cars and Trucks</td><td class="n">4.2 &middot; 190</td><td class="pack">29</td><td class="n">3</td><td class="n">39</td></tr>
+      <tr><td class="q">Autohouse.US</td><td class="n">4.9 &middot; 366</td><td class="pack">27</td><td class="n">2</td><td class="n">36</td></tr>
+      <tr><td class="q">H and S Auto Group</td><td class="n">4.9 &middot; 197</td><td class="pack">27</td><td class="n">2</td><td class="n">42</td></tr>
+      <tr><td class="q">Our Local Dealer</td><td class="n">4.7 &middot; 127</td><td class="pack">24</td><td class="n">2</td><td class="n">23</td></tr>
+      <tr><td class="q">Calhoun Auto Outlet</td><td class="n">4.4 &middot; 52</td><td class="pack">21</td><td class="n">2</td><td class="n">20</td></tr>
+      <tr><td class="q">The Auto Super Center</td><td class="n">4.4 &middot; 47</td><td class="pack">21</td><td class="n">2</td><td class="n">30</td></tr>
+      <tr><td class="q">Sherold Salmon Auto Superstore</td><td class="n">4.5 &middot; 145</td><td class="pack">20</td><td class="n">3</td><td class="n">1</td></tr>
+      <tr><td class="q">Peach State Motors</td><td class="n">4.7 &middot; 898</td><td class="pack">20</td><td class="n">3</td><td class="n">35</td></tr>
+      <tr><td class="q">Easy Auto, Rome</td><td class="n">4.8 &middot; 969</td><td class="pack">19</td><td class="n">2</td><td class="n">3</td></tr>
+      <tr><td class="q">Everybody's Auto Sales</td><td class="n">4.4 &middot; 72</td><td class="pack">19</td><td class="n">4</td><td class="n">20</td></tr>
+      <tr><td class="q">North Georgia Sales</td><td class="n">4.3 &middot; 19</td><td class="pack">19</td><td class="n">1</td><td class="n">17</td></tr>
+      <tr><td class="q">Williams Auto Sales</td><td class="n">4.7 &middot; 67</td><td class="pack">19</td><td class="n">1</td><td class="n">37</td></tr>
+    </tbody>
+  </table></div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>What the numbers mean</h2>
+  <div class="find">
+
+    <h3><span>1.</span>The problem is Rome, not the region</h3>
+    <p>The instinct after seeing 26 markets of zeros is to reach farther. The data says the opposite.</p>
+    <p>All 277 businesses holding these packs were resolved to their exact street addresses, and the distance
+    from each one to the town whose pack it holds was measured. <b>The middle value is 3.0 miles.</b> In used
+    car retail, the map pack is won by being close. In 17 of the 25 markets outside Rome, every dealer holding
+    a pack is physically closer to that town than Cochran is. Cartersville, Dalton, Canton, Woodstock, Fort
+    Payne and the rest are not winnable from North Broad Street, and no amount of website work changes that.</p>
+    <p>Rome is different. It is the largest market in the study, the lot is a mile from the center of it, and
+    the pack is being lost to three named competitors rather than to geography.</p>
+
+    <h3><span>2.</span>Proof that the Rome pack is winnable</h3>
+    <p>If distance decided the Rome pack, only Rome dealers would be in it. That is not what was found.</p>
+    <p><b>Cartersville Trucks, based 22 miles away, holds a Rome map pack slot on "used trucks for sale."</b>
+    A dealer in another county reaches into Rome. Cochran, a mile from the center, does not appear.</p>
+    <p>That single fact establishes that the Rome pack is decided by how well Google understands a business,
+    not by how close it sits.</p>
+
+    <h3><span>3.</span>Review count is not the gate</h3>
+    <p>The obvious explanation for losing to Easy Auto and Trinity is their review counts, both near 1,000.
+    That explanation does not survive the data.</p>
+    <div class="scroll" style="max-width:620px"><table>
+      <thead><tr><th class="kw">Business</th><th>Rating and reviews</th><th>Rome pack slots</th></tr></thead>
+      <tbody>
+        <tr><td class="q">Sherold Salmon Auto Superstore</td><td class="n">4.5 &middot; 145</td><td class="pack">15 of 19</td></tr>
+        <tr><td class="q">Global Auto Sales</td><td class="n">4.8 &middot; 228</td><td class="pack">2 of 19</td></tr>
+        <tr><td class="q">SRI Auto Brokers</td><td class="n">3.9 &middot; 34</td><td class="pack">2 of 19</td></tr>
+        <tr><td class="q">Georgia Auto Brokers</td><td class="n">4.9 &middot; 33</td><td class="pack">1 of 19</td></tr>
+        <tr><td class="q">Mayflower Motor Co</td><td class="n">4.7 &middot; 126</td><td class="pack">1 of 19</td></tr>
+        <tr><td class="q you">Cochran Motor Company</td><td class="n">5.0 &middot; 21</td><td class="gone">0 of 19</td></tr>
+      </tbody>
+    </table></div>
+    <p style="margin-top:16px"><b>Sherold Salmon holds 15 of the 19 Rome packs with 145 reviews</b>, not a
+    thousand. And <b>SRI Auto Brokers holds two Rome slots with 34 reviews and a 3.9 star rating</b>, a lower
+    rating than Cochran's.</p>
+    <p>Reviews matter, and 21 is genuinely low. But businesses with 33, 34 and 126 reviews are in these blocks.
+    Cochran holds the highest star rating in Rome and none of them. Something other than reputation is keeping
+    him out, and that is the good news, because reputation is the slowest thing to change.</p>
+
+    <h3><span>4.</span>The largest single opportunity is buy here pay here</h3>
+    <p><b>"Buy here pay here" is the highest volume search term in the entire 40 mile area at 1,190 searches a
+    month</b>, ahead of "used cars" at 1,060. Counting the related credit terms, the lane is worth
+    <b>1,710 searches a month</b>, and it produces a map pack in all 26 markets.</p>
+    <p>The dealership already does this work. The website says so in passing, but there is no page about it,
+    and nothing on the Google Business Profile mentions it. Google has no way to know. The Rome pack for this
+    term is currently held by Easy Auto, Trinity and SRI Auto Brokers, and SRI is holding its slot with 34
+    reviews.</p>
+
+    <h3><span>5.</span>The website is close to invisible</h3>
+    <p><b>Cochranmotorco.com appears in the ordinary web results on 9 of 520 searches</b>, all in Rome, at
+    positions 9 through 18, which is the second page for most people.</p>
+    <p>The cause is structural. The current site assembles all of its content, including every vehicle, inside
+    the visitor's browser after the page loads. Search engines receive a nearly empty page. Every individual
+    vehicle page returns the same title and the same content as the home page, so there is nothing for Google
+    to tell apart, index or rank. The same applies to the AI search tools a growing share of shoppers now use.</p>
+
+    <h3><span>6.</span>Where the profile itself is thin</h3>
+    <p>The Google Business Profile is claimed, correctly addressed, has hours set and carries a 5.0 star
+    rating. Two gaps stand out: <b>three photographs</b>, where dealers winning these packs carry dozens, and
+    <b>no secondary categories</b>, so terms like truck dealer and the finance related searches have nothing
+    to attach to.</p>
+
+    <h3><span>7.</span>The lot itself is under described</h3>
+    <p>Of the 41 vehicles currently in inventory, <b>20 have no photographs at all</b>, <b>none have a written
+    description</b>, and <b>6 have no price</b>. Half the lot is effectively invisible even to someone who
+    finds the website. This is the least expensive problem in this report to fix, and it is not a website
+    problem.</p>
+
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>The plan</h2>
+
+  <h3>Where the effort goes, and where it does not</h3>
+  <p class="lede">Rome first. It is the largest market in the study, the lot sits a mile from its center, and
+  the pack there is lost on prominence rather than distance. After Rome: Lindale, Adairsville, Calhoun,
+  Summerville, Cedartown and Rockmart, all markets where a dealer at Cochran's distance has been measured
+  holding a pack.</p>
+  <p class="lede">Nothing gets spent on the far markets. Cartersville, Dalton, Canton, Woodstock, Acworth,
+  Kennesaw, Fort Payne, Villa Rica and the other distant towns are held by dealers inside those towns. That
+  was measured across 277 competitors rather than assumed. If it changes, the re measurement will show it.</p>
+
+  <h3>What we are building</h3>
+  <ol class="next">
+    <li><b>Per vehicle pages on a rebuilt website</b>
+    Every vehicle gets its own page with its own title, photographs, description and specifications, in a form
+    search engines and AI tools can read. Inventory keeps being managed in Wayne Reaves exactly as it is today.
+    The new site reads that inventory automatically, so a vehicle entered in the morning has a page the same
+    day with no extra work at the dealership. This turns 41 vehicles into 41 ways to be found, and it is what
+    makes searches like "used 4x4 truck rome ga" reachable at all.</li>
+    <li><b>A buy here pay here section</b>
+    The largest demand pocket in the market at 1,710 searches a month, currently unclaimed by this dealership
+    despite being work it already does. This becomes a real part of the site and a matching set of services on
+    the Google Business Profile.</li>
+    <li><b>Google Business Profile build out</b>
+    Photographs, secondary categories that match what is actually sold, services, and a regular posting
+    cadence. This is the only route to the 3,230 monthly "near me" searches, which no website page can capture.</li>
+    <li><b>Review generation, automated</b>
+    Every sold vehicle produces an ask, without anyone at the dealership having to remember. Twenty one reviews
+    is low enough to be the tiebreaker against businesses sitting at 145, even though the data shows reviews
+    are not the gate.</li>
+    <li><b>Tracking, from day one</b>
+    Calls and web enquiries get logged and attributed, so leads coming from this work are visible as they
+    arrive rather than guessed at later.</li>
+  </ol>
+
+  <h3>What we need from the dealership</h3>
+  <p class="lede">None of these take long, and the work above cannot fully land without them.</p>
+  <ul class="need">
+    <li><b>Photographs of the 20 vehicles that have none</b><span>Half the lot cannot sell online without them, and no page or profile fixes that</span></li>
+    <li><b>Prices on the 6 vehicles missing one</b><span>Unpriced vehicles get skipped by shoppers and by Google</span></li>
+    <li><b>Access to the domain registrar</b><span>To point the new website live while the existing system keeps running alongside it</span></li>
+    <li><b>Manager access to the Google Business Profile</b><span>To add photographs, categories, services and posts</span></li>
+    <li><b>A contact at Wayne Reaves</b><span>One request, to move the current site to its own address so the new site can take the main one</span></li>
+    <li><b>The list of past buyers</b><span>The starting point for the review programme</span></li>
+  </ul>
+  <p class="lede">Continuing to enter vehicles in Wayne Reaves the same way as today, with photographs and a
+  price, is the single most valuable ongoing habit. Everything downstream is built on that data.</p>
+
+  <h3>How progress gets measured</h3>
+  <p class="lede">These are the baseline numbers, recorded before any work. The same 520 searches get run again
+  at 30 and 60 days.</p>
+  <div class="scroll" style="max-width:760px"><table class="town">
+    <thead><tr><th class="kw">Measure</th><th>Today</th><th>What moves first</th></tr></thead>
+    <tbody>
+      <tr><td class="q">Map pack appearances, 520 searches</td><td class="gone">0</td><td class="hold">Rome terms first, near ring after</td></tr>
+      <tr><td class="q">Rome map pack appearances, 19 terms</td><td class="gone">0</td><td class="hold">Buy here pay here and used car terms</td></tr>
+      <tr><td class="q">Website appearances in web results</td><td class="far">9 of 520</td><td class="hold">Vehicle pages entering results within weeks of launch</td></tr>
+      <tr><td class="q">Google reviews</td><td class="near">21</td><td class="hold">Steady climb once the ask is automated</td></tr>
+      <tr><td class="q">Profile photographs</td><td class="gone">3</td><td class="hold">Immediately</td></tr>
+      <tr><td class="q">Vehicles with photographs</td><td class="near">21 of 41</td><td class="hold">Immediately</td></tr>
+      <tr><td class="q">Vehicles with descriptions</td><td class="gone">0 of 41</td><td class="hold">On rebuild</td></tr>
+    </tbody>
+  </table></div>
+  <div class="callout" style="max-width:70ch">
+    <h3>Rankings are the lagging measure, not the leading one</h3>
+    <p style="margin:0">Calls, web enquiries and direction requests move first, and they will be reported as
+    they happen. Map pack positions follow after. Judging the work on pack position alone in the first weeks
+    would be reading the slowest number on the board.</p>
+  </div>
+</div></section>
+
+<div class="wrap"><footer>
+  <span>Prepared by Forge Dev Studio for Cochran Motor Company &middot; 1023 N Broad St, Rome GA</span>
+  <span>520 searches &middot; measured 19 July 2026</span>
+</footer></div>
+</body>
+</html>
