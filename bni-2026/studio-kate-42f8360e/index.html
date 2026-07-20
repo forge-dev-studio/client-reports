@@ -15,7 +15,11 @@
   --pack:#3F9A5E; --near:#C08E13; --far:#7C7568; --gone:#E0625A;
 }}
 *{box-sizing:border-box}
+/* Body text and every table use a clean system stack, always. The brand face is
+   applied to headings only, below. Applying it document-wide made a report set in
+   a condensed display face unreadable, which defeats the deliverable. */
 body{background:var(--paper);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;margin:0}
+h1,h2,h3{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 .wrap{max-width:1000px;margin:0 auto;padding:40px 22px 72px}
 .eyebrow{font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);font-weight:700}
 h1{font-size:clamp(28px,5vw,42px);line-height:1.1;margin:8px 0 6px;color:var(--ink);font-weight:700;text-wrap:balance}
@@ -70,7 +74,7 @@ footer b{color:var(--text)}
 }</style>
 </head><body><div class="wrap">
 
-<div class="eyebrow">Local search audit · measured July 19, 2026</div>
+<div class="eyebrow">Local search audit · measured July 20, 2026</div>
 <h1>Where Studio Kate Photography ranks<br>across Northwest Georgia</h1>
 <p class="sub">20 searches × 16 markets · 320 measured results</p>
 
@@ -87,55 +91,6 @@ within about 30 miles, measured against your listing at 404 Tribune St, Rome, GA
 is where you show up, and who is standing in front of you where you do not.</p>
 
 <h2>The short version</h2><p><strong>You are the most visible photographer on this entire board.</strong> Across 320 searches in 16 towns you hold a top-three spot in 48 of them and rank first in 28. That is more top-three placements than any other business measured, ahead of the next two at 32 each. Rome is yours outright: top three in all 20 searches, first place in 16 of them. The interesting part is what happens outside Rome, because in 101 of the 233 searches where you do not appear, at least one business that does appear is farther from that town than you are.</p>
-
-<h2>Who is holding these searches now</h2>
-
-<div class="tablebox"><table>
-    <tr><th>Business</th><th>Rating</th><th>Searches they hold</th><th>Where</th></tr><tr><th scope="row">Coty Danyelle Photography LLC</th>
-        <td>5 <span style="color:var(--muted)">(52)</span></td>
-        <td>32</td>
-        <td style="color:var(--muted);font-size:13.5px">Euharlee, Adairsville, Cartersville, Trion</td></tr><tr><th scope="row">Paris Mountain Photography</th>
-        <td>5 <span style="color:var(--muted)">(12)</span></td>
-        <td>29</td>
-        <td style="color:var(--muted);font-size:13.5px">Aragon, Cedartown, Rockmart</td></tr><tr><th scope="row">Ashlee Burgess Photography</th>
-        <td>5 <span style="color:var(--muted)">(57)</span></td>
-        <td>25</td>
-        <td style="color:var(--muted);font-size:13.5px">Lindale, Cave Spring, Euharlee, Adairsville +5</td></tr><tr><th scope="row">Cindy Harter Photography</th>
-        <td>5 <span style="color:var(--muted)">(160)</span></td>
-        <td>25</td>
-        <td style="color:var(--muted);font-size:13.5px">Euharlee, Rockmart, Cartersville</td></tr><tr><th scope="row">Sherry Sloan Photography</th>
-        <td>5 <span style="color:var(--muted)">(21)</span></td>
-        <td>21</td>
-        <td style="color:var(--muted);font-size:13.5px">Adairsville, Calhoun</td></tr><tr><th scope="row">Lifesong Photography</th>
-        <td>5 <span style="color:var(--muted)">(68)</span></td>
-        <td>20</td>
-        <td style="color:var(--muted);font-size:13.5px">Euharlee, Adairsville</td></tr><tr><th scope="row">Erica Lachelle Photography LLC</th>
-        <td>5 <span style="color:var(--muted)">(36)</span></td>
-        <td>19</td>
-        <td style="color:var(--muted);font-size:13.5px">Rockmart, Dallas</td></tr><tr><th scope="row">Ashley Nash Photography</th>
-        <td>4.9 <span style="color:var(--muted)">(8)</span></td>
-        <td>17</td>
-        <td style="color:var(--muted);font-size:13.5px">Rockmart, Dallas</td></tr><tr><th scope="row">CC Photography GA</th>
-        <td>5 <span style="color:var(--muted)">(17)</span></td>
-        <td>15</td>
-        <td style="color:var(--muted);font-size:13.5px">Lindale, Shannon, Euharlee, Adairsville +2</td></tr><tr><th scope="row">Abigail's Photography</th>
-        <td>5 <span style="color:var(--muted)">(7)</span></td>
-        <td>15</td>
-        <td style="color:var(--muted);font-size:13.5px">Calhoun</td></tr></table></div>
-
-<h2>Businesses winning towns you are closer to</h2>
-  <p>Each of these holds top spots, across more than one search, in a town you are physically nearer to.
-  That means those spots are not being decided by distance. They are being decided by which businesses
-  have told Google they cover the area.</p><div class="tablebox"><table>
-    <tr><th>Business</th><th>Searches they hold</th><th>Example town</th><th>Their distance</th><th>Your distance</th></tr><tr><th scope="row">Ashlee Burgess Photography</th><td>25</td><td>Rockmart</td>
-      <td>26.9 mi</td><td class="pack">18.7 mi</td></tr><tr><th scope="row">Fearfully and Wonderfully Captured Photography</th><td>14</td><td>Centre</td>
-      <td>51.6 mi</td><td class="pack">28.8 mi</td></tr><tr><th scope="row">Simply Corey Photography</th><td>11</td><td>Rockmart</td>
-      <td>32.3 mi</td><td class="pack">18.7 mi</td></tr><tr><th scope="row">Rebekah Gregg Photography</th><td>10</td><td>Rockmart</td>
-      <td>29.5 mi</td><td class="pack">18.7 mi</td></tr><tr><th scope="row">Tina J. Smith Photography | Atlanta Branding &amp; Lifestyle Photographer</th><td>9</td><td>Euharlee</td>
-      <td>39.5 mi</td><td class="pack">15.4 mi</td></tr><tr><th scope="row">Elizabeth Klusmann Photography</th><td>8</td><td>Euharlee</td>
-      <td>24.9 mi</td><td class="pack">15.4 mi</td></tr><tr><th scope="row">Headshot Solutions &amp; Beyond, LLC</th><td>8</td><td>Adairsville</td>
-      <td>30.3 mi</td><td class="pack">16 mi</td></tr><tr><th scope="row">Anne Say Photography</th><td>7</td><td>Lindale</td>
-      <td>23.5 mi</td><td class="pack">4.2 mi</td></tr></table></div>
 
 <h2>Every market at a glance</h2>
 <div class="tablebox"><table>
@@ -291,13 +246,61 @@ in the top three, which is usually the fastest guide to what to lead with.</p>
       <td class="pack">1</td>
       <td>1 <span class="mi" style="color:var(--muted)">of 16</span></td></tr></table></div>
 
+<h2>Who is holding the spots you are not</h2>
+<div class="tablebox"><table>
+    <tr><th>Business</th><th>Rating</th><th>Searches they hold</th><th>Where</th></tr><tr><th scope="row">Coty Danyelle Photography LLC</th>
+        <td>5 <span style="color:var(--muted)">(52)</span></td>
+        <td>32</td>
+        <td style="color:var(--muted);font-size:13.5px">Euharlee, Adairsville, Cartersville, Trion</td></tr><tr><th scope="row">Paris Mountain Photography</th>
+        <td>5 <span style="color:var(--muted)">(12)</span></td>
+        <td>29</td>
+        <td style="color:var(--muted);font-size:13.5px">Aragon, Cedartown, Rockmart</td></tr><tr><th scope="row">Ashlee Burgess Photography</th>
+        <td>5 <span style="color:var(--muted)">(57)</span></td>
+        <td>25</td>
+        <td style="color:var(--muted);font-size:13.5px">Lindale, Cave Spring, Euharlee, Adairsville +5</td></tr><tr><th scope="row">Cindy Harter Photography</th>
+        <td>5 <span style="color:var(--muted)">(160)</span></td>
+        <td>25</td>
+        <td style="color:var(--muted);font-size:13.5px">Euharlee, Rockmart, Cartersville</td></tr><tr><th scope="row">Sherry Sloan Photography</th>
+        <td>5 <span style="color:var(--muted)">(21)</span></td>
+        <td>21</td>
+        <td style="color:var(--muted);font-size:13.5px">Adairsville, Calhoun</td></tr><tr><th scope="row">Lifesong Photography</th>
+        <td>5 <span style="color:var(--muted)">(68)</span></td>
+        <td>20</td>
+        <td style="color:var(--muted);font-size:13.5px">Euharlee, Adairsville</td></tr><tr><th scope="row">Erica Lachelle Photography LLC</th>
+        <td>5 <span style="color:var(--muted)">(36)</span></td>
+        <td>19</td>
+        <td style="color:var(--muted);font-size:13.5px">Rockmart, Dallas</td></tr><tr><th scope="row">Ashley Nash Photography</th>
+        <td>4.9 <span style="color:var(--muted)">(8)</span></td>
+        <td>17</td>
+        <td style="color:var(--muted);font-size:13.5px">Rockmart, Dallas</td></tr><tr><th scope="row">CC Photography GA</th>
+        <td>5 <span style="color:var(--muted)">(17)</span></td>
+        <td>15</td>
+        <td style="color:var(--muted);font-size:13.5px">Lindale, Shannon, Euharlee, Adairsville +2</td></tr><tr><th scope="row">Abigail's Photography</th>
+        <td>5 <span style="color:var(--muted)">(7)</span></td>
+        <td>15</td>
+        <td style="color:var(--muted);font-size:13.5px">Calhoun</td></tr></table></div>
+
+<h2>Businesses winning towns you are closer to</h2>
+  <p>Each of these holds top spots, across more than one search, in a town you are physically nearer to.
+  That means those spots are not being decided by distance. They are being decided by which businesses
+  have told Google they cover the area.</p><div class="tablebox"><table>
+    <tr><th>Business</th><th>Searches they hold</th><th>Example town</th><th>Their distance</th><th>Your distance</th></tr><tr><th scope="row">Ashlee Burgess Photography</th><td>25</td><td>Rockmart</td>
+      <td>26.9 mi</td><td class="pack">18.7 mi</td></tr><tr><th scope="row">Fearfully and Wonderfully Captured Photography</th><td>14</td><td>Centre</td>
+      <td>51.6 mi</td><td class="pack">28.8 mi</td></tr><tr><th scope="row">Simply Corey Photography</th><td>11</td><td>Rockmart</td>
+      <td>32.3 mi</td><td class="pack">18.7 mi</td></tr><tr><th scope="row">Rebekah Gregg Photography</th><td>10</td><td>Rockmart</td>
+      <td>29.5 mi</td><td class="pack">18.7 mi</td></tr><tr><th scope="row">Tina J. Smith Photography | Atlanta Branding &amp; Lifestyle Photographer</th><td>9</td><td>Euharlee</td>
+      <td>39.5 mi</td><td class="pack">15.4 mi</td></tr><tr><th scope="row">Elizabeth Klusmann Photography</th><td>8</td><td>Euharlee</td>
+      <td>24.9 mi</td><td class="pack">15.4 mi</td></tr><tr><th scope="row">Headshot Solutions &amp; Beyond, LLC</th><td>8</td><td>Adairsville</td>
+      <td>30.3 mi</td><td class="pack">16 mi</td></tr><tr><th scope="row">Anne Say Photography</th><td>7</td><td>Lindale</td>
+      <td>23.5 mi</td><td class="pack">4.2 mi</td></tr></table></div>
+
 <h2>What this means</h2><h3>Rome is yours, and two nearby towns are already working</h3><p>In Rome you appear in all 20 searches, hold the top three in all 20, and sit at first place in 16. The four that are not first are "photographer" at third and "children's photographer", "business headshots" and "personal branding photographer" at second. There is no meaningful room left to gain in your home town.</p><p>Lindale, 4.4 miles out, puts you in 16 of 20 searches with 11 in the top three and 5 firsts. Shannon, 7.6 miles out, is the same shape: 16 of 20, 11 top three, 6 firsts. After those two the results thin out quickly. Cedartown has you in 11 of 20 but only 2 in the top three. Cave Spring is 7 of 20 with 3 top three. Everything past that is single digits.</p><p>One thing worth noting before anything else: every single one of the 320 searches returned a local pack. Some businesses in this audit have terms where Google shows no local results at all, which makes those searches unwinnable by anyone. You have none of those. Every cell on your board is a real contest.</p><h3>Distance is not what is keeping you out</h3><p>The natural assumption is that towns 15 to 30 miles away belong to whoever is closest to them. For most of this map, the data says otherwise.</p><p>In 163 of the 320 searches, at least one business holding a spot is farther from that town than you are. Narrowing to just the searches where you are absent entirely, it is 101 out of 233.</p><p>The specifics are striking:</p><ul><li>Lindale is 4.2 miles from you. Simply Corey Photography holds <strong>first place</strong> there for "children's photographer" from 47.2 miles away. The same business holds first for that term in Summerville from 69.3 miles, Trion from 72.1 miles, Aragon from 35 miles and Rockmart from 32.3 miles, plus first for "family photographer" in Cedartown from 40.5 miles.</li><li>Shannon is 8 miles from you. Shannon Dantzer Photography holds first there for "headshot photographer" from 54.8 miles away, on 4 reviews.</li><li>Cedartown has 13 different businesses holding spots from farther away than you are, reaching in from 34 to 73 miles.</li><li>Cedar Bluff and Centre, the two Alabama markets where you do not appear at all, are held largely by two businesses reaching in from 51 to 71 miles.</li></ul><p>This distinction decides what the fix is. Where the winners are all local, no profile setting outranks a building on the same street. Where the winners are reaching in from 40 or 60 miles, those spots are being decided by which businesses have declared they cover the area, and that is a contest anyone can enter.</p><h3>Two markets where the ground genuinely is held locally</h3><p>Cartersville and Dallas are the honest exceptions, and they are worth naming so effort does not go there first. In both towns, every business holding a top-three spot is closer to that town than you are. Not one of them reaches in from farther.</p><p>Cartersville is anchored by Cindy Harter Photography, 1.3 miles out with 160 reviews, holding a top-three spot in 20 of the searches measured there, and Coty Danyelle Photography at 9.9 miles with 52 reviews holding 18. Dallas is anchored by Erica Lachelle Photography at 7.5 miles and Ashley Nash Photography at 1.1 miles. You appear twice in Cartersville, at 11th and 10th, and not at all in Dallas. These two are where effort would buy the least.</p><h3>Reviews are not the lever here</h3><p>You are at 5.0 stars on 32 reviews. Across the whole grid, 223 different businesses hold a top-three spot at least once. Of the 218 with a review count attached, 106 have fewer than you do, and the median is 33, which puts you squarely in the middle of the field rather than behind it.</p><p>Narrowing further: 92 different businesses outrank you somewhere in this set, and 42 of them have fewer than 32 reviews. In Cedartown, the two businesses holding first place across most of your near-miss searches are Kiela's Photo Lab on 8 reviews and Paris Mountain Photography on 12. In Dallas, Ashley Nash Photography holds a top-three spot in 14 searches on 8 reviews.</p><p>Reviews still matter for whether someone books you once they find you. What the data says is that they are not the thing deciding whether you show up in the first place. That is useful, because "get more reviews" is the standard advice and in your case it would be aimed at a contest you are already winning.</p><h3>Your four service lines behave in three different ways</h3><p><strong>Senior portraits travel best.</strong> 25 appearances across the grid, 15 of them top three, 10 at first place. "Senior pictures" alone reaches 9 towns.</p><p><strong>Core terms carry the widest reach.</strong> 31 appearances, 18 top three, 9 firsts. "Portrait studio" is your single strongest term anywhere, appearing in 11 of the 16 towns.</p><p><strong>Family portraits are the reverse shape.</strong> Only 11 appearances in the entire grid, but 9 of those 11 are top three and 6 are first place. That is the best conversion rate of anything you do. You win almost every time you show up, and you rarely show up. "Outdoor family photographer" and "children's photographer" each appear in exactly one town, and that town is Rome.</p><p><strong>Brand and business work is the hardest ground.</strong> Reach is decent at 20 appearances, but only 6 reach the top three. This is the one family where the field is genuinely stiff, because Atlanta branding and headshot specialists reach into these towns from 36 to 74 miles out. It is also where six of your fifteen near-misses sit, spread across Lindale, Shannon and Cedartown, so you are consistently landing just outside rather than being shut out.</p><h3>The keyword control check came back clean</h3><p>This keyword set carried one watch item. "Photography studio" can sometimes return big-box and one-hour photo counters instead of portrait studios, which would make it a term not worth pursuing. Checked across all 16 towns, none of the 16 packs contained a listing of that kind. Every holder is a working photographer or a portrait studio.</p><p>In fact "photography studio" is one of your stronger terms, top three in four towns and first in three of them. Your Business Profile is also filed under Photographer, which is the category that reliably triggers these packs. Nothing structural is working against you in this set, which is not true of every business in this audit.</p>
 
 <h2>Three things that would move the needle</h2>
 <div class="recs"><div class="rec"><h3>Declare the full list of towns you travel to</h3><p>This is the cheapest item in the report and it opens the most ground. In 101 of the 233 searches where you do not appear, at least one business holding a spot is farther from that town than you are. Rockmart is the clearest single example: businesses hold spots there from 31 to 40 miles out while you sit at 18.7 miles. Aragon, Euharlee and Cave Spring show the same pattern.</p><p>When the winners in a town are reaching in from three to five times your distance, proximity is plainly not what Google is weighing. The most likely explanation is a declared service area that is narrower than the work you actually travel for. Both your Business Profile and your website have a place to state which towns you serve, and the searches suggest that list is currently shorter than your real coverage. You can review and widen it yourself this week without hiring anyone.</p></div><div class="rec"><h3>Give your family portrait work the reach your senior work already has</h3><p>Family portrait terms are the best-converting part of your business and the smallest footprint. You appear on them 11 times across 320 searches, and <strong>9 of those 11 are top three, with 6 at first place</strong>. No other part of your work converts like that.</p><p>The limit is footprint, not quality. "Outdoor family photographer" and "children's photographer" each appear in exactly one town, and that town is Rome. Meanwhile Simply Corey Photography holds first place for "children's photographer" in five separate towns across your area, including Lindale from 47.2 miles away while you are 4.2 miles from it.</p><p>Your senior portrait work already reaches nine towns, so this level of reach is clearly achievable for a studio your size. Making family and children's sessions as prominent in how the studio presents itself as senior sessions already are would put your best-converting service line in front of the same audience that already finds you.</p></div><div class="rec"><h3>Cedartown is the fastest win on the board</h3><p>This is the most concrete opportunity in the report. Cedartown is a town of 10,190 people, 17.5 miles out, and you already appear in 11 of the 20 searches there. <strong>Seven of them are sitting at fourth, fifth or sixth place.</strong></p><p>The seven are portrait photographer, photography studio and professional photographer all at fourth, headshot photographer and corporate headshots at fifth, and senior photos and business headshots at sixth. Three of the seven are a single position outside the block customers actually look at.</p><p>Move those and Cedartown goes from two top-three placements to nine, which puts it within touching distance of Lindale and Shannon, your two strongest markets outside Rome. What makes this the best use of effort is that the hard part is already done. Google is showing you to Cedartown searchers and already ranks you above most of the field. On top of that, 13 different businesses hold spots there from farther away than you are, several from beyond 50 miles, so the town is demonstrably open to a studio based elsewhere.</p></div></div>
 
 <footer>
-  <p><b>320 searches recorded on July 19, 2026.</b> Google's local rankings
+  <p><b>320 searches recorded on July 20, 2026.</b> Google's local rankings
   move by a position or so from day to day, so this is a snapshot with a margin rather than a fixed score.
   Re-measuring the same searches later shows movement cleanly, because this baseline was taken first.</p>
   <p>Prepared by <b>Eric Kirby</b> · Forge, AI &amp; Web Design · Synergy Telecom &amp; Medical Systems ·

@@ -15,7 +15,11 @@
   --pack:#3F9A5E; --near:#C08E13; --far:#7C7568; --gone:#E0625A;
 }}
 *{box-sizing:border-box}
-body{background:var(--paper);color:var(--text);font:16px/1.65 'Sen',system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;margin:0}
+/* Body text and every table use a clean system stack, always. The brand face is
+   applied to headings only, below. Applying it document-wide made a report set in
+   a condensed display face unreadable, which defeats the deliverable. */
+body{background:var(--paper);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;margin:0}
+h1,h2,h3{font-family:'Sen',system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 .wrap{max-width:1000px;margin:0 auto;padding:40px 22px 72px}
 .eyebrow{font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);font-weight:700}
 h1{font-size:clamp(28px,5vw,42px);line-height:1.1;margin:8px 0 6px;color:var(--ink);font-weight:700;text-wrap:balance}
@@ -70,7 +74,7 @@ footer b{color:var(--text)}
 }</style>
 </head><body><div class="wrap">
 
-<div class="eyebrow">Local search audit · measured July 19, 2026</div>
+<div class="eyebrow">Local search audit · measured July 20, 2026</div>
 <h1>Where Steve Dennis Coaching ranks<br>across Northwest Georgia</h1>
 <p class="sub">20 searches × 16 markets · 320 measured results</p>
 
@@ -87,55 +91,6 @@ within about 30 miles. What follows
 is where you show up, and who is standing in front of you where you do not.</p>
 
 <h2>The short version</h2><p><strong>Your Google listing is named exactly right, and one search term is doing almost half your work.</strong> Across 320 searches you appear in 72 and hold a top-three spot in 11, which is real traction for a listing carrying 8 reviews. John Maxwell coach accounts for 5 of those 11 top-three placements and sits at fourth in four more towns. The single most striking result in the whole report is that Rome itself returns only one local business for that search, and it is a company 64 miles away.</p>
-
-<h2>Who is holding these searches now</h2>
-
-<div class="tablebox"><table>
-    <tr><th>Business</th><th>Rating</th><th>Searches they hold</th><th>Where</th></tr><tr><th scope="row">Dale Carnegie Training of Atlanta</th>
-        <td>5 <span style="color:var(--muted)">(114)</span></td>
-        <td>25</td>
-        <td style="color:var(--muted);font-size:13.5px">Lindale, Shannon, Euharlee, Adairsville +6</td></tr><tr><th scope="row">Guardian Leadership</th>
-        <td>5 <span style="color:var(--muted)">(57)</span></td>
-        <td>22</td>
-        <td style="color:var(--muted);font-size:13.5px">Lindale, Shannon, Cave Spring, Euharlee +8</td></tr><tr><th scope="row">Rock Bottom Coaching LLC</th>
-        <td>5 <span style="color:var(--muted)">(1)</span></td>
-        <td>22</td>
-        <td style="color:var(--muted);font-size:13.5px">Shannon, Cave Spring, Euharlee, Summerville +4</td></tr><tr><th scope="row">Launch From Within Life Coaching</th>
-        <td>5 <span style="color:var(--muted)">(7)</span></td>
-        <td>21</td>
-        <td style="color:var(--muted);font-size:13.5px">Lindale, Shannon, Cave Spring, Euharlee +6</td></tr><tr><th scope="row">Darryl Bumpass Sr ( Keynote Speaker ) Life Coach</th>
-        <td>5 <span style="color:var(--muted)">(2)</span></td>
-        <td>18</td>
-        <td style="color:var(--muted);font-size:13.5px">Rome, Lindale, Shannon, Euharlee +8</td></tr><tr><th scope="row">WinShape Leadership</th>
-        <td>5 <span style="color:var(--muted)">(61)</span></td>
-        <td>16</td>
-        <td style="color:var(--muted);font-size:13.5px">Rome, Lindale, Shannon, Cave Spring +3</td></tr><tr><th scope="row">Celebs7L Retreat Lodge</th>
-        <td>—</td>
-        <td>14</td>
-        <td style="color:var(--muted);font-size:13.5px">Rome, Lindale, Shannon, Cave Spring +10</td></tr><tr><th scope="row">FocalPoint Leadership Training of Atlanta, GA</th>
-        <td>5 <span style="color:var(--muted)">(6)</span></td>
-        <td>14</td>
-        <td style="color:var(--muted);font-size:13.5px">Lindale, Shannon, Euharlee, Adairsville +6</td></tr><tr><th scope="row">Moore 2 Life Consultants, LLC - Executive Coaching, Career Coaching, and Life Coach Firm</th>
-        <td>5 <span style="color:var(--muted)">(13)</span></td>
-        <td>13</td>
-        <td style="color:var(--muted);font-size:13.5px">Lindale, Cave Spring, Euharlee, Adairsville +4</td></tr><tr><th scope="row">Game Changer Leadership Coaching, Keynote Speaker, Consulting - Rennie Curran</th>
-        <td>4.9 <span style="color:var(--muted)">(20)</span></td>
-        <td>11</td>
-        <td style="color:var(--muted);font-size:13.5px">Lindale, Shannon, Adairsville, Aragon +3</td></tr></table></div>
-
-<h2>Businesses winning towns you are closer to</h2>
-  <p>Each of these holds top spots, across more than one search, in a town you are physically nearer to.
-  That means those spots are not being decided by distance. They are being decided by which businesses
-  have told Google they cover the area.</p><div class="tablebox"><table>
-    <tr><th>Business</th><th>Searches they hold</th><th>Example town</th><th>Their distance</th><th>Your distance</th></tr><tr><th scope="row">Dale Carnegie Training of Atlanta</th><td>23</td><td>Cartersville</td>
-      <td>31.5 mi</td><td class="pack">8.7 mi</td></tr><tr><th scope="row">Guardian Leadership</th><td>17</td><td>Cartersville</td>
-      <td>36 mi</td><td class="pack">8.7 mi</td></tr><tr><th scope="row">Launch From Within Life Coaching</th><td>16</td><td>Cartersville</td>
-      <td>25 mi</td><td class="pack">8.7 mi</td></tr><tr><th scope="row">Darryl Bumpass Sr ( Keynote Speaker ) Life Coach</th><td>16</td><td>Cartersville</td>
-      <td>36 mi</td><td class="pack">8.7 mi</td></tr><tr><th scope="row">Celebs7L Retreat Lodge</th><td>13</td><td>Cartersville</td>
-      <td>32 mi</td><td class="pack">8.7 mi</td></tr><tr><th scope="row">FocalPoint Leadership Training of Atlanta, GA</th><td>12</td><td>Summerville</td>
-      <td>40.3 mi</td><td class="pack">34.3 mi</td></tr><tr><th scope="row">Game Changer Leadership Coaching, Keynote Speaker, Consulting - Rennie Curran</th><td>11</td><td>Rockmart</td>
-      <td>40.6 mi</td><td class="pack">25.9 mi</td></tr><tr><th scope="row">Moore 2 Life Consultants, LLC - Executive Coaching, Career Coaching, and Life Coach Firm</th><td>10</td><td>Rockmart</td>
-      <td>35.1 mi</td><td class="pack">25.9 mi</td></tr></table></div>
 
 <h2>Every market at a glance</h2>
 <div class="tablebox"><table>
@@ -291,13 +246,61 @@ in the top three, which is usually the fastest guide to what to lead with.</p>
       <td class="gone">0</td>
       <td>0 <span class="mi" style="color:var(--muted)">of 16</span></td></tr></table></div>
 
+<h2>Who is holding the spots you are not</h2>
+<div class="tablebox"><table>
+    <tr><th>Business</th><th>Rating</th><th>Searches they hold</th><th>Where</th></tr><tr><th scope="row">Dale Carnegie Training of Atlanta</th>
+        <td>5 <span style="color:var(--muted)">(114)</span></td>
+        <td>25</td>
+        <td style="color:var(--muted);font-size:13.5px">Lindale, Shannon, Euharlee, Adairsville +6</td></tr><tr><th scope="row">Guardian Leadership</th>
+        <td>5 <span style="color:var(--muted)">(57)</span></td>
+        <td>22</td>
+        <td style="color:var(--muted);font-size:13.5px">Lindale, Shannon, Cave Spring, Euharlee +8</td></tr><tr><th scope="row">Rock Bottom Coaching LLC</th>
+        <td>5 <span style="color:var(--muted)">(1)</span></td>
+        <td>22</td>
+        <td style="color:var(--muted);font-size:13.5px">Shannon, Cave Spring, Euharlee, Summerville +4</td></tr><tr><th scope="row">Launch From Within Life Coaching</th>
+        <td>5 <span style="color:var(--muted)">(7)</span></td>
+        <td>21</td>
+        <td style="color:var(--muted);font-size:13.5px">Lindale, Shannon, Cave Spring, Euharlee +6</td></tr><tr><th scope="row">Darryl Bumpass Sr ( Keynote Speaker ) Life Coach</th>
+        <td>5 <span style="color:var(--muted)">(2)</span></td>
+        <td>18</td>
+        <td style="color:var(--muted);font-size:13.5px">Rome, Lindale, Shannon, Euharlee +8</td></tr><tr><th scope="row">WinShape Leadership</th>
+        <td>5 <span style="color:var(--muted)">(61)</span></td>
+        <td>16</td>
+        <td style="color:var(--muted);font-size:13.5px">Rome, Lindale, Shannon, Cave Spring +3</td></tr><tr><th scope="row">Celebs7L Retreat Lodge</th>
+        <td>—</td>
+        <td>14</td>
+        <td style="color:var(--muted);font-size:13.5px">Rome, Lindale, Shannon, Cave Spring +10</td></tr><tr><th scope="row">FocalPoint Leadership Training of Atlanta, GA</th>
+        <td>5 <span style="color:var(--muted)">(6)</span></td>
+        <td>14</td>
+        <td style="color:var(--muted);font-size:13.5px">Lindale, Shannon, Euharlee, Adairsville +6</td></tr><tr><th scope="row">Moore 2 Life Consultants, LLC - Executive Coaching, Career Coaching, and Life Coach Firm</th>
+        <td>5 <span style="color:var(--muted)">(13)</span></td>
+        <td>13</td>
+        <td style="color:var(--muted);font-size:13.5px">Lindale, Cave Spring, Euharlee, Adairsville +4</td></tr><tr><th scope="row">Game Changer Leadership Coaching, Keynote Speaker, Consulting - Rennie Curran</th>
+        <td>4.9 <span style="color:var(--muted)">(20)</span></td>
+        <td>11</td>
+        <td style="color:var(--muted);font-size:13.5px">Lindale, Shannon, Adairsville, Aragon +3</td></tr></table></div>
+
+<h2>Businesses winning towns you are closer to</h2>
+  <p>Each of these holds top spots, across more than one search, in a town you are physically nearer to.
+  That means those spots are not being decided by distance. They are being decided by which businesses
+  have told Google they cover the area.</p><div class="tablebox"><table>
+    <tr><th>Business</th><th>Searches they hold</th><th>Example town</th><th>Their distance</th><th>Your distance</th></tr><tr><th scope="row">Dale Carnegie Training of Atlanta</th><td>23</td><td>Cartersville</td>
+      <td>31.5 mi</td><td class="pack">8.7 mi</td></tr><tr><th scope="row">Guardian Leadership</th><td>17</td><td>Cartersville</td>
+      <td>36 mi</td><td class="pack">8.7 mi</td></tr><tr><th scope="row">Launch From Within Life Coaching</th><td>16</td><td>Cartersville</td>
+      <td>25 mi</td><td class="pack">8.7 mi</td></tr><tr><th scope="row">Darryl Bumpass Sr ( Keynote Speaker ) Life Coach</th><td>16</td><td>Cartersville</td>
+      <td>36 mi</td><td class="pack">8.7 mi</td></tr><tr><th scope="row">Celebs7L Retreat Lodge</th><td>13</td><td>Cartersville</td>
+      <td>32 mi</td><td class="pack">8.7 mi</td></tr><tr><th scope="row">FocalPoint Leadership Training of Atlanta, GA</th><td>12</td><td>Summerville</td>
+      <td>40.3 mi</td><td class="pack">34.3 mi</td></tr><tr><th scope="row">Game Changer Leadership Coaching, Keynote Speaker, Consulting - Rennie Curran</th><td>11</td><td>Rockmart</td>
+      <td>40.6 mi</td><td class="pack">25.9 mi</td></tr><tr><th scope="row">Moore 2 Life Consultants, LLC - Executive Coaching, Career Coaching, and Life Coach Firm</th><td>10</td><td>Rockmart</td>
+      <td>35.1 mi</td><td class="pack">25.9 mi</td></tr></table></div>
+
 <h2>What this means</h2><h3>Your listing name is not the problem, and that is worth confirming</h3><p>There was a reasonable concern going in that your Business Profile might be listed under Motivation Unlimited rather than the name people search for. The data settles it: the profile reads <strong>Steve Dennis Coaching</strong>, and that is the name Google shows on every placement captured in these results. No name mismatch exists. That is one fewer thing to fix.</p><p>The profile does carry one setting worth a look. Its category is <strong>Life coach</strong>. Life coach is your weakest term in this entire report: no top-three placements anywhere, appearances in only 4 of 16 markets, and ninth place in Rome. Executive coach, by contrast, appears in 12 markets and takes second in Rome, Shannon and Trion. The searches you win and the category your listing carries are describing two different practices.</p><h3>John Maxwell coach is your signature term, and Rome is wide open on it</h3><p>This term is the standout. You hold the top three for it in five towns: second in Shannon, second in Rockmart, and third in Cave Spring, Adairsville and Cedartown. You sit at fourth in four more, Lindale, Euharlee, Aragon and Dallas. That is nine markets where you are visible or nearly visible on a term that describes a certification you actually hold.</p><p>Then there is Rome. The search John Maxwell coach in Rome returns <strong>one single local result</strong>, and it is not you. It is The John Maxwell Company, carrying 2 reviews, located 64.3 miles away. There is no crowd to break into and no established local competitor. One result, and a space beside it.</p><h3>Coaching is a category where local packs are often thin or absent</h3><p>This needs saying before anything is read as a shortfall. Local search does not treat coaching the way it treats plumbers or dentists, where Google reliably assembles a full list of nearby businesses.</p><p>In 5 of your 320 searches Google rendered no local pack at all: keynote speaker and leadership speaker in Cave Spring, and John Maxwell coach, keynote speaker and leadership speaker in Trion. In another 31 searches it produced three results or fewer, against the 20 it produces for a typical local trade. Keynote speaker and conference speaker return no appearances for you anywhere, and keynote speaker produced no pack at all in two markets.</p><p>These are not losses and they should not be counted as gaps. They are searches where the local pack is not the route buyers take, and no amount of profile work changes that.</p><h3>The training terms belong to national and Atlanta firms</h3><p>Five terms in this set describe corporate training: leadership training, corporate training, team building training, leadership development program and management training. Across all 80 of those searches you do not appear once. Unlike the speaker terms, the packs here are full, so this is a genuine competitive picture rather than an empty category.</p><p>The holders explain it. Dale Carnegie Training of Atlanta takes 27 of those spots, Warrior Leadership 20, Guardian Leadership 14, Do Teambuilding 12, The Collaborative Training Company 12, T.A.P. Leadership Development Group 12, and FocalPoint Leadership Training of Atlanta 10. Of the 378 pack positions across these searches, 132 are held by businesses more than 30 miles from the town being searched. This is a lane occupied by national training brands and Atlanta firms reaching outward.</p><p>Rome does have local presence here worth knowing about: WinShape Leadership at 6.2 miles with 61 reviews, WorkPlay Solutions at 5.7 miles with 61 reviews, and CmP Training Rome at 0.1 miles. These are the nearby names in that space.</p><h3>Distance is not what is keeping you out</h3><p>This is the clearest signal in the report. In <strong>221 of 320 searches</strong>, a business ranks in a town while sitting further from it than you do. That is more than two thirds of everything measured, and it appears in all 16 markets.</p><p>Some of the gaps are dramatic. FocalPoint Leadership Training of Atlanta holds second place in Cartersville from 74.3 miles away, where you are 8.7 miles out. The Collaborative Training Company holds first in Trion from 75 miles. Bison View Lodge holds first in Calhoun for executive retreat from 71 miles, where you are 16 miles out. Whatever is deciding these results, proximity is not it.</p><h3>Where Google places you on the map</h3><p>Your profile has no public street address, which is normal and correct for a coach who travels to clients. Google still works from a map pin, and the pin on your listing currently reads about <strong>22 miles from downtown Rome</strong>. It reads 8.7 miles from Cartersville, 9.2 from Adairsville, 14.1 from Euharlee and 16 from Calhoun.</p><p>In other words, the map treats you as an east-side business closer to Bartow and Gordon counties than to Rome. That is worth knowing given that Rome is where your name, your chapter and your referral network actually sit. It also fits the pattern in the results: your Rome performance is respectable at 8 appearances and 2 top-three spots, but Shannon, Adairsville, Cedartown and Rockmart all convert as well or better despite being smaller.</p><h3>Reviews are part of this, but not the deciding factor</h3><p>You carry a 5.0 rating on 8 reviews. Of the businesses ranking above you across these searches, 132 have 8 reviews or fewer and 172 have more. Roughly two in five of the businesses outranking you have no more reputation to point at than you do.</p><p>Two examples make the point. In Rome for executive coach, you sit second behind EmpowHer Rome at 16 reviews, and third place goes to a business with 1 review. In Rome for leadership coach you sit fifth, and fourth place is held by a firm 52.1 miles away with 5 reviews. Growing the review count would help, as it always does, but the data does not support it as the main thing standing between you and better placement.</p>
 
 <h2>Three things that would move the needle</h2>
 <div class="recs"><div class="rec"><h3>Take the John Maxwell searches in your own town</h3><p>This is the most concrete opening in the report. The search John Maxwell coach in Rome returns exactly one local result, The John Maxwell Company, with 2 reviews, from 64.3 miles away. You are a certified John Maxwell coach based in the area, and you already hold the top three for that same term in Shannon, Rockmart, Cave Spring, Adairsville and Cedartown.</p><p>Four more towns have you at fourth place on it: Lindale, Euharlee, Aragon and Dallas. Making the Maxwell certification an explicit, prominent part of how your profile and site describe you addresses all ten markets at once. It is the single term where you have both a defensible credential and almost no competition, and Rome is the least contested of the ten.</p></div><div class="rec"><h3>Match your listing's category to the executive work</h3><p>Your Business Profile is categorised as Life coach. The results show that is not the lane you compete in. Life coach returns no top-three placement in any of the 16 markets and puts you ninth in Rome. Executive coach appears in 12 markets and puts you second in Rome, Shannon and Trion. Leadership coach reaches 7 markets and fifth in Rome.</p><p>Category is one of the strongest signals Google uses to decide which searches a business belongs in, and yours is currently pointing at the general wellness and personal-life side of coaching rather than the executive and leadership side where your placements actually come from. This is a settings change you can make yourself in an afternoon, and it costs nothing to correct.</p></div><div class="rec"><h3>Anchor your listing to the Rome side of your territory</h3><p>Because your profile carries no street address, Google positions you entirely from a map pin, and that pin currently reads about 22 miles from downtown Rome while reading 8.7 miles from Cartersville and 9.2 from Adairsville. The map is treating you as a Bartow-side business.</p><p>This matters more than it sounds, because 221 of your 320 searches are being won by businesses further from the town than you are, which means these packs are decided by stated coverage rather than by who is nearest. Reviewing what your profile says about where you are based and which areas you serve is the mechanism for correcting that, and it is worth doing before anything else geographic. Rome is where your name and your referral relationships already are, and the listing should reflect that.</p></div></div>
 
 <footer>
-  <p><b>320 searches recorded on July 19, 2026.</b> Google's local rankings
+  <p><b>320 searches recorded on July 20, 2026.</b> Google's local rankings
   move by a position or so from day to day, so this is a snapshot with a margin rather than a fixed score.
   Re-measuring the same searches later shows movement cleanly, because this baseline was taken first.</p>
   <p>Prepared by <b>Eric Kirby</b> · Forge, AI &amp; Web Design · Synergy Telecom &amp; Medical Systems ·

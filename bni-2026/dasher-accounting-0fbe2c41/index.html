@@ -15,7 +15,11 @@
   --pack:#3F9A5E; --near:#C08E13; --far:#7C7568; --gone:#E0625A;
 }}
 *{box-sizing:border-box}
-body{background:var(--paper);color:var(--text);font:16px/1.65 'Hanken Grotesk',system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;margin:0}
+/* Body text and every table use a clean system stack, always. The brand face is
+   applied to headings only, below. Applying it document-wide made a report set in
+   a condensed display face unreadable, which defeats the deliverable. */
+body{background:var(--paper);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;margin:0}
+h1,h2,h3{font-family:'Hanken Grotesk',system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 .wrap{max-width:1000px;margin:0 auto;padding:40px 22px 72px}
 .eyebrow{font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);font-weight:700}
 h1{font-size:clamp(28px,5vw,42px);line-height:1.1;margin:8px 0 6px;color:var(--ink);font-weight:700;text-wrap:balance}
@@ -70,7 +74,7 @@ footer b{color:var(--text)}
 }</style>
 </head><body><div class="wrap">
 
-<div class="eyebrow">Local search audit · measured July 19, 2026</div>
+<div class="eyebrow">Local search audit · measured July 20, 2026</div>
 <h1>Where Dasher Accounting Services ranks<br>across Northwest Georgia</h1>
 <p class="sub">20 searches × 16 markets · 320 measured results</p>
 
@@ -138,8 +142,6 @@ these spots today. Look at the review counts before anything else.</p>
       <td>37.9 mi</td><td class="pack">6.1 mi</td></tr><tr><th scope="row">Bookkeeping by Andrea, LLC.</th><td>6</td><td>Euharlee</td>
       <td>16.9 mi</td><td class="pack">4.4 mi</td></tr></table></div>
 
-
-
 <h2>Every search, town by town</h2>
 <p>These grids record all 320 searches. Your listing does not appear in them yet, so every cell reads
 as a dash, and that is exactly what the recommendations below are for. They are included so you can see the
@@ -159,7 +161,7 @@ full scope of what was measured, and so the same grids can be run again later to
 <div class="recs"><div class="rec"><h3>Tell your Business Profile what you do and which towns you serve</h3><p>This is the free one, it takes an afternoon, and it is the single highest-value item in the report. Your profile already passes the hard test: it exists, it is rated 5.0, and Google returns it for your business name. What it has not been given is the category, service list and service-area information that a category search matches against, which is why the name works and the service does not.</p><p>The evidence that this is the blocker rather than geography: in Aragon, 2.9 miles from you, 20 top-three placements across 15 of 20 searches are held from more than 10 miles away, one of them from 54.4 miles. In Rockmart, 23 of the 33 measurable top-three placements come from more than 10 miles out. Proximity is clearly not what Google is rewarding in this category. Declared coverage is, and that is a field you fill in rather than a distance you have to overcome.</p></div><div class="rec"><h3>Plant your flag on the QuickBooks terms while the field is nearly empty</h3><p>Once the profile describes the business properly, put the QuickBooks specialty at the front of how it presents itself rather than treating it as a sub-service.</p><p>The reason is the field depth. "QuickBooks ProAdvisor" returns an average of 8.9 businesses per market against 20 for the general bookkeeping phrases, and in Rockmart, Aragon, Cave Spring and Summerville it returns exactly one. "Catch up bookkeeping" has a median top-three holder with 2 reviews and no local business holding it at all in your own town, where the three spots are taken from 679 and 1,186 miles away. "Virtual bookkeeping" has a median top-three holder with 3 reviews.</p><p>Compare that with the broad term "bookkeeping services", where you would be entering a full field of 20 behind a competitor with 136 reviews. Same effort, very different odds. The thin fields also happen to describe higher-value work than the generic phrases do, and the people searching them already know what they need.</p></div><div class="rec"><h3>Put the core facts into the page itself, not only into the JavaScript</h3><p>Served the way a crawler requests it, your homepage currently returns 4 words, no H1 and no meta description, and both /sitemap.xml and /robots.txt return 404. The 558 words that a visitor sees only exist once JavaScript has run.</p><p>To be straight with you about the priority: this is not what is holding the map results back. Beavers Bookkeeping holds 29 top-three spots across 9 towns without owning a website at all. Fix the profile first. But the site is what a prospect judges you on after they find you, and a page whose first-pass version is four words gives Google nothing to connect you to the towns and services you want to be found for.</p><p>The work here is small and does not need a rebuild: get the plain facts of the business, what you do, who it is for, and the towns you cover, into the page's own HTML with a real headline and description, and add the two missing files. Any developer can do it in well under a day, and free tools will show you exactly what a crawler currently receives.</p></div></div>
 
 <footer>
-  <p><b>320 searches recorded on July 19, 2026.</b> Google's local rankings
+  <p><b>320 searches recorded on July 20, 2026.</b> Google's local rankings
   move by a position or so from day to day, so this is a snapshot with a margin rather than a fixed score.
   Re-measuring the same searches later shows movement cleanly, because this baseline was taken first.</p>
   <p>Prepared by <b>Eric Kirby</b> · Forge, AI &amp; Web Design · Synergy Telecom &amp; Medical Systems ·

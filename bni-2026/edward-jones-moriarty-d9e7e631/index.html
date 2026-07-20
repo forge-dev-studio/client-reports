@@ -15,7 +15,11 @@
   --pack:#3F9A5E; --near:#C08E13; --far:#7C7568; --gone:#E0625A;
 }}
 *{box-sizing:border-box}
+/* Body text and every table use a clean system stack, always. The brand face is
+   applied to headings only, below. Applying it document-wide made a report set in
+   a condensed display face unreadable, which defeats the deliverable. */
 body{background:var(--paper);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;margin:0}
+h1,h2,h3{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 .wrap{max-width:1000px;margin:0 auto;padding:40px 22px 72px}
 .eyebrow{font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);font-weight:700}
 h1{font-size:clamp(28px,5vw,42px);line-height:1.1;margin:8px 0 6px;color:var(--ink);font-weight:700;text-wrap:balance}
@@ -70,7 +74,7 @@ footer b{color:var(--text)}
 }</style>
 </head><body><div class="wrap">
 
-<div class="eyebrow">Local search audit · measured July 19, 2026</div>
+<div class="eyebrow">Local search audit · measured July 20, 2026</div>
 <h1>Where Edward Jones - Sean Moriarty ranks<br>across Northwest Georgia</h1>
 <p class="sub">20 searches × 16 markets · 320 measured results</p>
 
@@ -87,55 +91,6 @@ within about 30 miles, measured against your listing at 222 Broad St, Rome, GA 3
 is where you show up, and who is standing in front of you where you do not.</p>
 
 <h2>The short version</h2><p><strong>Twenty three Edward Jones advisors turn up somewhere in these 320 searches, and every one of them shares the exact same corporate website you do.</strong> That single fact decides how to read this whole report. Whatever separates the ones appearing constantly from the ones appearing rarely, it is not the website, because the website is identical. It sits at the individual profile level, and that is the part you control. You appear in 30 of the 320 searches with four top-three placements and one first place. Several colleagues on the same platform, some with fewer reviews than your five, appear far more often, which means the ceiling here is not corporate.</p>
-
-<h2>Who is holding these searches now</h2>
-
-<div class="tablebox"><table>
-    <tr><th>Business</th><th>Rating</th><th>Searches they hold</th><th>Where</th></tr><tr><th scope="row">Envoy Wealth Management</th>
-        <td>5 <span style="color:var(--muted)">(15)</span></td>
-        <td>44</td>
-        <td style="color:var(--muted);font-size:13.5px">Rome, Lindale, Shannon, Cave Spring +10</td></tr><tr><th scope="row">Peachtree Planning Corporation</th>
-        <td>5 <span style="color:var(--muted)">(2)</span></td>
-        <td>26</td>
-        <td style="color:var(--muted);font-size:13.5px">Rome, Lindale, Shannon, Euharlee +3</td></tr><tr><th scope="row">Wealth Enhancement &amp; Preservation</th>
-        <td>5 <span style="color:var(--muted)">(20)</span></td>
-        <td>26</td>
-        <td style="color:var(--muted);font-size:13.5px">Euharlee, Adairsville, Rockmart, Cartersville</td></tr><tr><th scope="row">Stars &amp; Stripes Financial Advisors</th>
-        <td>5 <span style="color:var(--muted)">(10)</span></td>
-        <td>24</td>
-        <td style="color:var(--muted);font-size:13.5px">Lindale, Cave Spring, Euharlee, Aragon +5</td></tr><tr><th scope="row">Asset Management Group, Inc</th>
-        <td>4.9 <span style="color:var(--muted)">(51)</span></td>
-        <td>21</td>
-        <td style="color:var(--muted);font-size:13.5px">Rome, Cave Spring, Euharlee, Adairsville +4</td></tr><tr><th scope="row">Dudley Asset Management</th>
-        <td>5 <span style="color:var(--muted)">(1)</span></td>
-        <td>21</td>
-        <td style="color:var(--muted);font-size:13.5px">Adairsville, Summerville, Calhoun</td></tr><tr><th scope="row">Edward Jones - Financial Advisor: Daniel Bosarge</th>
-        <td>5 <span style="color:var(--muted)">(20)</span></td>
-        <td>20</td>
-        <td style="color:var(--muted);font-size:13.5px">Rome, Lindale, Shannon, Cave Spring +2</td></tr><tr><th scope="row">Nida Financial Group</th>
-        <td>5 <span style="color:var(--muted)">(1)</span></td>
-        <td>19</td>
-        <td style="color:var(--muted);font-size:13.5px">Euharlee, Adairsville, Cartersville</td></tr><tr><th scope="row">Benjamin F. Edwards</th>
-        <td>5 <span style="color:var(--muted)">(2)</span></td>
-        <td>18</td>
-        <td style="color:var(--muted);font-size:13.5px">Rome, Lindale, Shannon</td></tr><tr><th scope="row">Main Street Advisors</th>
-        <td>5 <span style="color:var(--muted)">(1)</span></td>
-        <td>18</td>
-        <td style="color:var(--muted);font-size:13.5px">Cedartown, Rockmart, Dallas</td></tr></table></div>
-
-<h2>Businesses winning towns you are closer to</h2>
-  <p>Each of these holds top spots, across more than one search, in a town you are physically nearer to.
-  That means those spots are not being decided by distance. They are being decided by which businesses
-  have told Google they cover the area.</p><div class="tablebox"><table>
-    <tr><th>Business</th><th>Searches they hold</th><th>Example town</th><th>Their distance</th><th>Your distance</th></tr><tr><th scope="row">Envoy Wealth Management</th><td>28</td><td>Aragon</td>
-      <td>20.8 mi</td><td class="pack">15.8 mi</td></tr><tr><th scope="row">Stars &amp; Stripes Financial Advisors</th><td>22</td><td>Euharlee</td>
-      <td>28.7 mi</td><td class="pack">15.4 mi</td></tr><tr><th scope="row">Unity Financial Planning Group</th><td>12</td><td>Rockmart</td>
-      <td>26.7 mi</td><td class="pack">18.6 mi</td></tr><tr><th scope="row">ID Legacy Asset Management LLC.</th><td>10</td><td>Rockmart</td>
-      <td>24.8 mi</td><td class="pack">18.6 mi</td></tr><tr><th scope="row">Datapoint Financial Planning, LLC</th><td>9</td><td>Adairsville</td>
-      <td>37.8 mi</td><td class="pack">16.1 mi</td></tr><tr><th scope="row">Milestone Investment Management LLC</th><td>7</td><td>Rockmart</td>
-      <td>29.3 mi</td><td class="pack">18.6 mi</td></tr><tr><th scope="row">Goodwin Investment Advisory</th><td>7</td><td>Calhoun</td>
-      <td>35 mi</td><td class="pack">21.6 mi</td></tr><tr><th scope="row">Natalie Green Hosea Estate Planning, Probate, and Estate Administration Attorney</th><td>6</td><td>Adairsville</td>
-      <td>29.6 mi</td><td class="pack">16.1 mi</td></tr></table></div>
 
 <h2>Every market at a glance</h2>
 <div class="tablebox"><table>
@@ -291,13 +246,61 @@ in the top three, which is usually the fastest guide to what to lead with.</p>
       <td class="gone">0</td>
       <td>0 <span class="mi" style="color:var(--muted)">of 16</span></td></tr></table></div>
 
+<h2>Who is holding the spots you are not</h2>
+<div class="tablebox"><table>
+    <tr><th>Business</th><th>Rating</th><th>Searches they hold</th><th>Where</th></tr><tr><th scope="row">Envoy Wealth Management</th>
+        <td>5 <span style="color:var(--muted)">(15)</span></td>
+        <td>44</td>
+        <td style="color:var(--muted);font-size:13.5px">Rome, Lindale, Shannon, Cave Spring +10</td></tr><tr><th scope="row">Peachtree Planning Corporation</th>
+        <td>5 <span style="color:var(--muted)">(2)</span></td>
+        <td>26</td>
+        <td style="color:var(--muted);font-size:13.5px">Rome, Lindale, Shannon, Euharlee +3</td></tr><tr><th scope="row">Wealth Enhancement &amp; Preservation</th>
+        <td>5 <span style="color:var(--muted)">(20)</span></td>
+        <td>26</td>
+        <td style="color:var(--muted);font-size:13.5px">Euharlee, Adairsville, Rockmart, Cartersville</td></tr><tr><th scope="row">Stars &amp; Stripes Financial Advisors</th>
+        <td>5 <span style="color:var(--muted)">(10)</span></td>
+        <td>24</td>
+        <td style="color:var(--muted);font-size:13.5px">Lindale, Cave Spring, Euharlee, Aragon +5</td></tr><tr><th scope="row">Asset Management Group, Inc</th>
+        <td>4.9 <span style="color:var(--muted)">(51)</span></td>
+        <td>21</td>
+        <td style="color:var(--muted);font-size:13.5px">Rome, Cave Spring, Euharlee, Adairsville +4</td></tr><tr><th scope="row">Dudley Asset Management</th>
+        <td>5 <span style="color:var(--muted)">(1)</span></td>
+        <td>21</td>
+        <td style="color:var(--muted);font-size:13.5px">Adairsville, Summerville, Calhoun</td></tr><tr><th scope="row">Edward Jones - Financial Advisor: Daniel Bosarge</th>
+        <td>5 <span style="color:var(--muted)">(20)</span></td>
+        <td>20</td>
+        <td style="color:var(--muted);font-size:13.5px">Rome, Lindale, Shannon, Cave Spring +2</td></tr><tr><th scope="row">Nida Financial Group</th>
+        <td>5 <span style="color:var(--muted)">(1)</span></td>
+        <td>19</td>
+        <td style="color:var(--muted);font-size:13.5px">Euharlee, Adairsville, Cartersville</td></tr><tr><th scope="row">Benjamin F. Edwards</th>
+        <td>5 <span style="color:var(--muted)">(2)</span></td>
+        <td>18</td>
+        <td style="color:var(--muted);font-size:13.5px">Rome, Lindale, Shannon</td></tr><tr><th scope="row">Main Street Advisors</th>
+        <td>5 <span style="color:var(--muted)">(1)</span></td>
+        <td>18</td>
+        <td style="color:var(--muted);font-size:13.5px">Cedartown, Rockmart, Dallas</td></tr></table></div>
+
+<h2>Businesses winning towns you are closer to</h2>
+  <p>Each of these holds top spots, across more than one search, in a town you are physically nearer to.
+  That means those spots are not being decided by distance. They are being decided by which businesses
+  have told Google they cover the area.</p><div class="tablebox"><table>
+    <tr><th>Business</th><th>Searches they hold</th><th>Example town</th><th>Their distance</th><th>Your distance</th></tr><tr><th scope="row">Envoy Wealth Management</th><td>28</td><td>Aragon</td>
+      <td>20.8 mi</td><td class="pack">15.8 mi</td></tr><tr><th scope="row">Stars &amp; Stripes Financial Advisors</th><td>22</td><td>Euharlee</td>
+      <td>28.7 mi</td><td class="pack">15.4 mi</td></tr><tr><th scope="row">Unity Financial Planning Group</th><td>12</td><td>Rockmart</td>
+      <td>26.7 mi</td><td class="pack">18.6 mi</td></tr><tr><th scope="row">ID Legacy Asset Management LLC.</th><td>10</td><td>Rockmart</td>
+      <td>24.8 mi</td><td class="pack">18.6 mi</td></tr><tr><th scope="row">Datapoint Financial Planning, LLC</th><td>9</td><td>Adairsville</td>
+      <td>37.8 mi</td><td class="pack">16.1 mi</td></tr><tr><th scope="row">Milestone Investment Management LLC</th><td>7</td><td>Rockmart</td>
+      <td>29.3 mi</td><td class="pack">18.6 mi</td></tr><tr><th scope="row">Goodwin Investment Advisory</th><td>7</td><td>Calhoun</td>
+      <td>35 mi</td><td class="pack">21.6 mi</td></tr><tr><th scope="row">Natalie Green Hosea Estate Planning, Probate, and Estate Administration Attorney</th><td>6</td><td>Adairsville</td>
+      <td>29.6 mi</td><td class="pack">16.1 mi</td></tr></table></div>
+
 <h2>What this means</h2><h3>Your colleagues are the control group</h3><p>Most audits have to guess at how much of a result comes down to the website. Here that question answers itself, because 23 Edward Jones advisors appear in the captured results and all of them are on the same corporate site with the same structure and the same branding.</p><ul><li><strong>Daniel Bosarge</strong>, 1.3 miles from you, holds 33 top-five positions across eight towns and takes first place seven times, on a 5.0 rating from 20 reviews.</li><li><strong>Stacy J Jefferson</strong> holds 22 top-five positions across four towns and takes first place ten times, on a 5.0 rating from 3 reviews.</li><li><strong>Bodie Moore</strong> holds 11 across two towns with five first places, on a 5.0 rating from 1 review.</li><li><strong>Jason R Kolacz</strong> holds six positions across five towns with five first places, from between 24.7 and 63.6 miles out.</li><li><strong>You</strong> hold eight top-five positions across four towns with one first place, on a 5.0 rating from 5 reviews.</li></ul><p>Three of those four have fewer reviews than you do. All four have the identical website. The difference is happening somewhere else, and everywhere else in this picture is something you personally control.</p><h3>Where you already appear</h3><p>You appear in 30 of the 320 searches. Four of those are top-three placements, which is the block that shows on a phone without scrolling:</p><ul><li><strong>Trion, mutual funds advisor</strong>, first place</li><li><strong>Shannon, financial advisor</strong>, second</li><li><strong>Shannon, investment advisor</strong>, second</li><li><strong>Shannon, brokerage firm</strong>, second</li></ul><p>Shannon is quietly your best market. You appear in 9 of 20 searches there and three of them are second place, one step from the top. Rome is your widest market with 12 of 20 searches showing you somewhere, though none of those has reached the top three yet, with the two closest sitting at fifth.</p><h3>Eleven of these searches had no local list at all</h3><p>This needs stating clearly so it is not misread. In 11 of the 320 searches Google returned no local businesses whatsoever: "401k rollover" in Lindale, Cave Spring, Euharlee, Adairsville, Aragon, Calhoun, Cartersville, Summerville, Trion and Centre, plus "IRA rollover" in Cedar Bluff. Across all 32 rollover searches, 24 returned a single local result or none at all.</p><p>Where those searches did return something, they returned a different industry entirely. In Rome, "401k rollover" is led by the <strong>Social Security Administration</strong>, followed by Velox Insurance and Talley Insurance Services. "IRA rollover" in Rome is led by <strong>Henderson &amp; Sons Funeral Home</strong> with a storage company in second.</p><p>Nobody is winning those searches. There is no local answer for Google to give. They are not a gap in your visibility and there is nothing to pursue there.</p><p>Two other terms behave similarly. "Estate planning advisor" in Rome is led by two law firms, McRae, Smith, Peek, Harman &amp; Monroe and Hartmanlaw, which is the correct result for that phrase. And the audit flagged "life insurance advisor" in advance as likely to be crowded by insurance agencies rather than investment advisors. Rome confirms it exactly: Rome Healthplan Advisors and Talley Insurance Services hold second and third.</p><h3>Distance is not what is deciding these lists</h3><p>This is the most important diagnostic in the report, because it determines whether the outlying towns are worth any effort at all.</p><p>In <strong>161 of the captured searches, a rival holds a position while sitting farther from that town than you are</strong>. In 70 of those the farther business took first place outright.</p><p>Lindale is the clearest case. You are <strong>4.1 miles</strong> from Lindale and appear in 1 of its 20 searches. Meanwhile 20 Lindale searches are held by businesses farther away than you: Inspired Wealth Planning of Cordele takes first place in five of them from <strong>175.1 miles</strong> on a 5.0 rating from a single review, and other first places go to businesses at 27.8, 29.5, 38, 41.6, 42.6, 52.3, 58 and 154.9 miles.</p><p>The pattern repeats close to home. Cave Spring shows 25 such searches and you are 13.6 miles away. Aragon shows 23 and you are 15.8 miles. Cedartown shows 20 and you are 17.1 miles. Envoy Wealth Management reaches into ten towns from up to 49.6 miles, and Stars &amp; Stripes Financial Advisors into eight from up to 63 miles.</p><p>Your Edward Jones colleague Jason R Kolacz is doing the same thing, holding positions in five towns from as far as 63.6 miles out, on the same website you have.</p><p>When results look like this, proximity is not the deciding factor. These lists are being awarded on declared coverage, and declared coverage is a setting.</p><h3>Reviews are not the lever here</h3><p>You are at 5.0 on 5 reviews. Look at who holds the top three in Rome:</p><ul><li>Benjamin F. Edwards, 11 top-three positions including three first places, on 5.0 from <strong>2 reviews</strong></li><li>Charles E Norris, an Edward Jones colleague 0.9 miles away, 4 top-three positions on 5.0 from <strong>3 reviews</strong></li><li>McDonald Wealth Management, two first places on 5.0 from <strong>3 reviews</strong></li><li>Peachtree Planning Corporation, a top-three position on 5.0 from <strong>2 reviews</strong></li></ul><p>Four businesses in your own town hold spots you do not, each with fewer reviews than you have. The same holds among Edward Jones advisors generally, where Stacy J Jefferson takes first place ten times on 3 reviews and Bodie Moore five times on 1.</p><p>To be straight about it, reviews are not nothing. Daniel Bosarge, the strongest performer in Rome, does have 20 of them and Coosa Valley Financial Group has 63. But a review count is plainly not the thing standing between you and the top three, and treating it as the main project would aim effort at the wrong target.</p><h3>What your profile currently reaches on, and what it does not</h3><p>Your listing is categorised as <strong>Financial consultant</strong>, and one phrase carries almost all of your reach. "Mutual funds advisor" places you in 7 of the 16 towns, more than any other term, and it is the source of your only first place.</p><p>Eight of the twenty terms return nothing for you anywhere in the grid: retirement planning, retirement income planning, portfolio management, wealth management, college savings plan advisor, life insurance advisor, 401k rollover and IRA rollover.</p><p>The last two are the empty-list terms already covered. The others are not empty at all. <strong>"Retirement planning" returned a full 20 local businesses in every one of the 16 towns.</strong> "Life insurance advisor" never returned fewer than 15. "Wealth management" never fewer than 14. "Estate planning advisor" never fewer than 13. Those are busy, contested lists of local financial businesses, and a Rome advisor who does that work is not currently on any of them.</p>
 
 <h2>Three things that would move the needle</h2>
 <div class="recs"><div class="rec"><h3>Name retirement and wealth planning, not just investments</h3><p>Right now "mutual funds advisor" is doing nearly all the work, reaching 7 of the 16 towns and producing your only first place. That is a narrow slice of what you actually do for people.</p><p>Meanwhile "retirement planning" returned a full list of 20 local financial businesses in every single town measured, "life insurance advisor" never dropped below 15, "wealth management" never below 14 and "estate planning advisor" never below 13. These are active lists with real local competitors on them, and you are not appearing on any of them anywhere.</p><p>Your Google profile lets you spell out the services you provide, in your own words, without touching anything corporate. Making retirement planning, retirement income, portfolio work and wealth management explicit there gives Google something to match against four term families that currently have nothing of yours to find. It costs nothing and it is a single sitting of work.</p></div><div class="rec"><h3>Lindale is four miles out and effectively unclaimed</h3><p>Of everything in this report, this is the widest gap between effort and reward.</p><p>You are 4.1 miles from Lindale and you appear in 1 of its 20 searches. In 20 of those searches somebody farther away than you holds a position, and five first places belong to a firm in Cordele, 175.1 miles from Lindale, with one review to its name. Other Lindale first places are held from 27.8, 29.5, 38, 41.6, 42.6, 52.3 and 58 miles.</p><p>Cave Spring at 13.6 miles shows 25 such searches, Aragon at 15.8 shows 23, and Cedartown at 17.1 shows 20. Across the whole grid it happens 161 times, and 70 of those are outright first places taken by someone farther out than you.</p><p>None of that is geography. It is a matter of what each listing has told Google about the area it works in, and yours is the piece you can adjust. Your colleague Jason R Kolacz is holding positions in five towns from as far as 63.6 miles on the identical corporate platform, which is the clearest possible proof that reaching beyond your own street is available to an Edward Jones advisor.</p></div><div class="rec"><h3>Two Rome searches are one step from the top three</h3><p>This is the most concrete opportunity on the page, and it is in your own town where your referrals live.</p><p>Rome is already your widest market. You appear in 12 of its 20 searches. What has not happened yet is a top-three placement, and two searches are sitting at <strong>fifth place</strong>: "investment advisor" and "mutual funds advisor". Two positions is the entire distance between where you are and the block of three results a searcher sees before scrolling.</p><p>Shannon is the same story with a shorter run. You hold three second places there, on "financial advisor", "investment advisor" and "brokerage firm", each one position from the top. Add Lindale's "mutual funds advisor" at fourth and Shannon's "financial planning services" at fifth and there are five searches within two places of a meaningful improvement.</p><p>These are the cheapest wins available because the hard part is already done. Google knows who you are, it already shows you to these searchers, and the businesses ahead of you are mostly holding those spots with fewer reviews than you have. Focusing the way your profile describes those two services, and making sure the people you have already served can be seen connecting your name to that work, is entirely within your hands and needs nobody's approval.</p></div></div>
 
 <footer>
-  <p><b>320 searches recorded on July 19, 2026.</b> Google's local rankings
+  <p><b>320 searches recorded on July 20, 2026.</b> Google's local rankings
   move by a position or so from day to day, so this is a snapshot with a margin rather than a fixed score.
   Re-measuring the same searches later shows movement cleanly, because this baseline was taken first.</p>
   <p>Prepared by <b>Eric Kirby</b> · Forge, AI &amp; Web Design · Synergy Telecom &amp; Medical Systems ·

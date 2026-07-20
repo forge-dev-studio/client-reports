@@ -15,7 +15,11 @@
   --pack:#3F9A5E; --near:#C08E13; --far:#7C7568; --gone:#E0625A;
 }}
 *{box-sizing:border-box}
+/* Body text and every table use a clean system stack, always. The brand face is
+   applied to headings only, below. Applying it document-wide made a report set in
+   a condensed display face unreadable, which defeats the deliverable. */
 body{background:var(--paper);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;margin:0}
+h1,h2,h3{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 .wrap{max-width:1000px;margin:0 auto;padding:40px 22px 72px}
 .eyebrow{font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);font-weight:700}
 h1{font-size:clamp(28px,5vw,42px);line-height:1.1;margin:8px 0 6px;color:var(--ink);font-weight:700;text-wrap:balance}
@@ -70,7 +74,7 @@ footer b{color:var(--text)}
 }</style>
 </head><body><div class="wrap">
 
-<div class="eyebrow">Local search audit · measured July 19, 2026</div>
+<div class="eyebrow">Local search audit · measured July 20, 2026</div>
 <h1>Where MP Group ranks<br>across Northwest Georgia</h1>
 <p class="sub">20 searches × 15 markets · 300 measured results</p>
 
@@ -87,55 +91,6 @@ within about 30 miles, measured against your listing at 3950 Cobb Pkwy NW, Acwor
 is where you show up, and who is standing in front of you where you do not.</p>
 
 <h2>The short version</h2><p><strong>Merchant services does not behave like an ordinary local search category, and knowing that is worth more than any single ranking in this report.</strong> Google did return a local pack for 295 of the 300 searches measured, so the packs are there. What they are not is local. In 161 of those 295 searches at least one of the five businesses shown is flagged as being outside the search area, 101 of them include a business more than 300 miles away, and on the plain phrase "merchant services" the top spot in 8 of your 15 markets belongs to a company in another state or the far side of Georgia. Read against that backdrop, your 59 appearances, 7 top-three placements and first place in Acworth for "online payment processing" are a genuine position, and the gaps worth closing are the ordinary, fixable kind.</p>
-
-<h2>Who is holding these searches now</h2>
-
-<div class="tablebox"><table>
-    <tr><th>Business</th><th>Rating</th><th>Searches they hold</th><th>Where</th></tr><tr><th scope="row">Atlanta Payment Solutions</th>
-        <td>5 <span style="color:var(--muted)">(16)</span></td>
-        <td>94</td>
-        <td style="color:var(--muted);font-size:13.5px">Acworth, Kennesaw, Cartersville, Woodstock +10</td></tr><tr><th scope="row">Wingman Payments</th>
-        <td>5 <span style="color:var(--muted)">(29)</span></td>
-        <td>72</td>
-        <td style="color:var(--muted);font-size:13.5px">Acworth, Kennesaw, Emerson, Cartersville +11</td></tr><tr><th scope="row">Omega Bank Card Services: Local Credit Card Processing | Low Cost Merchant Services | Clover POS Dealer</th>
-        <td>4.9 <span style="color:var(--muted)">(141)</span></td>
-        <td>59</td>
-        <td style="color:var(--muted);font-size:13.5px">Acworth, Kennesaw, Emerson, Cartersville +9</td></tr><tr><th scope="row">Top Payment Solutions - Card Processing Merchant</th>
-        <td>4.7 <span style="color:var(--muted)">(23)</span></td>
-        <td>53</td>
-        <td style="color:var(--muted);font-size:13.5px">Acworth, Kennesaw, Emerson, Cartersville +11</td></tr><tr><th scope="row">Retail Data Systems - Restaurant POS Systems</th>
-        <td>3.5 <span style="color:var(--muted)">(13)</span></td>
-        <td>37</td>
-        <td style="color:var(--muted);font-size:13.5px">Acworth, Kennesaw, Emerson, Cartersville +11</td></tr><tr><th scope="row">Elite Merchant Solutions</th>
-        <td>5 <span style="color:var(--muted)">(20)</span></td>
-        <td>27</td>
-        <td style="color:var(--muted);font-size:13.5px">Acworth, Kennesaw, Cartersville, Woodstock +3</td></tr><tr><th scope="row">Atlaswipe Payment Solutions</th>
-        <td>5 <span style="color:var(--muted)">(9)</span></td>
-        <td>22</td>
-        <td style="color:var(--muted);font-size:13.5px">Acworth, Kennesaw, Emerson, Cartersville +8</td></tr><tr><th scope="row">First National Processing</th>
-        <td>5 <span style="color:var(--muted)">(13)</span></td>
-        <td>22</td>
-        <td style="color:var(--muted);font-size:13.5px">Kennesaw, Powder Springs, Holly Springs, Smyrna +2</td></tr><tr><th scope="row">POS UNLIMITED</th>
-        <td>4.5 <span style="color:var(--muted)">(17)</span></td>
-        <td>19</td>
-        <td style="color:var(--muted);font-size:13.5px">Acworth, Kennesaw, Cartersville, Woodstock +9</td></tr><tr><th scope="row">Lifelong Merchant Services</th>
-        <td>4.8 <span style="color:var(--muted)">(61)</span></td>
-        <td>13</td>
-        <td style="color:var(--muted);font-size:13.5px">Acworth, Kennesaw, Emerson, Powder Springs +6</td></tr></table></div>
-
-<h2>Businesses winning towns you are closer to</h2>
-  <p>Each of these holds top spots, across more than one search, in a town you are physically nearer to.
-  That means those spots are not being decided by distance. They are being decided by which businesses
-  have told Google they cover the area.</p><div class="tablebox"><table>
-    <tr><th>Business</th><th>Searches they hold</th><th>Example town</th><th>Their distance</th><th>Your distance</th></tr><tr><th scope="row">Atlanta Payment Solutions</th><td>56</td><td>Woodstock</td>
-      <td>17.7 mi</td><td class="pack">10.9 mi</td></tr><tr><th scope="row">Wingman Payments</th><td>50</td><td>Marietta</td>
-      <td>19.6 mi</td><td class="pack">11.4 mi</td></tr><tr><th scope="row">Top Payment Solutions - Card Processing Merchant</th><td>49</td><td>Smyrna</td>
-      <td>22.9 mi</td><td class="pack">16.2 mi</td></tr><tr><th scope="row">Omega Bank Card Services: Local Credit Card Processing | Low Cost Merchant Services | Clover POS Dealer</th><td>25</td><td>Kennesaw</td>
-      <td>11.8 mi</td><td class="pack">5.3 mi</td></tr><tr><th scope="row">POS UNLIMITED</th><td>14</td><td>Marietta</td>
-      <td>16.6 mi</td><td class="pack">11.4 mi</td></tr><tr><th scope="row">Atlaswipe Payment Solutions</th><td>14</td><td>Woodstock</td>
-      <td>17.2 mi</td><td class="pack">10.9 mi</td></tr><tr><th scope="row">Cost Plus Processing</th><td>8</td><td>Marietta</td>
-      <td>21.7 mi</td><td class="pack">11.4 mi</td></tr><tr><th scope="row">Lifelong Merchant Services</th><td>6</td><td>Kennesaw</td>
-      <td>20 mi</td><td class="pack">5.3 mi</td></tr></table></div>
 
 <h2>Every market at a glance</h2>
 <div class="tablebox"><table>
@@ -286,13 +241,61 @@ in the top three, which is usually the fastest guide to what to lead with.</p>
       <td class="gone">0</td>
       <td>0 <span class="mi" style="color:var(--muted)">of 15</span></td></tr></table></div>
 
+<h2>Who is holding the spots you are not</h2>
+<div class="tablebox"><table>
+    <tr><th>Business</th><th>Rating</th><th>Searches they hold</th><th>Where</th></tr><tr><th scope="row">Atlanta Payment Solutions</th>
+        <td>5 <span style="color:var(--muted)">(16)</span></td>
+        <td>94</td>
+        <td style="color:var(--muted);font-size:13.5px">Acworth, Kennesaw, Cartersville, Woodstock +10</td></tr><tr><th scope="row">Wingman Payments</th>
+        <td>5 <span style="color:var(--muted)">(29)</span></td>
+        <td>72</td>
+        <td style="color:var(--muted);font-size:13.5px">Acworth, Kennesaw, Emerson, Cartersville +11</td></tr><tr><th scope="row">Omega Bank Card Services: Local Credit Card Processing | Low Cost Merchant Services | Clover POS Dealer</th>
+        <td>4.9 <span style="color:var(--muted)">(141)</span></td>
+        <td>59</td>
+        <td style="color:var(--muted);font-size:13.5px">Acworth, Kennesaw, Emerson, Cartersville +9</td></tr><tr><th scope="row">Top Payment Solutions - Card Processing Merchant</th>
+        <td>4.7 <span style="color:var(--muted)">(23)</span></td>
+        <td>53</td>
+        <td style="color:var(--muted);font-size:13.5px">Acworth, Kennesaw, Emerson, Cartersville +11</td></tr><tr><th scope="row">Retail Data Systems - Restaurant POS Systems</th>
+        <td>3.5 <span style="color:var(--muted)">(13)</span></td>
+        <td>37</td>
+        <td style="color:var(--muted);font-size:13.5px">Acworth, Kennesaw, Emerson, Cartersville +11</td></tr><tr><th scope="row">Elite Merchant Solutions</th>
+        <td>5 <span style="color:var(--muted)">(20)</span></td>
+        <td>27</td>
+        <td style="color:var(--muted);font-size:13.5px">Acworth, Kennesaw, Cartersville, Woodstock +3</td></tr><tr><th scope="row">Atlaswipe Payment Solutions</th>
+        <td>5 <span style="color:var(--muted)">(9)</span></td>
+        <td>22</td>
+        <td style="color:var(--muted);font-size:13.5px">Acworth, Kennesaw, Emerson, Cartersville +8</td></tr><tr><th scope="row">First National Processing</th>
+        <td>5 <span style="color:var(--muted)">(13)</span></td>
+        <td>22</td>
+        <td style="color:var(--muted);font-size:13.5px">Kennesaw, Powder Springs, Holly Springs, Smyrna +2</td></tr><tr><th scope="row">POS UNLIMITED</th>
+        <td>4.5 <span style="color:var(--muted)">(17)</span></td>
+        <td>19</td>
+        <td style="color:var(--muted);font-size:13.5px">Acworth, Kennesaw, Cartersville, Woodstock +9</td></tr><tr><th scope="row">Lifelong Merchant Services</th>
+        <td>4.8 <span style="color:var(--muted)">(61)</span></td>
+        <td>13</td>
+        <td style="color:var(--muted);font-size:13.5px">Acworth, Kennesaw, Emerson, Powder Springs +6</td></tr></table></div>
+
+<h2>Businesses winning towns you are closer to</h2>
+  <p>Each of these holds top spots, across more than one search, in a town you are physically nearer to.
+  That means those spots are not being decided by distance. They are being decided by which businesses
+  have told Google they cover the area.</p><div class="tablebox"><table>
+    <tr><th>Business</th><th>Searches they hold</th><th>Example town</th><th>Their distance</th><th>Your distance</th></tr><tr><th scope="row">Atlanta Payment Solutions</th><td>56</td><td>Woodstock</td>
+      <td>17.7 mi</td><td class="pack">10.9 mi</td></tr><tr><th scope="row">Wingman Payments</th><td>50</td><td>Marietta</td>
+      <td>19.6 mi</td><td class="pack">11.4 mi</td></tr><tr><th scope="row">Top Payment Solutions - Card Processing Merchant</th><td>49</td><td>Smyrna</td>
+      <td>22.9 mi</td><td class="pack">16.2 mi</td></tr><tr><th scope="row">Omega Bank Card Services: Local Credit Card Processing | Low Cost Merchant Services | Clover POS Dealer</th><td>25</td><td>Kennesaw</td>
+      <td>11.8 mi</td><td class="pack">5.3 mi</td></tr><tr><th scope="row">POS UNLIMITED</th><td>14</td><td>Marietta</td>
+      <td>16.6 mi</td><td class="pack">11.4 mi</td></tr><tr><th scope="row">Atlaswipe Payment Solutions</th><td>14</td><td>Woodstock</td>
+      <td>17.2 mi</td><td class="pack">10.9 mi</td></tr><tr><th scope="row">Cost Plus Processing</th><td>8</td><td>Marietta</td>
+      <td>21.7 mi</td><td class="pack">11.4 mi</td></tr><tr><th scope="row">Lifelong Merchant Services</th><td>6</td><td>Kennesaw</td>
+      <td>20 mi</td><td class="pack">5.3 mi</td></tr></table></div>
+
 <h2>What this means</h2><h3>The packs render. They are just not behaving like local packs.</h3><p>Only 5 of the 300 searches produced no local results at all, and 182 returned a full field of 20 businesses. So this is not a category where Google refuses to draw a map. The unusual part is who it puts on that map.</p><p>Across the 1,346 competitor placements captured, 235 are held by businesses Google itself marks as outside the search area. 161 of the 295 packs contain at least one of those, and 101 contain a business more than 300 miles from the town being searched. First place goes to an out-of-area business in 77 searches, and to something more than 50 miles away in 79.</p><p>The clearest example is your core phrase, "merchant services". In 8 of your 15 markets the top result is not from this region at all. Dallas Merchant Services holds first place in Dallas, Georgia from 906 miles away. Reliant Merchant Services holds Woodstock, Powder Springs and Canton from roughly 758 miles. Florida Merchant Services holds Smyrna and Austell from about 420 miles, and Augusta Merchant Services holds Kennesaw and Marietta from around 145. One company, Superior Credit Card Processing, appears 43 times across this grid and takes first place in 33 of them from between 117 and 143 miles away, on a profile carrying 3 reviews.</p><p>The practical meaning is that proximity, normally the strongest signal in a local pack, is doing very little work in this category. That cuts both ways. It explains why being 1.9 miles from Acworth has not automatically won you the region, and it also means the businesses ahead of you are not there because they are closer.</p><h3>No large processor is holding this field</h3><p>This was worth checking, because the usual assumption is that Square, Toast, Stripe, Chase or the banks own these searches. They do not. Across all 1,346 competitor placements, Elavon appears exactly once. Square, Toast, Stripe, PayPal and the banks appear zero times.</p><p>What holds the field instead is your own peer group: independent reps and regional offices. Atlanta Payment Solutions appears 108 times, Wingman Payments 103, Top Payment Solutions 86, Omega Bank Card Services 78, Cost Plus Processing 47, First National Processing 45 and Elite Merchant Solutions 41. These are companies your size doing your job. That is genuinely good news, because it means the ground is contestable.</p><h3>Acworth is a real position, and it has room left in it</h3><p>You appear in 13 of the 20 Acworth searches, hold the top three in five and hold first place for "online payment processing", the only first place anywhere in the report. You are also second for "merchant services", "credit card processing", "merchant account provider" and "ACH payment processing".</p><p>Four more sit just outside: "payment processing company" at fourth, and "payment processor", "switch merchant service provider" and "small business credit card processing" at fifth. In all four you are 1.9 miles from Acworth and every business ranked above you sits between 10.5 and 152.3 miles away. In one of them, "payment processor", the business in fourth place ahead of you is a butcher shop.</p><h3>Five of the twenty terms belong to a different industry</h3><p>These are not gaps in your visibility, and they are not worth pursuing.</p><ul><li><strong>"card reader for business"</strong> returns no payments companies at all across any of the 15 markets. The field is held by Heart Soul and Art, AlphaGraphics, a psychic and tarot card reader, Micro Center, 2nd &amp; Charles and Staples. First place in Acworth goes to The Crazy Book Lady. Google is reading "card" as greeting cards and tarot cards.</li><li><strong>"apple pay setup for business"</strong> returns Apple retail stores, Kroger, Walmart and a phone repair shop. Two of the 15 markets returned no pack for it at all.</li><li><strong>"POS system", "point of sale system" and "restaurant POS system"</strong> belong to hardware dealers and installers. Retail Data Systems appears in 14 of the 15 markets on the first of those, alongside POS Unlimited, Bottle POS, Clover POS Systems Atlanta and Tonic POS. That is a different business from yours.</li></ul><p>Worth flagging separately: "reduce credit card fees" pulls consumer credit repair rather than merchant cost reduction. First place in Acworth is Credit Repair Express, and Women Who Money Plan and Lendmark Financial also appear. The phrase reads to Google as a consumer with card debt rather than a merchant with a processing statement. Three of the 15 markets returned no pack for it at all.</p><h3>Reviews are not what is deciding these searches</h3><p>You are at 4.7 stars on 17 reviews. Of the 188 competitors captured with a review count, 73 have fewer reviews than you and 87 carry a lower rating. Of the 255 competitor placements sitting above you in searches where you both appear, 92 come from businesses with fewer than 17 reviews.</p><p>The sharpest version of this: Atlanta Payment Solutions holds more positions in this report than any other business, 108 of them, on 16 reviews. That is one fewer than you have. Something other than reputation is deciding these placements, which means review effort is not the lever here.</p><h3>Distance is not the barrier either</h3><p>In 168 of the 300 searches, at least one business wins that town from farther away than you are from it, 266 instances in total, and in 73 of them that farther business holds first place. Atlanta Payment Solutions wins markets from up to 40 miles out, Wingman Payments from up to 45, Top Payment Solutions from up to 48. You are between 1.9 and 18.6 miles from every town on this list.</p><p>So wherever you are absent, geography is not the explanation. What the leaders have that shows up plainly in the data is a listing that states without ambiguity what they sell, which is the signal still carrying weight in a category where proximity is not.</p><h3>What this report measures, and what it does not</h3><p>This audit measured Google map packs only. It says nothing about the introductions, referrals and direct relationships a business-to-business category like yours actually runs on, and nothing above should be read as a judgement on those. The honest conclusion is that in this category the map pack is one modest channel rather than the main one. It is still worth the small amount of work it takes to hold ground in it, and the terms that deserve that work are the ones where real payments companies are competing: the five core phrases, plus the switching and comparison terms.</p>
 
 <h2>Three things that would move the needle</h2>
 <div class="recs"><div class="rec"><h3>Let the listing say payments in its own words</h3><p>Your Business Profile is currently filed under Consultant, which is a fair description of the work. The businesses holding the top of these packs are named and presented as payment companies without any ambiguity: Atlanta Payment Solutions, Wingman Payments, Top Payment Solutions, Elite Merchant Solutions, Omega Bank Card Services, First National Processing.</p><p>In a category where proximity is doing almost no work and review counts are not separating anyone, what the listing says it does is carrying most of the remaining weight. Making the profile's primary category and service list name the payments work directly is the cheapest move in this report. It takes an afternoon, costs nothing, and needs no outside help.</p></div><div class="rec"><h3>Close the last two positions in Acworth</h3><p>Acworth is the market where everything difficult is already done. You appear in 13 of 20 searches, hold the top three in five and hold first place in one.</p><p>Four more are sitting just outside the block customers actually look at: <strong>"payment processing company" at fourth, and "payment processor", "switch merchant service provider" and "small business credit card processing" at fifth.</strong> Moving those four takes Acworth from five top-three placements to nine, close to half your term list in your home market.</p><p>What makes this the shortest distance to travel anywhere in the report is the gap involved. In every one of those four searches you are 1.9 miles from Acworth and the businesses above you sit between 10.5 and 152.3 miles away. Google is already showing you to those searchers. It is placing you one or two rows below where the nearest business in the field would normally sit.</p></div><div class="rec"><h3>Press the term where the leaders are hundreds of miles out</h3><p>"Merchant account provider" is the softest target on your list. You already sit second in Acworth, fourth in Kennesaw, fourth in Marietta and sixth in Cartersville, and you appear in 6 of the 15 markets.</p><p>The two businesses holding the most ground on that phrase are Augusta Merchant Services, which appears in 13 of the 15 packs from roughly 140 to 170 miles away, and Florida Merchant Services, which appears in 11 of them from more than 400 miles away. Neither is anywhere near the towns they are ranking in, and you are between 1.9 and 18.6 miles from all 15.</p><p>Concentrating on this one phrase across Kennesaw, Marietta and Cartersville, where you already sit fourth, fourth and sixth, is the best return available outside your home market. It is also a far shorter contest than the broad phrase "merchant services", which is where those same distant companies are strongest.</p></div></div>
 
 <footer>
-  <p><b>300 searches recorded on July 19, 2026.</b> Google's local rankings
+  <p><b>300 searches recorded on July 20, 2026.</b> Google's local rankings
   move by a position or so from day to day, so this is a snapshot with a margin rather than a fixed score.
   Re-measuring the same searches later shows movement cleanly, because this baseline was taken first.</p>
   <p>Prepared by <b>Eric Kirby</b> · Forge, AI &amp; Web Design · Synergy Telecom &amp; Medical Systems ·
