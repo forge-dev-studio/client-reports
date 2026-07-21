@@ -110,6 +110,9 @@ details code{font-size:.82rem}
 footer{background:var(--ink);color:#b9b2a5;padding:36px 0;text-align:center;font-size:.9rem}
 footer b{color:var(--gold-bright)}
 .note{font-size:.85rem;color:var(--muted)}
+section a{color:var(--gold-deep);font-weight:500}
+:root[data-theme="dark"] section a{color:var(--gold-bright)}
+@media (prefers-color-scheme:dark){section a{color:var(--gold-bright)}}
 </style>
 
 <header>
@@ -136,7 +139,7 @@ footer b{color:var(--gold-bright)}
     <h2>What this measures</h2>
     <p class="lede">The map pack, the three businesses Google shows with the map, takes the large majority of calls from local searches. Everything below it splits the rest.</p>
     <p>For every one of 460 cells we ran the literal search a family would type, for example <code>home health care cartersville ga</code>, with the search centered on that town, and recorded where each Interim HealthCare listing appears and who holds the top three. This is the same signal paid tools like Local Falcon read. Positions drift a spot day to day; the pattern is what matters.</p>
-    <p>Keyword selection was evidence based, not guesswork: we crawled the five highest reviewed home care agencies in the north Atlanta metro (review bases of 101 to 690) to see which services they build pages for, then checked every candidate against Google's own search volume data for Georgia and for Rome, and kept the 20 highest value terms across three service families. "Near me" searches can't be measured per town from outside, so they are excluded here; note that <b>home care near me</b> is the single most searched home care term in Rome (70/mo), and it is won with the same profile signals this report recommends.</p>
+    <p>Keyword selection was evidence based, not guesswork: we crawled the five highest reviewed home care agencies in the north Atlanta metro (review bases of 101 to 690) to see which services they build pages for, then checked every candidate against Google's own search volume data for Georgia and for Rome, and kept the 20 highest value terms across three service families. "Near me" searches can't be measured per town from outside, so they are excluded here; note that <b>home care near me</b> is the single most searched home care term in Rome (70/mo).</p>
   </div></div>
 </section>
 
@@ -199,7 +202,7 @@ footer b{color:var(--gold-bright)}
 <div class="card"><div class="kick">Holds #1 in Rome on 1 term</div><h3>Fifth Avenue Health Care Center</h3><p class="note">3.4★ / 14 reviews · Skilled Nursing At Home</p></div>
   </div>
   <div class="narrow" style="margin-top:20px">
-    <p>Every pack holder above has fewer than 25 reviews. The biggest review base in the entire Rome vertical is CenterWell at 51. For comparison, Rome's leading plumbers, roofers and dentists hold hundreds to thousands. <b>This vertical's review race has barely started, and nobody in it is running a systematic review program.</b> The first agency that does will hold the prominence signal Google leans on when proximity ties.</p>
+    <p>Every pack holder above has fewer than 25 reviews. The biggest review base in the entire Rome vertical is CenterWell at 51. For comparison, Rome's leading plumbers, roofers and dentists hold hundreds to thousands. <b>This vertical's review race has barely started.</b></p>
   </div></div>
 </section>
 
@@ -208,8 +211,8 @@ footer b{color:var(--gold-bright)}
     <h2>The proof it's fixable is inside your own brand</h2>
     <p class="lede">A sibling Interim franchise, same corporate website template, packs 10 of 20 searches in its market.</p>
     <p><b>Interim HealthCare of Paulding County</b> (5.0★, 26 reviews) appears 45 times in this grid from its Dallas/Hiram territory, including 10 pack positions, 10 of them in Acworth, a contested Cobb county border market. Same brand. Same corporate location page format. Roughly double the reviews, a 5.0 rating, and a locally tuned profile.</p>
-    <p>That matters because it removes the easy excuse. The corporate website template is not what's holding the Rome office to #5. The difference between the two offices is the strength of the local Google Business Profile: rating, review count and velocity, categories, and the services list. Those are exactly the levers a local SEO program controls.</p>
-    <p class="note">Franchise territory note: Paulding's office appearing in Euharlee, Rockmart and Cartersville cells reflects Google's distance logic, not territory rights. Which border towns the Rome office may market into is governed by your franchise agreement; the program below targets your licensed counties only.</p>
+    <p>That matters because it removes the easy excuse. The corporate website template is not what's holding the Rome office to #5. The difference between the two offices comes down to how each one's local Google presence has been built and maintained. That gap is closable.</p>
+    <p class="note">Franchise territory note: Paulding's office appearing in Euharlee, Rockmart and Cartersville cells reflects Google's distance logic, not territory rights. Which border towns the Rome office may market into is governed by your franchise agreement.</p>
   </div></div>
 </section>
 
@@ -241,7 +244,7 @@ footer b{color:var(--gold-bright)}
 <tr><td>Skilled Nursing At Home</td><td class="r">110</td><td class="r">$8.71</td><td class="r">10</td></tr></tbody></table>
     </div>
     <div class="narrow" style="margin-top:20px">
-      <p class="note">Excluded on evidence: <b>senior care</b> and <b>elder care</b> (6,600 and 4,400/mo GA) return assisted living facilities in Rome, not home care agencies, so they would overstate the opportunity. "Near me" terms are excluded from the grid but drive the profile work. Memory care terms return facility results and restricted ads data; they belong in content, not the pack strategy. One more demand signal worth knowing: the two most reviewed agencies in the state's north metro built their review mass on Georgia Medicaid's caregiver programs, a family caregiver lead lane (get paid to care for a family member) that no Rome area agency currently owns.</p>
+      <p class="note">Excluded on evidence: <b>senior care</b> and <b>elder care</b> (6,600 and 4,400/mo GA) return assisted living facilities in Rome, not home care agencies, so they would overstate the opportunity. "Near me" terms can't be measured per town, so they are excluded from the grid. Memory care terms return facility results and restricted ads data. One more demand signal worth knowing: several of the highest value lanes in this market currently have no strong Rome area owner at all.</p>
     </div>
   </div>
 </section>
@@ -327,15 +330,13 @@ footer b{color:var(--gold-bright)}
 
 <section>
   <div class="wrap"><div class="narrow">
-    <h2>What we'd do next</h2>
-    <p class="lede">In priority order. Every item targets a measured gap in this report.</p>
-    <ol class="steps">
-      <li><b>Rebuild the Google Business Profile around the terms that pay.</b> Primary and secondary categories, all 20 services with descriptions, service area set to your licensed counties. Today the profile is invisible on respite care, 24 hour home care, veterans home care and elderly care, terms with 2,400 to 4,400 monthly Georgia searches.</li>
-      <li><b>Run a real review engine.</b> From 12 reviews to vertical leader is a 40 review gap, the smallest in any Rome vertical we've measured. Your Paulding sibling shows what 5.0★ with more reviews does to pack coverage. Target: pass CenterWell's 51 within one quarter.</li>
-      <li><b>Defend the two wins, take the near misses.</b> #2 private duty nursing and #3 home health are in the pack now; eight terms sit at #4 to #7. Profile relevance signals, review keywords and weekly posts move one click away terms into the pack without touching the website.</li>
-      <li><b>Fix the local web surface within franchise rules.</b> The corporate location page is one thin template page. We'd verify what corporate permits (many franchisees may add localized content or a compliant microsite) and build the Rome, Cedartown and county service pages this grid shows are uncontested.</li>
-      <li><b>Open the lead lanes nobody here owns.</b> Veterans home care pages and VA community care positioning, respite care content, and the Georgia Medicaid family caregiver lane that built 690 review businesses in the metro. All three are empty in this market.</li>
-    </ol>
+    <h2>What this adds up to</h2>
+    <p class="lede">Three facts from 460 measured searches.</p>
+    <p><b>1. The home market is winnable.</b> Two pack positions held today, eight more searches sitting one click out, and no dominant local player anywhere in the vertical. The names holding #1 are beatable on the signals Google actually ranks by.</p>
+    <p><b>2. The fix is already proven inside your own brand.</b> A sibling Interim office, on the same corporate website, gets the pack coverage Rome is missing. This is not a brand problem and not a website problem. It is a local presence problem, and those get solved.</p>
+    <p><b>3. The demand is real and largely unclaimed.</b> Thousands of monthly Georgia searches at $7 to $26 per click in advertiser value, several high value service terms with no strong Rome area owner, and a review race the whole vertical is running at a walking pace.</p>
+    <p style="margin-top:18px">What we would change, in what order, and what it takes: that's the conversation. If you want to walk through this report and what a program for the Rome office looks like, reach out.</p>
+    <p><b>Eric Kirby · Forge Dev Studio</b> · <a href="mailto:eric@forgedevstudio.com">eric@forgedevstudio.com</a></p>
     <p class="note" style="margin-top:14px">Method: DataForSEO Google local finder, coordinate centered searches (validated against hand measured Rome results the same day, exact match on all shared cells), desktop, July 21, 2026. Positions drift ±1 day to day. We never fabricate data: every number in this report is from a recorded search result, Google Ads volume data, or the public profiles and websites named.</p>
   </div></div>
 </section>
