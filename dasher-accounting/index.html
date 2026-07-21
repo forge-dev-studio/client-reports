@@ -101,6 +101,16 @@ td strong{color:var(--ink)}
 .cta a{color:#8fa8ef;font-weight:700;text-decoration:none}
 .cta a:hover{text-decoration:underline}
 
+/* offer */
+.offer{display:grid;grid-template-columns:230px 1fr;gap:28px;background:#fff;border:1px solid var(--line);border-top:4px solid var(--blue);border-radius:12px;padding:26px 28px;margin:22px 0 0}
+.op-label{font-family:var(--head);font-weight:700;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut)}
+.op-strike{font-family:var(--head);font-weight:700;font-size:22px;color:var(--mut);text-decoration:line-through;text-decoration-thickness:2.5px;text-decoration-color:var(--blue);margin-right:10px}
+.op-zero{font-family:var(--head);font-weight:800;font-size:42px;color:var(--blue);letter-spacing:-.02em}
+.op-mo{font-family:var(--head);font-weight:800;font-size:30px;color:var(--ink)}
+.op-mo small{font-size:16px;font-weight:700;color:var(--mut)}
+.og-badge{display:inline-block;font-family:var(--head);font-weight:800;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#fff;background:var(--blue);border-radius:999px;padding:4px 12px;margin-bottom:12px}
+.offer-guarantee p{margin:0;font-size:15.5px;color:var(--ink-2);max-width:58ch}
+@media (max-width:640px){.offer{grid-template-columns:1fr}}
 footer{padding:34px 0 46px;color:var(--mut);font-size:13px}
 footer p{max-width:86ch;margin:0 0 8px}
 @media (max-width:560px){
@@ -282,6 +292,19 @@ footer p{max-width:86ch;margin:0 0 8px}
       <div class="n">03</div>
       <h3>Review automation</h3>
       <p>A steady, hands-off system that turns happy clients into public reviews. Your rating is already perfect at 5.0. Growing the count past the typical winner in each first-wave town is the fastest single lever in this entire report, and it runs without you chasing anyone.</p>
+    </div>
+  </div>
+  <h2 style="margin-top:44px">The investment.</h2>
+  <div class="offer">
+    <div class="offer-price">
+      <div class="op-label">Website build</div>
+      <div style="display:flex;align-items:baseline;margin:4px 0 16px"><span class="op-strike num">$500</span><span class="op-zero num">$0</span></div>
+      <div class="op-label">Full program</div>
+      <div class="op-mo num">$297<small>/mo</small></div>
+    </div>
+    <div class="offer-guarantee">
+      <div class="og-badge">The guarantee</div>
+      <p>If the program has not brought you two new clients within the first 90 days after your new site goes live, we work for free until we have brought you three. That is how confident this data makes us.</p>
     </div>
   </div>
   <div class="cta">
