@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Elite Catastrophe &middot; Local Search Audit &amp; Work Plan</title>
+<style>
+:root{
+  --acc:#2e6b46; --acc-deep:#1f4c31; --acc-bright:#4aa06b;
+  --paper:#f7faf7; --card:#ffffff; --line:#dfe6df; --text:#181d1a; --muted:#5b6660;
+  --pack:#2f8b4c; --near:#b5850f; --far:#8d8578; --gone:#c2564d;
+  --packbg:#e9f4ec; --nearbg:#fdf3dc; --farbg:#f1efea; --gonebg:#faeceb;
+  --head:Georgia,'Times New Roman',serif;
+  --body:ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;
+  --accent-text:var(--acc-deep);
+}
+@media (prefers-color-scheme:dark){:root{
+  --paper:#0f1411; --card:#171d19; --line:#28312b; --text:#e7ede8; --muted:#9aa79f;
+  --pack:#52a566; --near:#d9a520; --far:#8a8378; --gone:#de7a72;
+  --packbg:#16281c; --nearbg:#2a2311; --farbg:#201d19; --gonebg:#2c1a18;
+  --accent-text:var(--acc-bright);
+}}
+:root[data-theme="dark"]{--paper:#0f1411;--card:#171d19;--line:#28312b;--text:#e7ede8;--muted:#9aa79f;--pack:#52a566;--near:#d9a520;--far:#8a8378;--gone:#de7a72;--packbg:#16281c;--nearbg:#2a2311;--farbg:#201d19;--gonebg:#2c1a18;--accent-text:var(--acc-bright)}
+:root[data-theme="light"]{--paper:#f7faf7;--card:#ffffff;--line:#dfe6df;--text:#181d1a;--muted:#5b6660;--pack:#2f8b4c;--near:#b5850f;--far:#8d8578;--gone:#c2564d;--packbg:#e9f4ec;--nearbg:#fdf3dc;--farbg:#f1efea;--gonebg:#faeceb;--accent-text:var(--acc-deep)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--text);font-family:var(--body);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+.narrow{max-width:70ch;margin-inline:auto}
+h1,h2,h3{font-family:var(--head);line-height:1.15;text-wrap:balance;margin:0;font-weight:700}
+h1{font-size:clamp(2rem,5vw,3rem)}
+h2{font-size:clamp(1.4rem,3vw,1.9rem);margin:2.6em 0 .6em}
+h3{font-size:1.15rem;margin:1.6em 0 .4em}
+p{margin:.8em 0}
+.hero{padding:64px 0 30px;border-bottom:3px solid var(--acc);background:linear-gradient(180deg,color-mix(in srgb,var(--acc) 7%,var(--paper)),var(--paper))}
+.kicker{letter-spacing:.14em;text-transform:uppercase;font-size:.78rem;color:var(--accent-text);font-weight:700;margin-bottom:10px}
+.sub{color:var(--muted);max-width:75ch}
+table{border-collapse:collapse;width:100%;margin:1.2em 0;font-size:.92rem;background:var(--card)}
+th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:color-mix(in srgb,var(--acc) 8%,var(--card));font-weight:600}
+.scroll{overflow-x:auto;margin:1.2em 0}
+.scroll table{margin:0;min-width:640px}
+.pill{display:inline-block;padding:1px 9px;border-radius:99px;font-size:.83rem;font-weight:600;white-space:nowrap}
+.pill.pack{background:var(--packbg);color:var(--pack)}
+.pill.near{background:var(--nearbg);color:var(--near)}
+.pill.far{background:var(--farbg);color:var(--far)}
+.pill.gone{background:var(--gonebg);color:var(--gone)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin:1.2em 0}
+.big{font-family:var(--head);font-size:clamp(1.5rem,3.5vw,2.2rem);line-height:1.25}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:1.4em 0}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.stat .n{font-family:var(--head);font-size:2rem;font-weight:700;color:var(--accent-text)}
+.stat .l{color:var(--muted);font-size:.9rem}
+.foot{margin:70px 0 40px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem}
+ol li,ul li{margin:.45em 0}
+.note{font-size:.9rem;color:var(--muted)}
+strong{font-weight:700}
+</style>
+</head>
+<body>
+<div class="hero"><div class="wrap">
+<div class="kicker">Forge Dev Studio &middot; Local Search Audit</div>
+<h1>Elite Catastrophe: Local Search Audit &amp; Work Plan</h1>
+<p class="sub">Measured July 21, 2026. 1,140 real Google searches: 30 search terms (15 roofing, 15 tree) across 38 cities within 50 miles of Rome, plus a study of the highest-ranking roofers north of Atlanta and real monthly search volumes.</p>
+</div></div>
+<div class="wrap narrow">
+
+<h2>What this measures</h2>
+<p>Every number in this report comes from a real, location-targeted Google search run on July 21. For each of 38 cities (every Georgia place of 2,000+ people within 50 miles of Rome, plus Lindale), we searched all 30 terms the way a local customer would, for example <em>tree removal Cartersville GA</em>, and recorded exactly where Elite Catastrophe appears in the local results, along with who holds the top spots.</p>
+<p>The map pack (the top 3 businesses Google shows with the map) is where the calls come from. Positions 4 and below are visible only after a click. Not present means the business did not appear in the top 20 local results at all.</p>
+
+<h2>Stated plainly: the limits of this data</h2>
+<p>Local rankings move daily and vary slightly by the searcher's exact location; single positions can drift by one spot. Search volumes are Google Ads annual averages: storm-related terms spike far above their average in the weeks after severe weather, so their yearly numbers understate what they are worth in the moments that matter to this business. Nothing here is a guarantee of future rankings. It is an honest baseline to measure progress against.</p>
+
+<h2>The headline</h2>
+<div class="card"><p class="big">Your reviews are elite. Your visibility is not, and reviews are not the reason.</p>
+<p>Across all 1,140 searches, Elite Catastrophe reached the map pack exactly once: <strong>#2 in Rome for storm damage tree removal</strong>. Yet your Google profile stands at <strong>4.9 stars with 76 reviews</strong>, which is more reviews than five of the eight businesses in Rome's tree service pack, and you are adding reviews roughly three times faster than the two businesses at the top.</p>
+<p>What is holding you back is <strong>how Google has you filed</strong>. Your listing and website present a storm damage restoration company first. Google agrees, and ranks you for storm terms. But everyday searches like <em>tree service</em> and <em>tree removal</em> carry most of the demand, and for those Google does not see you as a primary answer yet. That is a fixable configuration problem, not a years-long reputation problem.</p></div>
+
+<div class="grid3">
+<div class="stat"><div class="n">4.9&#9733;/76</div><div class="l">Your Google rating and review count, more than 5 of the 8 pack businesses in Rome tree service</div></div>
+<div class="stat"><div class="n">#2</div><div class="l">Rome, storm damage tree removal. Your identity works; it is aimed at the smallest slice of demand</div></div>
+<div class="stat"><div class="n">#13</div><div class="l">Rome, tree service, the head term of the category. The gap this plan closes</div></div>
+</div>
+
+<h2>Rome, term by term</h2>
+<h3>Tree searches</h3>
+<div class="scroll"><table>
+<tr><th>Search (Rome GA)</th><th>Elite position</th><th>Current #1</th></tr>
+<tr><td>Tree Service</td><td><span class="pill far">#13</span></td><td>Googe Tree Service and Design (5&#9733;/229)</td></tr>
+<tr><td>Tree Removal</td><td><span class="pill far">#11</span></td><td>Googe Tree Service and Design (5&#9733;/229)</td></tr>
+<tr><td>Tree Company</td><td><span class="pill far">#14</span></td><td>Walker's Tree Service (4.9&#9733;/141)</td></tr>
+<tr><td>Tree Trimming</td><td><span class="pill far">#14</span></td><td>Googe Tree Service and Design (5&#9733;/229)</td></tr>
+<tr><td>Tree Cutting Service</td><td><span class="pill far">#13</span></td><td>Walker's Tree Service (4.9&#9733;/141)</td></tr>
+<tr><td>Tree Pruning</td><td><span class="pill far">#12</span></td><td>Googe Tree Service and Design (5&#9733;/229)</td></tr>
+<tr><td>Emergency Tree Removal</td><td><span class="pill near">#9</span></td><td>Googe Tree Service and Design (5&#9733;/229)</td></tr>
+<tr><td>24 Hour Tree Service</td><td><span class="pill far">#12</span></td><td>Googe Tree Service and Design (5&#9733;/229)</td></tr>
+<tr><td>Fallen Tree Removal</td><td><span class="pill near">#6</span></td><td>Kingdom Tree Services LLC (5&#9733;/17)</td></tr>
+<tr><td>Storm Damage Tree Removal</td><td><span class="pill pack">#2</span></td><td>Kingdom Tree Services LLC (5&#9733;/17)</td></tr>
+<tr><td>Tree Debris Removal</td><td><span class="pill near">#10</span></td><td>Kingdom Tree Services LLC (5&#9733;/17)</td></tr>
+<tr><td>Stump Grinding</td><td><span class="pill far">#14</span></td><td>Xtreme Tree Worx (4.8&#9733;/83)</td></tr>
+<tr><td>Stump Removal</td><td><span class="pill far">#11</span></td><td>Kingdom Tree Services LLC (5&#9733;/17)</td></tr>
+<tr><td>Large Tree Removal</td><td><span class="pill far">#15</span></td><td>Walker's Tree Service (4.9&#9733;/141)</td></tr>
+<tr><td>Arborist</td><td><span class="pill far">#12</span></td><td>Googe Tree Service and Design (5&#9733;/229)</td></tr></table></div>
+<p>The pattern is consistent: the more a term sounds like storms and emergencies, the better you rank (<em>storm damage tree removal</em> #2, <em>fallen tree removal</em> #6, <em>emergency tree removal</em> #9). The more it sounds like everyday tree work, the further back you sit.</p>
+
+<h3>The proof the pack is open</h3>
+<p>The Rome tree pack is led by Googe Tree Service and Design (5&#9733;/229) and Walker's Tree Service (4.9&#9733;/141), long-established businesses with big review bases. But the third pack spot tells the real story: <strong>Kingdom Tree Services LLC</strong> holds pack positions across every tree term we measured with just <strong>17 reviews</strong>, from a one-page website, as a company founded in late 2024. Google is not rewarding review mass there. It is rewarding a clean, unambiguous tree service identity. You have 4.5 times their review count. Configured the same way, you compete immediately.</p>
+
+<h3>Roofing searches</h3>
+<div class="scroll"><table>
+<tr><th>Search (Rome GA)</th><th>Elite position</th><th>Current #1</th></tr>
+<tr><td>Roofing Contractor</td><td><span class="pill gone">Not present</span></td><td>Midian Roofing Inc. (4.9&#9733;/505)</td></tr>
+<tr><td>Roofing Company</td><td><span class="pill gone">Not present</span></td><td>Midian Roofing Inc. (4.9&#9733;/505)</td></tr>
+<tr><td>Roofer</td><td><span class="pill gone">Not present</span></td><td>Midian Roofing Inc. (4.9&#9733;/505)</td></tr>
+<tr><td>Roof Repair</td><td><span class="pill gone">Not present</span></td><td>Midian Roofing Inc. (4.9&#9733;/505)</td></tr>
+<tr><td>Roof Replacement</td><td><span class="pill gone">Not present</span></td><td>Midian Roofing Inc. (4.9&#9733;/505)</td></tr>
+<tr><td>Roof Leak Repair</td><td><span class="pill gone">Not present</span></td><td>Midian Roofing Inc. (4.9&#9733;/505)</td></tr>
+<tr><td>Emergency Roof Repair</td><td><span class="pill gone">Not present</span></td><td>Midian Roofing Inc. (4.9&#9733;/505)</td></tr>
+<tr><td>Storm Damage Roof Repair</td><td><span class="pill far">#13</span></td><td>Midian Roofing Inc. (4.9&#9733;/505)</td></tr>
+<tr><td>Hail Damage Roof Repair</td><td><span class="pill gone">Not present</span></td><td>Midian Roofing Inc. (4.9&#9733;/505)</td></tr>
+<tr><td>Metal Roofing</td><td><span class="pill gone">Not present</span></td><td>Georgia Metal Center (4.9&#9733;/23)</td></tr>
+<tr><td>Shingle Roof Replacement</td><td><span class="pill gone">Not present</span></td><td>Midian Roofing Inc. (4.9&#9733;/505)</td></tr>
+<tr><td>Roof Inspection</td><td><span class="pill gone">Not present</span></td><td>Midian Roofing Inc. (4.9&#9733;/505)</td></tr>
+<tr><td>Residential Roofing</td><td><span class="pill gone">Not present</span></td><td>Midian Roofing Inc. (4.9&#9733;/505)</td></tr>
+<tr><td>Commercial Roofing</td><td><span class="pill gone">Not present</span></td><td>Midian Roofing Inc. (4.9&#9733;/505)</td></tr>
+<tr><td>Roof Tarping</td><td><span class="pill far">#13</span></td><td>Rooftop Solutions (5&#9733;/41)</td></tr></table></div>
+<p>Honesty matters here: Rome's roofing pack is held by businesses with 179 to 610 reviews earned specifically for roofing. Competing head-on for <em>roofing contractor</em> is not a realistic near-term goal and we will not pretend otherwise. Where you already register is the storm side (<em>storm damage roof repair</em> and <em>roof tarping</em>, both #13). That is the honest roofing lane: own the storm and insurance moment, and let the roof work come through it.</p>
+
+<h2>All 38 markets</h2>
+<p>Best position across all 30 terms, by distance from Rome. This is the standard shape of local search: the map pack is proximity-driven, so the realistic battleground is the first ring, roughly 0 to 25 miles.</p>
+<div class="scroll"><table>
+<tr><th>City</th><th>Miles</th><th>Best position</th><th>Pack cells (of 30)</th></tr>
+<tr><td>Rome</td><td>0</td><td><span class="pill pack">#2</span></td><td>1</td></tr>
+<tr><td>Lindale</td><td>5.4</td><td><span class="pill near">#8</span></td><td>0</td></tr>
+<tr><td>Adairsville</td><td>16.8</td><td><span class="pill near">#8</span></td><td>0</td></tr>
+<tr><td>Euharlee</td><td>16.8</td><td><span class="pill far">#15</span></td><td>0</td></tr>
+<tr><td>Cedartown</td><td>17.2</td><td><span class="pill near">#10</span></td><td>0</td></tr>
+<tr><td>Summerville</td><td>17.4</td><td><span class="pill near">#5</span></td><td>0</td></tr>
+<tr><td>Rockmart</td><td>19.4</td><td><span class="pill far">#12</span></td><td>0</td></tr>
+<tr><td>Calhoun</td><td>21</td><td><span class="pill far">#14</span></td><td>0</td></tr>
+<tr><td>Cartersville</td><td>23.1</td><td><span class="pill gone">Not present</span></td><td>0</td></tr>
+<tr><td>LaFayette</td><td>31.1</td><td><span class="pill gone">Not present</span></td><td>0</td></tr>
+<tr><td>Dallas</td><td>31.2</td><td><span class="pill gone">Not present</span></td><td>0</td></tr>
+<tr><td>Acworth</td><td>32.1</td><td><span class="pill gone">Not present</span></td><td>0</td></tr>
+<tr><td>Hiram</td><td>36</td><td><span class="pill gone">Not present</span></td><td>0</td></tr>
+<tr><td>Kennesaw</td><td>36.5</td><td><span class="pill gone">Not present</span></td><td>0</td></tr>
+<tr><td>Dalton</td><td>36.7</td><td><span class="pill gone">Not present</span></td><td>0</td></tr>
+<tr><td>Tallapoosa</td><td>37</td><td><span class="pill gone">Not present</span></td><td>0</td></tr>
+<tr><td>Temple</td><td>37.9</td><td><span class="pill gone">Not present</span></td><td>0</td></tr>
+<tr><td>Bremen</td><td>38.4</td><td><span class="pill gone">Not present</span></td><td>0</td></tr>
+<tr><td>Canton</td><td>39.7</td><td><span class="pill gone">Not present</span></td><td>0</td></tr>
+<tr><td>Powder Springs</td><td>40</td><td><span class="pill gone">Not present</span></td><td>0</td></tr>
+<tr><td>Woodstock</td><td>40.1</td><td><span class="pill gone">Not present</span></td><td>0</td></tr>
+<tr><td>Villa Rica</td><td>40.2</td><td><span class="pill gone">Not present</span></td><td>0</td></tr>
+<tr><td>Holly Springs</td><td>40.7</td><td><span class="pill gone">Not present</span></td><td>0</td></tr>
+<tr><td>Chatsworth</td><td>42.4</td><td><span class="pill gone">Not present</span></td><td>0</td></tr>
+<tr><td>Chickamauga</td><td>42.6</td><td><span class="pill gone">Not present</span></td><td>0</td></tr>
+<tr><td>Marietta</td><td>42.7</td><td><span class="pill gone">Not present</span></td><td>0</td></tr>
+<tr><td>Austell</td><td>43.8</td><td><span class="pill gone">Not present</span></td><td>0</td></tr>
+<tr><td>Ringgold</td><td>44.9</td><td><span class="pill gone">Not present</span></td><td>0</td></tr>
+<tr><td>Jasper</td><td>45</td><td><span class="pill gone">Not present</span></td><td>0</td></tr>
+<tr><td>Varnell</td><td>45.7</td><td><span class="pill gone">Not present</span></td><td>0</td></tr>
+<tr><td>Douglasville</td><td>45.9</td><td><span class="pill gone">Not present</span></td><td>0</td></tr>
+<tr><td>Trenton</td><td>45.9</td><td><span class="pill gone">Not present</span></td><td>0</td></tr>
+<tr><td>Fort Oglethorpe</td><td>46.1</td><td><span class="pill gone">Not present</span></td><td>0</td></tr>
+<tr><td>Ball Ground</td><td>47</td><td><span class="pill gone">Not present</span></td><td>0</td></tr>
+<tr><td>Mableton</td><td>47.3</td><td><span class="pill gone">Not present</span></td><td>0</td></tr>
+<tr><td>Smyrna</td><td>47.4</td><td><span class="pill gone">Not present</span></td><td>0</td></tr>
+<tr><td>Carrollton</td><td>47.7</td><td><span class="pill gone">Not present</span></td><td>0</td></tr>
+<tr><td>Rossville</td><td>49.4</td><td><span class="pill gone">Not present</span></td><td>0</td></tr></table></div>
+<p>One term already travels: <strong>storm damage tree removal</strong> puts you in the top 15 in 8 cities out to Calhoun (21 miles): Rome #2, Lindale #8, Adairsville #8, Euharlee #15, Cedartown #10, Summerville #8, Rockmart #12, Calhoun #14. The plan builds landing surfaces so that reach converts.</p>
+
+<h2>What people actually search for</h2>
+<p>Real Google Ads monthly averages for Georgia. The storm terms you currently rank for are the smallest slice of the market on an average month. The everyday terms you are absent from carry the volume.</p>
+<div class="scroll"><table>
+<tr><th>Search term</th><th>GA searches/mo</th><th>Advertiser cost per click</th></tr>
+<tr><td>Tree Service Near Me</td><td>5,400</td><td>$22.67</td></tr>
+<tr><td>Roofer Near Me</td><td>5,400</td><td>$20.36</td></tr>
+<tr><td>Roofing Companies Near Me</td><td>5,400</td><td>$26.47</td></tr>
+<tr><td>Metal Roofing</td><td>3,600</td><td>$8.58</td></tr>
+<tr><td>Stump Grinding</td><td>3,600</td><td>$5.78</td></tr>
+<tr><td>Roofing Contractor</td><td>2,900</td><td>$22.68</td></tr>
+<tr><td>Roofing Company</td><td>2,900</td><td>$24.48</td></tr>
+<tr><td>Tree Service</td><td>2,900</td><td>$11.41</td></tr>
+<tr><td>Roof Repair</td><td>2,400</td><td>$42.70</td></tr>
+<tr><td>Tree Removal Near Me</td><td>2,400</td><td>$21.83</td></tr>
+<tr><td>Arborist</td><td>1,900</td><td>$18.83</td></tr>
+<tr><td>Tree Removal</td><td>1,600</td><td>$25.29</td></tr>
+<tr><td>Roof Tarping</td><td>260</td><td>$4.77</td></tr>
+<tr><td>Emergency Roof Repair</td><td>140</td><td>$66.30</td></tr>
+<tr><td>Emergency Tree Removal</td><td>140</td><td>$34.80</td></tr>
+<tr><td>Storm Damage Roof Repair</td><td>70</td><td></td></tr>
+<tr><td>Hail Damage Roof Repair</td><td>40</td><td></td></tr>
+<tr><td>Fallen Tree Removal</td><td>20</td><td>$38.93</td></tr>
+<tr><td>Storm Damage Tree Removal</td><td>10</td><td></td></tr></table></div>
+<p class="note">Cost per click is what businesses pay Google Ads for one visitor on that term. A #1 to #3 map pack position earns those clicks without paying for them. Note the click prices on emergency work: emergency roof repair runs $66 a click, emergency tree removal $35. The storm lane is small on average months and extremely valuable in the moment.</p>
+
+<h2>What the winners north of Atlanta do</h2>
+<p>You asked what the highest-ranking roofers in the metro corridor are doing. We measured the packs in 8 north-metro cities (Marietta, Kennesaw, Woodstock, Canton, Alpharetta, Roswell, Cumming, Gainesville) and then analyzed the keyword footprint of the top 5.</p>
+<div class="scroll"><table>
+<tr><th>Roofer</th><th>Google profile</th><th>Keywords ranked (US)</th><th>Top-3 positions</th><th>What powers them</th></tr>
+<tr><td>Dr Roof Atlanta</td><td>4.8/1,900&#9733;</td><td>887</td><td>9</td><td>City-page grid: 273 city keywords, 50 #1 positions</td></tr>
+<tr><td>ARAC Roof It Forward</td><td>4.8/1,800&#9733;</td><td>873</td><td>5</td><td>Content engine: answers problem searches like "water mark on ceiling" (3,600/mo)</td></tr>
+<tr><td>Riverside Roofing</td><td>5.0/110&#9733;</td><td>77</td><td>0</td><td>Google profile strength; small site</td></tr>
+<tr><td>Infiniti Roofing</td><td>4.8/341&#9733;</td><td>77</td><td>0</td><td>Google profile strength; small site</td></tr>
+<tr><td>Infinity Roofing Contractors</td><td>4.9/153&#9733;</td><td>0</td><td>0</td><td>Google profile strength; no measurable site footprint</td></tr></table></div>
+<p>Two lessons transfer directly to Northwest Georgia. First, the only roofer with a real search-engine machine (Dr Roof) built it as a city-by-city page grid; we will build the same grid at your actual service-area scale. Second, three of the five strongest pack performers have almost no website footprint at all: map pack position comes from the Google Business Profile itself. The profile is the product. The website multiplies it.</p>
+
+<h2>What the numbers mean</h2>
+<ul>
+<li><strong>The constraint is identity, not reputation.</strong> Google has you filed as storm restoration. The everyday tree terms carry the demand, and your review base already qualifies you for them.</li>
+<li><strong>Rome first, then the ring.</strong> Proximity rules the pack. Rome and the 0 to 25 mile ring (Lindale, Cedartown, Rockmart, Calhoun, Summerville, Adairsville, Cartersville) are winnable; the far metro edge is not, and we will not spend your money pretending it is.</li>
+<li><strong>Your review engine is the growth asset.</strong> You add roughly 11 to 12 reviews a month, about triple the pace of the businesses holding #1 and #2 in Rome. At current paces you pass the #2 business's review count in under a year.</li>
+<li><strong>Storms are your moat, not your ceiling.</strong> Keep owning the storm moment (you are #2 for it in Rome and reach 20+ miles). The fix is adding the everyday tree identity on top, not replacing the storm one.</li>
+</ul>
+
+<h2>The plan</h2>
+<ol>
+<li><strong>Google Business Profile surgery (week 1).</strong> Commit the profile to tree service plus storm restoration: category set, full services list, service area matched to the real 0 to 25 mile ring, photo and posting cadence, and a direct review link. Reconcile the hours shown across the web (listings currently disagree about weekend and 24/7 availability).</li>
+<li><strong>Citation and trust cleanup (weeks 1 to 2).</strong> One exact business name, address, and phone everywhere: today the name appears four different ways across directories, and one legacy lead-gen listing needs to be disassociated or rebuilt. Bring every statement of credentials, memberships, and business history on the site and directories current and verifiable, correct the BBB listing, and display license and insurance details. Clean listings are both a ranking signal and what insurance-minded storm customers check.</li>
+<li><strong>Website rebuild (weeks 2 to 6).</strong> Tree-first homepage (the current site leads with roofing on a listing that ranks for tree work), a page per service, a page per city in the first ring, and the structured business data (schema) Google reads; the current site has none. Wire the site to the profile, reviews, and socials; today it links to none of them.</li>
+<li><strong>Formalize the review engine (ongoing).</strong> Your organic pace is already the best in the market. A simple automated ask after every completed job protects the 4.9 and compounds the one advantage the incumbents cannot match.</li>
+<li><strong>Storm and insurance content lane (ongoing).</strong> The questions homeowners actually search (a tree fell on my roof, who do I call; does insurance cover tree removal; what does emergency tarping cost) have zero good local answers in this market. This is the Dr Roof city grid plus the content engine, aimed at your specialty.</li>
+</ol>
+<p><strong>Honest expectations:</strong> storm and emergency pack positions in roughly 3 to 6 months, everyday tree term pack entry in Rome in roughly 6 to 12, and a genuine run at #1 and #2 as the review counts converge over 18 to 24. Roofing head terms stay off the promise list; the storm roofing niche is the lane.</p>
+
+<div class="foot">Prepared by Forge Dev Studio &middot; July 21, 2026 &middot; Method: 1,140 location-targeted Google local searches (30 terms &times; 38 cities) captured July 21, 2026 via DataForSEO, coordinate-centered per city; volumes from Google Ads; competitor keyword footprints from DataForSEO Labs. Rankings drift; this is the baseline.</div>
+</div>
+</body>
+</html>
