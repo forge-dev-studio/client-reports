@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Creating Magic Vacations With Wendi · Business &amp; Group Travel | Forge Dev Studio</title>
+<meta name="description" content="Companion note on corporate, incentive, and group travel lanes for Creating Magic Vacations With Wendi.">
+<meta name="theme-color" content="#0c3a4e">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%230c3a4e'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='17' fill='%23B68EA2' text-anchor='middle'%3EW%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Karla:wght@300;400;500;600;700&family=Italianno&display=swap" rel="stylesheet">
+<style>html{color-scheme:light dark}:root{
+  --ocean-deep:oklch(0.28 0.05 230); --ocean:oklch(0.38 0.06 225); --ocean-mid:oklch(0.48 0.07 220);
+  --ocean-soft:oklch(0.82 0.03 220);
+  --coral:#B68EA2; --coral-deep:oklch(0.57 0.06 347); --coral-warm:oklch(0.82 0.04 347); --coral-paper:oklch(0.96 0.014 347);
+  --gold-deep:oklch(0.62 0.11 70);
+  --ivory:oklch(0.97 0.012 80);
+  --ink:oklch(0.22 0.03 240); --ink-soft:oklch(0.42 0.02 235); --ink-mute:oklch(0.58 0.015 230);
+  --line:oklch(0.86 0.02 220); --card:#fff; --paper:var(--ivory);
+  --pack:oklch(0.45 0.10 160); --packbg:oklch(0.94 0.04 160);
+  --near:var(--gold-deep); --nearbg:oklch(0.95 0.04 80);
+  --mid:var(--ocean-mid); --midbg:oklch(0.95 0.02 220);
+  --far:var(--ink-mute); --farbg:oklch(0.95 0.005 230);
+  --gone:oklch(0.62 0.05 25); --gonebg:oklch(0.97 0.012 25);
+  --display:'Marcellus',Garamond,serif; --body:'Karla',system-ui,sans-serif; --script:'Italianno',cursive;
+}
+@media (prefers-color-scheme:dark){:root{
+  --paper:oklch(0.19 0.03 235); --card:oklch(0.24 0.03 233); --line:oklch(0.34 0.03 230);
+  --ink:oklch(0.95 0.01 80); --ink-soft:oklch(0.80 0.02 220); --ink-mute:oklch(0.66 0.02 225);
+  --packbg:oklch(0.30 0.06 160); --pack:oklch(0.82 0.12 160);
+  --nearbg:oklch(0.30 0.05 80); --near:oklch(0.86 0.10 80);
+  --midbg:oklch(0.29 0.03 220); --mid:oklch(0.80 0.05 220);
+  --farbg:oklch(0.26 0.01 230); --far:oklch(0.68 0.02 225);
+  --gonebg:oklch(0.27 0.02 25); --gone:oklch(0.72 0.05 25);
+}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.narrow{max-width:72ch;margin-inline:auto}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.15;margin:0;text-wrap:balance}
+h2{font-size:clamp(1.55rem,3vw,2.15rem);margin:0 0 .5rem;text-align:center}
+h3{font-size:1.12rem;margin:0 0 .4rem}
+.script{font-family:var(--script);font-size:1.45em;color:var(--coral);line-height:.8}
+p{margin:0 0 1rem}
+strong,b{font-weight:600}
+section{padding:46px 0}
+section+section{border-top:1px solid var(--line)}
+.lede{font-size:1.05rem;color:var(--ink-soft);text-align:center}
+.narrow p{text-align:left}
+header{background:linear-gradient(160deg,var(--ocean-deep),var(--ocean));color:var(--ivory);padding:52px 0 46px;border-bottom:4px solid var(--coral);text-align:center}
+.eyebrow{font-family:var(--display);font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--coral-warm)}
+header h1{font-size:clamp(2.1rem,5vw,3.2rem);margin:.5rem 0 .4rem;color:#fff}
+header .sub{color:var(--ocean-soft);max-width:66ch;margin:0 auto}
+.brandline{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:20px;color:var(--ocean-soft);font-size:.9rem}
+.brandline b{color:var(--coral-warm);font-weight:500}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:14px;margin:-34px 0 0}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:0 4px 14px rgba(12,58,78,.06)}
+.stat .n{font-family:var(--display);font-size:2.1rem;line-height:1;font-variant-numeric:tabular-nums;color:var(--ocean)}
+.stat.hi .n{color:var(--coral-deep)}
+.stat .l{font-size:.82rem;color:var(--ink-mute);margin-top:7px;line-height:1.4}
+.legend{display:flex;gap:16px;flex-wrap:wrap;margin:16px 0 10px;font-size:.84rem;justify-content:center}
+.key{display:inline-flex;align-items:center;gap:7px}
+.sw{width:15px;height:15px;border-radius:4px;display:inline-block;border:1px solid var(--line)}
+.sw.pack{background:var(--packbg)}.sw.near{background:var(--nearbg)}.sw.mid{background:var(--midbg)}.sw.far{background:var(--farbg)}.sw.gone{background:var(--gonebg)}
+.tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--card)}
+table{border-collapse:collapse;width:100%;font-size:.88rem}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line)}
+.grid td{text-align:center;font-variant-numeric:tabular-nums;font-weight:600;width:46px}
+.grid th[scope=row]{position:sticky;left:0;background:var(--card);font-weight:400;white-space:nowrap;border-right:1px solid var(--line);z-index:1;font-size:.84rem}
+.grid thead th{font-family:var(--display);font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;background:var(--card);white-space:nowrap;vertical-align:bottom;font-weight:400}
+.grid thead .mi{display:block;font-family:var(--body);font-size:.68rem;color:var(--ink-mute);text-transform:none;letter-spacing:0}
+.grid tr.fam th{font-family:var(--display);font-size:.68rem;text-transform:uppercase;letter-spacing:.14em;color:var(--coral-deep);background:var(--paper);padding-top:14px}
+.grid tr.fam td{background:var(--paper)}
+.grid tr.totals th,.grid tr.totals td{border-top:2px solid var(--line);font-family:var(--display);background:var(--card)}
+td.pack{background:var(--packbg);color:var(--pack)}
+td.near{background:var(--nearbg);color:var(--near)}
+td.mid{background:var(--midbg);color:var(--mid)}
+td.far{background:var(--farbg);color:var(--far)}
+td.gone{background:var(--gonebg);color:var(--gone)}
+td.na{color:var(--far)}
+td.tot{font-family:var(--display);color:var(--ocean)}
+.market{border:1px solid var(--line);border-radius:14px;background:var(--card);margin-bottom:10px;overflow:hidden}
+.market summary{cursor:pointer;padding:14px 18px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;list-style:none}
+.market summary::-webkit-details-marker{display:none}
+.market summary::before{content:"▸";color:var(--coral);font-size:.8rem}
+.market[open] summary::before{content:"▾"}
+.mname{font-family:var(--display);font-size:1.05rem}
+.mmeta{color:var(--ink-mute);font-size:.86rem}
+.badge{margin-left:auto;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;padding:4px 11px;border-radius:100px;border:1px solid var(--line);color:var(--ink-soft)}
+.b-leading{background:var(--packbg);color:var(--pack);border-color:transparent}
+.b-established{background:var(--nearbg);color:var(--near);border-color:transparent}
+.b-building{background:var(--midbg);color:var(--mid);border-color:transparent}
+.b-roomtogrow{background:var(--farbg)}
+.mbody{padding:0 18px 14px}
+.mtbl{font-size:.85rem}
+.mtbl td.p{text-align:center;font-weight:600;width:52px;border-radius:6px}
+.mtbl td.k{color:var(--ink-soft)}
+.mtbl .lead{color:var(--ink-soft)}
+.rv{color:var(--ink-mute);font-size:.82em;white-space:nowrap}
+.barwrap{display:inline-block;width:66px;height:7px;background:var(--farbg);border-radius:100px;overflow:hidden;vertical-align:middle;margin-right:8px}
+.bar{display:block;height:100%;background:var(--coral)}
+td.c{text-align:center}
+.famtag{font-size:.76rem;color:var(--ink-mute);text-transform:uppercase;letter-spacing:.06em}
+.callout{background:var(--coral-paper);border-left:3px solid var(--coral);border-radius:0 12px 12px 0;padding:18px 22px;margin:22px 0}
+@media (prefers-color-scheme:dark){.callout{background:oklch(0.27 0.04 347)}}
+.callout p:last-child{margin:0}
+.wins{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:20px}
+.win{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--coral);border-radius:12px;padding:18px 20px}
+.win .n{font-family:var(--display);font-size:1.7rem;color:var(--coral-deep);line-height:1}
+.win p{margin:.4rem 0 0;font-size:.92rem;color:var(--ink-soft)}
+.mktbig{text-align:center;margin:8px 0 4px}
+.mktbig .n{font-family:var(--display);font-size:clamp(2.8rem,7vw,4.2rem);color:var(--coral-deep);line-height:1}
+.mktbig .l{color:var(--ink-mute);font-size:.95rem}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:10px}
+@media (max-width:720px){.split{grid-template-columns:1fr}}
+footer{background:var(--ocean-deep);color:var(--ocean-soft);text-align:center;padding:34px 0;font-size:.86rem}
+footer b{color:var(--coral-warm);font-weight:500}
+@media (max-width:640px){.stats{margin-top:-24px}.badge{margin-left:0}}
+.you{background:var(--coral);color:#fff;font-size:.7rem;padding:1px 7px;border-radius:100px;margin-left:6px;vertical-align:middle}
+.win h3{font-family:var(--display);color:var(--ocean);margin-bottom:.3rem}</style>
+</head><body>
+<header><div class="wrap">
+  <div class="eyebrow">Companion Note · 22 July 2026</div>
+  <h1>Business &amp; group <span class="script">travel</span></h1>
+  <p class="sub">A short read on three lanes that sit beside the vacation market: corporate travel, incentive trips, and group travel. How people find these services, how big the Georgia demand is, and who holds the space today.</p>
+  <div class="brandline"><span><b>Creating Magic Vacations With Wendi</b></span><span>·</span><span>Companion to the Local Search Market Study</span></div>
+</div></header>
+
+<section><div class="wrap narrow">
+  <h2>These lanes work <span class="script">differently</span></h2>
+  <p class="lede">Worth understanding before reading the numbers.</p>
+  <p>The vacation market in the main study is a <strong>search</strong> market: families type "disney travel agent" into Google, and being visible wins the call. Corporate, incentive, and group travel are mostly a <strong>relationship</strong> market. A company books its trips through the agency its people already know and trust, and it renews there year after year. That difference shapes everything below: the searching is thin, but the work is real and it repeats.</p>
+</div></section>
+
+<section><div class="wrap">
+  <h2>How much of this gets <span class="script">searched</span></h2>
+  <p class="lede">Monthly Google searches, nationally and in Georgia.</p>
+  <div class="narrow"><div class="tblwrap"><table><thead><tr><th>Search</th><th class="c">US / mo</th><th class="c">Georgia / mo</th></tr></thead><tbody><tr><td class="k">Corporate Event Planner</td><td class="c">3600</td><td class="c"><b>110</b></td></tr><tr><td class="k">Corporate Travel Management</td><td class="c">2900</td><td class="c"><b>110</b></td></tr><tr><td class="k">Meeting Planner</td><td class="c">4400</td><td class="c"><b>90</b></td></tr><tr><td class="k">Travel Management Company</td><td class="c">1600</td><td class="c"><b>50</b></td></tr><tr><td class="k">Group Travel Companies</td><td class="c">1600</td><td class="c"><b>50</b></td></tr><tr><td class="k">Corporate Travel Agency</td><td class="c">1000</td><td class="c"><b>40</b></td></tr><tr><td class="k">Corporate Travel Agent</td><td class="c">1000</td><td class="c"><b>40</b></td></tr><tr><td class="k">Company Retreat Planning</td><td class="c">880</td><td class="c"><b>20</b></td></tr><tr><td class="k">Corporate Travel Management Company</td><td class="c">480</td><td class="c"><b>20</b></td></tr><tr><td class="k">Group Travel Planner</td><td class="c">390</td><td class="c"><b>20</b></td></tr><tr><td class="k">Corporate Travel Services</td><td class="c">720</td><td class="c"><b>10</b></td></tr><tr><td class="k">Business Travel Agency</td><td class="c">480</td><td class="c"><b>10</b></td></tr><tr><td class="k">Business Travel Agent</td><td class="c">480</td><td class="c"><b>10</b></td></tr><tr><td class="k">Incentive Travel</td><td class="c">480</td><td class="c"><b>10</b></td></tr></tbody></table></div>
+  <p style="text-align:center;color:var(--ink-mute);font-size:.86rem;margin-top:10px">Across every corporate, incentive, and group term measured, Georgia totals about <b>730 searches a month</b>.</p>
+  <div class="callout"><p><strong>The takeaway.</strong> Statewide, these searches run to a few dozen a month each, and most of that sits in metro Atlanta. That is not a knock on the lanes, it is the nature of them: businesses do not shop for a travel manager on Google, they get referred to one. So this is a market you win through relationships and reputation, not through ranking.</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Who holds these lanes today</h2>
+  <p class="lede">The names that appear when you do search, and where.</p>
+  <div class="split">
+    <div><h3 style="text-align:center;font-family:var(--display)">Metro Atlanta</h3>
+      <div class="tblwrap"><table><thead><tr><th>Agency</th><th class="c">Rating</th><th class="c">Reviews</th><th class="c">Lanes</th></tr></thead><tbody><tr><td>KK Travels Worldwide</td><td class="c">4.8★</td><td class="c">58</td><td class="c">3/3</td></tr><tr><td>NEAL MILLER TRAVEL COMPANY</td><td class="c">4.9★</td><td class="c">29</td><td class="c">3/3</td></tr><tr><td>About Going Places</td><td class="c">4.3★</td><td class="c">26</td><td class="c">3/3</td></tr><tr><td>LL Adventures Company</td><td class="c">4.9★</td><td class="c">28</td><td class="c">2/3</td></tr><tr><td>Epperly Travel</td><td class="c">4.9★</td><td class="c">132</td><td class="c">1/3</td></tr><tr><td>Travel Inc</td><td class="c">3.2★</td><td class="c">50</td><td class="c">1/3</td></tr><tr><td>The Trip Atelier</td><td class="c">5★</td><td class="c">36</td><td class="c">1/3</td></tr></tbody></table></div>
+      <p style="font-size:.82rem;color:var(--ink-mute);margin-top:8px;text-align:center">Where corporate demand concentrates. Review counts are modest, so no one owns it outright.</p>
+    </div>
+    <div><h3 style="text-align:center;font-family:var(--display)">Rome, for group travel</h3>
+      <div class="tblwrap"><table><thead><tr><th class="c">#</th><th>Agency</th><th class="c">Rating</th><th class="c">Reviews</th></tr></thead><tbody><tr><td class="c">1</td><td>Magical Travel &amp; Events Inc</td><td class="c">4.5★</td><td class="c">11</td></tr><tr><td class="c">2</td><td>Eagle Christian Tours</td><td class="c">5★</td><td class="c">5100</td></tr><tr><td class="c">3</td><td>Preferred Travel of Rome, Inc</td><td class="c">5★</td><td class="c">3</td></tr><tr><td class="c">4</td><td>Creating Magic Vacations With Wendi <span class="you">you</span></td><td class="c">5★</td><td class="c">29</td></tr><tr><td class="c">5</td><td>Travels by RayRay</td><td class="c">5★</td><td class="c">11</td></tr><tr><td class="c">6</td><td>Judy Duke Travel</td><td class="c">5★</td><td class="c">1</td></tr></tbody></table></div>
+      <p style="font-size:.82rem;color:var(--ink-mute);margin-top:8px;text-align:center">You already appear here. The one large incumbent is a faith-based tour specialist.</p>
+    </div>
+  </div>
+</div></section>
+
+<section><div class="wrap narrow">
+  <h2>Lane by lane</h2>
+  <div class="wins" style="grid-template-columns:1fr">
+    <div class="win"><h3>Corporate &amp; business travel</h3><p>Thin search demand, concentrated in Atlanta, bought by referral. In Rome the space is wide open, but open because few people search it locally rather than because it is untapped gold. This is an outbound and relationship lane: local employers, existing clients, and word of mouth, not search rankings.</p></div>
+    <div class="win"><h3>Incentive &amp; meeting travel</h3><p>A specialized corporate lane, held in Atlanta by agencies with dedicated meetings-and-events operations. It rewards that infrastructure, so it is the least natural fit of the three for a personal advisory.</p></div>
+    <div class="win"><h3>Group travel</h3><p>The most promising of the three, and the closest to what you already do. You show up in the Rome group results today. The one large local name specializes in faith-based bus tours, which is a single niche, not the whole lane. Family reunions, milestone-celebration groups, girlfriend getaways, and group Disney and cruise trips are the natural openings.</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap narrow">
+  <h2>The natural <span class="script">extension</span></h2>
+  <p>Group travel is not a new direction so much as a bigger version of your current one. A group Disney trip, a family-reunion cruise, or a milestone celebration for a dozen travelers is the same specialty you are already known for, sized up. It comes through the relationships and reviews you are already building, which is exactly why it fits where corporate and incentive do not.</p>
+  <p style="color:var(--ink-mute);font-size:.94rem">This note is a companion to the main market study. Happy to talk through any of it whenever you would like.</p>
+  <p style="text-align:center;margin-top:26px"><a href="./" style="color:var(--coral-deep);font-family:var(--display);font-size:1.05rem;text-decoration:none;border-bottom:1px solid var(--coral)">&larr; Back to the Local Search Market Study</a></p>
+</div></section>
+
+<footer><div class="wrap">
+  <div><b>Creating Magic Vacations With Wendi</b> · Business &amp; group travel companion note · 22 July 2026</div>
+  <div style="margin-top:6px">Prepared by Forge Dev Studio</div>
+</div></footer></body></html>
