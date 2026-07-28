@@ -1,5 +1,5 @@
 {
- "captured": "2026-07-28T22:23:02.971Z",
+ "captured": "2026-07-28T22:47:10.986Z",
  "profile": {
   "title": "Studio Kate Photography",
   "address": "404 Tribune St, Rome, GA 30161",
@@ -11,11 +11,11 @@
  },
  "business": {
   "stats": {
-   "measured": 527,
-   "first": 4,
-   "pack": 12,
-   "present": 26,
-   "absent": 501
+   "measured": 806,
+   "first": 12,
+   "pack": 21,
+   "present": 40,
+   "absent": 766
   },
   "cells": [
    {
@@ -206,6 +206,105 @@
     "outOfArea": false
    },
    {
+    "market": "Rome",
+    "term": "headshot photoshoot",
+    "vol": 320,
+    "kd": 37,
+    "pos": 1,
+    "rival": "Studio Kate Photography",
+    "rivalMi": 0.4,
+    "rivalVotes": 32,
+    "outOfArea": false
+   },
+   {
+    "market": "Rome",
+    "term": "headshot photo",
+    "vol": 320,
+    "kd": 37,
+    "pos": 1,
+    "rival": "Studio Kate Photography",
+    "rivalMi": 0.4,
+    "rivalVotes": 32,
+    "outOfArea": false
+   },
+   {
+    "market": "Rome",
+    "term": "photographers for headshots",
+    "vol": 260,
+    "kd": 31,
+    "pos": 1,
+    "rival": "Studio Kate Photography",
+    "rivalMi": 0.4,
+    "rivalVotes": 32,
+    "outOfArea": false
+   },
+   {
+    "market": "Rome",
+    "term": "company headshots",
+    "vol": 110,
+    "kd": 20,
+    "pos": 1,
+    "rival": "Studio Kate Photography",
+    "rivalMi": 0.4,
+    "rivalVotes": 32,
+    "outOfArea": false
+   },
+   {
+    "market": "Rome",
+    "term": "corp headshots",
+    "vol": 110,
+    "kd": null,
+    "pos": 1,
+    "rival": "Studio Kate Photography",
+    "rivalMi": 0.4,
+    "rivalVotes": 32,
+    "outOfArea": false
+   },
+   {
+    "market": "Rome",
+    "term": "businessman headshot",
+    "vol": 110,
+    "kd": 20,
+    "pos": 1,
+    "rival": "Studio Kate Photography",
+    "rivalMi": 0.4,
+    "rivalVotes": 32,
+    "outOfArea": false
+   },
+   {
+    "market": "Rome",
+    "term": "professional headshots women",
+    "vol": 90,
+    "kd": 0,
+    "pos": 1,
+    "rival": "Studio Kate Photography",
+    "rivalMi": 0.4,
+    "rivalVotes": 32,
+    "outOfArea": false
+   },
+   {
+    "market": "Rome",
+    "term": "headshot professional woman",
+    "vol": 90,
+    "kd": 0,
+    "pos": 1,
+    "rival": "Studio Kate Photography",
+    "rivalMi": 0.4,
+    "rivalVotes": 32,
+    "outOfArea": false
+   },
+   {
+    "market": "Rome",
+    "term": "real estate headshots",
+    "vol": 70,
+    "kd": 0,
+    "pos": 11,
+    "rival": "Kelly Moore Photography",
+    "rivalMi": 0.8,
+    "rivalVotes": 28,
+    "outOfArea": false
+   },
+   {
     "market": "Cedartown",
     "term": "photographer",
     "vol": 2900,
@@ -393,6 +492,105 @@
     "outOfArea": false
    },
    {
+    "market": "Cedartown",
+    "term": "headshot photoshoot",
+    "vol": 320,
+    "kd": 37,
+    "pos": 13,
+    "rival": "Presto Photography",
+    "rivalMi": 35.8,
+    "rivalVotes": 28,
+    "outOfArea": false
+   },
+   {
+    "market": "Cedartown",
+    "term": "headshot photo",
+    "vol": 320,
+    "kd": 37,
+    "pos": 3,
+    "rival": "Kiela's Photo Lab",
+    "rivalMi": 0.1,
+    "rivalVotes": 8,
+    "outOfArea": false
+   },
+   {
+    "market": "Cedartown",
+    "term": "photographers for headshots",
+    "vol": 260,
+    "kd": 31,
+    "pos": 15,
+    "rival": "Photos by Haley Nicole",
+    "rivalMi": 150.5,
+    "rivalVotes": 141,
+    "outOfArea": true
+   },
+   {
+    "market": "Cedartown",
+    "term": "company headshots",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Headshot Solutions & Beyond, LLC",
+    "rivalMi": 35.2,
+    "rivalVotes": 55,
+    "outOfArea": false
+   },
+   {
+    "market": "Cedartown",
+    "term": "corp headshots",
+    "vol": 110,
+    "kd": null,
+    "pos": 4,
+    "rival": "Geoffrey Donne Photography",
+    "rivalMi": 36.9,
+    "rivalVotes": 75,
+    "outOfArea": false
+   },
+   {
+    "market": "Cedartown",
+    "term": "businessman headshot",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Happy Hour Headshot Atlanta",
+    "rivalMi": 53.7,
+    "rivalVotes": 58,
+    "outOfArea": false
+   },
+   {
+    "market": "Cedartown",
+    "term": "professional headshots women",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Anne Say Photography",
+    "rivalMi": 36.1,
+    "rivalVotes": 52,
+    "outOfArea": false
+   },
+   {
+    "market": "Cedartown",
+    "term": "headshot professional woman",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Simply Zee Imagery Metro Atlanta Branding + Headshot Photography",
+    "rivalMi": 56.6,
+    "rivalVotes": 7,
+    "outOfArea": false
+   },
+   {
+    "market": "Cedartown",
+    "term": "real estate headshots",
+    "vol": 70,
+    "kd": 0,
+    "pos": null,
+    "rival": "Scott Whitehead Real Estate and Photography",
+    "rivalMi": 2470.8,
+    "rivalVotes": 1,
+    "outOfArea": true
+   },
+   {
     "market": "Summerville",
     "term": "photographer",
     "vol": 2900,
@@ -577,6 +775,105 @@
     "rival": "Atlanta Event Photography",
     "rivalMi": 2448.4,
     "rivalVotes": 2,
+    "outOfArea": true
+   },
+   {
+    "market": "Summerville",
+    "term": "headshot photoshoot",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "Summerville Headshots LLC",
+    "rivalMi": 313.7,
+    "rivalVotes": 22,
+    "outOfArea": true
+   },
+   {
+    "market": "Summerville",
+    "term": "headshot photo",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "Summerville Headshots LLC",
+    "rivalMi": 313.7,
+    "rivalVotes": 22,
+    "outOfArea": true
+   },
+   {
+    "market": "Summerville",
+    "term": "photographers for headshots",
+    "vol": 260,
+    "kd": 31,
+    "pos": null,
+    "rival": "Photos by Haley Nicole",
+    "rivalMi": 175.7,
+    "rivalVotes": 141,
+    "outOfArea": true
+   },
+   {
+    "market": "Summerville",
+    "term": "company headshots",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Summerville Headshots LLC",
+    "rivalMi": 313.7,
+    "rivalVotes": 22,
+    "outOfArea": true
+   },
+   {
+    "market": "Summerville",
+    "term": "corp headshots",
+    "vol": 110,
+    "kd": null,
+    "pos": null,
+    "rival": "Summerville Headshots LLC",
+    "rivalMi": 313.7,
+    "rivalVotes": 22,
+    "outOfArea": true
+   },
+   {
+    "market": "Summerville",
+    "term": "businessman headshot",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Summerville Headshots LLC",
+    "rivalMi": 313.7,
+    "rivalVotes": 22,
+    "outOfArea": true
+   },
+   {
+    "market": "Summerville",
+    "term": "professional headshots women",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Summerville Headshots LLC",
+    "rivalMi": 313.7,
+    "rivalVotes": 22,
+    "outOfArea": true
+   },
+   {
+    "market": "Summerville",
+    "term": "headshot professional woman",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Summerville Headshots LLC",
+    "rivalMi": 313.7,
+    "rivalVotes": 22,
+    "outOfArea": true
+   },
+   {
+    "market": "Summerville",
+    "term": "real estate headshots",
+    "vol": 70,
+    "kd": 0,
+    "pos": null,
+    "rival": "Impact Photo Real Estate Photography",
+    "rivalMi": 78.2,
+    "rivalVotes": 84,
     "outOfArea": true
    },
    {
@@ -767,6 +1064,105 @@
     "outOfArea": false
    },
    {
+    "market": "Calhoun",
+    "term": "headshot photoshoot",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "Abigail's Photography",
+    "rivalMi": 5,
+    "rivalVotes": 7,
+    "outOfArea": false
+   },
+   {
+    "market": "Calhoun",
+    "term": "headshot photo",
+    "vol": 320,
+    "kd": 37,
+    "pos": 18,
+    "rival": "Sherry Sloan Photography",
+    "rivalMi": 0,
+    "rivalVotes": 21,
+    "outOfArea": false
+   },
+   {
+    "market": "Calhoun",
+    "term": "photographers for headshots",
+    "vol": 260,
+    "kd": 31,
+    "pos": null,
+    "rival": "Sherry Sloan Photography",
+    "rivalMi": 0,
+    "rivalVotes": 21,
+    "outOfArea": false
+   },
+   {
+    "market": "Calhoun",
+    "term": "company headshots",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Sherry Sloan Photography",
+    "rivalMi": 0,
+    "rivalVotes": 21,
+    "outOfArea": false
+   },
+   {
+    "market": "Calhoun",
+    "term": "corp headshots",
+    "vol": 110,
+    "kd": null,
+    "pos": null,
+    "rival": "Sherry Sloan Photography",
+    "rivalMi": 0,
+    "rivalVotes": 21,
+    "outOfArea": false
+   },
+   {
+    "market": "Calhoun",
+    "term": "businessman headshot",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Sherry Sloan Photography",
+    "rivalMi": 0,
+    "rivalVotes": 21,
+    "outOfArea": false
+   },
+   {
+    "market": "Calhoun",
+    "term": "professional headshots women",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Sherry Sloan Photography",
+    "rivalMi": 0,
+    "rivalVotes": 21,
+    "outOfArea": false
+   },
+   {
+    "market": "Calhoun",
+    "term": "headshot professional woman",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Sherry Sloan Photography",
+    "rivalMi": 0,
+    "rivalVotes": 21,
+    "outOfArea": false
+   },
+   {
+    "market": "Calhoun",
+    "term": "real estate headshots",
+    "vol": 70,
+    "kd": 0,
+    "pos": null,
+    "rival": "Impact Photo Real Estate Photography",
+    "rivalMi": 60.2,
+    "rivalVotes": 84,
+    "outOfArea": false
+   },
+   {
     "market": "Cartersville",
     "term": "photographer",
     "vol": 2900,
@@ -952,6 +1348,105 @@
     "rivalMi": 138.4,
     "rivalVotes": 30,
     "outOfArea": true
+   },
+   {
+    "market": "Cartersville",
+    "term": "headshot photoshoot",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "Coty Danyelle Photography LLC",
+    "rivalMi": 11.1,
+    "rivalVotes": 52,
+    "outOfArea": false
+   },
+   {
+    "market": "Cartersville",
+    "term": "headshot photo",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "Coty Danyelle Photography LLC",
+    "rivalMi": 11.1,
+    "rivalVotes": 52,
+    "outOfArea": false
+   },
+   {
+    "market": "Cartersville",
+    "term": "photographers for headshots",
+    "vol": 260,
+    "kd": 31,
+    "pos": null,
+    "rival": "Coty Danyelle Photography LLC",
+    "rivalMi": 11.1,
+    "rivalVotes": 52,
+    "outOfArea": false
+   },
+   {
+    "market": "Cartersville",
+    "term": "company headshots",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Coty Danyelle Photography LLC",
+    "rivalMi": 11.1,
+    "rivalVotes": 52,
+    "outOfArea": false
+   },
+   {
+    "market": "Cartersville",
+    "term": "corp headshots",
+    "vol": 110,
+    "kd": null,
+    "pos": null,
+    "rival": "Coty Danyelle Photography LLC",
+    "rivalMi": 11.1,
+    "rivalVotes": 52,
+    "outOfArea": false
+   },
+   {
+    "market": "Cartersville",
+    "term": "businessman headshot",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Anne Say Photography",
+    "rivalMi": 18.9,
+    "rivalVotes": 52,
+    "outOfArea": false
+   },
+   {
+    "market": "Cartersville",
+    "term": "professional headshots women",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Coty Danyelle Photography LLC",
+    "rivalMi": 11.1,
+    "rivalVotes": 52,
+    "outOfArea": false
+   },
+   {
+    "market": "Cartersville",
+    "term": "headshot professional woman",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Coty Danyelle Photography LLC",
+    "rivalMi": 11.1,
+    "rivalVotes": 52,
+    "outOfArea": false
+   },
+   {
+    "market": "Cartersville",
+    "term": "real estate headshots",
+    "vol": 70,
+    "kd": 0,
+    "pos": null,
+    "rival": "Limitless Photography - Real Estate Photography/Drone Services/Videography",
+    "rivalMi": 6.3,
+    "rivalVotes": 23,
+    "outOfArea": false
    },
    {
     "market": "Dallas",
@@ -1141,6 +1636,105 @@
     "outOfArea": true
    },
    {
+    "market": "Dallas",
+    "term": "headshot photoshoot",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "Ashley Nash Photography",
+    "rivalMi": 0.8,
+    "rivalVotes": 8,
+    "outOfArea": false
+   },
+   {
+    "market": "Dallas",
+    "term": "headshot photo",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "Erica Lachelle Photography LLC",
+    "rivalMi": 7.5,
+    "rivalVotes": 36,
+    "outOfArea": false
+   },
+   {
+    "market": "Dallas",
+    "term": "photographers for headshots",
+    "vol": 260,
+    "kd": 31,
+    "pos": null,
+    "rival": "Erica Lachelle Photography LLC",
+    "rivalMi": 7.5,
+    "rivalVotes": 36,
+    "outOfArea": false
+   },
+   {
+    "market": "Dallas",
+    "term": "company headshots",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Dallas Business Headshots",
+    "rivalMi": 694.1,
+    "rivalVotes": 95,
+    "outOfArea": true
+   },
+   {
+    "market": "Dallas",
+    "term": "corp headshots",
+    "vol": 110,
+    "kd": null,
+    "pos": null,
+    "rival": "Dallas Business Headshots",
+    "rivalMi": 694.1,
+    "rivalVotes": 95,
+    "outOfArea": true
+   },
+   {
+    "market": "Dallas",
+    "term": "businessman headshot",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Dallas Business Headshots",
+    "rivalMi": 694.1,
+    "rivalVotes": 95,
+    "outOfArea": true
+   },
+   {
+    "market": "Dallas",
+    "term": "professional headshots women",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Erica Lachelle Photography LLC",
+    "rivalMi": 7.5,
+    "rivalVotes": 36,
+    "outOfArea": false
+   },
+   {
+    "market": "Dallas",
+    "term": "headshot professional woman",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Ashley Nash Photography",
+    "rivalMi": 0.8,
+    "rivalVotes": 8,
+    "outOfArea": false
+   },
+   {
+    "market": "Dallas",
+    "term": "real estate headshots",
+    "vol": 70,
+    "kd": 0,
+    "pos": null,
+    "rival": "Carl Nelson Photography for Real Estate",
+    "rivalMi": 7.4,
+    "rivalVotes": 40,
+    "outOfArea": false
+   },
+   {
     "market": "Acworth",
     "term": "photographer",
     "vol": 2900,
@@ -1325,6 +1919,105 @@
     "rival": "24/7 Digital Media Films",
     "rivalMi": 1.7,
     "rivalVotes": 122,
+    "outOfArea": false
+   },
+   {
+    "market": "Acworth",
+    "term": "headshot photoshoot",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "Chris Henderson Photography",
+    "rivalMi": 2.8,
+    "rivalVotes": 18,
+    "outOfArea": false
+   },
+   {
+    "market": "Acworth",
+    "term": "headshot photo",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "Cady",
+    "rivalMi": 1.4,
+    "rivalVotes": 14661,
+    "outOfArea": false
+   },
+   {
+    "market": "Acworth",
+    "term": "photographers for headshots",
+    "vol": 260,
+    "kd": 31,
+    "pos": null,
+    "rival": "Cady",
+    "rivalMi": 1.4,
+    "rivalVotes": 14661,
+    "outOfArea": false
+   },
+   {
+    "market": "Acworth",
+    "term": "company headshots",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Headshot Solutions & Beyond, LLC",
+    "rivalMi": 5,
+    "rivalVotes": 55,
+    "outOfArea": false
+   },
+   {
+    "market": "Acworth",
+    "term": "corp headshots",
+    "vol": 110,
+    "kd": null,
+    "pos": null,
+    "rival": "Headshot Solutions & Beyond, LLC",
+    "rivalMi": 5,
+    "rivalVotes": 55,
+    "outOfArea": false
+   },
+   {
+    "market": "Acworth",
+    "term": "businessman headshot",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Colina Portrait",
+    "rivalMi": 1,
+    "rivalVotes": 11,
+    "outOfArea": false
+   },
+   {
+    "market": "Acworth",
+    "term": "professional headshots women",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Nina Parker Photography",
+    "rivalMi": 23.9,
+    "rivalVotes": 83,
+    "outOfArea": false
+   },
+   {
+    "market": "Acworth",
+    "term": "headshot professional woman",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Colina Portrait",
+    "rivalMi": 1,
+    "rivalVotes": 11,
+    "outOfArea": false
+   },
+   {
+    "market": "Acworth",
+    "term": "real estate headshots",
+    "vol": 70,
+    "kd": 0,
+    "pos": null,
+    "rival": "Gold Lens Media - Real Estate Photo/Video/Drone, Headshots",
+    "rivalMi": 6.6,
+    "rivalVotes": 33,
     "outOfArea": false
    },
    {
@@ -1515,6 +2208,105 @@
     "outOfArea": false
    },
    {
+    "market": "LaFayette",
+    "term": "headshot photoshoot",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "Sunflower Grace Photography",
+    "rivalMi": 0,
+    "rivalVotes": 14,
+    "outOfArea": false
+   },
+   {
+    "market": "LaFayette",
+    "term": "headshot photo",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "Sunflower Grace Photography",
+    "rivalMi": 0,
+    "rivalVotes": 14,
+    "outOfArea": false
+   },
+   {
+    "market": "LaFayette",
+    "term": "photographers for headshots",
+    "vol": 260,
+    "kd": 31,
+    "pos": null,
+    "rival": "Sunflower Grace Photography",
+    "rivalMi": 0,
+    "rivalVotes": 14,
+    "outOfArea": false
+   },
+   {
+    "market": "LaFayette",
+    "term": "company headshots",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Kelly Morvant Photography, LLC",
+    "rivalMi": 502.2,
+    "rivalVotes": 39,
+    "outOfArea": true
+   },
+   {
+    "market": "LaFayette",
+    "term": "corp headshots",
+    "vol": 110,
+    "kd": null,
+    "pos": null,
+    "rival": "Kelly Morvant Photography, LLC",
+    "rivalMi": 502.2,
+    "rivalVotes": 39,
+    "outOfArea": true
+   },
+   {
+    "market": "LaFayette",
+    "term": "businessman headshot",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "In A Snap Photography 2015",
+    "rivalMi": 0.9,
+    "rivalVotes": null,
+    "outOfArea": false
+   },
+   {
+    "market": "LaFayette",
+    "term": "professional headshots women",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Kelly Morvant Photography, LLC",
+    "rivalMi": 502.2,
+    "rivalVotes": 39,
+    "outOfArea": true
+   },
+   {
+    "market": "LaFayette",
+    "term": "headshot professional woman",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Kelly Morvant Photography, LLC",
+    "rivalMi": 502.2,
+    "rivalVotes": 39,
+    "outOfArea": true
+   },
+   {
+    "market": "LaFayette",
+    "term": "real estate headshots",
+    "vol": 70,
+    "kd": 0,
+    "pos": null,
+    "rival": "Impact Photo Real Estate Photography",
+    "rivalMi": 83.6,
+    "rivalVotes": 84,
+    "outOfArea": true
+   },
+   {
     "market": "Kennesaw",
     "term": "photographer",
     "vol": 2900,
@@ -1702,6 +2494,105 @@
     "outOfArea": false
    },
    {
+    "market": "Kennesaw",
+    "term": "headshot photoshoot",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "One Soul Photography",
+    "rivalMi": 5.9,
+    "rivalVotes": 50,
+    "outOfArea": false
+   },
+   {
+    "market": "Kennesaw",
+    "term": "headshot photo",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "Headshot Solutions & Beyond, LLC",
+    "rivalMi": 2.2,
+    "rivalVotes": 55,
+    "outOfArea": false
+   },
+   {
+    "market": "Kennesaw",
+    "term": "photographers for headshots",
+    "vol": 260,
+    "kd": 31,
+    "pos": null,
+    "rival": "Presto Photography",
+    "rivalMi": 1.8,
+    "rivalVotes": 28,
+    "outOfArea": false
+   },
+   {
+    "market": "Kennesaw",
+    "term": "company headshots",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Headshot Solutions & Beyond, LLC",
+    "rivalMi": 2.2,
+    "rivalVotes": 55,
+    "outOfArea": false
+   },
+   {
+    "market": "Kennesaw",
+    "term": "corp headshots",
+    "vol": 110,
+    "kd": null,
+    "pos": null,
+    "rival": "Headshot Solutions & Beyond, LLC",
+    "rivalMi": 2.2,
+    "rivalVotes": 55,
+    "outOfArea": false
+   },
+   {
+    "market": "Kennesaw",
+    "term": "businessman headshot",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Headshot Solutions & Beyond, LLC",
+    "rivalMi": 2.2,
+    "rivalVotes": 55,
+    "outOfArea": false
+   },
+   {
+    "market": "Kennesaw",
+    "term": "professional headshots women",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "One Soul Photography",
+    "rivalMi": 5.9,
+    "rivalVotes": 50,
+    "outOfArea": false
+   },
+   {
+    "market": "Kennesaw",
+    "term": "headshot professional woman",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Headshot Solutions & Beyond, LLC",
+    "rivalMi": 2.2,
+    "rivalVotes": 55,
+    "outOfArea": false
+   },
+   {
+    "market": "Kennesaw",
+    "term": "real estate headshots",
+    "vol": 70,
+    "kd": 0,
+    "pos": null,
+    "rival": "Clear Skies Real Estate Photography",
+    "rivalMi": 124,
+    "rivalVotes": 36,
+    "outOfArea": true
+   },
+   {
     "market": "Dalton",
     "term": "photographer",
     "vol": 2900,
@@ -1886,6 +2777,105 @@
     "rival": "Arc Studios Photography",
     "rivalMi": 0.1,
     "rivalVotes": 46,
+    "outOfArea": false
+   },
+   {
+    "market": "Dalton",
+    "term": "headshot photoshoot",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "Nathan Curtis Photography",
+    "rivalMi": 11.4,
+    "rivalVotes": 29,
+    "outOfArea": false
+   },
+   {
+    "market": "Dalton",
+    "term": "headshot photo",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "TriStar Visuals Photography",
+    "rivalMi": 0.3,
+    "rivalVotes": 70,
+    "outOfArea": false
+   },
+   {
+    "market": "Dalton",
+    "term": "photographers for headshots",
+    "vol": 260,
+    "kd": 31,
+    "pos": null,
+    "rival": "Arc Studios Photography",
+    "rivalMi": 0.1,
+    "rivalVotes": 46,
+    "outOfArea": false
+   },
+   {
+    "market": "Dalton",
+    "term": "company headshots",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Arc Studios Photography",
+    "rivalMi": 0.1,
+    "rivalVotes": 46,
+    "outOfArea": false
+   },
+   {
+    "market": "Dalton",
+    "term": "corp headshots",
+    "vol": 110,
+    "kd": null,
+    "pos": null,
+    "rival": "TriStar Visuals Photography",
+    "rivalMi": 0.3,
+    "rivalVotes": 70,
+    "outOfArea": false
+   },
+   {
+    "market": "Dalton",
+    "term": "businessman headshot",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Nathan Curtis Photography",
+    "rivalMi": 11.4,
+    "rivalVotes": 29,
+    "outOfArea": false
+   },
+   {
+    "market": "Dalton",
+    "term": "professional headshots women",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Nathan Curtis Photography",
+    "rivalMi": 11.4,
+    "rivalVotes": 29,
+    "outOfArea": false
+   },
+   {
+    "market": "Dalton",
+    "term": "headshot professional woman",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Nathan Curtis Photography",
+    "rivalMi": 11.4,
+    "rivalVotes": 29,
+    "outOfArea": false
+   },
+   {
+    "market": "Dalton",
+    "term": "real estate headshots",
+    "vol": 70,
+    "kd": 0,
+    "pos": null,
+    "rival": "Scott Ramsey Photography | Real Estate | Vacation Rental | Drone | Video",
+    "rivalMi": 26,
+    "rivalVotes": 37,
     "outOfArea": false
    },
    {
@@ -2076,6 +3066,105 @@
     "outOfArea": false
    },
    {
+    "market": "Holly Springs",
+    "term": "headshot photoshoot",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "HD Photography",
+    "rivalMi": 2.8,
+    "rivalVotes": 42,
+    "outOfArea": false
+   },
+   {
+    "market": "Holly Springs",
+    "term": "headshot photo",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "HD Photography",
+    "rivalMi": 2.8,
+    "rivalVotes": 42,
+    "outOfArea": false
+   },
+   {
+    "market": "Holly Springs",
+    "term": "photographers for headshots",
+    "vol": 260,
+    "kd": 31,
+    "pos": null,
+    "rival": "Susana Stethers Photography",
+    "rivalMi": 19.3,
+    "rivalVotes": 7,
+    "outOfArea": false
+   },
+   {
+    "market": "Holly Springs",
+    "term": "company headshots",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Headshot Studio Atlanta",
+    "rivalMi": 18.7,
+    "rivalVotes": 281,
+    "outOfArea": false
+   },
+   {
+    "market": "Holly Springs",
+    "term": "corp headshots",
+    "vol": 110,
+    "kd": null,
+    "pos": null,
+    "rival": "Headshot Studio Atlanta",
+    "rivalMi": 18.7,
+    "rivalVotes": 281,
+    "outOfArea": false
+   },
+   {
+    "market": "Holly Springs",
+    "term": "businessman headshot",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Advanced Photo & Imaging",
+    "rivalMi": 18.8,
+    "rivalVotes": 186,
+    "outOfArea": false
+   },
+   {
+    "market": "Holly Springs",
+    "term": "professional headshots women",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Headshot Studio Atlanta",
+    "rivalMi": 18.7,
+    "rivalVotes": 281,
+    "outOfArea": false
+   },
+   {
+    "market": "Holly Springs",
+    "term": "headshot professional woman",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Headshot Studio Atlanta",
+    "rivalMi": 18.7,
+    "rivalVotes": 281,
+    "outOfArea": false
+   },
+   {
+    "market": "Holly Springs",
+    "term": "real estate headshots",
+    "vol": 70,
+    "kd": 0,
+    "pos": null,
+    "rival": "JMAUROPHOTO",
+    "rivalMi": 21.3,
+    "rivalVotes": 70,
+    "outOfArea": false
+   },
+   {
     "market": "Woodstock",
     "term": "photographer",
     "vol": 2900,
@@ -2260,6 +3349,105 @@
     "rival": "Mind and Capture LLC",
     "rivalMi": 2.6,
     "rivalVotes": 10,
+    "outOfArea": false
+   },
+   {
+    "market": "Woodstock",
+    "term": "headshot photoshoot",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "Armetrice Photography",
+    "rivalMi": 2.7,
+    "rivalVotes": 65,
+    "outOfArea": false
+   },
+   {
+    "market": "Woodstock",
+    "term": "headshot photo",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "Armetrice Photography",
+    "rivalMi": 2.7,
+    "rivalVotes": 65,
+    "outOfArea": false
+   },
+   {
+    "market": "Woodstock",
+    "term": "photographers for headshots",
+    "vol": 260,
+    "kd": 31,
+    "pos": null,
+    "rival": "Armetrice Photography",
+    "rivalMi": 2.7,
+    "rivalVotes": 65,
+    "outOfArea": false
+   },
+   {
+    "market": "Woodstock",
+    "term": "company headshots",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Armetrice Photography",
+    "rivalMi": 2.7,
+    "rivalVotes": 65,
+    "outOfArea": false
+   },
+   {
+    "market": "Woodstock",
+    "term": "corp headshots",
+    "vol": 110,
+    "kd": null,
+    "pos": null,
+    "rival": "Armetrice Photography",
+    "rivalMi": 2.7,
+    "rivalVotes": 65,
+    "outOfArea": false
+   },
+   {
+    "market": "Woodstock",
+    "term": "businessman headshot",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Armetrice Photography",
+    "rivalMi": 2.7,
+    "rivalVotes": 65,
+    "outOfArea": false
+   },
+   {
+    "market": "Woodstock",
+    "term": "professional headshots women",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Armetrice Photography",
+    "rivalMi": 2.7,
+    "rivalVotes": 65,
+    "outOfArea": false
+   },
+   {
+    "market": "Woodstock",
+    "term": "headshot professional woman",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Armetrice Photography",
+    "rivalMi": 2.7,
+    "rivalVotes": 65,
+    "outOfArea": false
+   },
+   {
+    "market": "Woodstock",
+    "term": "real estate headshots",
+    "vol": 70,
+    "kd": 0,
+    "pos": null,
+    "rival": "Impact Photo Real Estate Photography",
+    "rivalMi": 24.1,
+    "rivalVotes": 84,
     "outOfArea": false
    },
    {
@@ -2450,6 +3638,105 @@
     "outOfArea": false
    },
    {
+    "market": "Canton",
+    "term": "headshot photoshoot",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "HD Photography",
+    "rivalMi": 1.8,
+    "rivalVotes": 42,
+    "outOfArea": false
+   },
+   {
+    "market": "Canton",
+    "term": "headshot photo",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "HD Photography",
+    "rivalMi": 1.8,
+    "rivalVotes": 42,
+    "outOfArea": false
+   },
+   {
+    "market": "Canton",
+    "term": "photographers for headshots",
+    "vol": 260,
+    "kd": 31,
+    "pos": null,
+    "rival": "HD Photography",
+    "rivalMi": 1.8,
+    "rivalVotes": 42,
+    "outOfArea": false
+   },
+   {
+    "market": "Canton",
+    "term": "company headshots",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "HD Photography",
+    "rivalMi": 1.8,
+    "rivalVotes": 42,
+    "outOfArea": false
+   },
+   {
+    "market": "Canton",
+    "term": "corp headshots",
+    "vol": 110,
+    "kd": null,
+    "pos": null,
+    "rival": "HD Photography",
+    "rivalMi": 1.8,
+    "rivalVotes": 42,
+    "outOfArea": false
+   },
+   {
+    "market": "Canton",
+    "term": "businessman headshot",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "HD Photography",
+    "rivalMi": 1.8,
+    "rivalVotes": 42,
+    "outOfArea": false
+   },
+   {
+    "market": "Canton",
+    "term": "professional headshots women",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Madison Colt Studios",
+    "rivalMi": 3.2,
+    "rivalVotes": 82,
+    "outOfArea": false
+   },
+   {
+    "market": "Canton",
+    "term": "headshot professional woman",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Madison Colt Studios",
+    "rivalMi": 3.2,
+    "rivalVotes": 82,
+    "outOfArea": false
+   },
+   {
+    "market": "Canton",
+    "term": "real estate headshots",
+    "vol": 70,
+    "kd": 0,
+    "pos": null,
+    "rival": "Visually Sold",
+    "rivalMi": 0.1,
+    "rivalVotes": 153,
+    "outOfArea": false
+   },
+   {
     "market": "Powder Springs",
     "term": "photographer",
     "vol": 2900,
@@ -2634,6 +3921,105 @@
     "rival": "Complete Weddings + Events",
     "rivalMi": 72.7,
     "rivalVotes": 127,
+    "outOfArea": false
+   },
+   {
+    "market": "Powder Springs",
+    "term": "headshot photoshoot",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "Liz by Design Photography, LLC",
+    "rivalMi": 0,
+    "rivalVotes": 208,
+    "outOfArea": false
+   },
+   {
+    "market": "Powder Springs",
+    "term": "headshot photo",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "Liz by Design Photography, LLC",
+    "rivalMi": 0,
+    "rivalVotes": 208,
+    "outOfArea": false
+   },
+   {
+    "market": "Powder Springs",
+    "term": "photographers for headshots",
+    "vol": 260,
+    "kd": 31,
+    "pos": null,
+    "rival": "Liz by Design Photography, LLC",
+    "rivalMi": 0,
+    "rivalVotes": 208,
+    "outOfArea": false
+   },
+   {
+    "market": "Powder Springs",
+    "term": "company headshots",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Liz by Design Photography, LLC",
+    "rivalMi": 0,
+    "rivalVotes": 208,
+    "outOfArea": false
+   },
+   {
+    "market": "Powder Springs",
+    "term": "corp headshots",
+    "vol": 110,
+    "kd": null,
+    "pos": null,
+    "rival": "Liz by Design Photography, LLC",
+    "rivalMi": 0,
+    "rivalVotes": 208,
+    "outOfArea": false
+   },
+   {
+    "market": "Powder Springs",
+    "term": "businessman headshot",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Liz by Design Photography, LLC",
+    "rivalMi": 0,
+    "rivalVotes": 208,
+    "outOfArea": false
+   },
+   {
+    "market": "Powder Springs",
+    "term": "professional headshots women",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Liz by Design Photography, LLC",
+    "rivalMi": 0,
+    "rivalVotes": 208,
+    "outOfArea": false
+   },
+   {
+    "market": "Powder Springs",
+    "term": "headshot professional woman",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Liz by Design Photography, LLC",
+    "rivalMi": 0,
+    "rivalVotes": 208,
+    "outOfArea": false
+   },
+   {
+    "market": "Powder Springs",
+    "term": "real estate headshots",
+    "vol": 70,
+    "kd": 0,
+    "pos": null,
+    "rival": "Carl Nelson Photography for Real Estate",
+    "rivalMi": 4.1,
+    "rivalVotes": 40,
     "outOfArea": false
    },
    {
@@ -2824,6 +4210,105 @@
     "outOfArea": false
    },
    {
+    "market": "Villa Rica",
+    "term": "headshot photoshoot",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "Stephanie Warmoth Photography",
+    "rivalMi": 0.1,
+    "rivalVotes": 45,
+    "outOfArea": false
+   },
+   {
+    "market": "Villa Rica",
+    "term": "headshot photo",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "Stephanie Warmoth Photography",
+    "rivalMi": 0.1,
+    "rivalVotes": 45,
+    "outOfArea": false
+   },
+   {
+    "market": "Villa Rica",
+    "term": "photographers for headshots",
+    "vol": 260,
+    "kd": 31,
+    "pos": null,
+    "rival": "Jenni Nikki Photography, LLC | Atlanta Photographer",
+    "rivalMi": 34.1,
+    "rivalVotes": 107,
+    "outOfArea": false
+   },
+   {
+    "market": "Villa Rica",
+    "term": "company headshots",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "LH The Space",
+    "rivalMi": 1.4,
+    "rivalVotes": 23,
+    "outOfArea": false
+   },
+   {
+    "market": "Villa Rica",
+    "term": "corp headshots",
+    "vol": 110,
+    "kd": null,
+    "pos": null,
+    "rival": "LH The Space",
+    "rivalMi": 1.4,
+    "rivalVotes": 23,
+    "outOfArea": false
+   },
+   {
+    "market": "Villa Rica",
+    "term": "businessman headshot",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "LH The Space",
+    "rivalMi": 1.4,
+    "rivalVotes": 23,
+    "outOfArea": false
+   },
+   {
+    "market": "Villa Rica",
+    "term": "professional headshots women",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Beauty Unveiled Studios photography",
+    "rivalMi": 6.3,
+    "rivalVotes": 167,
+    "outOfArea": false
+   },
+   {
+    "market": "Villa Rica",
+    "term": "headshot professional woman",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "April Elizabeth Photography",
+    "rivalMi": 6.9,
+    "rivalVotes": 16,
+    "outOfArea": false
+   },
+   {
+    "market": "Villa Rica",
+    "term": "real estate headshots",
+    "vol": 70,
+    "kd": 0,
+    "pos": null,
+    "rival": "Carl Nelson Photography for Real Estate",
+    "rivalMi": 17.2,
+    "rivalVotes": 40,
+    "outOfArea": false
+   },
+   {
     "market": "Marietta",
     "term": "photographer",
     "vol": 2900,
@@ -3011,6 +4496,105 @@
     "outOfArea": true
    },
    {
+    "market": "Marietta",
+    "term": "headshot photoshoot",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "Stuart Hasson Studios",
+    "rivalMi": 5.5,
+    "rivalVotes": 112,
+    "outOfArea": false
+   },
+   {
+    "market": "Marietta",
+    "term": "headshot photo",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "SQSPhotography",
+    "rivalMi": 1.9,
+    "rivalVotes": 55,
+    "outOfArea": false
+   },
+   {
+    "market": "Marietta",
+    "term": "photographers for headshots",
+    "vol": 260,
+    "kd": 31,
+    "pos": null,
+    "rival": "Stuart Hasson Studios",
+    "rivalMi": 5.5,
+    "rivalVotes": 112,
+    "outOfArea": false
+   },
+   {
+    "market": "Marietta",
+    "term": "company headshots",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Headshot Solutions & Beyond, LLC",
+    "rivalMi": 6.2,
+    "rivalVotes": 55,
+    "outOfArea": false
+   },
+   {
+    "market": "Marietta",
+    "term": "corp headshots",
+    "vol": 110,
+    "kd": null,
+    "pos": null,
+    "rival": "SQSPhotography",
+    "rivalMi": 1.9,
+    "rivalVotes": 55,
+    "outOfArea": false
+   },
+   {
+    "market": "Marietta",
+    "term": "businessman headshot",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Headshot Solutions & Beyond, LLC",
+    "rivalMi": 6.2,
+    "rivalVotes": 55,
+    "outOfArea": false
+   },
+   {
+    "market": "Marietta",
+    "term": "professional headshots women",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Stuart Hasson Studios",
+    "rivalMi": 5.5,
+    "rivalVotes": 112,
+    "outOfArea": false
+   },
+   {
+    "market": "Marietta",
+    "term": "headshot professional woman",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Headshot Solutions & Beyond, LLC",
+    "rivalMi": 6.2,
+    "rivalVotes": 55,
+    "outOfArea": false
+   },
+   {
+    "market": "Marietta",
+    "term": "real estate headshots",
+    "vol": 70,
+    "kd": 0,
+    "pos": null,
+    "rival": "Agents Choice Media ℠ Atlanta Real Estate Photography and Video Services",
+    "rivalMi": 8.1,
+    "rivalVotes": 53,
+    "outOfArea": false
+   },
+   {
     "market": "Chatsworth",
     "term": "photographer",
     "vol": 2900,
@@ -3195,6 +4779,105 @@
     "rival": "Bradd Parker Photography",
     "rivalMi": 0.1,
     "rivalVotes": 20,
+    "outOfArea": false
+   },
+   {
+    "market": "Chatsworth",
+    "term": "headshot photoshoot",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "Nathan Curtis Photography",
+    "rivalMi": 5.8,
+    "rivalVotes": 29,
+    "outOfArea": false
+   },
+   {
+    "market": "Chatsworth",
+    "term": "headshot photo",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "Bradd Parker Photography",
+    "rivalMi": 0.1,
+    "rivalVotes": 20,
+    "outOfArea": false
+   },
+   {
+    "market": "Chatsworth",
+    "term": "photographers for headshots",
+    "vol": 260,
+    "kd": 31,
+    "pos": null,
+    "rival": "Nathan Curtis Photography",
+    "rivalMi": 5.8,
+    "rivalVotes": 29,
+    "outOfArea": false
+   },
+   {
+    "market": "Chatsworth",
+    "term": "company headshots",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Anne Say Photography",
+    "rivalMi": 23.9,
+    "rivalVotes": 52,
+    "outOfArea": false
+   },
+   {
+    "market": "Chatsworth",
+    "term": "corp headshots",
+    "vol": 110,
+    "kd": null,
+    "pos": null,
+    "rival": "Bradd Parker Photography",
+    "rivalMi": 0.1,
+    "rivalVotes": 20,
+    "outOfArea": false
+   },
+   {
+    "market": "Chatsworth",
+    "term": "businessman headshot",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Nathan Curtis Photography",
+    "rivalMi": 5.8,
+    "rivalVotes": 29,
+    "outOfArea": false
+   },
+   {
+    "market": "Chatsworth",
+    "term": "professional headshots women",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Wild & Free Photography",
+    "rivalMi": 2.5,
+    "rivalVotes": 15,
+    "outOfArea": false
+   },
+   {
+    "market": "Chatsworth",
+    "term": "headshot professional woman",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Wild & Free Photography",
+    "rivalMi": 2.5,
+    "rivalVotes": 15,
+    "outOfArea": false
+   },
+   {
+    "market": "Chatsworth",
+    "term": "real estate headshots",
+    "vol": 70,
+    "kd": 0,
+    "pos": null,
+    "rival": "Impact Photo Real Estate Photography",
+    "rivalMi": 67.2,
+    "rivalVotes": 84,
     "outOfArea": false
    },
    {
@@ -3385,6 +5068,105 @@
     "outOfArea": false
    },
    {
+    "market": "Douglasville",
+    "term": "headshot photoshoot",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "Geoffrey Donne Photography",
+    "rivalMi": 3.2,
+    "rivalVotes": 75,
+    "outOfArea": false
+   },
+   {
+    "market": "Douglasville",
+    "term": "headshot photo",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "Geoffrey Donne Photography",
+    "rivalMi": 3.2,
+    "rivalVotes": 75,
+    "outOfArea": false
+   },
+   {
+    "market": "Douglasville",
+    "term": "photographers for headshots",
+    "vol": 260,
+    "kd": 31,
+    "pos": null,
+    "rival": "Geoffrey Donne Photography",
+    "rivalMi": 3.2,
+    "rivalVotes": 75,
+    "outOfArea": false
+   },
+   {
+    "market": "Douglasville",
+    "term": "company headshots",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Geoffrey Donne Photography",
+    "rivalMi": 3.2,
+    "rivalVotes": 75,
+    "outOfArea": false
+   },
+   {
+    "market": "Douglasville",
+    "term": "corp headshots",
+    "vol": 110,
+    "kd": null,
+    "pos": null,
+    "rival": "Geoffrey Donne Photography",
+    "rivalMi": 3.2,
+    "rivalVotes": 75,
+    "outOfArea": false
+   },
+   {
+    "market": "Douglasville",
+    "term": "businessman headshot",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Geoffrey Donne Photography",
+    "rivalMi": 3.2,
+    "rivalVotes": 75,
+    "outOfArea": false
+   },
+   {
+    "market": "Douglasville",
+    "term": "professional headshots women",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Geoffrey Donne Photography",
+    "rivalMi": 3.2,
+    "rivalVotes": 75,
+    "outOfArea": false
+   },
+   {
+    "market": "Douglasville",
+    "term": "headshot professional woman",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Geoffrey Donne Photography",
+    "rivalMi": 3.2,
+    "rivalVotes": 75,
+    "outOfArea": false
+   },
+   {
+    "market": "Douglasville",
+    "term": "real estate headshots",
+    "vol": 70,
+    "kd": 0,
+    "pos": null,
+    "rival": "Carl Nelson Photography for Real Estate",
+    "rivalMi": 11.4,
+    "rivalVotes": 40,
+    "outOfArea": false
+   },
+   {
     "market": "Jasper",
     "term": "photographer",
     "vol": 2900,
@@ -3569,6 +5351,105 @@
     "rival": "Bloom in Grace Photography, LLC",
     "rivalMi": 15.7,
     "rivalVotes": 23,
+    "outOfArea": false
+   },
+   {
+    "market": "Jasper",
+    "term": "headshot photoshoot",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "Bloom in Grace Photography, LLC",
+    "rivalMi": 15.7,
+    "rivalVotes": 23,
+    "outOfArea": false
+   },
+   {
+    "market": "Jasper",
+    "term": "headshot photo",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "Dinah Sutton Photography",
+    "rivalMi": 7.8,
+    "rivalVotes": 9,
+    "outOfArea": false
+   },
+   {
+    "market": "Jasper",
+    "term": "photographers for headshots",
+    "vol": 260,
+    "kd": 31,
+    "pos": null,
+    "rival": "Marissa Harrison Photography LLC",
+    "rivalMi": 17.8,
+    "rivalVotes": 34,
+    "outOfArea": false
+   },
+   {
+    "market": "Jasper",
+    "term": "company headshots",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Shan Roberts Photography",
+    "rivalMi": 40.6,
+    "rivalVotes": 94,
+    "outOfArea": false
+   },
+   {
+    "market": "Jasper",
+    "term": "corp headshots",
+    "vol": 110,
+    "kd": null,
+    "pos": null,
+    "rival": "Edge Portraiture",
+    "rivalMi": 52.1,
+    "rivalVotes": 103,
+    "outOfArea": false
+   },
+   {
+    "market": "Jasper",
+    "term": "businessman headshot",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Happy Hour Headshot Atlanta",
+    "rivalMi": 48.2,
+    "rivalVotes": 58,
+    "outOfArea": false
+   },
+   {
+    "market": "Jasper",
+    "term": "professional headshots women",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "North Ga. Photography, Inc.",
+    "rivalMi": 2492.6,
+    "rivalVotes": 45,
+    "outOfArea": true
+   },
+   {
+    "market": "Jasper",
+    "term": "headshot professional woman",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Dinah Sutton Photography",
+    "rivalMi": 7.8,
+    "rivalVotes": 9,
+    "outOfArea": false
+   },
+   {
+    "market": "Jasper",
+    "term": "real estate headshots",
+    "vol": 70,
+    "kd": 0,
+    "pos": null,
+    "rival": "Impact Photo Real Estate Photography",
+    "rivalMi": 39.8,
+    "rivalVotes": 84,
     "outOfArea": false
    },
    {
@@ -3759,6 +5640,105 @@
     "outOfArea": true
    },
    {
+    "market": "Mableton",
+    "term": "headshot photoshoot",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "Diego’s Photography – Headshots, Branding & Family Portraits | Atlanta-Vinings",
+    "rivalMi": 6.4,
+    "rivalVotes": 222,
+    "outOfArea": false
+   },
+   {
+    "market": "Mableton",
+    "term": "headshot photo",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "Shan Roberts Photography",
+    "rivalMi": 6.9,
+    "rivalVotes": 94,
+    "outOfArea": false
+   },
+   {
+    "market": "Mableton",
+    "term": "photographers for headshots",
+    "vol": 260,
+    "kd": 31,
+    "pos": null,
+    "rival": "Studio 270 - Photography Studio Rental",
+    "rivalMi": 4.4,
+    "rivalVotes": 68,
+    "outOfArea": false
+   },
+   {
+    "market": "Mableton",
+    "term": "company headshots",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Headshot Solutions & Beyond, LLC",
+    "rivalMi": 13,
+    "rivalVotes": 55,
+    "outOfArea": false
+   },
+   {
+    "market": "Mableton",
+    "term": "corp headshots",
+    "vol": 110,
+    "kd": null,
+    "pos": null,
+    "rival": "Geoffrey Donne Photography",
+    "rivalMi": 11.2,
+    "rivalVotes": 75,
+    "outOfArea": false
+   },
+   {
+    "market": "Mableton",
+    "term": "businessman headshot",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Jeremy Bustin Photography",
+    "rivalMi": 14,
+    "rivalVotes": 255,
+    "outOfArea": false
+   },
+   {
+    "market": "Mableton",
+    "term": "professional headshots women",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Geoffrey Donne Photography",
+    "rivalMi": 11.2,
+    "rivalVotes": 75,
+    "outOfArea": false
+   },
+   {
+    "market": "Mableton",
+    "term": "headshot professional woman",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Headshot Solutions & Beyond, LLC",
+    "rivalMi": 13,
+    "rivalVotes": 55,
+    "outOfArea": false
+   },
+   {
+    "market": "Mableton",
+    "term": "real estate headshots",
+    "vol": 70,
+    "kd": 0,
+    "pos": null,
+    "rival": "Agents Choice Media ℠ Atlanta Real Estate Photography and Video Services",
+    "rivalMi": 14.4,
+    "rivalVotes": 53,
+    "outOfArea": false
+   },
+   {
     "market": "Smyrna",
     "term": "photographer",
     "vol": 2900,
@@ -3943,6 +5923,105 @@
     "rival": "WEA Photography",
     "rivalMi": 2.9,
     "rivalVotes": 57,
+    "outOfArea": false
+   },
+   {
+    "market": "Smyrna",
+    "term": "headshot photoshoot",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "WEA Photography",
+    "rivalMi": 2.9,
+    "rivalVotes": 57,
+    "outOfArea": false
+   },
+   {
+    "market": "Smyrna",
+    "term": "headshot photo",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "WEA Photography",
+    "rivalMi": 2.9,
+    "rivalVotes": 57,
+    "outOfArea": false
+   },
+   {
+    "market": "Smyrna",
+    "term": "photographers for headshots",
+    "vol": 260,
+    "kd": 31,
+    "pos": null,
+    "rival": "WEA Photography",
+    "rivalMi": 2.9,
+    "rivalVotes": 57,
+    "outOfArea": false
+   },
+   {
+    "market": "Smyrna",
+    "term": "company headshots",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "WEA Photography",
+    "rivalMi": 2.9,
+    "rivalVotes": 57,
+    "outOfArea": false
+   },
+   {
+    "market": "Smyrna",
+    "term": "corp headshots",
+    "vol": 110,
+    "kd": null,
+    "pos": null,
+    "rival": "WEA Photography",
+    "rivalMi": 2.9,
+    "rivalVotes": 57,
+    "outOfArea": false
+   },
+   {
+    "market": "Smyrna",
+    "term": "businessman headshot",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "WEA Photography",
+    "rivalMi": 2.9,
+    "rivalVotes": 57,
+    "outOfArea": false
+   },
+   {
+    "market": "Smyrna",
+    "term": "professional headshots women",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "WEA Photography",
+    "rivalMi": 2.9,
+    "rivalVotes": 57,
+    "outOfArea": false
+   },
+   {
+    "market": "Smyrna",
+    "term": "headshot professional woman",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "WEA Photography",
+    "rivalMi": 2.9,
+    "rivalVotes": 57,
+    "outOfArea": false
+   },
+   {
+    "market": "Smyrna",
+    "term": "real estate headshots",
+    "vol": 70,
+    "kd": 0,
+    "pos": null,
+    "rival": "Diego’s Photography – Headshots, Branding & Family Portraits | Atlanta-Vinings",
+    "rivalMi": 2.7,
+    "rivalVotes": 222,
     "outOfArea": false
    },
    {
@@ -4133,6 +6212,105 @@
     "outOfArea": false
    },
    {
+    "market": "Ringgold",
+    "term": "headshot photoshoot",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "Collective Photo Studio",
+    "rivalMi": 8.9,
+    "rivalVotes": 49,
+    "outOfArea": false
+   },
+   {
+    "market": "Ringgold",
+    "term": "headshot photo",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "Elle Tee Photography",
+    "rivalMi": 7.8,
+    "rivalVotes": 29,
+    "outOfArea": false
+   },
+   {
+    "market": "Ringgold",
+    "term": "photographers for headshots",
+    "vol": 260,
+    "kd": 31,
+    "pos": null,
+    "rival": "Stirrups and Styles Photography",
+    "rivalMi": 321,
+    "rivalVotes": 43,
+    "outOfArea": true
+   },
+   {
+    "market": "Ringgold",
+    "term": "company headshots",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Home",
+    "rivalMi": 7.2,
+    "rivalVotes": 1,
+    "outOfArea": false
+   },
+   {
+    "market": "Ringgold",
+    "term": "corp headshots",
+    "vol": 110,
+    "kd": null,
+    "pos": null,
+    "rival": "Collective Photo Studio",
+    "rivalMi": 8.9,
+    "rivalVotes": 49,
+    "outOfArea": false
+   },
+   {
+    "market": "Ringgold",
+    "term": "businessman headshot",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Home",
+    "rivalMi": 7.2,
+    "rivalVotes": 1,
+    "outOfArea": false
+   },
+   {
+    "market": "Ringgold",
+    "term": "professional headshots women",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Collective Photo Studio",
+    "rivalMi": 8.9,
+    "rivalVotes": 49,
+    "outOfArea": false
+   },
+   {
+    "market": "Ringgold",
+    "term": "headshot professional woman",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Collective Photo Studio",
+    "rivalMi": 8.9,
+    "rivalVotes": 49,
+    "outOfArea": false
+   },
+   {
+    "market": "Ringgold",
+    "term": "real estate headshots",
+    "vol": 70,
+    "kd": 0,
+    "pos": null,
+    "rival": "Impact Photo Real Estate Photography",
+    "rivalMi": 86.9,
+    "rivalVotes": 84,
+    "outOfArea": true
+   },
+   {
     "market": "Carrollton",
     "term": "photographer",
     "vol": 2900,
@@ -4317,6 +6495,105 @@
     "rival": "Headshot Scott / Photo Studio",
     "rivalMi": 41.4,
     "rivalVotes": 34,
+    "outOfArea": false
+   },
+   {
+    "market": "Carrollton",
+    "term": "headshot photoshoot",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "Devine Studios Photography",
+    "rivalMi": 3.5,
+    "rivalVotes": 30,
+    "outOfArea": false
+   },
+   {
+    "market": "Carrollton",
+    "term": "headshot photo",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "McClain Photography LLC and Drone Services",
+    "rivalMi": 0.6,
+    "rivalVotes": 25,
+    "outOfArea": false
+   },
+   {
+    "market": "Carrollton",
+    "term": "photographers for headshots",
+    "vol": 260,
+    "kd": 31,
+    "pos": null,
+    "rival": "Ashlee Burgess Photography",
+    "rivalMi": 21.5,
+    "rivalVotes": 57,
+    "outOfArea": false
+   },
+   {
+    "market": "Carrollton",
+    "term": "company headshots",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "McClain Photography LLC and Drone Services",
+    "rivalMi": 0.6,
+    "rivalVotes": 25,
+    "outOfArea": false
+   },
+   {
+    "market": "Carrollton",
+    "term": "corp headshots",
+    "vol": 110,
+    "kd": null,
+    "pos": null,
+    "rival": "McClain Photography LLC and Drone Services",
+    "rivalMi": 0.6,
+    "rivalVotes": 25,
+    "outOfArea": false
+   },
+   {
+    "market": "Carrollton",
+    "term": "businessman headshot",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "McClain Photography LLC and Drone Services",
+    "rivalMi": 0.6,
+    "rivalVotes": 25,
+    "outOfArea": false
+   },
+   {
+    "market": "Carrollton",
+    "term": "professional headshots women",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Ashlee Burgess Photography",
+    "rivalMi": 21.5,
+    "rivalVotes": 57,
+    "outOfArea": false
+   },
+   {
+    "market": "Carrollton",
+    "term": "headshot professional woman",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Ashlee Burgess Photography",
+    "rivalMi": 21.5,
+    "rivalVotes": 57,
+    "outOfArea": false
+   },
+   {
+    "market": "Carrollton",
+    "term": "real estate headshots",
+    "vol": 70,
+    "kd": 0,
+    "pos": null,
+    "rival": "Impact Photo Real Estate Photography",
+    "rivalMi": 59.2,
+    "rivalVotes": 84,
     "outOfArea": false
    },
    {
@@ -4507,6 +6784,105 @@
     "outOfArea": false
    },
    {
+    "market": "Roswell",
+    "term": "headshot photoshoot",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "Tracy Hoexter Photography",
+    "rivalMi": 1.4,
+    "rivalVotes": 195,
+    "outOfArea": false
+   },
+   {
+    "market": "Roswell",
+    "term": "headshot photo",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "Tracy Hoexter Photography",
+    "rivalMi": 1.4,
+    "rivalVotes": 195,
+    "outOfArea": false
+   },
+   {
+    "market": "Roswell",
+    "term": "photographers for headshots",
+    "vol": 260,
+    "kd": 31,
+    "pos": null,
+    "rival": "Tracy Hoexter Photography",
+    "rivalMi": 1.4,
+    "rivalVotes": 195,
+    "outOfArea": false
+   },
+   {
+    "market": "Roswell",
+    "term": "company headshots",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Tracy Hoexter Photography",
+    "rivalMi": 1.4,
+    "rivalVotes": 195,
+    "outOfArea": false
+   },
+   {
+    "market": "Roswell",
+    "term": "corp headshots",
+    "vol": 110,
+    "kd": null,
+    "pos": null,
+    "rival": "Tracy Hoexter Photography",
+    "rivalMi": 1.4,
+    "rivalVotes": 195,
+    "outOfArea": false
+   },
+   {
+    "market": "Roswell",
+    "term": "businessman headshot",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Tracy Hoexter Photography",
+    "rivalMi": 1.4,
+    "rivalVotes": 195,
+    "outOfArea": false
+   },
+   {
+    "market": "Roswell",
+    "term": "professional headshots women",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Tracy Hoexter Photography",
+    "rivalMi": 1.4,
+    "rivalVotes": 195,
+    "outOfArea": false
+   },
+   {
+    "market": "Roswell",
+    "term": "headshot professional woman",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Tracy Hoexter Photography",
+    "rivalMi": 1.4,
+    "rivalVotes": 195,
+    "outOfArea": false
+   },
+   {
+    "market": "Roswell",
+    "term": "real estate headshots",
+    "vol": 70,
+    "kd": 0,
+    "pos": null,
+    "rival": "Tracy Hoexter Photography",
+    "rivalMi": 1.4,
+    "rivalVotes": 195,
+    "outOfArea": false
+   },
+   {
     "market": "Ellijay",
     "term": "photographer",
     "vol": 2900,
@@ -4691,6 +7067,105 @@
     "rival": "Photocentric Photography",
     "rivalMi": 0,
     "rivalVotes": 19,
+    "outOfArea": false
+   },
+   {
+    "market": "Ellijay",
+    "term": "headshot photoshoot",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "Rebecca Laurel Photography",
+    "rivalMi": 3.3,
+    "rivalVotes": 21,
+    "outOfArea": false
+   },
+   {
+    "market": "Ellijay",
+    "term": "headshot photo",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "Slavenas Photography",
+    "rivalMi": 3.4,
+    "rivalVotes": 16,
+    "outOfArea": false
+   },
+   {
+    "market": "Ellijay",
+    "term": "photographers for headshots",
+    "vol": 260,
+    "kd": 31,
+    "pos": null,
+    "rival": "Slavenas Photography",
+    "rivalMi": 3.4,
+    "rivalVotes": 16,
+    "outOfArea": false
+   },
+   {
+    "market": "Ellijay",
+    "term": "company headshots",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Photocentric Photography",
+    "rivalMi": 0,
+    "rivalVotes": 19,
+    "outOfArea": false
+   },
+   {
+    "market": "Ellijay",
+    "term": "corp headshots",
+    "vol": 110,
+    "kd": null,
+    "pos": null,
+    "rival": "Photocentric Photography",
+    "rivalMi": 0,
+    "rivalVotes": 19,
+    "outOfArea": false
+   },
+   {
+    "market": "Ellijay",
+    "term": "businessman headshot",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Rebecca Laurel Photography",
+    "rivalMi": 3.3,
+    "rivalVotes": 21,
+    "outOfArea": false
+   },
+   {
+    "market": "Ellijay",
+    "term": "professional headshots women",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Rebecca Laurel Photography",
+    "rivalMi": 3.3,
+    "rivalVotes": 21,
+    "outOfArea": false
+   },
+   {
+    "market": "Ellijay",
+    "term": "headshot professional woman",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Rebecca Laurel Photography",
+    "rivalMi": 3.3,
+    "rivalVotes": 21,
+    "outOfArea": false
+   },
+   {
+    "market": "Ellijay",
+    "term": "real estate headshots",
+    "vol": 70,
+    "kd": 0,
+    "pos": null,
+    "rival": "The Lensed Listing - Real Estate Photography, Videography & Drone",
+    "rivalMi": 20.9,
+    "rivalVotes": 3,
     "outOfArea": false
    },
    {
@@ -4881,6 +7356,105 @@
     "outOfArea": true
    },
    {
+    "market": "Milton",
+    "term": "headshot photoshoot",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "Alexandra Zak Photography",
+    "rivalMi": 5.5,
+    "rivalVotes": 194,
+    "outOfArea": false
+   },
+   {
+    "market": "Milton",
+    "term": "headshot photo",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "M2M Pics Photography - Portraits, Headshots & Corporate Photography Alpharetta & Atlanta",
+    "rivalMi": 4.4,
+    "rivalVotes": 35,
+    "outOfArea": false
+   },
+   {
+    "market": "Milton",
+    "term": "photographers for headshots",
+    "vol": 260,
+    "kd": 31,
+    "pos": null,
+    "rival": "M2M Pics Photography - Portraits, Headshots & Corporate Photography Alpharetta & Atlanta",
+    "rivalMi": 4.4,
+    "rivalVotes": 35,
+    "outOfArea": false
+   },
+   {
+    "market": "Milton",
+    "term": "company headshots",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Headshot Solutions & Beyond, LLC",
+    "rivalMi": 21.5,
+    "rivalVotes": 55,
+    "outOfArea": false
+   },
+   {
+    "market": "Milton",
+    "term": "corp headshots",
+    "vol": 110,
+    "kd": null,
+    "pos": null,
+    "rival": "M2M Pics Photography - Portraits, Headshots & Corporate Photography Alpharetta & Atlanta",
+    "rivalMi": 4.4,
+    "rivalVotes": 35,
+    "outOfArea": false
+   },
+   {
+    "market": "Milton",
+    "term": "businessman headshot",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Happy Hour Headshot Atlanta",
+    "rivalMi": 25.1,
+    "rivalVotes": 58,
+    "outOfArea": false
+   },
+   {
+    "market": "Milton",
+    "term": "professional headshots women",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Anne Say Photography",
+    "rivalMi": 38.9,
+    "rivalVotes": 52,
+    "outOfArea": false
+   },
+   {
+    "market": "Milton",
+    "term": "headshot professional woman",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Simply Zee Imagery Metro Atlanta Branding + Headshot Photography",
+    "rivalMi": 27.7,
+    "rivalVotes": 7,
+    "outOfArea": false
+   },
+   {
+    "market": "Milton",
+    "term": "real estate headshots",
+    "vol": 70,
+    "kd": 0,
+    "pos": null,
+    "rival": "Impact Photo Real Estate Photography",
+    "rivalMi": 15.9,
+    "rivalVotes": 84,
+    "outOfArea": false
+   },
+   {
     "market": "Sandy Springs",
     "term": "photographer",
     "vol": 2900,
@@ -5065,6 +7639,105 @@
     "rival": "My Creative House Atlanta",
     "rivalMi": 5.1,
     "rivalVotes": 58,
+    "outOfArea": false
+   },
+   {
+    "market": "Sandy Springs",
+    "term": "headshot photoshoot",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "Headshot Studio Atlanta",
+    "rivalMi": 0.3,
+    "rivalVotes": 281,
+    "outOfArea": false
+   },
+   {
+    "market": "Sandy Springs",
+    "term": "headshot photo",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "Headshot Studio Atlanta",
+    "rivalMi": 0.3,
+    "rivalVotes": 281,
+    "outOfArea": false
+   },
+   {
+    "market": "Sandy Springs",
+    "term": "photographers for headshots",
+    "vol": 260,
+    "kd": 31,
+    "pos": null,
+    "rival": "Headshot Studio Atlanta",
+    "rivalMi": 0.3,
+    "rivalVotes": 281,
+    "outOfArea": false
+   },
+   {
+    "market": "Sandy Springs",
+    "term": "company headshots",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Headshot Studio Atlanta",
+    "rivalMi": 0.3,
+    "rivalVotes": 281,
+    "outOfArea": false
+   },
+   {
+    "market": "Sandy Springs",
+    "term": "corp headshots",
+    "vol": 110,
+    "kd": null,
+    "pos": null,
+    "rival": "Headshot Studio Atlanta",
+    "rivalMi": 0.3,
+    "rivalVotes": 281,
+    "outOfArea": false
+   },
+   {
+    "market": "Sandy Springs",
+    "term": "businessman headshot",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Headshot Studio Atlanta",
+    "rivalMi": 0.3,
+    "rivalVotes": 281,
+    "outOfArea": false
+   },
+   {
+    "market": "Sandy Springs",
+    "term": "professional headshots women",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Headshot Studio Atlanta",
+    "rivalMi": 0.3,
+    "rivalVotes": 281,
+    "outOfArea": false
+   },
+   {
+    "market": "Sandy Springs",
+    "term": "headshot professional woman",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Headshot Studio Atlanta",
+    "rivalMi": 0.3,
+    "rivalVotes": 281,
+    "outOfArea": false
+   },
+   {
+    "market": "Sandy Springs",
+    "term": "real estate headshots",
+    "vol": 70,
+    "kd": 0,
+    "pos": null,
+    "rival": "Agents Choice Media ℠ Atlanta Real Estate Photography and Video Services",
+    "rivalMi": 3.6,
+    "rivalVotes": 53,
     "outOfArea": false
    },
    {
@@ -5255,6 +7928,105 @@
     "outOfArea": false
    },
    {
+    "market": "Alpharetta",
+    "term": "headshot photoshoot",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "M2M Pics Photography - Portraits, Headshots & Corporate Photography Alpharetta & Atlanta",
+    "rivalMi": 0.4,
+    "rivalVotes": 35,
+    "outOfArea": false
+   },
+   {
+    "market": "Alpharetta",
+    "term": "headshot photo",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "M2M Pics Photography - Portraits, Headshots & Corporate Photography Alpharetta & Atlanta",
+    "rivalMi": 0.4,
+    "rivalVotes": 35,
+    "outOfArea": false
+   },
+   {
+    "market": "Alpharetta",
+    "term": "photographers for headshots",
+    "vol": 260,
+    "kd": 31,
+    "pos": null,
+    "rival": "M2M Pics Photography - Portraits, Headshots & Corporate Photography Alpharetta & Atlanta",
+    "rivalMi": 0.4,
+    "rivalVotes": 35,
+    "outOfArea": false
+   },
+   {
+    "market": "Alpharetta",
+    "term": "company headshots",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "M2M Pics Photography - Portraits, Headshots & Corporate Photography Alpharetta & Atlanta",
+    "rivalMi": 0.4,
+    "rivalVotes": 35,
+    "outOfArea": false
+   },
+   {
+    "market": "Alpharetta",
+    "term": "corp headshots",
+    "vol": 110,
+    "kd": null,
+    "pos": null,
+    "rival": "M2M Pics Photography - Portraits, Headshots & Corporate Photography Alpharetta & Atlanta",
+    "rivalMi": 0.4,
+    "rivalVotes": 35,
+    "outOfArea": false
+   },
+   {
+    "market": "Alpharetta",
+    "term": "businessman headshot",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "M2M Pics Photography - Portraits, Headshots & Corporate Photography Alpharetta & Atlanta",
+    "rivalMi": 0.4,
+    "rivalVotes": 35,
+    "outOfArea": false
+   },
+   {
+    "market": "Alpharetta",
+    "term": "professional headshots women",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "M2M Pics Photography - Portraits, Headshots & Corporate Photography Alpharetta & Atlanta",
+    "rivalMi": 0.4,
+    "rivalVotes": 35,
+    "outOfArea": false
+   },
+   {
+    "market": "Alpharetta",
+    "term": "headshot professional woman",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Corporate Headshots Atlanta - Alpharetta",
+    "rivalMi": 2.3,
+    "rivalVotes": 2,
+    "outOfArea": false
+   },
+   {
+    "market": "Alpharetta",
+    "term": "real estate headshots",
+    "vol": 70,
+    "kd": 0,
+    "pos": null,
+    "rival": "LaRuche Photo - Real Estate Photography, Videos & more!",
+    "rivalMi": 465.8,
+    "rivalVotes": 51,
+    "outOfArea": true
+   },
+   {
     "market": "Dunwoody",
     "term": "photographer",
     "vol": 2900,
@@ -5440,6 +8212,105 @@
     "rivalMi": 2517.1,
     "rivalVotes": 2,
     "outOfArea": true
+   },
+   {
+    "market": "Dunwoody",
+    "term": "headshot photoshoot",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "Headshot Studio Atlanta",
+    "rivalMi": 2.7,
+    "rivalVotes": 281,
+    "outOfArea": false
+   },
+   {
+    "market": "Dunwoody",
+    "term": "headshot photo",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "Kenji Kubota Headshot Photography",
+    "rivalMi": 4.1,
+    "rivalVotes": 147,
+    "outOfArea": false
+   },
+   {
+    "market": "Dunwoody",
+    "term": "photographers for headshots",
+    "vol": 260,
+    "kd": 31,
+    "pos": null,
+    "rival": "Headshot Studio Atlanta",
+    "rivalMi": 2.7,
+    "rivalVotes": 281,
+    "outOfArea": false
+   },
+   {
+    "market": "Dunwoody",
+    "term": "company headshots",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Headshot Studio Atlanta",
+    "rivalMi": 2.7,
+    "rivalVotes": 281,
+    "outOfArea": false
+   },
+   {
+    "market": "Dunwoody",
+    "term": "corp headshots",
+    "vol": 110,
+    "kd": null,
+    "pos": null,
+    "rival": "Corporate Headshots Atlanta - Dunwoody Perimeter",
+    "rivalMi": 1.3,
+    "rivalVotes": 1,
+    "outOfArea": false
+   },
+   {
+    "market": "Dunwoody",
+    "term": "businessman headshot",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Corporate Headshots Atlanta - Dunwoody Perimeter",
+    "rivalMi": 1.3,
+    "rivalVotes": 1,
+    "outOfArea": false
+   },
+   {
+    "market": "Dunwoody",
+    "term": "professional headshots women",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Headshot Studio Atlanta",
+    "rivalMi": 2.7,
+    "rivalVotes": 281,
+    "outOfArea": false
+   },
+   {
+    "market": "Dunwoody",
+    "term": "headshot professional woman",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Corporate Headshots Atlanta - Dunwoody Perimeter",
+    "rivalMi": 1.3,
+    "rivalVotes": 1,
+    "outOfArea": false
+   },
+   {
+    "market": "Dunwoody",
+    "term": "real estate headshots",
+    "vol": 70,
+    "kd": 0,
+    "pos": null,
+    "rival": "Agents Choice Media ℠ Atlanta Real Estate Photography and Video Services",
+    "rivalMi": 4.6,
+    "rivalVotes": 53,
+    "outOfArea": false
    },
    {
     "market": "Chattanooga",
@@ -5629,6 +8500,105 @@
     "outOfArea": true
    },
    {
+    "market": "Chattanooga",
+    "term": "headshot photoshoot",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "Millicent Garland Photography",
+    "rivalMi": 10.7,
+    "rivalVotes": 38,
+    "outOfArea": false
+   },
+   {
+    "market": "Chattanooga",
+    "term": "headshot photo",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "Millicent Garland Photography",
+    "rivalMi": 10.7,
+    "rivalVotes": 38,
+    "outOfArea": false
+   },
+   {
+    "market": "Chattanooga",
+    "term": "photographers for headshots",
+    "vol": 260,
+    "kd": 31,
+    "pos": null,
+    "rival": "Millicent Garland Photography",
+    "rivalMi": 10.7,
+    "rivalVotes": 38,
+    "outOfArea": false
+   },
+   {
+    "market": "Chattanooga",
+    "term": "company headshots",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Jose Loza Photography",
+    "rivalMi": 8.5,
+    "rivalVotes": 37,
+    "outOfArea": false
+   },
+   {
+    "market": "Chattanooga",
+    "term": "corp headshots",
+    "vol": 110,
+    "kd": null,
+    "pos": null,
+    "rival": "Millicent Garland Photography",
+    "rivalMi": 10.7,
+    "rivalVotes": 38,
+    "outOfArea": false
+   },
+   {
+    "market": "Chattanooga",
+    "term": "businessman headshot",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "Brooke Bragger Photography | Chattanooga Portrait Photographer",
+    "rivalMi": 1.7,
+    "rivalVotes": 92,
+    "outOfArea": false
+   },
+   {
+    "market": "Chattanooga",
+    "term": "professional headshots women",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Millicent Garland Photography",
+    "rivalMi": 10.7,
+    "rivalVotes": 38,
+    "outOfArea": false
+   },
+   {
+    "market": "Chattanooga",
+    "term": "headshot professional woman",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Jose Loza Photography",
+    "rivalMi": 8.5,
+    "rivalVotes": 37,
+    "outOfArea": false
+   },
+   {
+    "market": "Chattanooga",
+    "term": "real estate headshots",
+    "vol": 70,
+    "kd": 0,
+    "pos": null,
+    "rival": "Creative Revolver - Real Estate Photography & Video",
+    "rivalMi": 19.6,
+    "rivalVotes": 111,
+    "outOfArea": false
+   },
+   {
     "market": "Blue Ridge",
     "term": "photographer",
     "vol": 2900,
@@ -5813,6 +8783,105 @@
     "rival": "BROADCAST Pro Photo",
     "rivalMi": 0.2,
     "rivalVotes": 13,
+    "outOfArea": false
+   },
+   {
+    "market": "Blue Ridge",
+    "term": "headshot photoshoot",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "Timothy Landon Photography",
+    "rivalMi": 17.5,
+    "rivalVotes": 113,
+    "outOfArea": false
+   },
+   {
+    "market": "Blue Ridge",
+    "term": "headshot photo",
+    "vol": 320,
+    "kd": 37,
+    "pos": null,
+    "rival": "ZoLu Photography",
+    "rivalMi": 36.8,
+    "rivalVotes": 18,
+    "outOfArea": false
+   },
+   {
+    "market": "Blue Ridge",
+    "term": "photographers for headshots",
+    "vol": 260,
+    "kd": 31,
+    "pos": null,
+    "rival": "Timothy Landon Photography",
+    "rivalMi": 17.5,
+    "rivalVotes": 113,
+    "outOfArea": false
+   },
+   {
+    "market": "Blue Ridge",
+    "term": "company headshots",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "BROADCAST Pro Photo",
+    "rivalMi": 0.2,
+    "rivalVotes": 13,
+    "outOfArea": false
+   },
+   {
+    "market": "Blue Ridge",
+    "term": "corp headshots",
+    "vol": 110,
+    "kd": null,
+    "pos": null,
+    "rival": "BROADCAST Pro Photo",
+    "rivalMi": 0.2,
+    "rivalVotes": 13,
+    "outOfArea": false
+   },
+   {
+    "market": "Blue Ridge",
+    "term": "businessman headshot",
+    "vol": 110,
+    "kd": 20,
+    "pos": null,
+    "rival": "North Ga. Photography, Inc.",
+    "rivalMi": 2482.7,
+    "rivalVotes": 45,
+    "outOfArea": true
+   },
+   {
+    "market": "Blue Ridge",
+    "term": "professional headshots women",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "Rebecca Laurel Photography",
+    "rivalMi": 17.9,
+    "rivalVotes": 21,
+    "outOfArea": false
+   },
+   {
+    "market": "Blue Ridge",
+    "term": "headshot professional woman",
+    "vol": 90,
+    "kd": 0,
+    "pos": null,
+    "rival": "ZoLu Photography",
+    "rivalMi": 36.8,
+    "rivalVotes": 18,
+    "outOfArea": false
+   },
+   {
+    "market": "Blue Ridge",
+    "term": "real estate headshots",
+    "vol": 70,
+    "kd": 0,
+    "pos": null,
+    "rival": "Impact Photo Real Estate Photography",
+    "rivalMi": 64.5,
+    "rivalVotes": 84,
     "outOfArea": false
    }
   ]
@@ -6578,143 +9647,143 @@
  "rivals": [
   {
    "title": "Headshot Solutions & Beyond, LLC",
-   "cells": 27,
+   "cells": 41,
    "mkts": 8,
    "minMi": 2.2,
    "votes": 55
   },
   {
    "title": "Headshot Studio Atlanta",
-   "cells": 20,
+   "cells": 36,
    "mkts": 4,
    "minMi": 0.3,
    "votes": 281
   },
   {
-   "title": "Agents Choice Media ℠ Atlanta Real Estate Photography and Video Services",
-   "cells": 18,
-   "mkts": 18,
-   "minMi": 3.6,
-   "votes": 53
-  },
-  {
-   "title": "Sherry Sloan Photography",
-   "cells": 17,
-   "mkts": 1,
-   "minMi": 0,
-   "votes": 21
-  },
-  {
    "title": "Liz by Design Photography, LLC",
-   "cells": 17,
+   "cells": 25,
    "mkts": 3,
    "minMi": 0,
    "votes": 208
   },
   {
-   "title": "Coty Danyelle Photography LLC",
-   "cells": 12,
+   "title": "Sherry Sloan Photography",
+   "cells": 24,
    "mkts": 1,
-   "minMi": 11.1,
-   "votes": 52
-  },
-  {
-   "title": "Arc Studios Photography",
-   "cells": 12,
-   "mkts": 1,
-   "minMi": 0.1,
-   "votes": 46
-  },
-  {
-   "title": "HD Photography",
-   "cells": 12,
-   "mkts": 2,
-   "minMi": 1.8,
-   "votes": 42
+   "minMi": 0,
+   "votes": 21
   },
   {
    "title": "Geoffrey Donne Photography",
-   "cells": 12,
-   "mkts": 2,
+   "cells": 23,
+   "mkts": 3,
    "minMi": 3.2,
    "votes": 75
   },
   {
+   "title": "Agents Choice Media ℠ Atlanta Real Estate Photography and Video Services",
+   "cells": 22,
+   "mkts": 18,
+   "minMi": 3.6,
+   "votes": 53
+  },
+  {
    "title": "M2M Pics Photography - Portraits, Headshots & Corporate Photography Alpharetta & Atlanta",
-   "cells": 11,
+   "cells": 21,
    "mkts": 2,
    "minMi": 0.4,
    "votes": 35
   },
   {
-   "title": "Home",
-   "cells": 10,
-   "mkts": 1,
-   "minMi": 7.2,
-   "votes": 1
+   "title": "HD Photography",
+   "cells": 20,
+   "mkts": 2,
+   "minMi": 1.8,
+   "votes": 42
   },
   {
-   "title": "Paris Mountain Photography",
-   "cells": 9,
-   "mkts": 2,
-   "minMi": 0.8,
-   "votes": 12
+   "title": "Coty Danyelle Photography LLC",
+   "cells": 19,
+   "mkts": 1,
+   "minMi": 11.1,
+   "votes": 52
   },
   {
    "title": "Armetrice Photography",
-   "cells": 9,
+   "cells": 17,
    "mkts": 1,
    "minMi": 2.7,
    "votes": 65
   },
   {
-   "title": "Bradd Parker Photography",
-   "cells": 9,
-   "mkts": 1,
-   "minMi": 0.1,
-   "votes": 20
-  },
-  {
    "title": "WEA Photography",
-   "cells": 9,
+   "cells": 17,
    "mkts": 1,
    "minMi": 2.9,
    "votes": 57
   },
   {
-   "title": "McClain Photography LLC and Drone Services",
-   "cells": 9,
-   "mkts": 1,
-   "minMi": 0.6,
-   "votes": 25
-  },
-  {
-   "title": "EtherArts Product Photography & Graphics",
-   "cells": 8,
-   "mkts": 8,
-   "minMi": 4.7,
-   "votes": 142
-  },
-  {
-   "title": "Sunflower Grace Photography",
-   "cells": 8,
-   "mkts": 1,
-   "minMi": 0,
-   "votes": 14
-  },
-  {
    "title": "Nathan Curtis Photography",
-   "cells": 8,
+   "cells": 15,
    "mkts": 3,
    "minMi": 5.8,
    "votes": 29
   },
   {
-   "title": "Rebecca Laurel Photography",
-   "cells": 8,
+   "title": "Tracy Hoexter Photography",
+   "cells": 15,
    "mkts": 1,
+   "minMi": 1.4,
+   "votes": 195
+  },
+  {
+   "title": "Arc Studios Photography",
+   "cells": 14,
+   "mkts": 1,
+   "minMi": 0.1,
+   "votes": 46
+  },
+  {
+   "title": "McClain Photography LLC and Drone Services",
+   "cells": 13,
+   "mkts": 1,
+   "minMi": 0.6,
+   "votes": 25
+  },
+  {
+   "title": "Rebecca Laurel Photography",
+   "cells": 13,
+   "mkts": 2,
    "minMi": 3.3,
    "votes": 21
+  },
+  {
+   "title": "Home",
+   "cells": 12,
+   "mkts": 1,
+   "minMi": 7.2,
+   "votes": 1
+  },
+  {
+   "title": "Sunflower Grace Photography",
+   "cells": 11,
+   "mkts": 1,
+   "minMi": 0,
+   "votes": 14
+  },
+  {
+   "title": "Bradd Parker Photography",
+   "cells": 11,
+   "mkts": 1,
+   "minMi": 0.1,
+   "votes": 20
+  },
+  {
+   "title": "Impact Photo Real Estate Photography",
+   "cells": 10,
+   "mkts": 8,
+   "minMi": 15.9,
+   "votes": 84
   }
  ]
 }
