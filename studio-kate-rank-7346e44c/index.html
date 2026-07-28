@@ -52,6 +52,12 @@ tr.fam th{font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var
 .pill.bad{background:color-mix(in srgb,var(--gone) 12%,transparent);color:var(--gone)}
 .muted{color:var(--muted)}
 .small{font-size:13px}
+ol.plan{counter-reset:rec;list-style:none;padding:0;margin:18px 0}
+ol.plan li{counter-increment:rec;position:relative;background:var(--card);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:16px 20px 16px 58px;margin:12px 0;max-width:80ch}
+ol.plan li::before{content:counter(rec);position:absolute;left:16px;top:15px;width:27px;height:27px;border-radius:50%;background:var(--accent);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:13.5px}
+ul.dont{list-style:none;padding:0;margin:14px 0}
+ul.dont li{position:relative;padding:11px 18px 11px 34px;margin:8px 0;border-left:3px solid var(--gone);background:var(--card);border-radius:6px;max-width:80ch}
+ul.dont li::before{content:"\00d7";position:absolute;left:13px;top:10px;color:var(--gone);font-weight:700;font-size:17px}
 footer{margin-top:70px;padding-top:20px;border-top:1px solid var(--line);font-size:13px;color:var(--muted);max-width:78ch}
 @media print{body{background:#fff}}</style>
 </head>
@@ -62,19 +68,30 @@ footer{margin-top:70px;padding-top:20px;border-top:1px solid var(--line);font-si
 <p class="lede">Every figure here comes from a live Google search or a measured monthly search volume. Nothing is estimated or modelled.</p>
 <p class="sub">854 local searches captured on July 28, 2026, across 31 markets for business photography and 8 towns for senior portraits.</p><div class="note"><strong>Your Google Business Profile, as Google holds it today.</strong><br>
 Studio Kate Photography, 404 Tribune St, Rome, GA 30161.
-Listed under the category <strong>Photographer</strong>, rated 5 from 32 reviews.</div><h2>Where you stand</h2>
-<p class="sub">Two lanes were measured separately, because they behave nothing alike.</p>
+Listed under the category <strong>Photographer</strong>, rated 5 from 32 reviews.</div><h2>The short version</h2>
 <div class="tiles">
-<div class="tile accent"><div class="n">22 of 48</div><div class="l">senior searches where you appear, across 8 towns</div></div>
-<div class="tile"><div class="n">40 of 806</div><div class="l">business searches where you appear, across 31 markets</div></div>
+<div class="tile accent"><div class="n">12 of 26</div><div class="l">business terms where you are first in Rome</div></div>
+<div class="tile"><div class="n">0</div><div class="l">top-three positions anywhere outside Rome</div></div>
+<div class="tile"><div class="n">3.9&times;</div><div class="l">more monthly demand in Cobb County than in Floyd</div></div>
 </div>
-<p class="sub">Senior portraits reach <strong>46%</strong> of the searches measured. Business photography reaches <strong>5%</strong>. Put plainly: the senior side of the business already travels beyond Rome on its own, and the business side has never left town. You hold a top-three spot in 21 business searches, and <strong>every one of them is in Rome</strong>.</p><h2>The search terms, and what each one is worth</h2>
+<p class="sub" style="font-size:16.5px;max-width:72ch">
+<strong>You are dominant in your smallest market and invisible in your largest.</strong>
+Rome is 300 searches a month across these terms and you hold first place on 12 of 26 of them, including the three hardest measured. Cobb County is 1,180 a month, Sandy Springs 630, Chattanooga 600 &mdash; and across all 30 markets outside Rome you appear in 14 searches out of 780 and hold not a single top-three place.
+<br><br>
+The gap in Rome is narrow and has a name. Kelly Moore Photography, 0.8 miles away with fewer reviews than you, holds the two highest-volume headshot terms and every qualified variant. The gap outside Rome is not narrow, but it is also not a content problem &mdash; searches pairing a town with a business term return essentially nothing anywhere, so it is won through your Google profile rather than through a page per town.
+</p><h2>The two lanes behave nothing alike</h2>
+<p class="sub">This is why they are measured, targeted and planned separately for the rest of this report.</p>
+<div class="tiles">
+<div class="tile accent"><div class="n">46%</div><div class="l">of senior searches show you, across 8 towns (22 of 48)</div></div>
+<div class="tile"><div class="n">5%</div><div class="l">of business searches show you, across 31 markets (40 of 806)</div></div>
+</div>
+<p class="sub">Senior work already travels beyond Rome without anyone pushing it, surfacing in Cave Spring, Cedartown, Adairsville, Rockmart, Calhoun and Summerville. Business photography has never left town. That single contrast is the reason senior stays local and deliberately small while the business lane needs reach it does not yet have.</p><h2>The search terms, and what each one is worth</h2>
 <p class="sub">Search volume here is <strong>your market area only</strong> &mdash; the counties you actually serve, from Floyd and Chattooga through Cobb and Cherokee up to Hamilton County in Tennessee, plus the five north-metro suburbs you reach. It deliberately excludes the rest of Georgia, because Savannah, Augusta and Macon are not markets you can sell into and counting them would flatter every number on this page. Difficulty estimates how hard the first page is to break into, based on the strength of the sites already ranking: under 10 is winnable on content alone, over 30 usually needs authority built first.</p>
 <div class="note"><strong>Why some rows say "under 10 a month".</strong> Google reports a minimum of 10 searches per month and rounds hard below that, so a term genuinely searched two or three times in a county comes back as 10 &mdash; or as nothing. Where every county in your area sits at that floor, adding them up would produce a total larger than the whole state of Georgia, which cannot be true. Those terms are shown as below the reporting threshold instead of being given a number that would not hold up.</div>
 <h3>Business photography</h3>
 <div class="tablebox"><table><thead><tr>
 <th>Search term</th>
-<th class="num">Searches / mo<br><span class="muted small">in your market area</span></th>
+<th class="num">Searches / mo<br><span class="muted small">across your market area</span></th>
 <th class="num">Busiest county<br><span class="muted small">for this term</span></th>
 <th class="num">Difficulty<br><span class="muted small">0&ndash;100</span></th>
 <th class="num">Your rank<br><span class="muted small">in Rome</span></th>
@@ -217,43 +234,48 @@ Then <strong>8 further terms go to a single competitor</strong>, Kelly Moore Pho
 <br><br>
 So this is not a case of missing the headshot market. You already hold most of it in Rome. The gap is two head terms, one persistent local rival, and an almost total absence everywhere outside Rome.</div>
 <h3>Senior portraits</h3>
+<p class="sub">Measured across the <strong>Rome inner ring only</strong> &mdash; Floyd, Bartow, Polk, Chattooga and Gordon counties, covering Rome, Cave Spring, Adairsville, Cedartown, Summerville, Rockmart, Calhoun and Cartersville. Senior work is a proximity purchase and this is where you have chosen to compete, so measuring it across Cobb or Hamilton would report a market you are not pursuing.</p>
 <div class="tablebox"><table><thead><tr>
 <th>Search term</th>
-<th class="num">Searches / mo<br><span class="muted small">in your market area</span></th>
+<th class="num">Searches / mo<br><span class="muted small">across the Rome inner ring</span></th>
 <th class="num">Busiest county<br><span class="muted small">for this term</span></th>
 <th class="num">Difficulty<br><span class="muted small">0&ndash;100</span></th>
 <th class="num">Your rank<br><span class="muted small">in Rome</span></th>
 <th class="num">Markets<br><span class="muted small">you appear in</span></th></tr></thead><tbody><tr class="fam"><th colspan="6">Senior</th></tr><tr><td class="kw">senior pictures</td>
-<td class="num"><strong>290</strong></td>
-<td class="num">Cobb Co, GA <span class="muted small">50</span></td>
+<td class="num"><span class="muted small">under 10 a month<br>in every inner-ring county</span></td>
+<td class="num"><span class="muted">—</span></td>
 <td class="num"><span class="pill good">0</span></td>
 <td class="num"><span class="pill good">2</span></td>
 <td class="num">6 <span class="muted small">of 8</span></td></tr><tr><td class="kw">senior portraits</td>
-<td class="num"><strong>250</strong></td>
-<td class="num">Cobb Co, GA <span class="muted small">20</span></td>
+<td class="num"><span class="muted small">under 10 a month<br>in every inner-ring county</span></td>
+<td class="num"><span class="muted">—</span></td>
 <td class="num"><span class="pill mid">14</span></td>
 <td class="num"><span class="pill top">1st</span></td>
 <td class="num">4 <span class="muted small">of 8</span></td></tr><tr><td class="kw">senior photos</td>
-<td class="num"><strong>260</strong></td>
-<td class="num">Cobb Co, GA <span class="muted small">30</span></td>
+<td class="num"><span class="muted small">under 10 a month<br>in every inner-ring county</span></td>
+<td class="num"><span class="muted">—</span></td>
 <td class="num"><span class="pill good">0</span></td>
 <td class="num"><span class="pill top">1st</span></td>
 <td class="num">3 <span class="muted small">of 8</span></td></tr><tr><td class="kw">senior picture photographers</td>
-<td class="num"><strong>270</strong></td>
-<td class="num">Cobb Co, GA <span class="muted small">30</span></td>
+<td class="num"><span class="muted small">under 10 a month<br>in every inner-ring county</span></td>
+<td class="num"><span class="muted">—</span></td>
 <td class="num"><span class="pill good">1</span></td>
 <td class="num"><span class="pill top">1st</span></td>
 <td class="num">1 <span class="muted small">of 8</span></td></tr><tr><td class="kw">senior photographers near me</td>
-<td class="num"><span class="muted small">under 10 a month<br>in every county</span></td>
+<td class="num"><span class="muted small">under 10 a month<br>in every inner-ring county</span></td>
 <td class="num"><span class="muted">—</span></td>
 <td class="num"><span class="pill good">0</span></td>
 <td class="num"><span class="pill top">1st</span></td>
 <td class="num">7 <span class="muted small">of 8</span></td></tr><tr><td class="kw">high school senior photographer</td>
-<td class="num"><span class="muted small">under 10 a month<br>in every county</span></td>
+<td class="num"><span class="muted small">under 10 a month<br>in every inner-ring county</span></td>
 <td class="num"><span class="muted">—</span></td>
 <td class="num"><span class="muted">—</span></td>
 <td class="num"><span class="pill top">1st</span></td>
-<td class="num">1 <span class="muted small">of 8</span></td></tr></tbody></table></div><h2>Where the demand actually sits</h2>
+<td class="num">1 <span class="muted small">of 8</span></td></tr></tbody></table></div>
+<div class="note"><strong>The senior market inside your ring is small, and you already own most of it.</strong>
+Every senior term sits under 10 searches a month in all five inner-ring counties, so the true figure is below what Google will report. That is not a failure of the lane, it is its size.
+<br><br>
+For contrast, <em>senior pictures</em> alone runs about 50 a month in Cobb County, more than the entire inner ring combined. The senior demand in Georgia is concentrated in metro Atlanta, not around Rome. Keeping seniors local is still defensible, since families hire close to home and you hold first place on five of six senior terms in Rome, but the ceiling on that lane inside this footprint is genuinely low and worth naming before anyone plans around it.</div><h2>Where the demand actually sits</h2>
 <p class="sub">Grouped by the area measured, because a county is what a photographer genuinely serves and the smallest geography Google reports honestly. Six of your markets sit inside Cobb County, so Cobb's figure is stated once and the towns it covers are listed beside it. The second-to-last column counts searches that name a town directly, such as "photographer rome ga".</p><div class="tablebox"><table class="areas"><thead><tr>
 <th>Area</th><th>Towns</th>
 <th class="num">People</th>
@@ -402,7 +424,39 @@ So this is not a case of missing the headshot market. You already hold most of i
 <div class="note"><strong>Your home county ranks 14th of the 23 areas listed.</strong>
 Floyd County carries 300 searches a month across these terms. Cobb County carries 1,180, close to four times as much, and Hamilton County around Chattanooga carries 600.
 <br><br>
-The last column is the one that settles a strategic question. Searches that pair a town name with a business term &mdash; "brand photographer cartersville ga", "business headshots kennesaw ga" &mdash; return essentially nothing anywhere in the territory. Business clients do not search that way. They search "professional headshots" or "headshots near me" and let Google work out where they are. That is why the business lane is won through your Google profile and your service pages rather than through a page per town.</div><h2>Rome, in full</h2>
+The last column is the one that settles a strategic question. Searches that pair a town name with a business term &mdash; "brand photographer cartersville ga", "business headshots kennesaw ga" &mdash; return essentially nothing anywhere in the territory. Business clients do not search that way. They search "professional headshots" or "headshots near me" and let Google work out where they are. That is why the business lane is won through your Google profile and your service pages rather than through a page per town.</div>
+
+<h2>What the data says to do</h2>
+<p class="sub">Ordered by what the measurements support, not by effort. Every item traces back to a figure above.</p>
+<ol class="plan">
+<li><strong>Take <em>headshots</em> and <em>professional headshots</em> in Rome.</strong>
+At 680 searches a month each across your market area, these are the two largest winnable positions you have, and you already sit second and third. The business holding them is 0.8 miles away with 28 reviews against your 32. You are not behind on distance or reputation, which means the gap is in how the two businesses are described and what each site actually covers.</li>
+
+<li><strong>Review your Google Business Profile category.</strong>
+You are listed under the general "Photographer". Every business beating you on business terms names its speciality outright &mdash; Headshot Solutions &amp; Beyond, Headshot Studio Atlanta, EtherArts Product Photography &mdash; and sits in a category to match. Worth checking what you can evidence before changing anything, since Google expects the category to match verifiable proof.</li>
+
+<li><strong>Consolidate the four websites into one.</strong>
+<em>brands.studio-kate.com</em> and <em>seniors.studio-kate.com</em> rank for nothing at all. <em>blog.studio-kate.com</em> ranks for 85 terms, and those rankings are the only organic asset you own. Everything on separate subdomains builds authority that the main site never receives.</li>
+
+<li><strong>Rebuild the blog's senior content on the main site.</strong>
+You currently sit between positions 44 and 67 for "senior pictures outfits" and "clothing for senior pictures", terms searched around 8,100 times a month nationally. That content already works. Moving and improving it is the least work for the most movement of anything on this list.</li>
+
+<li><strong>Build the headshot service pages.</strong>
+You hold first place on 12 of 26 business terms in Rome including the three hardest, so the ground is already yours to build on. LinkedIn headshots deserve their own page: it is the cleanest business intent in the entire dataset, and the person searching it is a professional spending their own money on their career.</li>
+
+<li><strong>Publish on a calendar that matches the seasons.</strong>
+Senior demand peaks in July at roughly four times its December low, and headshots peak in February and again in September. The two lanes are counter-cyclical, so senior content needs to be live by April and business content ahead of the winter and late-summer peaks. Both content clusters sit at difficulty 0, which means content quality alone can win them.</li>
+
+<li><strong>Treat reach beyond Rome as a profile problem, not a page problem.</strong>
+You appear in 14 of 780 searches outside Rome and hold no top-three anywhere. Since town-plus-business-term searches return nothing across the whole territory, that reach is bought through profile strength, reviews and proximity signals rather than through writing a page for each town.</li>
+</ol>
+
+<h3>What the data says not to do</h3>
+<ul class="dont">
+<li><strong>Do not build a page per town for business terms.</strong> Searches pairing a town with "brand photographer", "business headshots" or "corporate headshots" measured essentially zero in all 31 markets. Those pages would target searches that do not exist, and a stack of near-identical location pages is the pattern Google treats as doorway content.</li>
+<li><strong>Do not build the strategy on "brand photographer".</strong> It is under 10 searches a month in every county you serve. It is a good description of the work and a poor way to be found.</li>
+<li><strong>Do not expect the content retainer to be found through search.</strong> Tested three separate ways, including creator-economy vocabulary, and it does not register. It is a real service people buy, just not one they search for. It gets sold in the room.</li>
+</ul><h2>Rome, in full</h2>
 <p class="sub">Rome is the one market where you compete on every term, so it is the clearest picture of how you are positioned. It is also where the pattern above is most visible.</p>
 <h3>Business photography in Rome</h3>
 <div class="tablebox"><table><thead><tr>
