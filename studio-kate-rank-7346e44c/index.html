@@ -52,9 +52,17 @@ tr.fam th{font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var
 .pill.bad{background:color-mix(in srgb,var(--gone) 12%,transparent);color:var(--gone)}
 .muted{color:var(--muted)}
 .small{font-size:13px}
-ol.plan{counter-reset:rec;list-style:none;padding:0;margin:18px 0}
-ol.plan li{counter-increment:rec;position:relative;background:var(--card);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:16px 20px 16px 58px;margin:12px 0;max-width:80ch}
-ol.plan li::before{content:counter(rec);position:absolute;left:16px;top:15px;width:27px;height:27px;border-radius:50%;background:var(--accent);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:13.5px}
+.phase{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin:16px 0;border-top:3px solid var(--accent)}
+.phasehead{display:flex;flex-wrap:wrap;align-items:baseline;gap:12px;margin-bottom:4px}
+.phasehead h3{margin:0;font-size:20px}
+.win{font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;color:#fff;background:var(--accent);padding:3px 10px;border-radius:99px;font-weight:700;white-space:nowrap}
+.phasemeta{display:flex;flex-wrap:wrap;gap:18px;margin:10px 0 12px;font-size:13.5px;color:var(--muted);border-bottom:1px solid var(--line);padding-bottom:11px}
+.phasemeta strong{color:var(--ink);font-variant-numeric:tabular-nums}
+p.towns{font-size:14px;margin:0 0 10px;color:var(--text)}
+ul.phasebuild{margin:0 0 12px;padding-left:20px;font-size:15px}
+ul.phasebuild li{margin:6px 0}
+p.trust,p.targetline{font-size:14.5px;margin:8px 0 0;padding:10px 14px;border-radius:6px;background:color-mix(in srgb,var(--accent) 7%,transparent)}
+p.targetline{background:color-mix(in srgb,var(--pack) 9%,transparent)}
 ul.dont{list-style:none;padding:0;margin:14px 0}
 ul.dont li{position:relative;padding:11px 18px 11px 34px;margin:8px 0;border-left:3px solid var(--gone);background:var(--card);border-radius:6px;max-width:80ch}
 ul.dont li::before{content:"\00d7";position:absolute;left:13px;top:10px;color:var(--gone);font-weight:700;font-size:17px}
@@ -281,175 +289,185 @@ For contrast, <em>senior pictures</em> alone runs about 50 a month in Cobb Count
 <th class="num">People</th>
 <th class="num">Searches<br><span class="muted small">/ mo</span></th>
 <th class="num">Headshots<br><span class="muted small">&amp; brand</span></th>
-<th class="num">Town<br><span class="muted small">named</span></th>
 <th class="num">You<br><span class="muted small">appear</span></th></tr></thead><tbody><tr><td class="kw">Cobb Co, GA</td>
 <td class="small towns">Acworth, Kennesaw, Powder Springs, Marietta, Mableton, Smyrna</td>
 <td class="num muted">278,609</td>
 <td class="num"><strong>1,180</strong></td>
 <td class="num">610</td>
-<td class="num muted">420</td>
 <td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Sandy Springs, GA</td>
 <td class="small towns">Sandy Springs</td>
 <td class="num muted">105,505</td>
 <td class="num"><strong>630</strong></td>
 <td class="num">310</td>
-<td class="num muted">20</td>
 <td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Hamilton Co, TN</td>
 <td class="small towns">Chattanooga</td>
 <td class="num muted">191,496</td>
 <td class="num"><strong>600</strong></td>
 <td class="num">220</td>
-<td class="num muted">750</td>
 <td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Alpharetta, GA</td>
 <td class="small towns">Alpharetta</td>
 <td class="num muted">67,275</td>
 <td class="num"><strong>470</strong></td>
 <td class="num">230</td>
-<td class="num muted">140</td>
 <td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Cherokee Co, GA</td>
 <td class="small towns">Holly Springs, Woodstock, Canton</td>
 <td class="num muted">97,563</td>
 <td class="num"><strong>440</strong></td>
 <td class="num">220</td>
-<td class="num muted">200</td>
 <td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Douglas Co, GA</td>
 <td class="small towns">Douglasville</td>
 <td class="num muted">40,540</td>
 <td class="num"><strong>360</strong></td>
 <td class="num">170</td>
-<td class="num muted">50</td>
 <td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Paulding Co, GA</td>
 <td class="small towns">Dallas</td>
 <td class="num muted">15,062</td>
 <td class="num"><strong>350</strong></td>
 <td class="num">170</td>
-<td class="num muted">50</td>
 <td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Carroll Co, GA</td>
 <td class="small towns">Villa Rica, Carrollton</td>
 <td class="num muted">48,401</td>
 <td class="num"><strong>350</strong></td>
 <td class="num">160</td>
-<td class="num muted">120</td>
 <td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Roswell, GA</td>
 <td class="small towns">Roswell</td>
 <td class="num muted">92,227</td>
 <td class="num"><strong>340</strong></td>
 <td class="num">170</td>
-<td class="num muted">50</td>
 <td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Milton, GA</td>
 <td class="small towns">Milton</td>
 <td class="num muted">41,490</td>
 <td class="num"><strong>340</strong></td>
 <td class="num">170</td>
-<td class="num muted">—</td>
 <td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Whitfield Co, GA</td>
 <td class="small towns">Dalton</td>
 <td class="num muted">34,970</td>
 <td class="num"><strong>330</strong></td>
 <td class="num">140</td>
-<td class="num muted">20</td>
 <td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Dunwoody, GA</td>
 <td class="small towns">Dunwoody</td>
 <td class="num muted">51,795</td>
 <td class="num"><strong>320</strong></td>
 <td class="num">170</td>
-<td class="num muted">10</td>
 <td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Bartow Co, GA</td>
 <td class="small towns">Cartersville</td>
 <td class="num muted">25,082</td>
 <td class="num"><strong>310</strong></td>
 <td class="num">140</td>
-<td class="num muted">90</td>
 <td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Floyd Co, GA</td>
 <td class="small towns">Rome</td>
 <td class="num muted">38,747</td>
 <td class="num"><strong>300</strong></td>
 <td class="num">140</td>
-<td class="num muted">200</td>
 <td class="num">26 <span class="muted small">of 26</span></td></tr><tr><td class="kw">Catoosa Co, GA</td>
 <td class="small towns">Ringgold</td>
 <td class="num muted">3,425</td>
 <td class="num"><strong>260</strong></td>
 <td class="num">150</td>
-<td class="num muted">—</td>
 <td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Walker Co, GA</td>
 <td class="small towns">LaFayette</td>
 <td class="num muted">7,028</td>
 <td class="num"><strong>250</strong></td>
 <td class="num">130</td>
-<td class="num muted">—</td>
 <td class="num">1 <span class="muted small">of 26</span></td></tr><tr><td class="kw">Gordon Co, GA</td>
 <td class="small towns">Calhoun</td>
 <td class="num muted">19,592</td>
 <td class="num"><strong>230</strong></td>
 <td class="num">110</td>
-<td class="num muted">10</td>
 <td class="num">2 <span class="muted small">of 26</span></td></tr><tr><td class="kw">Gilmer Co, GA</td>
 <td class="small towns">Ellijay</td>
 <td class="num muted">1,923</td>
 <td class="num"><strong>230</strong></td>
 <td class="num">110</td>
-<td class="num muted">40</td>
 <td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Chattooga Co, GA</td>
 <td class="small towns">Summerville</td>
 <td class="num muted">4,421</td>
 <td class="num"><strong>220</strong></td>
 <td class="num">100</td>
-<td class="num muted">—</td>
 <td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Polk Co, GA</td>
 <td class="small towns">Cedartown</td>
 <td class="num muted">10,313</td>
 <td class="num"><strong>200</strong></td>
 <td class="num">80</td>
-<td class="num muted">—</td>
 <td class="num">11 <span class="muted small">of 26</span></td></tr><tr><td class="kw">Murray Co, GA</td>
 <td class="small towns">Chatsworth</td>
 <td class="num muted">4,943</td>
 <td class="num"><strong>180</strong></td>
 <td class="num">100</td>
-<td class="num muted">—</td>
 <td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Fannin Co, GA</td>
 <td class="small towns">Blue Ridge</td>
 <td class="num muted">1,246</td>
 <td class="num"><strong>170</strong></td>
 <td class="num">80</td>
-<td class="num muted">150</td>
 <td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Pickens Co, GA</td>
 <td class="small towns">Jasper</td>
 <td class="num muted">5,289</td>
 <td class="num"><strong>160</strong></td>
 <td class="num">70</td>
-<td class="num muted">10</td>
 <td class="num"><span class="muted">none</span></td></tr></tbody></table></div>
 <div class="note"><strong>Your home county ranks 14th of the 23 areas listed.</strong>
 Floyd County carries 300 searches a month across these terms. Cobb County carries 1,180, close to four times as much, and Hamilton County around Chattanooga carries 600.
 <br><br>
 The last column is the one that settles a strategic question. Searches that pair a town name with a business term &mdash; "brand photographer cartersville ga", "business headshots kennesaw ga" &mdash; return essentially nothing anywhere in the territory. Business clients do not search that way. They search "professional headshots" or "headshots near me" and let Google work out where they are. That is why the business lane is won through your Google profile and your service pages rather than through a page per town.</div>
 
-<h2>What the data says to do</h2>
-<p class="sub">Ordered by what the measurements support, not by effort. Every item traces back to a figure above.</p>
-<ol class="plan">
-<li><strong>Take <em>headshots</em> and <em>professional headshots</em> in Rome.</strong>
-At 680 searches a month each across your market area, these are the two largest winnable positions you have, and you already sit second and third. The business holding them is 0.8 miles away with 28 reviews against your 32. You are not behind on distance or reputation, which means the gap is in how the two businesses are described and what each site actually covers.</li>
-
-<li><strong>Review your Google Business Profile category.</strong>
-You are listed under the general "Photographer". Every business beating you on business terms names its speciality outright &mdash; Headshot Solutions &amp; Beyond, Headshot Studio Atlanta, EtherArts Product Photography &mdash; and sits in a category to match. Worth checking what you can evidence before changing anything, since Google expects the category to match verifiable proof.</li>
-
-<li><strong>Consolidate the four websites into one.</strong>
-<em>brands.studio-kate.com</em> and <em>seniors.studio-kate.com</em> rank for nothing at all. <em>blog.studio-kate.com</em> ranks for 85 terms, and those rankings are the only organic asset you own. Everything on separate subdomains builds authority that the main site never receives.</li>
-
-<li><strong>Rebuild the blog's senior content on the main site.</strong>
-You currently sit between positions 44 and 67 for "senior pictures outfits" and "clothing for senior pictures", terms searched around 8,100 times a month nationally. That content already works. Moving and improving it is the least work for the most movement of anything on this list.</li>
-
-<li><strong>Build the headshot service pages.</strong>
-You hold first place on 12 of 26 business terms in Rome including the three hardest, so the ground is already yours to build on. LinkedIn headshots deserve their own page: it is the cleanest business intent in the entire dataset, and the person searching it is a professional spending their own money on their career.</li>
-
-<li><strong>Publish on a calendar that matches the seasons.</strong>
-Senior demand peaks in July at roughly four times its December low, and headshots peak in February and again in September. The two lanes are counter-cyclical, so senior content needs to be live by April and business content ahead of the winter and late-summer peaks. Both content clusters sit at difficulty 0, which means content quality alone can win them.</li>
-
-<li><strong>Treat reach beyond Rome as a profile problem, not a page problem.</strong>
-You appear in 14 of 780 searches outside Rome and hold no top-three anywhere. Since town-plus-business-term searches return nothing across the whole territory, that reach is bought through profile strength, reviews and proximity signals rather than through writing a page for each town.</li>
-</ol>
+<h2>The twelve-month plan</h2>
+<p class="sub">Four phases, sequenced by geography rather than by task, because each band of markets has to be earned before the next becomes reachable. The demand figure on each phase is what that phase opens up; the running total is everything reachable by the end of it.</p><div class="phase">
+<div class="phasehead">
+<span class="win">Months 0&ndash;3</span>
+<h3>Fix the foundations and finish winning Rome</h3>
+</div>
+<div class="phasemeta">
+<span><strong>300</strong> searches a month opened up</span>
+<span><strong>300</strong> reachable in total by the end</span>
+<span>1 area</span>
+</div>
+<p class="towns"><strong>Markets:</strong> Rome, Cave Spring</p>
+<ul class="phasebuild"><li>Consolidate <em>brands.</em>, <em>seniors.</em> and <em>blog.studio-kate.com</em> into one site. The first two rank for nothing; the blog holds the only 85 rankings you own, so its content moves with a mapped redirect for every URL.</li><li>Rebuild the senior outfit posts on the main site. They already sit at positions 44 to 67 for terms searched around 8,100 times a month nationally.</li><li>Build the headshot, LinkedIn headshot and brand session service pages.</li><li>Review the Google Business Profile category against what you can evidence.</li></ul>
+<p class="trust"><strong>Building trust:</strong> Get the review engine running: a request goes out after every session. You are at 32 reviews and the business beating you on headshots has 28, so this is a gap you can close inside a quarter.</p>
+<p class="targetline"><strong>What success looks like:</strong> Take <em>headshots</em> and <em>professional headshots</em> in Rome. You are second and third on both today.</p>
+</div><div class="phase">
+<div class="phasehead">
+<span class="win">Months 3&ndash;6</span>
+<h3>Extend across the inner ring</h3>
+</div>
+<div class="phasemeta">
+<span><strong>1,980</strong> searches a month opened up</span>
+<span><strong>2,280</strong> reachable in total by the end</span>
+<span>8 areas</span>
+</div>
+<p class="towns"><strong>Markets:</strong> Cartersville, Calhoun, Cedartown, Rockmart, Adairsville, Summerville, LaFayette, Ringgold, Chatsworth, Dalton</p>
+<ul class="phasebuild"><li>Senior work is already surfacing here without effort, so the senior lane gets its content and galleries first while the business lane is still being built.</li><li>Publish the senior content cluster before April so it is ranking for the July peak.</li><li>Add real client work from these towns as it accumulates, since a page carrying a shoot from that town is what separates this from a template.</li></ul>
+<p class="trust"><strong>Building trust:</strong> Reviews from clients in these counties, and named local work published as it happens. Proximity plus a visible local footprint is what moves a profile into a neighbouring market.</p>
+<p class="targetline"><strong>What success looks like:</strong> Appear in the inner-ring markets at all. You currently show in 14 searches across every market outside Rome combined.</p>
+</div><div class="phase">
+<div class="phasehead">
+<span class="win">Months 6&ndash;9</span>
+<h3>Enter Cobb and Cherokee, the largest prize</h3>
+</div>
+<div class="phasemeta">
+<span><strong>2,910</strong> searches a month opened up</span>
+<span><strong>5,190</strong> reachable in total by the end</span>
+<span>6 areas</span>
+</div>
+<p class="towns"><strong>Markets:</strong> Marietta, Kennesaw, Acworth, Smyrna, Mableton, Powder Springs, Woodstock, Canton, Holly Springs, Dallas, Douglasville, Carrollton, Villa Rica</p>
+<ul class="phasebuild"><li>Cobb County alone carries more demand than any other area you serve, and Marietta is the only market outside Rome with measurable headshot volume.</li><li>Vertical headshot pages built on real client work: realtors, executives, teams and offices.</li><li>Corporate event coverage, which is weekday work that fits the schedule and pairs naturally with retainer clients.</li></ul>
+<p class="trust"><strong>Building trust:</strong> This is the hardest trust gap in the plan. The businesses holding Cobb carry 55 to 281 reviews and sit inside the county. Expect to need real clients there first, then reviews from them, before rankings follow.</p>
+<p class="targetline"><strong>What success looks like:</strong> First measurable placements in Cobb and Cherokee.</p>
+</div><div class="phase">
+<div class="phasehead">
+<span class="win">Months 9&ndash;12</span>
+<h3>Chattanooga and the north metro</h3>
+</div>
+<div class="phasemeta">
+<span><strong>3,260</strong> searches a month opened up</span>
+<span><strong>8,450</strong> reachable in total by the end</span>
+<span>9 areas</span>
+</div>
+<p class="towns"><strong>Markets:</strong> Chattanooga, Sandy Springs, Alpharetta, Roswell, Milton, Dunwoody, Jasper, Ellijay, Blue Ridge</p>
+<ul class="phasebuild"><li>Chattanooga is the largest single town-named market in the territory and sits an hour up I-75.</li><li>The north-metro suburbs carry high demand and high competition, so they come last on purpose.</li><li>The Ellijay and Blue Ridge cluster is worked from the cabin rather than driven from Rome, and its businesses are cabin rentals, wineries, venues and boutiques marketing to visitors who never see them in person.</li></ul>
+<p class="trust"><strong>Building trust:</strong> By this point the profile carries a year of reviews and published client work across three bands. That accumulated proof is what makes a distant market winnable at all.</p>
+<p class="targetline"><strong>What success looks like:</strong> Measurable presence in Chattanooga and at least one north-metro market.</p>
+</div><p class="sub">Total reachable demand across the full twelve months: <strong>8,450 searches a month</strong>, against the 300 a month you compete in today.</p>
 
 <h3>What the data says not to do</h3>
 <ul class="dont">
@@ -563,59 +581,9 @@ You appear in 14 of 780 searches outside Rome and hold no top-three anywhere. Si
 <td class="num muted">0.4 mi</td>
 <td class="num muted">32</td></tr></tbody></table></div>
 <div class="note"><strong>One competitor is worth naming.</strong> Kelly Moore Photography sits 0.8 miles from your studio with 28 Google reviews, fewer than your 32, and takes most of the headshot searches you do not hold &mdash; including both 1,900-a-month head terms. Closer is not the reason, and better reviewed is not the reason. What is left is how each business is described and what each website actually covers, and those are both things you control.</div><h2>The other 30 business markets</h2>
-<p class="sub">There is no table for most of these, because there is nothing in them to tabulate.</p>
-<p class="sub">Across 30 markets and 26 search terms, you appear in <strong>14</strong> searches and hold <strong>zero</strong> top-three positions. 27 of those markets return you nowhere at all: Summerville, Cartersville, Dallas, Acworth, Kennesaw, Dalton, Holly Springs, Woodstock, Canton, Powder Springs, Villa Rica, Marietta, Chatsworth, Douglasville, Jasper, Mableton, Smyrna, Ringgold, Carrollton, Roswell, Ellijay, Milton, Sandy Springs, Alpharetta, Dunwoody, Chattanooga, Blue Ridge.</p><h3>Cedartown, GA</h3><p class="sub">17.8 miles from the studio. You appear in 11 of 26 searches here, none of them in the top three.</p>
-<div class="tablebox"><table><thead><tr>
-<th>Search term</th><th class="num">Searches / mo<br><span class="muted small">Polk County, GA</span></th><th class="num">You</th>
-<th>Currently first</th><th class="num">Their distance</th><th class="num">Their reviews</th></tr></thead><tbody><tr class="fam"><th colspan="6">Headshots</th></tr><tr><td class="kw">headshots</td><td class="num">10</td><td class="num"><span class="pill mid">4</span></td>
-<td>Paris Mountain Photography</td>
-<td class="num muted">11.7 mi</td>
-<td class="num muted">12</td></tr><tr><td class="kw">professional headshots</td><td class="num">10</td><td class="num"><span class="pill mid">9</span></td>
-<td>Paris Mountain Photography</td>
-<td class="num muted">11.7 mi</td>
-<td class="num muted">12</td></tr><tr><td class="kw">headshot photographer</td><td class="num">10</td><td class="num"><span class="pill mid">8</span></td>
-<td>Eagle People Media</td>
-<td class="num muted">0.3 mi</td>
-<td class="num muted">13</td></tr><tr><td class="kw">business headshots</td><td class="num"><span class="muted small">under 10</span></td><td class="num"><span class="pill mid">9</span></td>
-<td>Paris Mountain Photography</td>
-<td class="num muted">11.7 mi</td>
-<td class="num muted">12</td></tr><tr><td class="kw">corporate headshots</td><td class="num">10</td><td class="num"><span class="pill mid">7</span></td>
-<td>Headshot Solutions &amp; Beyond, LLC</td>
-<td class="num muted">35.2 mi</td>
-<td class="num muted">55</td></tr><tr class="fam"><th colspan="6">Commercial</th></tr><tr><td class="kw">commercial photographer</td><td class="num"><span class="muted small">under 10</span></td><td class="num"><span class="pill mid">10</span></td>
-<td>Eagle People Media</td>
-<td class="num muted">0.3 mi</td>
-<td class="num muted">13</td></tr><tr><td class="kw">product photography</td><td class="num">10</td><td class="num"><span class="pill mid">7</span></td>
-<td>Kiela's Photo Lab</td>
-<td class="num muted">0.1 mi</td>
-<td class="num muted">8</td></tr><tr class="fam"><th colspan="6">Additional headshot phrasings</th></tr><tr><td class="kw">headshot photoshoot</td><td class="num">10</td><td class="num"><span class="pill bad">13</span></td>
-<td>Presto Photography</td>
-<td class="num muted">35.8 mi</td>
-<td class="num muted">28</td></tr><tr><td class="kw">headshot photo</td><td class="num">10</td><td class="num"><span class="pill good">3</span></td>
-<td>Kiela's Photo Lab</td>
-<td class="num muted">0.1 mi</td>
-<td class="num muted">8</td></tr><tr><td class="kw">photographers for headshots</td><td class="num">10</td><td class="num"><span class="pill bad">15</span></td>
-<td>Photos by Haley Nicole <span class="muted small">(out of area)</span></td>
-<td class="num muted">150.5 mi</td>
-<td class="num muted">141</td></tr><tr><td class="kw">corp headshots</td><td class="num">10</td><td class="num"><span class="pill mid">4</span></td>
-<td>Geoffrey Donne Photography</td>
-<td class="num muted">36.9 mi</td>
-<td class="num muted">75</td></tr></tbody></table></div><h3>Calhoun, GA</h3><p class="sub">20.9 miles from the studio. You appear in 2 of 26 searches here, none of them in the top three.</p>
-<div class="tablebox"><table><thead><tr>
-<th>Search term</th><th class="num">Searches / mo<br><span class="muted small">Gordon County, GA</span></th><th class="num">You</th>
-<th>Currently first</th><th class="num">Their distance</th><th class="num">Their reviews</th></tr></thead><tbody><tr class="fam"><th colspan="6">Commercial</th></tr><tr><td class="kw">commercial photographer</td><td class="num"><span class="muted small">under 10</span></td><td class="num"><span class="pill mid">9</span></td>
-<td>Sherry Sloan Photography</td>
-<td class="num muted">0 mi</td>
-<td class="num muted">21</td></tr><tr class="fam"><th colspan="6">Additional headshot phrasings</th></tr><tr><td class="kw">headshot photo</td><td class="num">10</td><td class="num"><span class="pill bad">18</span></td>
-<td>Sherry Sloan Photography</td>
-<td class="num muted">0 mi</td>
-<td class="num muted">21</td></tr></tbody></table></div><h3>LaFayette, GA</h3><p class="sub">31.7 miles from the studio. You appear in 1 of 26 searches here, none of them in the top three.</p>
-<div class="tablebox"><table><thead><tr>
-<th>Search term</th><th class="num">Searches / mo<br><span class="muted small">Walker County, GA</span></th><th class="num">You</th>
-<th>Currently first</th><th class="num">Their distance</th><th class="num">Their reviews</th></tr></thead><tbody><tr class="fam"><th colspan="6">Brand</th></tr><tr><td class="kw">brand photographer</td><td class="num">10</td><td class="num"><span class="pill bad">19</span></td>
-<td>Laure Photography branding <span class="muted small">(out of area)</span></td>
-<td class="num muted">184.4 mi</td>
-<td class="num muted">27</td></tr></tbody></table></div><h2>Senior portraits beyond Rome</h2>
+<p class="sub">Across 30 markets and 26 search terms &mdash; 780 searches in total &mdash; you appear <strong>14</strong> times and hold <strong>no</strong> top-three position anywhere.</p>
+<p class="sub">You register at all in only 3: Cedartown, Calhoun, LaFayette. The remaining 27 return you nowhere: Summerville, Cartersville, Dallas, Acworth, Kennesaw, Dalton, Holly Springs, Woodstock, Canton, Powder Springs, Villa Rica, Marietta, Chatsworth, Douglasville, Jasper, Mableton, Smyrna, Ringgold, Carrollton, Roswell, Ellijay, Milton, Sandy Springs, Alpharetta, Dunwoody, Chattanooga, Blue Ridge.</p>
+<div class="note">This is the whole case for the plan above. It is not a ranking problem to be fixed page by page, because there is no page to fix &mdash; there is no presence at all. It is built by earning clients, reviews and published work in one band of markets at a time.</div><h2>Senior portraits beyond Rome</h2>
 <p class="sub">The contrast with the business lane is the finding. Without any deliberate effort, senior work already surfaces across the towns around Rome.</p>
 <div class="tablebox"><table><thead><tr><th>Town</th><th class="num">Population</th><th class="num">Miles</th><th class="num">You appear in</th><th class="num">Top three</th></tr></thead><tbody><tr><td class="kw">Rome, GA</td><td class="num">38,747</td><td class="num muted">0</td>
 <td class="num">6 <span class="muted small">of 6</span></td>
