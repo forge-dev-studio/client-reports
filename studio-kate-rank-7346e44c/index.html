@@ -39,6 +39,10 @@ th,td{padding:8px 12px;text-align:left;border-bottom:1px solid var(--line)}
 th{font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:700;white-space:nowrap}
 td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
 td.kw{font-weight:600;color:var(--ink)}
+/* The area table carries seven columns and a wrapping town list; without tightening it
+   pushed the last two columns off the right edge at laptop width. */
+table.areas th,table.areas td{padding:7px 8px}
+table.areas td.towns{white-space:normal;max-width:210px;line-height:1.35}
 tr:last-child td{border-bottom:0}
 tr.fam th{font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);padding-top:16px;font-weight:700}
 .pill{display:inline-block;padding:1px 9px;border-radius:99px;font-size:12px;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
@@ -65,388 +69,442 @@ Listed under the category <strong>Photographer</strong>, rated 5 from 32 reviews
 <div class="tile"><div class="n">40 of 806</div><div class="l">business searches where you appear, across 31 markets</div></div>
 </div>
 <p class="sub">Senior portraits reach <strong>46%</strong> of the searches measured. Business photography reaches <strong>5%</strong>. Put plainly: the senior side of the business already travels beyond Rome on its own, and the business side has never left town. You hold a top-three spot in 21 business searches, and <strong>every one of them is in Rome</strong>.</p><h2>The search terms, and what each one is worth</h2>
-<p class="sub">Search volume is monthly Google searches across Georgia. Difficulty estimates how hard the first page is to break into, based on the strength of the sites already there: under 10 is winnable with good content alone, over 30 usually needs authority you have to build first.</p>
+<p class="sub">Search volume here is <strong>your market area only</strong> &mdash; the counties you actually serve, from Floyd and Chattooga through Cobb and Cherokee up to Hamilton County in Tennessee, plus the five north-metro suburbs you reach. It deliberately excludes the rest of Georgia, because Savannah, Augusta and Macon are not markets you can sell into and counting them would flatter every number on this page. Difficulty estimates how hard the first page is to break into, based on the strength of the sites already ranking: under 10 is winnable on content alone, over 30 usually needs authority built first.</p>
+<div class="note"><strong>Why some rows say "under 10 a month".</strong> Google reports a minimum of 10 searches per month and rounds hard below that, so a term genuinely searched two or three times in a county comes back as 10 &mdash; or as nothing. Where every county in your area sits at that floor, adding them up would produce a total larger than the whole state of Georgia, which cannot be true. Those terms are shown as below the reporting threshold instead of being given a number that would not hold up.</div>
 <h3>Business photography</h3>
 <div class="tablebox"><table><thead><tr>
-<th>Search term</th><th class="num">Searches / mo<br><span class="muted small">in Georgia</span></th>
+<th>Search term</th>
+<th class="num">Searches / mo<br><span class="muted small">in your market area</span></th>
+<th class="num">Busiest county<br><span class="muted small">for this term</span></th>
 <th class="num">Difficulty<br><span class="muted small">0&ndash;100</span></th>
 <th class="num">Your rank<br><span class="muted small">in Rome</span></th>
-<th class="num">Markets<br><span class="muted small">you appear in</span></th></tr></thead><tbody><tr class="fam"><th colspan="5">Generic</th></tr><tr><td class="kw">photographer</td>
-<td class="num">2,900</td>
+<th class="num">Markets<br><span class="muted small">you appear in</span></th></tr></thead><tbody><tr class="fam"><th colspan="6">Generic</th></tr><tr><td class="kw">photographer</td>
+<td class="num"><strong>770</strong></td>
+<td class="num">Cobb Co, GA <span class="muted small">170</span></td>
 <td class="num"><span class="pill bad">68</span></td>
 <td class="num"><span class="pill mid">4</span></td>
 <td class="num">1 <span class="muted small">of 31</span></td></tr><tr><td class="kw">photography</td>
-<td class="num">2,900</td>
+<td class="num"><strong>770</strong></td>
+<td class="num">Cobb Co, GA <span class="muted small">170</span></td>
 <td class="num"><span class="pill bad">77</span></td>
 <td class="num"><span class="pill good">2</span></td>
-<td class="num">1 <span class="muted small">of 31</span></td></tr><tr class="fam"><th colspan="5">Headshots</th></tr><tr><td class="kw">headshots</td>
-<td class="num">1,900</td>
+<td class="num">1 <span class="muted small">of 31</span></td></tr><tr class="fam"><th colspan="6">Headshots</th></tr><tr><td class="kw">headshots</td>
+<td class="num"><strong>680</strong></td>
+<td class="num">Cobb Co, GA <span class="muted small">210</span></td>
 <td class="num"><span class="pill good">10</span></td>
 <td class="num"><span class="pill good">2</span></td>
 <td class="num">2 <span class="muted small">of 31</span></td></tr><tr><td class="kw">professional headshots</td>
-<td class="num">1,900</td>
+<td class="num"><strong>680</strong></td>
+<td class="num">Cobb Co, GA <span class="muted small">210</span></td>
 <td class="num"><span class="pill mid">24</span></td>
 <td class="num"><span class="pill good">3</span></td>
 <td class="num">2 <span class="muted small">of 31</span></td></tr><tr><td class="kw">headshot photographer</td>
-<td class="num">260</td>
+<td class="num"><strong>250</strong></td>
+<td class="num">Cobb Co, GA <span class="muted small">20</span></td>
 <td class="num"><span class="pill mid">29</span></td>
 <td class="num"><span class="pill top">1st</span></td>
 <td class="num">2 <span class="muted small">of 31</span></td></tr><tr><td class="kw">business headshots</td>
-<td class="num">110</td>
+<td class="num"><span class="muted small">under 10 a month<br>in every county</span></td>
+<td class="num"><span class="muted">—</span></td>
 <td class="num"><span class="pill mid">20</span></td>
 <td class="num"><span class="pill good">2</span></td>
 <td class="num">2 <span class="muted small">of 31</span></td></tr><tr><td class="kw">corporate headshots</td>
-<td class="num">110</td>
+<td class="num"><span class="muted small">under 10 a month<br>in every county</span></td>
+<td class="num"><span class="muted">—</span></td>
 <td class="num"><span class="pill good">9</span></td>
 <td class="num"><span class="pill good">2</span></td>
-<td class="num">2 <span class="muted small">of 31</span></td></tr><tr class="fam"><th colspan="5">LinkedIn</th></tr><tr><td class="kw">linkedin headshot</td>
-<td class="num">140</td>
+<td class="num">2 <span class="muted small">of 31</span></td></tr><tr class="fam"><th colspan="6">LinkedIn</th></tr><tr><td class="kw">linkedin headshot</td>
+<td class="num"><span class="muted small">under 10 a month<br>in every county</span></td>
+<td class="num"><span class="muted">—</span></td>
 <td class="num"><span class="pill good">6</span></td>
 <td class="num"><span class="pill good">2</span></td>
-<td class="num">1 <span class="muted small">of 31</span></td></tr><tr class="fam"><th colspan="5">Vertical headshots</th></tr><tr><td class="kw">real estate agent headshots</td>
-<td class="num">70</td>
+<td class="num">1 <span class="muted small">of 31</span></td></tr><tr class="fam"><th colspan="6">Vertical headshots</th></tr><tr><td class="kw">real estate agent headshots</td>
+<td class="num"><span class="muted small">under 10 a month<br>in every county</span></td>
+<td class="num"><span class="muted">—</span></td>
 <td class="num"><span class="pill good">0</span></td>
 <td class="num"><span class="pill bad">16</span></td>
 <td class="num">1 <span class="muted small">of 31</span></td></tr><tr><td class="kw">executive headshots</td>
-<td class="num">20</td>
+<td class="num"><span class="muted small">under 10 a month<br>in every county</span></td>
+<td class="num"><span class="muted">—</span></td>
 <td class="num"><span class="pill good">5</span></td>
 <td class="num"><span class="pill good">2</span></td>
 <td class="num">1 <span class="muted small">of 31</span></td></tr><tr><td class="kw">team headshots</td>
-<td class="num">10</td>
+<td class="num"><span class="muted small">under 10 a month<br>in every county</span></td>
+<td class="num"><span class="muted">—</span></td>
 <td class="num"><span class="pill good">0</span></td>
 <td class="num"><span class="pill good">2</span></td>
-<td class="num">1 <span class="muted small">of 31</span></td></tr><tr class="fam"><th colspan="5">Brand</th></tr><tr><td class="kw">brand photographer</td>
-<td class="num">30</td>
+<td class="num">1 <span class="muted small">of 31</span></td></tr><tr class="fam"><th colspan="6">Brand</th></tr><tr><td class="kw">brand photographer</td>
+<td class="num"><span class="muted small">under 10 a month<br>in every county</span></td>
+<td class="num"><span class="muted">—</span></td>
 <td class="num"><span class="pill good">0</span></td>
 <td class="num"><span class="pill top">1st</span></td>
 <td class="num">2 <span class="muted small">of 31</span></td></tr><tr><td class="kw">branding photoshoot</td>
-<td class="num">40</td>
+<td class="num"><span class="muted small">under 10 a month<br>in every county</span></td>
+<td class="num"><span class="muted">—</span></td>
 <td class="num"><span class="pill good">0</span></td>
 <td class="num"><span class="pill top">1st</span></td>
-<td class="num">1 <span class="muted small">of 31</span></td></tr><tr class="fam"><th colspan="5">Commercial</th></tr><tr><td class="kw">commercial photographer</td>
-<td class="num">40</td>
+<td class="num">1 <span class="muted small">of 31</span></td></tr><tr class="fam"><th colspan="6">Commercial</th></tr><tr><td class="kw">commercial photographer</td>
+<td class="num"><span class="muted small">under 10 a month<br>in every county</span></td>
+<td class="num"><span class="muted">—</span></td>
 <td class="num"><span class="pill good">0</span></td>
 <td class="num"><span class="pill mid">4</span></td>
 <td class="num">3 <span class="muted small">of 31</span></td></tr><tr><td class="kw">product photography</td>
-<td class="num">210</td>
+<td class="num"><span class="muted small">under 10 a month<br>in every county</span></td>
+<td class="num"><span class="muted">—</span></td>
 <td class="num"><span class="pill mid">21</span></td>
 <td class="num"><span class="pill top">1st</span></td>
-<td class="num">2 <span class="muted small">of 31</span></td></tr><tr class="fam"><th colspan="5">Events</th></tr><tr><td class="kw">event photographer</td>
-<td class="num">70</td>
+<td class="num">2 <span class="muted small">of 31</span></td></tr><tr class="fam"><th colspan="6">Events</th></tr><tr><td class="kw">event photographer</td>
+<td class="num"><span class="muted small">under 10 a month<br>in every county</span></td>
+<td class="num"><span class="muted">—</span></td>
 <td class="num"><span class="pill good">0</span></td>
 <td class="num"><span class="pill mid">5</span></td>
 <td class="num">1 <span class="muted small">of 31</span></td></tr><tr><td class="kw">corporate event photographer</td>
-<td class="num">20</td>
+<td class="num"><span class="muted small">under 10 a month<br>in every county</span></td>
+<td class="num"><span class="muted">—</span></td>
 <td class="num"><span class="pill good">0</span></td>
 <td class="num"><span class="pill mid">5</span></td>
-<td class="num">1 <span class="muted small">of 31</span></td></tr><tr class="fam"><th colspan="5">Additional headshot phrasings</th></tr><tr><td class="kw">headshot photoshoot</td>
-<td class="num">320</td>
+<td class="num">1 <span class="muted small">of 31</span></td></tr><tr class="fam"><th colspan="6">Additional headshot phrasings</th></tr><tr><td class="kw">headshot photoshoot</td>
+<td class="num"><strong>260</strong></td>
+<td class="num">Cobb Co, GA <span class="muted small">30</span></td>
 <td class="num"><span class="pill bad">37</span></td>
 <td class="num"><span class="pill top">1st</span></td>
 <td class="num">2 <span class="muted small">of 31</span></td></tr><tr><td class="kw">headshot photo</td>
-<td class="num">320</td>
+<td class="num"><strong>260</strong></td>
+<td class="num">Cobb Co, GA <span class="muted small">30</span></td>
 <td class="num"><span class="pill bad">37</span></td>
 <td class="num"><span class="pill top">1st</span></td>
 <td class="num">3 <span class="muted small">of 31</span></td></tr><tr><td class="kw">photographers for headshots</td>
-<td class="num">260</td>
+<td class="num"><strong>250</strong></td>
+<td class="num">Cobb Co, GA <span class="muted small">20</span></td>
 <td class="num"><span class="pill bad">31</span></td>
 <td class="num"><span class="pill top">1st</span></td>
 <td class="num">2 <span class="muted small">of 31</span></td></tr><tr><td class="kw">company headshots</td>
-<td class="num">110</td>
+<td class="num"><span class="muted small">under 10 a month<br>in every county</span></td>
+<td class="num"><span class="muted">—</span></td>
 <td class="num"><span class="pill mid">20</span></td>
 <td class="num"><span class="pill top">1st</span></td>
 <td class="num">1 <span class="muted small">of 31</span></td></tr><tr><td class="kw">corp headshots</td>
-<td class="num">110</td>
+<td class="num"><span class="muted small">under 10 a month<br>in every county</span></td>
+<td class="num"><span class="muted">—</span></td>
 <td class="num"><span class="muted">—</span></td>
 <td class="num"><span class="pill top">1st</span></td>
 <td class="num">2 <span class="muted small">of 31</span></td></tr><tr><td class="kw">businessman headshot</td>
-<td class="num">110</td>
+<td class="num"><span class="muted small">under 10 a month<br>in every county</span></td>
+<td class="num"><span class="muted">—</span></td>
 <td class="num"><span class="pill mid">20</span></td>
 <td class="num"><span class="pill top">1st</span></td>
 <td class="num">1 <span class="muted small">of 31</span></td></tr><tr><td class="kw">professional headshots women</td>
-<td class="num">90</td>
+<td class="num"><span class="muted small">under 10 a month<br>in every county</span></td>
+<td class="num"><span class="muted">—</span></td>
 <td class="num"><span class="pill good">0</span></td>
 <td class="num"><span class="pill top">1st</span></td>
 <td class="num">1 <span class="muted small">of 31</span></td></tr><tr><td class="kw">headshot professional woman</td>
-<td class="num">90</td>
+<td class="num"><span class="muted small">under 10 a month<br>in every county</span></td>
+<td class="num"><span class="muted">—</span></td>
 <td class="num"><span class="pill good">0</span></td>
 <td class="num"><span class="pill top">1st</span></td>
 <td class="num">1 <span class="muted small">of 31</span></td></tr><tr><td class="kw">real estate headshots</td>
-<td class="num">70</td>
+<td class="num"><span class="muted small">under 10 a month<br>in every county</span></td>
+<td class="num"><span class="muted">—</span></td>
 <td class="num"><span class="pill good">0</span></td>
 <td class="num"><span class="pill bad">11</span></td>
 <td class="num">1 <span class="muted small">of 31</span></td></tr></tbody></table></div>
 <div class="note"><strong>Rome is stronger than it first looks, and the gap is narrower and more specific.</strong>
 You hold first place on <strong>12 of the 26</strong> business terms measured here, and that includes the three hardest in the whole set: <em>headshot photoshoot</em> and <em>headshot photo</em> at difficulty 37, and <em>photographers for headshots</em> at 31.
 <br><br>
-What you lose falls into two tight groups. The two general terms, <em>photographer</em> and <em>photography</em> at 2,900 searches a month each, go to Blooming Oak Photography Studios &mdash; and at difficulty 68 and 77 those are the hardest searches on the board by a wide margin.
-Then <strong>8 further terms go to a single competitor</strong>, Kelly Moore Photography, including both 1,900-a-month head terms and every qualified headshot variant: LinkedIn, business, corporate, executive and team.
+What you lose falls into two tight groups. The two general terms, <em>photographer</em> and <em>photography</em> at 770 searches a month each across your counties, go to Blooming Oak Photography Studios &mdash; and at difficulty 68 and 77 those are the hardest searches on the board by a wide margin.
+Then <strong>8 further terms go to a single competitor</strong>, Kelly Moore Photography, including <em>headshots</em> and <em>professional headshots</em> at 680 a month each, and every qualified headshot variant: LinkedIn, business, corporate, executive and team.
 <br><br>
 So this is not a case of missing the headshot market. You already hold most of it in Rome. The gap is two head terms, one persistent local rival, and an almost total absence everywhere outside Rome.</div>
 <h3>Senior portraits</h3>
 <div class="tablebox"><table><thead><tr>
-<th>Search term</th><th class="num">Searches / mo<br><span class="muted small">in Georgia</span></th>
+<th>Search term</th>
+<th class="num">Searches / mo<br><span class="muted small">in your market area</span></th>
+<th class="num">Busiest county<br><span class="muted small">for this term</span></th>
 <th class="num">Difficulty<br><span class="muted small">0&ndash;100</span></th>
 <th class="num">Your rank<br><span class="muted small">in Rome</span></th>
-<th class="num">Markets<br><span class="muted small">you appear in</span></th></tr></thead><tbody><tr class="fam"><th colspan="5">Senior</th></tr><tr><td class="kw">senior pictures</td>
-<td class="num">720</td>
+<th class="num">Markets<br><span class="muted small">you appear in</span></th></tr></thead><tbody><tr class="fam"><th colspan="6">Senior</th></tr><tr><td class="kw">senior pictures</td>
+<td class="num"><strong>290</strong></td>
+<td class="num">Cobb Co, GA <span class="muted small">50</span></td>
 <td class="num"><span class="pill good">0</span></td>
 <td class="num"><span class="pill good">2</span></td>
 <td class="num">6 <span class="muted small">of 8</span></td></tr><tr><td class="kw">senior portraits</td>
-<td class="num">390</td>
+<td class="num"><strong>250</strong></td>
+<td class="num">Cobb Co, GA <span class="muted small">20</span></td>
 <td class="num"><span class="pill mid">14</span></td>
 <td class="num"><span class="pill top">1st</span></td>
 <td class="num">4 <span class="muted small">of 8</span></td></tr><tr><td class="kw">senior photos</td>
-<td class="num">480</td>
+<td class="num"><strong>260</strong></td>
+<td class="num">Cobb Co, GA <span class="muted small">30</span></td>
 <td class="num"><span class="pill good">0</span></td>
 <td class="num"><span class="pill top">1st</span></td>
 <td class="num">3 <span class="muted small">of 8</span></td></tr><tr><td class="kw">senior picture photographers</td>
-<td class="num">390</td>
+<td class="num"><strong>270</strong></td>
+<td class="num">Cobb Co, GA <span class="muted small">30</span></td>
 <td class="num"><span class="pill good">1</span></td>
 <td class="num"><span class="pill top">1st</span></td>
 <td class="num">1 <span class="muted small">of 8</span></td></tr><tr><td class="kw">senior photographers near me</td>
-<td class="num">170</td>
+<td class="num"><span class="muted small">under 10 a month<br>in every county</span></td>
+<td class="num"><span class="muted">—</span></td>
 <td class="num"><span class="pill good">0</span></td>
 <td class="num"><span class="pill top">1st</span></td>
 <td class="num">7 <span class="muted small">of 8</span></td></tr><tr><td class="kw">high school senior photographer</td>
-<td class="num">0</td>
+<td class="num"><span class="muted small">under 10 a month<br>in every county</span></td>
+<td class="num"><span class="muted">—</span></td>
 <td class="num"><span class="muted">—</span></td>
 <td class="num"><span class="pill top">1st</span></td>
-<td class="num">1 <span class="muted small">of 8</span></td></tr></tbody></table></div><h2>How much searching actually happens in each town</h2>
-<p class="sub">These are searches that name the town directly, such as "photographer rome ga" &mdash; the clearest measure of demand attached to a specific place. Towns are listed largest first.</p><div class="tablebox"><table><thead><tr>
-<th>Market</th><th class="num">Population</th><th class="num">Miles<br><span class="muted small">from studio</span></th>
-<th class="num">Searches / mo<br><span class="muted small">naming this town</span></th>
-<th class="num">of which<br><span class="muted small">business terms</span></th>
-<th class="num">You appear in</th></tr></thead><tbody><tr><td class="kw">Chattanooga, TN</td>
-<td class="num">191,496</td><td class="num muted">55.1</td>
-<td class="num"><strong>750</strong></td>
-<td class="num muted">0</td>
-<td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Marietta, GA</td>
-<td class="num">63,122</td><td class="num muted">41</td>
-<td class="num"><strong>280</strong></td>
-<td class="num ">20</td>
-<td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Rome, GA</td>
-<td class="num">38,747</td><td class="num muted">0</td>
-<td class="num"><strong>200</strong></td>
-<td class="num muted">0</td>
-<td class="num">26 <span class="muted small">of 26</span></td></tr><tr><td class="kw">Blue Ridge, GA</td>
-<td class="num">1,246</td><td class="num muted">63.6</td>
-<td class="num"><strong>150</strong></td>
-<td class="num muted">0</td>
-<td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Alpharetta, GA</td>
-<td class="num">67,275</td><td class="num muted">51.3</td>
-<td class="num"><strong>140</strong></td>
-<td class="num ">10</td>
-<td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Carrollton, GA</td>
-<td class="num">28,306</td><td class="num muted">47</td>
-<td class="num"><strong>120</strong></td>
-<td class="num muted">0</td>
-<td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Canton, GA</td>
-<td class="num">38,049</td><td class="num muted">38.5</td>
-<td class="num"><strong>110</strong></td>
-<td class="num muted">0</td>
-<td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Cartersville, GA</td>
-<td class="num">25,082</td><td class="num muted">21.7</td>
-<td class="num"><strong>90</strong></td>
-<td class="num muted">0</td>
-<td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Woodstock, GA</td>
-<td class="num">39,381</td><td class="num muted">38.4</td>
-<td class="num"><strong>90</strong></td>
-<td class="num muted">0</td>
-<td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Kennesaw, GA</td>
-<td class="num">37,740</td><td class="num muted">35.3</td>
-<td class="num"><strong>80</strong></td>
-<td class="num muted">0</td>
-<td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Dallas, GA</td>
-<td class="num">15,062</td><td class="num muted">29.6</td>
-<td class="num"><strong>50</strong></td>
-<td class="num muted">0</td>
-<td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Acworth, GA</td>
-<td class="num">22,624</td><td class="num muted">30.8</td>
-<td class="num"><strong>50</strong></td>
-<td class="num muted">0</td>
-<td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Douglasville, GA</td>
-<td class="num">40,540</td><td class="num muted">42.3</td>
-<td class="num"><strong>50</strong></td>
-<td class="num muted">0</td>
-<td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Roswell, GA</td>
-<td class="num">92,227</td><td class="num muted">48.7</td>
-<td class="num"><strong>50</strong></td>
-<td class="num muted">0</td>
-<td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Ellijay, GA</td>
-<td class="num">1,923</td><td class="num muted">49.3</td>
-<td class="num"><strong>40</strong></td>
-<td class="num muted">0</td>
-<td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Dalton, GA</td>
-<td class="num">34,970</td><td class="num muted">37.1</td>
-<td class="num"><strong>20</strong></td>
-<td class="num muted">0</td>
+<td class="num">1 <span class="muted small">of 8</span></td></tr></tbody></table></div><h2>Where the demand actually sits</h2>
+<p class="sub">Grouped by the area measured, because a county is what a photographer genuinely serves and the smallest geography Google reports honestly. Six of your markets sit inside Cobb County, so Cobb's figure is stated once and the towns it covers are listed beside it. The second-to-last column counts searches that name a town directly, such as "photographer rome ga".</p><div class="tablebox"><table class="areas"><thead><tr>
+<th>Area</th><th>Towns</th>
+<th class="num">People</th>
+<th class="num">Searches<br><span class="muted small">/ mo</span></th>
+<th class="num">Headshots<br><span class="muted small">&amp; brand</span></th>
+<th class="num">Town<br><span class="muted small">named</span></th>
+<th class="num">You<br><span class="muted small">appear</span></th></tr></thead><tbody><tr><td class="kw">Cobb Co, GA</td>
+<td class="small towns">Acworth, Kennesaw, Powder Springs, Marietta, Mableton, Smyrna</td>
+<td class="num muted">278,609</td>
+<td class="num"><strong>1,180</strong></td>
+<td class="num">610</td>
+<td class="num muted">420</td>
 <td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Sandy Springs, GA</td>
-<td class="num">105,505</td><td class="num muted">50.5</td>
-<td class="num"><strong>20</strong></td>
-<td class="num muted">0</td>
-<td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Calhoun, GA</td>
-<td class="num">19,592</td><td class="num muted">20.9</td>
-<td class="num"><strong>10</strong></td>
-<td class="num muted">0</td>
-<td class="num">2 <span class="muted small">of 26</span></td></tr><tr><td class="kw">Jasper, GA</td>
-<td class="num">5,289</td><td class="num muted">44.4</td>
-<td class="num"><strong>10</strong></td>
-<td class="num muted">0</td>
-<td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Smyrna, GA</td>
-<td class="num">57,177</td><td class="num muted">45.3</td>
-<td class="num"><strong>10</strong></td>
-<td class="num muted">0</td>
-<td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Dunwoody, GA</td>
-<td class="num">51,795</td><td class="num muted">52.1</td>
-<td class="num"><strong>10</strong></td>
-<td class="num ">10</td>
-<td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Cedartown, GA</td>
-<td class="num">10,313</td><td class="num muted">17.8</td>
-<td class="num"><strong>0</strong></td>
-<td class="num muted">0</td>
-<td class="num">11 <span class="muted small">of 26</span></td></tr><tr><td class="kw">Summerville, GA</td>
-<td class="num">4,421</td><td class="num muted">18.6</td>
-<td class="num"><strong>0</strong></td>
-<td class="num muted">0</td>
-<td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">LaFayette, GA</td>
-<td class="num">7,028</td><td class="num muted">31.7</td>
-<td class="num"><strong>0</strong></td>
-<td class="num muted">0</td>
-<td class="num">1 <span class="muted small">of 26</span></td></tr><tr><td class="kw">Holly Springs, GA</td>
-<td class="num">20,133</td><td class="num muted">38.3</td>
-<td class="num"><strong>0</strong></td>
-<td class="num muted">0</td>
-<td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Powder Springs, GA</td>
-<td class="num">19,632</td><td class="num muted">38.9</td>
-<td class="num"><strong>0</strong></td>
-<td class="num muted">0</td>
-<td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Villa Rica, GA</td>
-<td class="num">20,095</td><td class="num muted">38.9</td>
-<td class="num"><strong>0</strong></td>
-<td class="num muted">0</td>
-<td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Chatsworth, GA</td>
-<td class="num">4,943</td><td class="num muted">41.7</td>
-<td class="num"><strong>0</strong></td>
-<td class="num muted">0</td>
-<td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Mableton, GA</td>
-<td class="num">78,314</td><td class="num muted">45</td>
-<td class="num"><strong>0</strong></td>
-<td class="num muted">0</td>
-<td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Ringgold, GA</td>
-<td class="num">3,425</td><td class="num muted">45.6</td>
-<td class="num"><strong>0</strong></td>
-<td class="num muted">0</td>
+<td class="small towns">Sandy Springs</td>
+<td class="num muted">105,505</td>
+<td class="num"><strong>630</strong></td>
+<td class="num">310</td>
+<td class="num muted">20</td>
+<td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Hamilton Co, TN</td>
+<td class="small towns">Chattanooga</td>
+<td class="num muted">191,496</td>
+<td class="num"><strong>600</strong></td>
+<td class="num">220</td>
+<td class="num muted">750</td>
+<td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Alpharetta, GA</td>
+<td class="small towns">Alpharetta</td>
+<td class="num muted">67,275</td>
+<td class="num"><strong>470</strong></td>
+<td class="num">230</td>
+<td class="num muted">140</td>
+<td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Cherokee Co, GA</td>
+<td class="small towns">Holly Springs, Woodstock, Canton</td>
+<td class="num muted">97,563</td>
+<td class="num"><strong>440</strong></td>
+<td class="num">220</td>
+<td class="num muted">200</td>
+<td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Douglas Co, GA</td>
+<td class="small towns">Douglasville</td>
+<td class="num muted">40,540</td>
+<td class="num"><strong>360</strong></td>
+<td class="num">170</td>
+<td class="num muted">50</td>
+<td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Paulding Co, GA</td>
+<td class="small towns">Dallas</td>
+<td class="num muted">15,062</td>
+<td class="num"><strong>350</strong></td>
+<td class="num">170</td>
+<td class="num muted">50</td>
+<td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Carroll Co, GA</td>
+<td class="small towns">Villa Rica, Carrollton</td>
+<td class="num muted">48,401</td>
+<td class="num"><strong>350</strong></td>
+<td class="num">160</td>
+<td class="num muted">120</td>
+<td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Roswell, GA</td>
+<td class="small towns">Roswell</td>
+<td class="num muted">92,227</td>
+<td class="num"><strong>340</strong></td>
+<td class="num">170</td>
+<td class="num muted">50</td>
 <td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Milton, GA</td>
-<td class="num">41,490</td><td class="num muted">50.1</td>
-<td class="num"><strong>0</strong></td>
-<td class="num muted">0</td>
+<td class="small towns">Milton</td>
+<td class="num muted">41,490</td>
+<td class="num"><strong>340</strong></td>
+<td class="num">170</td>
+<td class="num muted">—</td>
+<td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Whitfield Co, GA</td>
+<td class="small towns">Dalton</td>
+<td class="num muted">34,970</td>
+<td class="num"><strong>330</strong></td>
+<td class="num">140</td>
+<td class="num muted">20</td>
+<td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Dunwoody, GA</td>
+<td class="small towns">Dunwoody</td>
+<td class="num muted">51,795</td>
+<td class="num"><strong>320</strong></td>
+<td class="num">170</td>
+<td class="num muted">10</td>
+<td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Bartow Co, GA</td>
+<td class="small towns">Cartersville</td>
+<td class="num muted">25,082</td>
+<td class="num"><strong>310</strong></td>
+<td class="num">140</td>
+<td class="num muted">90</td>
+<td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Floyd Co, GA</td>
+<td class="small towns">Rome</td>
+<td class="num muted">38,747</td>
+<td class="num"><strong>300</strong></td>
+<td class="num">140</td>
+<td class="num muted">200</td>
+<td class="num">26 <span class="muted small">of 26</span></td></tr><tr><td class="kw">Catoosa Co, GA</td>
+<td class="small towns">Ringgold</td>
+<td class="num muted">3,425</td>
+<td class="num"><strong>260</strong></td>
+<td class="num">150</td>
+<td class="num muted">—</td>
+<td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Walker Co, GA</td>
+<td class="small towns">LaFayette</td>
+<td class="num muted">7,028</td>
+<td class="num"><strong>250</strong></td>
+<td class="num">130</td>
+<td class="num muted">—</td>
+<td class="num">1 <span class="muted small">of 26</span></td></tr><tr><td class="kw">Gordon Co, GA</td>
+<td class="small towns">Calhoun</td>
+<td class="num muted">19,592</td>
+<td class="num"><strong>230</strong></td>
+<td class="num">110</td>
+<td class="num muted">10</td>
+<td class="num">2 <span class="muted small">of 26</span></td></tr><tr><td class="kw">Gilmer Co, GA</td>
+<td class="small towns">Ellijay</td>
+<td class="num muted">1,923</td>
+<td class="num"><strong>230</strong></td>
+<td class="num">110</td>
+<td class="num muted">40</td>
+<td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Chattooga Co, GA</td>
+<td class="small towns">Summerville</td>
+<td class="num muted">4,421</td>
+<td class="num"><strong>220</strong></td>
+<td class="num">100</td>
+<td class="num muted">—</td>
+<td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Polk Co, GA</td>
+<td class="small towns">Cedartown</td>
+<td class="num muted">10,313</td>
+<td class="num"><strong>200</strong></td>
+<td class="num">80</td>
+<td class="num muted">—</td>
+<td class="num">11 <span class="muted small">of 26</span></td></tr><tr><td class="kw">Murray Co, GA</td>
+<td class="small towns">Chatsworth</td>
+<td class="num muted">4,943</td>
+<td class="num"><strong>180</strong></td>
+<td class="num">100</td>
+<td class="num muted">—</td>
+<td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Fannin Co, GA</td>
+<td class="small towns">Blue Ridge</td>
+<td class="num muted">1,246</td>
+<td class="num"><strong>170</strong></td>
+<td class="num">80</td>
+<td class="num muted">150</td>
+<td class="num"><span class="muted">none</span></td></tr><tr><td class="kw">Pickens Co, GA</td>
+<td class="small towns">Jasper</td>
+<td class="num muted">5,289</td>
+<td class="num"><strong>160</strong></td>
+<td class="num">70</td>
+<td class="num muted">10</td>
 <td class="num"><span class="muted">none</span></td></tr></tbody></table></div>
-<div class="note"><strong>Two things stand out, and the second is the more important.</strong><br>
-Chattanooga alone accounts for 750 searches a month, more than Rome and Marietta combined, which makes it the single largest market in the territory.<br><br>
-And across all 31 markets, <strong>the business terms column is almost entirely empty</strong>. Searches that pair a town with "brand photographer", "business headshots" or "corporate headshots" return essentially zero everywhere. Business clients do not search that way. They search "professional headshots" or "headshots near me" and let Google work out where they are, which is why the business lane is won through your Google profile and your service pages rather than through town-by-town pages.</div><h2>Rome, in full</h2>
+<div class="note"><strong>Your home county ranks 14th of the 23 areas listed.</strong>
+Floyd County carries 300 searches a month across these terms. Cobb County carries 1,180, close to four times as much, and Hamilton County around Chattanooga carries 600.
+<br><br>
+The last column is the one that settles a strategic question. Searches that pair a town name with a business term &mdash; "brand photographer cartersville ga", "business headshots kennesaw ga" &mdash; return essentially nothing anywhere in the territory. Business clients do not search that way. They search "professional headshots" or "headshots near me" and let Google work out where they are. That is why the business lane is won through your Google profile and your service pages rather than through a page per town.</div><h2>Rome, in full</h2>
 <p class="sub">Rome is the one market where you compete on every term, so it is the clearest picture of how you are positioned. It is also where the pattern above is most visible.</p>
 <h3>Business photography in Rome</h3>
 <div class="tablebox"><table><thead><tr>
-<th>Search term</th><th class="num">Searches / mo</th><th class="num">You</th>
-<th>Currently first</th><th class="num">Their distance</th><th class="num">Their reviews</th></tr></thead><tbody><tr class="fam"><th colspan="6">Generic</th></tr><tr><td class="kw">photographer</td><td class="num">2,900</td><td class="num"><span class="pill mid">4</span></td>
+<th>Search term</th><th class="num">Searches / mo<br><span class="muted small">Floyd County, GA</span></th><th class="num">You</th>
+<th>Currently first</th><th class="num">Their distance</th><th class="num">Their reviews</th></tr></thead><tbody><tr class="fam"><th colspan="6">Generic</th></tr><tr><td class="kw">photographer</td><td class="num">20</td><td class="num"><span class="pill mid">4</span></td>
 <td>Blooming Oak Photography Studios</td>
 <td class="num muted">0.7 mi</td>
-<td class="num muted">47</td></tr><tr><td class="kw">photography</td><td class="num">2,900</td><td class="num"><span class="pill good">2</span></td>
+<td class="num muted">47</td></tr><tr><td class="kw">photography</td><td class="num">20</td><td class="num"><span class="pill good">2</span></td>
 <td>Blooming Oak Photography Studios</td>
 <td class="num muted">0.7 mi</td>
-<td class="num muted">47</td></tr><tr class="fam"><th colspan="6">Headshots</th></tr><tr><td class="kw">headshots</td><td class="num">1,900</td><td class="num"><span class="pill good">2</span></td>
+<td class="num muted">47</td></tr><tr class="fam"><th colspan="6">Headshots</th></tr><tr><td class="kw">headshots</td><td class="num">10</td><td class="num"><span class="pill good">2</span></td>
 <td>Kelly Moore Photography</td>
 <td class="num muted">0.8 mi</td>
-<td class="num muted">28</td></tr><tr><td class="kw">professional headshots</td><td class="num">1,900</td><td class="num"><span class="pill good">3</span></td>
+<td class="num muted">28</td></tr><tr><td class="kw">professional headshots</td><td class="num">10</td><td class="num"><span class="pill good">3</span></td>
 <td>Kelly Moore Photography</td>
 <td class="num muted">0.8 mi</td>
-<td class="num muted">28</td></tr><tr><td class="kw">headshot photographer</td><td class="num">260</td><td class="num"><span class="pill top">1st</span></td>
+<td class="num muted">28</td></tr><tr><td class="kw">headshot photographer</td><td class="num">10</td><td class="num"><span class="pill top">1st</span></td>
 <td>Studio Kate Photography</td>
 <td class="num muted">0.4 mi</td>
-<td class="num muted">32</td></tr><tr><td class="kw">business headshots</td><td class="num">110</td><td class="num"><span class="pill good">2</span></td>
+<td class="num muted">32</td></tr><tr><td class="kw">business headshots</td><td class="num">10</td><td class="num"><span class="pill good">2</span></td>
 <td>Kelly Moore Photography</td>
 <td class="num muted">0.8 mi</td>
-<td class="num muted">28</td></tr><tr><td class="kw">corporate headshots</td><td class="num">110</td><td class="num"><span class="pill good">2</span></td>
+<td class="num muted">28</td></tr><tr><td class="kw">corporate headshots</td><td class="num">10</td><td class="num"><span class="pill good">2</span></td>
 <td>Kelly Moore Photography</td>
 <td class="num muted">0.8 mi</td>
-<td class="num muted">28</td></tr><tr class="fam"><th colspan="6">LinkedIn</th></tr><tr><td class="kw">linkedin headshot</td><td class="num">140</td><td class="num"><span class="pill good">2</span></td>
+<td class="num muted">28</td></tr><tr class="fam"><th colspan="6">LinkedIn</th></tr><tr><td class="kw">linkedin headshot</td><td class="num">10</td><td class="num"><span class="pill good">2</span></td>
 <td>Kelly Moore Photography</td>
 <td class="num muted">0.8 mi</td>
-<td class="num muted">28</td></tr><tr class="fam"><th colspan="6">Vertical headshots</th></tr><tr><td class="kw">real estate agent headshots</td><td class="num">70</td><td class="num"><span class="pill bad">16</span></td>
+<td class="num muted">28</td></tr><tr class="fam"><th colspan="6">Vertical headshots</th></tr><tr><td class="kw">real estate agent headshots</td><td class="num">10</td><td class="num"><span class="pill bad">16</span></td>
 <td>HOME &amp; SKY | Real Estate Photography <span class="muted small">(out of area)</span></td>
 <td class="num muted">124.7 mi</td>
-<td class="num muted">20</td></tr><tr><td class="kw">executive headshots</td><td class="num">20</td><td class="num"><span class="pill good">2</span></td>
+<td class="num muted">20</td></tr><tr><td class="kw">executive headshots</td><td class="num">10</td><td class="num"><span class="pill good">2</span></td>
 <td>Kelly Moore Photography</td>
 <td class="num muted">0.8 mi</td>
-<td class="num muted">28</td></tr><tr><td class="kw">team headshots</td><td class="num">10</td><td class="num"><span class="pill good">2</span></td>
+<td class="num muted">28</td></tr><tr><td class="kw">team headshots</td><td class="num"><span class="muted small">under 10</span></td><td class="num"><span class="pill good">2</span></td>
 <td>Kelly Moore Photography</td>
 <td class="num muted">0.8 mi</td>
-<td class="num muted">28</td></tr><tr class="fam"><th colspan="6">Brand</th></tr><tr><td class="kw">brand photographer</td><td class="num">30</td><td class="num"><span class="pill top">1st</span></td>
+<td class="num muted">28</td></tr><tr class="fam"><th colspan="6">Brand</th></tr><tr><td class="kw">brand photographer</td><td class="num">10</td><td class="num"><span class="pill top">1st</span></td>
 <td>Studio Kate Photography</td>
 <td class="num muted">0.4 mi</td>
-<td class="num muted">32</td></tr><tr><td class="kw">branding photoshoot</td><td class="num">40</td><td class="num"><span class="pill top">1st</span></td>
+<td class="num muted">32</td></tr><tr><td class="kw">branding photoshoot</td><td class="num"><span class="muted small">under 10</span></td><td class="num"><span class="pill top">1st</span></td>
 <td>Studio Kate Photography</td>
 <td class="num muted">0.4 mi</td>
-<td class="num muted">32</td></tr><tr class="fam"><th colspan="6">Commercial</th></tr><tr><td class="kw">commercial photographer</td><td class="num">40</td><td class="num"><span class="pill mid">4</span></td>
+<td class="num muted">32</td></tr><tr class="fam"><th colspan="6">Commercial</th></tr><tr><td class="kw">commercial photographer</td><td class="num">10</td><td class="num"><span class="pill mid">4</span></td>
 <td>Blooming Oak Photography Studios</td>
 <td class="num muted">0.7 mi</td>
-<td class="num muted">47</td></tr><tr><td class="kw">product photography</td><td class="num">210</td><td class="num"><span class="pill top">1st</span></td>
+<td class="num muted">47</td></tr><tr><td class="kw">product photography</td><td class="num">10</td><td class="num"><span class="pill top">1st</span></td>
 <td>Studio Kate Photography</td>
 <td class="num muted">0.4 mi</td>
-<td class="num muted">32</td></tr><tr class="fam"><th colspan="6">Events</th></tr><tr><td class="kw">event photographer</td><td class="num">70</td><td class="num"><span class="pill mid">5</span></td>
+<td class="num muted">32</td></tr><tr class="fam"><th colspan="6">Events</th></tr><tr><td class="kw">event photographer</td><td class="num">10</td><td class="num"><span class="pill mid">5</span></td>
 <td>Cardamone Photography</td>
 <td class="num muted">6.8 mi</td>
-<td class="num muted">80</td></tr><tr><td class="kw">corporate event photographer</td><td class="num">20</td><td class="num"><span class="pill mid">5</span></td>
+<td class="num muted">80</td></tr><tr><td class="kw">corporate event photographer</td><td class="num"><span class="muted small">under 10</span></td><td class="num"><span class="pill mid">5</span></td>
 <td>Blooming Oak Photography Studios</td>
 <td class="num muted">0.7 mi</td>
-<td class="num muted">47</td></tr><tr class="fam"><th colspan="6">Additional headshot phrasings</th></tr><tr><td class="kw">headshot photoshoot</td><td class="num">320</td><td class="num"><span class="pill top">1st</span></td>
+<td class="num muted">47</td></tr><tr class="fam"><th colspan="6">Additional headshot phrasings</th></tr><tr><td class="kw">headshot photoshoot</td><td class="num">10</td><td class="num"><span class="pill top">1st</span></td>
 <td>Studio Kate Photography</td>
 <td class="num muted">0.4 mi</td>
-<td class="num muted">32</td></tr><tr><td class="kw">headshot photo</td><td class="num">320</td><td class="num"><span class="pill top">1st</span></td>
+<td class="num muted">32</td></tr><tr><td class="kw">headshot photo</td><td class="num">10</td><td class="num"><span class="pill top">1st</span></td>
 <td>Studio Kate Photography</td>
 <td class="num muted">0.4 mi</td>
-<td class="num muted">32</td></tr><tr><td class="kw">photographers for headshots</td><td class="num">260</td><td class="num"><span class="pill top">1st</span></td>
+<td class="num muted">32</td></tr><tr><td class="kw">photographers for headshots</td><td class="num">10</td><td class="num"><span class="pill top">1st</span></td>
 <td>Studio Kate Photography</td>
 <td class="num muted">0.4 mi</td>
-<td class="num muted">32</td></tr><tr><td class="kw">company headshots</td><td class="num">110</td><td class="num"><span class="pill top">1st</span></td>
+<td class="num muted">32</td></tr><tr><td class="kw">company headshots</td><td class="num">10</td><td class="num"><span class="pill top">1st</span></td>
 <td>Studio Kate Photography</td>
 <td class="num muted">0.4 mi</td>
-<td class="num muted">32</td></tr><tr><td class="kw">corp headshots</td><td class="num">110</td><td class="num"><span class="pill top">1st</span></td>
+<td class="num muted">32</td></tr><tr><td class="kw">corp headshots</td><td class="num">10</td><td class="num"><span class="pill top">1st</span></td>
 <td>Studio Kate Photography</td>
 <td class="num muted">0.4 mi</td>
-<td class="num muted">32</td></tr><tr><td class="kw">businessman headshot</td><td class="num">110</td><td class="num"><span class="pill top">1st</span></td>
+<td class="num muted">32</td></tr><tr><td class="kw">businessman headshot</td><td class="num">10</td><td class="num"><span class="pill top">1st</span></td>
 <td>Studio Kate Photography</td>
 <td class="num muted">0.4 mi</td>
-<td class="num muted">32</td></tr><tr><td class="kw">professional headshots women</td><td class="num">90</td><td class="num"><span class="pill top">1st</span></td>
+<td class="num muted">32</td></tr><tr><td class="kw">professional headshots women</td><td class="num">10</td><td class="num"><span class="pill top">1st</span></td>
 <td>Studio Kate Photography</td>
 <td class="num muted">0.4 mi</td>
-<td class="num muted">32</td></tr><tr><td class="kw">headshot professional woman</td><td class="num">90</td><td class="num"><span class="pill top">1st</span></td>
+<td class="num muted">32</td></tr><tr><td class="kw">headshot professional woman</td><td class="num">10</td><td class="num"><span class="pill top">1st</span></td>
 <td>Studio Kate Photography</td>
 <td class="num muted">0.4 mi</td>
-<td class="num muted">32</td></tr><tr><td class="kw">real estate headshots</td><td class="num">70</td><td class="num"><span class="pill bad">11</span></td>
+<td class="num muted">32</td></tr><tr><td class="kw">real estate headshots</td><td class="num">10</td><td class="num"><span class="pill bad">11</span></td>
 <td>Kelly Moore Photography</td>
 <td class="num muted">0.8 mi</td>
 <td class="num muted">28</td></tr></tbody></table></div>
 <h3>Senior portraits in Rome</h3>
 <div class="tablebox"><table><thead><tr>
-<th>Search term</th><th class="num">Searches / mo</th><th class="num">You</th>
-<th>Currently first</th><th class="num">Their distance</th><th class="num">Their reviews</th></tr></thead><tbody><tr class="fam"><th colspan="6">Senior</th></tr><tr><td class="kw">senior pictures</td><td class="num">720</td><td class="num"><span class="pill good">2</span></td>
+<th>Search term</th><th class="num">Searches / mo<br><span class="muted small">Floyd County, GA</span></th><th class="num">You</th>
+<th>Currently first</th><th class="num">Their distance</th><th class="num">Their reviews</th></tr></thead><tbody><tr class="fam"><th colspan="6">Senior</th></tr><tr><td class="kw">senior pictures</td><td class="num">10</td><td class="num"><span class="pill good">2</span></td>
 <td>Classic Impressions Portrait Studio Inc.</td>
 <td class="num muted">1 mi</td>
-<td class="num muted">17</td></tr><tr><td class="kw">senior portraits</td><td class="num">390</td><td class="num"><span class="pill top">1st</span></td>
+<td class="num muted">17</td></tr><tr><td class="kw">senior portraits</td><td class="num">10</td><td class="num"><span class="pill top">1st</span></td>
 <td>Studio Kate Photography</td>
 <td class="num muted">0.4 mi</td>
-<td class="num muted">32</td></tr><tr><td class="kw">senior photos</td><td class="num">480</td><td class="num"><span class="pill top">1st</span></td>
+<td class="num muted">32</td></tr><tr><td class="kw">senior photos</td><td class="num">10</td><td class="num"><span class="pill top">1st</span></td>
 <td>Studio Kate Photography</td>
 <td class="num muted">0.4 mi</td>
-<td class="num muted">32</td></tr><tr><td class="kw">senior picture photographers</td><td class="num">390</td><td class="num"><span class="pill top">1st</span></td>
+<td class="num muted">32</td></tr><tr><td class="kw">senior picture photographers</td><td class="num">10</td><td class="num"><span class="pill top">1st</span></td>
 <td>Studio Kate Photography</td>
 <td class="num muted">0.4 mi</td>
-<td class="num muted">32</td></tr><tr><td class="kw">senior photographers near me</td><td class="num">170</td><td class="num"><span class="pill top">1st</span></td>
+<td class="num muted">32</td></tr><tr><td class="kw">senior photographers near me</td><td class="num">10</td><td class="num"><span class="pill top">1st</span></td>
 <td>Studio Kate Photography</td>
 <td class="num muted">0.4 mi</td>
-<td class="num muted">32</td></tr><tr><td class="kw">high school senior photographer</td><td class="num">0</td><td class="num"><span class="pill top">1st</span></td>
+<td class="num muted">32</td></tr><tr><td class="kw">high school senior photographer</td><td class="num"><span class="muted small">under 10</span></td><td class="num"><span class="pill top">1st</span></td>
 <td>Studio Kate Photography</td>
 <td class="num muted">0.4 mi</td>
 <td class="num muted">32</td></tr></tbody></table></div>
@@ -454,53 +512,53 @@ And across all 31 markets, <strong>the business terms column is almost entirely 
 <p class="sub">There is no table for most of these, because there is nothing in them to tabulate.</p>
 <p class="sub">Across 30 markets and 26 search terms, you appear in <strong>14</strong> searches and hold <strong>zero</strong> top-three positions. 27 of those markets return you nowhere at all: Summerville, Cartersville, Dallas, Acworth, Kennesaw, Dalton, Holly Springs, Woodstock, Canton, Powder Springs, Villa Rica, Marietta, Chatsworth, Douglasville, Jasper, Mableton, Smyrna, Ringgold, Carrollton, Roswell, Ellijay, Milton, Sandy Springs, Alpharetta, Dunwoody, Chattanooga, Blue Ridge.</p><h3>Cedartown, GA</h3><p class="sub">17.8 miles from the studio. You appear in 11 of 26 searches here, none of them in the top three.</p>
 <div class="tablebox"><table><thead><tr>
-<th>Search term</th><th class="num">Searches / mo</th><th class="num">You</th>
-<th>Currently first</th><th class="num">Their distance</th><th class="num">Their reviews</th></tr></thead><tbody><tr class="fam"><th colspan="6">Headshots</th></tr><tr><td class="kw">headshots</td><td class="num">1,900</td><td class="num"><span class="pill mid">4</span></td>
+<th>Search term</th><th class="num">Searches / mo<br><span class="muted small">Polk County, GA</span></th><th class="num">You</th>
+<th>Currently first</th><th class="num">Their distance</th><th class="num">Their reviews</th></tr></thead><tbody><tr class="fam"><th colspan="6">Headshots</th></tr><tr><td class="kw">headshots</td><td class="num">10</td><td class="num"><span class="pill mid">4</span></td>
 <td>Paris Mountain Photography</td>
 <td class="num muted">11.7 mi</td>
-<td class="num muted">12</td></tr><tr><td class="kw">professional headshots</td><td class="num">1,900</td><td class="num"><span class="pill mid">9</span></td>
+<td class="num muted">12</td></tr><tr><td class="kw">professional headshots</td><td class="num">10</td><td class="num"><span class="pill mid">9</span></td>
 <td>Paris Mountain Photography</td>
 <td class="num muted">11.7 mi</td>
-<td class="num muted">12</td></tr><tr><td class="kw">headshot photographer</td><td class="num">260</td><td class="num"><span class="pill mid">8</span></td>
+<td class="num muted">12</td></tr><tr><td class="kw">headshot photographer</td><td class="num">10</td><td class="num"><span class="pill mid">8</span></td>
 <td>Eagle People Media</td>
 <td class="num muted">0.3 mi</td>
-<td class="num muted">13</td></tr><tr><td class="kw">business headshots</td><td class="num">110</td><td class="num"><span class="pill mid">9</span></td>
+<td class="num muted">13</td></tr><tr><td class="kw">business headshots</td><td class="num"><span class="muted small">under 10</span></td><td class="num"><span class="pill mid">9</span></td>
 <td>Paris Mountain Photography</td>
 <td class="num muted">11.7 mi</td>
-<td class="num muted">12</td></tr><tr><td class="kw">corporate headshots</td><td class="num">110</td><td class="num"><span class="pill mid">7</span></td>
+<td class="num muted">12</td></tr><tr><td class="kw">corporate headshots</td><td class="num">10</td><td class="num"><span class="pill mid">7</span></td>
 <td>Headshot Solutions &amp; Beyond, LLC</td>
 <td class="num muted">35.2 mi</td>
-<td class="num muted">55</td></tr><tr class="fam"><th colspan="6">Commercial</th></tr><tr><td class="kw">commercial photographer</td><td class="num">40</td><td class="num"><span class="pill mid">10</span></td>
+<td class="num muted">55</td></tr><tr class="fam"><th colspan="6">Commercial</th></tr><tr><td class="kw">commercial photographer</td><td class="num"><span class="muted small">under 10</span></td><td class="num"><span class="pill mid">10</span></td>
 <td>Eagle People Media</td>
 <td class="num muted">0.3 mi</td>
-<td class="num muted">13</td></tr><tr><td class="kw">product photography</td><td class="num">210</td><td class="num"><span class="pill mid">7</span></td>
+<td class="num muted">13</td></tr><tr><td class="kw">product photography</td><td class="num">10</td><td class="num"><span class="pill mid">7</span></td>
 <td>Kiela's Photo Lab</td>
 <td class="num muted">0.1 mi</td>
-<td class="num muted">8</td></tr><tr class="fam"><th colspan="6">Additional headshot phrasings</th></tr><tr><td class="kw">headshot photoshoot</td><td class="num">320</td><td class="num"><span class="pill bad">13</span></td>
+<td class="num muted">8</td></tr><tr class="fam"><th colspan="6">Additional headshot phrasings</th></tr><tr><td class="kw">headshot photoshoot</td><td class="num">10</td><td class="num"><span class="pill bad">13</span></td>
 <td>Presto Photography</td>
 <td class="num muted">35.8 mi</td>
-<td class="num muted">28</td></tr><tr><td class="kw">headshot photo</td><td class="num">320</td><td class="num"><span class="pill good">3</span></td>
+<td class="num muted">28</td></tr><tr><td class="kw">headshot photo</td><td class="num">10</td><td class="num"><span class="pill good">3</span></td>
 <td>Kiela's Photo Lab</td>
 <td class="num muted">0.1 mi</td>
-<td class="num muted">8</td></tr><tr><td class="kw">photographers for headshots</td><td class="num">260</td><td class="num"><span class="pill bad">15</span></td>
+<td class="num muted">8</td></tr><tr><td class="kw">photographers for headshots</td><td class="num">10</td><td class="num"><span class="pill bad">15</span></td>
 <td>Photos by Haley Nicole <span class="muted small">(out of area)</span></td>
 <td class="num muted">150.5 mi</td>
-<td class="num muted">141</td></tr><tr><td class="kw">corp headshots</td><td class="num">110</td><td class="num"><span class="pill mid">4</span></td>
+<td class="num muted">141</td></tr><tr><td class="kw">corp headshots</td><td class="num">10</td><td class="num"><span class="pill mid">4</span></td>
 <td>Geoffrey Donne Photography</td>
 <td class="num muted">36.9 mi</td>
 <td class="num muted">75</td></tr></tbody></table></div><h3>Calhoun, GA</h3><p class="sub">20.9 miles from the studio. You appear in 2 of 26 searches here, none of them in the top three.</p>
 <div class="tablebox"><table><thead><tr>
-<th>Search term</th><th class="num">Searches / mo</th><th class="num">You</th>
-<th>Currently first</th><th class="num">Their distance</th><th class="num">Their reviews</th></tr></thead><tbody><tr class="fam"><th colspan="6">Commercial</th></tr><tr><td class="kw">commercial photographer</td><td class="num">40</td><td class="num"><span class="pill mid">9</span></td>
+<th>Search term</th><th class="num">Searches / mo<br><span class="muted small">Gordon County, GA</span></th><th class="num">You</th>
+<th>Currently first</th><th class="num">Their distance</th><th class="num">Their reviews</th></tr></thead><tbody><tr class="fam"><th colspan="6">Commercial</th></tr><tr><td class="kw">commercial photographer</td><td class="num"><span class="muted small">under 10</span></td><td class="num"><span class="pill mid">9</span></td>
 <td>Sherry Sloan Photography</td>
 <td class="num muted">0 mi</td>
-<td class="num muted">21</td></tr><tr class="fam"><th colspan="6">Additional headshot phrasings</th></tr><tr><td class="kw">headshot photo</td><td class="num">320</td><td class="num"><span class="pill bad">18</span></td>
+<td class="num muted">21</td></tr><tr class="fam"><th colspan="6">Additional headshot phrasings</th></tr><tr><td class="kw">headshot photo</td><td class="num">10</td><td class="num"><span class="pill bad">18</span></td>
 <td>Sherry Sloan Photography</td>
 <td class="num muted">0 mi</td>
 <td class="num muted">21</td></tr></tbody></table></div><h3>LaFayette, GA</h3><p class="sub">31.7 miles from the studio. You appear in 1 of 26 searches here, none of them in the top three.</p>
 <div class="tablebox"><table><thead><tr>
-<th>Search term</th><th class="num">Searches / mo</th><th class="num">You</th>
-<th>Currently first</th><th class="num">Their distance</th><th class="num">Their reviews</th></tr></thead><tbody><tr class="fam"><th colspan="6">Brand</th></tr><tr><td class="kw">brand photographer</td><td class="num">30</td><td class="num"><span class="pill bad">19</span></td>
+<th>Search term</th><th class="num">Searches / mo<br><span class="muted small">Walker County, GA</span></th><th class="num">You</th>
+<th>Currently first</th><th class="num">Their distance</th><th class="num">Their reviews</th></tr></thead><tbody><tr class="fam"><th colspan="6">Brand</th></tr><tr><td class="kw">brand photographer</td><td class="num">10</td><td class="num"><span class="pill bad">19</span></td>
 <td>Laure Photography branding <span class="muted small">(out of area)</span></td>
 <td class="num muted">184.4 mi</td>
 <td class="num muted">27</td></tr></tbody></table></div><h2>Senior portraits beyond Rome</h2>
