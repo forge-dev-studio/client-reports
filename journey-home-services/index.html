@@ -64,16 +64,30 @@ td.far{background:var(--far);color:#6b7583}
 td.vol{color:var(--muted);font-variant-numeric:tabular-nums}
 .key{display:flex;gap:16px;flex-wrap:wrap;font-size:.83rem;color:var(--muted);margin-top:-6px}
 .key i{display:inline-block;width:13px;height:13px;border-radius:3px;vertical-align:-2px;margin-right:6px}
-.mkts{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:12px;margin-top:22px}
-.mkt{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
-.mhead{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:.35rem}
-.mname{font-family:var(--head);font-weight:600;font-size:1.05rem}
-.mmi{font-size:.78rem;color:var(--muted)}
-.mstat{font-size:.87rem;color:var(--muted);margin-bottom:.6rem}
-.mstat b{color:var(--text);font-family:var(--head);font-weight:700;font-size:1rem}
-.sep{opacity:.4;margin:0 2px}
-.mwho{display:flex;flex-direction:column;gap:3px;font-size:.82rem;color:#b7c0cb;border-top:1px solid var(--line);padding-top:.55rem}
-.mwho i,.dim i{color:var(--muted);font-style:normal;font-size:.76rem}
+.markets{margin-top:22px}
+.market{border:1px solid var(--line);border-radius:10px;background:var(--card);margin-bottom:10px;overflow:hidden}
+.market summary{cursor:pointer;padding:14px 18px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;list-style:none}
+.market summary::-webkit-details-marker{display:none}
+.market summary::before{content:"▸";color:var(--blue-br);font-size:.85rem}
+.market[open] summary::before{content:"▾"}
+.market summary:hover{background:var(--card2)}
+.mname{font-family:var(--head);font-weight:600;font-size:1.04rem}
+.mmeta{color:var(--muted);font-size:.85rem}
+.mscore{margin-left:auto;font-family:var(--head);font-size:.76rem;font-weight:600;padding:4px 11px;border-radius:100px}
+.mscore.good{background:rgba(31,122,77,.28);color:#6fd39c}
+.mscore.mid{background:rgba(122,99,32,.28);color:#e5c96a}
+.mscore.bad{background:rgba(224,112,95,.18);color:#e0705f}
+.market .tblwrap{border-top:1px solid var(--line);overflow-x:auto}
+.detail{width:100%;border-collapse:collapse;font-size:.86rem}
+.detail th{font-family:var(--head);font-weight:600;font-size:.7rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);text-align:left;padding:9px 18px;background:var(--card2)}
+.detail td{padding:8px 18px;border-top:1px solid var(--line);vertical-align:top}
+.detail td.q{color:#dde4eb;white-space:nowrap}
+.detail td.pos{font-family:var(--head);font-weight:700;white-space:nowrap;width:130px;background:none}
+.detail td.pos.pack{color:#6fd39c}.detail td.pos.near{color:#e5c96a}
+.detail td.pos.mid{color:#c99b7d}.detail td.pos.far{color:#7c8694}
+.detail td.lead{color:#b7c0cb;font-size:.84rem}
+.detail td.lead i{color:var(--muted);font-style:normal;font-size:.78rem}
+.detail .you{color:#6fd39c;font-weight:600}
 .dim{color:var(--muted)}
 .tbl th,.tbl td{padding:9px 12px;border-bottom:1px solid var(--line);text-align:left}
 .tbl thead th{font-family:var(--head);font-weight:600;font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;background:var(--card);color:var(--muted)}
@@ -83,6 +97,10 @@ td.vol{color:var(--muted);font-variant-numeric:tabular-nums}
 .tbl td.near{color:#e5c96a;background:none}
 .tbl td.mid{color:#c99b7d;background:none}
 .tbl td.far{color:#7c8694;background:none}
+.flag{display:inline-block;font-family:var(--head);font-size:.62rem;letter-spacing:.05em;text-transform:uppercase;padding:2px 6px;border-radius:4px;margin-left:7px;vertical-align:1px}
+.flag.no{background:rgba(224,112,95,.18);color:#e0705f}
+.flag.partial{background:rgba(216,173,63,.18);color:#d8ad3f}
+.fnote{display:block;font-size:.76rem;color:var(--muted);margin-top:2px;white-space:normal;max-width:38ch}
 .tag{background:var(--blue);color:#fff;font-size:.64rem;padding:2px 6px;border-radius:4px;font-family:var(--head);letter-spacing:.06em;text-transform:uppercase}
 .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:20px;margin-top:24px}
 .col{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 24px}
@@ -200,179 +218,852 @@ footer b{color:var(--text)}
     <span><i style="background:var(--far)"></i>Not in the top 20</span>
   </div>
   <div class="scroll"><table class="grid">
-    <thead><tr><th>Service searched</th><th>Rome<span class="mi">0 mi</span></th><th>Lindale<span class="mi">5.4 mi</span></th><th>Adairsville<span class="mi">15.3 mi</span></th><th>Cedartown<span class="mi">17.8 mi</span></th><th>Summerville<span class="mi">18.6 mi</span></th><th>Rockmart<span class="mi">19.1 mi</span></th><th>Calhoun<span class="mi">20.9 mi</span></th><th>Cartersville<span class="mi">21.8 mi</span></th><th>GA<span class="mi">per mo</span></th></tr></thead>
-    <tbody><tr class="lane"><th scope="row">Core</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><th scope="row">Handyman</th><td class="near">#7</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="mid">#15</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="vol">8,280</td></tr><tr><th scope="row">Handyman Services</th><td class="mid">#11</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="vol">2,320</td></tr><tr><th scope="row">Home Repair</th><td class="near">#6</td><td class="mid">#19</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="vol">800</td></tr><tr class="lane"><th scope="row">General</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><th scope="row">Tv Mounting</th><td class="mid">#13</td><td class="mid">#16</td><td class="far">.</td><td class="far">.</td><td class="near">#7</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="vol">4,880</td></tr><tr><th scope="row">Drywall Repair</th><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="vol">3,280</td></tr><tr><th scope="row">Interior Painting</th><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="vol">3,600</td></tr><tr><th scope="row">Painting Services</th><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="vol">480</td></tr><tr><th scope="row">Gutter Cleaning</th><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="vol">2,400</td></tr><tr><th scope="row">Gutter Repair</th><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="vol">590</td></tr><tr><th scope="row">Door Installation</th><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="vol">390</td></tr><tr class="lane"><th scope="row">Carpentry</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><th scope="row">Deck Repair</th><td class="near">#9</td><td class="mid">#17</td><td class="far">.</td><td class="far">.</td><td class="near">#5</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="vol">480</td></tr><tr><th scope="row">Siding Repair</th><td class="mid">#20</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="vol">590</td></tr><tr><th scope="row">Fence Repair</th><td class="near">#9</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="vol">390</td></tr><tr><th scope="row">Soffit Repair</th><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="vol">210</td></tr><tr><th scope="row">Subfloor Repair</th><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="vol">140</td></tr><tr><th scope="row">Door Repair</th><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="vol">260</td></tr><tr class="lane"><th scope="row">Electrical</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><th scope="row">Ceiling Fan Installation</th><td class="near">#9</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="vol">720</td></tr><tr><th scope="row">Recessed Lighting Installation</th><td class="near">#5</td><td class="mid">#17</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="vol">210</td></tr><tr><th scope="row">Light Fixture Installation</th><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="vol">70</td></tr><tr><th scope="row">Outlet Installation</th><td class="near">#6</td><td class="near">#5</td><td class="far">.</td><td class="far">.</td><td class="near">#7</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="vol">70</td></tr><tr class="totals"><th scope="row">Services showing at all</th><td class="near">10</td><td class="mid">5</td><td class="far">0</td><td class="far">0</td><td class="mid">4</td><td class="far">0</td><td class="far">0</td><td class="far">0</td><td></td></tr></tbody>
+    <thead><tr><th>Service searched</th><th>Rome<span class="mi">0 mi</span></th><th>Lindale<span class="mi">5.4 mi</span></th><th>Adairsville<span class="mi">15.3 mi</span></th><th>Cedartown<span class="mi">17.8 mi</span></th><th>Summerville<span class="mi">18.6 mi</span></th><th>Rockmart<span class="mi">19.1 mi</span></th><th>Calhoun<span class="mi">20.9 mi</span></th><th>Cartersville<span class="mi">21.8 mi</span></th><th>Rome<span class="mi">per mo</span></th></tr></thead>
+    <tbody><tr class="lane"><th scope="row">Core</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><th scope="row">Handyman</th><td class="near">#7</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="mid">#15</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="vol">50</td></tr><tr><th scope="row">Handyman Services</th><td class="mid">#11</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="vol">20</td></tr><tr><th scope="row">Home Repair</th><td class="near">#6</td><td class="mid">#19</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="vol">20</td></tr><tr class="lane"><th scope="row">General</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><th scope="row">Tv Mounting</th><td class="mid">#13</td><td class="mid">#16</td><td class="far">.</td><td class="far">.</td><td class="near">#7</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="vol">30</td></tr><tr><th scope="row">Drywall Repair</th><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="vol">20</td></tr><tr><th scope="row">Interior Painting</th><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="vol">10</td></tr><tr><th scope="row">Painting Services</th><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="vol">10</td></tr><tr><th scope="row">Gutter Cleaning</th><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="vol">10</td></tr><tr><th scope="row">Gutter Repair</th><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="vol">10</td></tr><tr><th scope="row">Door Installation</th><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="vol">10</td></tr><tr class="lane"><th scope="row">Carpentry</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><th scope="row">Deck Repair</th><td class="near">#9</td><td class="mid">#17</td><td class="far">.</td><td class="far">.</td><td class="near">#5</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="vol">10</td></tr><tr><th scope="row">Siding Repair</th><td class="mid">#20</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="vol">10</td></tr><tr><th scope="row">Fence Repair</th><td class="near">#9</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="vol">10</td></tr><tr><th scope="row">Soffit Repair</th><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="vol">10</td></tr><tr><th scope="row">Subfloor Repair</th><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="vol">10</td></tr><tr><th scope="row">Door Repair</th><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="vol">10</td></tr><tr class="lane"><th scope="row">Electrical</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><th scope="row">Ceiling Fan Installation</th><td class="near">#9</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="vol">10</td></tr><tr><th scope="row">Recessed Lighting Installation</th><td class="near">#5</td><td class="mid">#17</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="vol">10</td></tr><tr><th scope="row">Light Fixture Installation</th><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="vol">10</td></tr><tr><th scope="row">Outlet Installation</th><td class="near">#6</td><td class="near">#5</td><td class="far">.</td><td class="far">.</td><td class="near">#7</td><td class="far">.</td><td class="far">.</td><td class="far">.</td><td class="vol">10</td></tr><tr class="totals"><th scope="row">Services showing at all</th><td class="near">10</td><td class="mid">5</td><td class="far">0</td><td class="far">0</td><td class="mid">4</td><td class="far">0</td><td class="far">0</td><td class="far">0</td><td></td></tr></tbody>
   </table></div>
   <div class="note">Each town here was measured from one point, its centre. Rome is the market that was sampled five times, because that is where the competitive picture matters most.</div>
 </div></section>
 
 <section><div class="wrap">
   <h2>Town by town</h2>
-  <p class="lede">The same data read one market at a time, with the businesses most often holding a top three slot in each.</p>
-  <div class="mkts"><div class="mkt">
-    <div class="mhead"><span class="mname">Rome</span><span class="mmi">0 mi</span></div>
-    <div class="mstat"><b>10</b> of 20 services showing <span class="sep">/</span> <b>7</b> in the top 10</div>
-    <div class="mwho"><span>Matthews Lighting and Electric, LLC <i>5 / 246</i></span><span>Source Electrical Contractors <i>4.9 / 60</i></span><span>Handyman Tom LLC <i>5 / 10</i></span></div>
-  </div><div class="mkt">
-    <div class="mhead"><span class="mname">Lindale</span><span class="mmi">5.4 mi</span></div>
-    <div class="mstat"><b>5</b> of 20 services showing <span class="sep">/</span> <b>1</b> in the top 10</div>
-    <div class="mwho"><span>Pro Fix Paint <i>5 / 9</i></span><span>Matthews Lighting and Electric, LLC <i>5 / 246</i></span><span>LL Handyman Services <i>5 / 9</i></span></div>
-  </div><div class="mkt">
-    <div class="mhead"><span class="mname">Adairsville</span><span class="mmi">15.3 mi</span></div>
-    <div class="mstat"><b>0</b> of 20 services showing <span class="sep">/</span> <b>0</b> in the top 10</div>
-    <div class="mwho"><span>Simerly Home Services LLC <i>5 / 18</i></span><span>EaZy Pros <i>4.9 / 554</i></span><span>Steele Handyman Services, LLC <i>5 / 8</i></span></div>
-  </div><div class="mkt">
-    <div class="mhead"><span class="mname">Cedartown</span><span class="mmi">17.8 mi</span></div>
-    <div class="mstat"><b>0</b> of 20 services showing <span class="sep">/</span> <b>0</b> in the top 10</div>
-    <div class="mwho"><span>Daniel's Green Services And Handyman <i>4.8 / 61</i></span><span>quality painting &amp; home repairs llc <i>5 / 5</i></span><span>Livewire Solutions <i>5 / 137</i></span></div>
-  </div><div class="mkt">
-    <div class="mhead"><span class="mname">Summerville</span><span class="mmi">18.6 mi</span></div>
-    <div class="mstat"><b>4</b> of 20 services showing <span class="sep">/</span> <b>3</b> in the top 10</div>
-    <div class="mwho"><span>Pro Roof Ga <i>5 / 41</i></span><span>WILL-DO-SERVICES <i>5 / 7</i></span><span>Chamlee Electric <i>4.8 / 19</i></span></div>
-  </div><div class="mkt">
-    <div class="mhead"><span class="mname">Rockmart</span><span class="mmi">19.1 mi</span></div>
-    <div class="mstat"><b>0</b> of 20 services showing <span class="sep">/</span> <b>0</b> in the top 10</div>
-    <div class="mwho"><span>Sullins Roofing and Gutters <i>5 / 8</i></span><span>All Grounded Electric Rockmart GA <i>5 / 23</i></span><span>Southern Style Solutions Handyman Services <i>5 / 2</i></span></div>
-  </div><div class="mkt">
-    <div class="mhead"><span class="mname">Calhoun</span><span class="mmi">20.9 mi</span></div>
-    <div class="mstat"><b>0</b> of 20 services showing <span class="sep">/</span> <b>0</b> in the top 10</div>
-    <div class="mwho"><span>Husbands Helper Handyman Service <i>5 / 39</i></span><span>HandyPro Home Painting and Flooring LLC <i>5 / 37</i></span><span>Phoenix Electrical <i>4.9 / 136</i></span></div>
-  </div><div class="mkt">
-    <div class="mhead"><span class="mname">Cartersville</span><span class="mmi">21.8 mi</span></div>
-    <div class="mstat"><b>0</b> of 20 services showing <span class="sep">/</span> <b>0</b> in the top 10</div>
-    <div class="mwho"><span>Marshall's Handyman Service <i>4.8 / 214</i></span><span>1 Best Electric LLC <i>5 / 211</i></span><span>Rayne Storm Electric, LLC <i>4.9 / 104</i></span></div>
-  </div></div>
+  <p class="lede">The same data read one market at a time. Each row is the exact search that was run, where Journey Home Services landed, and who took first place. Rome is open below; the rest expand.</p>
+  <div class="markets"><details class="market" open>
+    <summary><span class="mname">Rome</span><span class="mmeta">0 mi from Rome</span>
+    <span class="mscore good">10/20 showing</span></summary>
+    <div class="tblwrap"><table class="detail">
+      <thead><tr><th>The search</th><th>Journey Home's spot</th><th>Who ranks first</th></tr></thead>
+      <tbody><tr>
+      <td class="q">Handyman Rome GA</td>
+      <td class="pos near">#7</td>
+      <td class="lead">Ace Handyman Services Rome Cartersville <i>4.9 / 87</i></td>
+    </tr><tr>
+      <td class="q">Handyman Services Rome GA</td>
+      <td class="pos mid">#11</td>
+      <td class="lead">Home Services at The Home Depot <i>4.2 / 6</i></td>
+    </tr><tr>
+      <td class="q">Home Repair Rome GA</td>
+      <td class="pos near">#6</td>
+      <td class="lead">Vicente Home Repair LLC <i>5 / 1</i></td>
+    </tr><tr>
+      <td class="q">Tv Mounting Rome GA</td>
+      <td class="pos mid">#13</td>
+      <td class="lead">Worldwide Electronics <i>4.7 / 150</i></td>
+    </tr><tr>
+      <td class="q">Drywall Repair Rome GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Weaver Drywall, Inc <i>5 / 1</i></td>
+    </tr><tr>
+      <td class="q">Interior Painting Rome GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Pinturas <i>5 / 68</i></td>
+    </tr><tr>
+      <td class="q">Painting Services Rome GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Chacon Quality Paint <i>5 / 17</i></td>
+    </tr><tr>
+      <td class="q">Gutter Cleaning Rome GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Exterior Solutions Pros <i>5 / 121</i></td>
+    </tr><tr>
+      <td class="q">Gutter Repair Rome GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Cornerstone Roofing Specialist &amp; Gutters <i>4.6 / 43</i></td>
+    </tr><tr>
+      <td class="q">Door Installation Rome GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Home Services at The Home Depot <i>4.3 / 3</i></td>
+    </tr><tr>
+      <td class="q">Deck Repair Rome GA</td>
+      <td class="pos near">#9</td>
+      <td class="lead">Moonlight Restoration and Repair LLC <i>5 / 19</i></td>
+    </tr><tr>
+      <td class="q">Siding Repair Rome GA</td>
+      <td class="pos mid">#20</td>
+      <td class="lead">Rooftop Solutions <i>5 / 41</i></td>
+    </tr><tr>
+      <td class="q">Fence Repair Rome GA</td>
+      <td class="pos near">#9</td>
+      <td class="lead">RAMÍREZ FENCING LLC AND LANDSCAPING <i>4.9 / 72</i></td>
+    </tr><tr>
+      <td class="q">Soffit Repair Rome GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Rooks Roofing &amp; Exteriors <i>5 / 313</i></td>
+    </tr><tr>
+      <td class="q">Subfloor Repair Rome GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">The flooring guy LLC <i>4.3 / 6</i></td>
+    </tr><tr>
+      <td class="q">Door Repair Rome GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Romega Garage Doors <i>4.9 / 71</i></td>
+    </tr><tr>
+      <td class="q">Ceiling Fan Installation Rome GA</td>
+      <td class="pos near">#9</td>
+      <td class="lead">Matthews Lighting and Electric, LLC <i>5 / 246</i></td>
+    </tr><tr>
+      <td class="q">Recessed Lighting Installation Rome GA</td>
+      <td class="pos near">#5</td>
+      <td class="lead">Matthews Lighting and Electric, LLC <i>5 / 246</i></td>
+    </tr><tr>
+      <td class="q">Light Fixture Installation Rome GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Matthews Lighting and Electric, LLC <i>5 / 246</i></td>
+    </tr><tr>
+      <td class="q">Outlet Installation Rome GA</td>
+      <td class="pos near">#6</td>
+      <td class="lead">Matthews Lighting and Electric, LLC <i>5 / 246</i></td>
+    </tr></tbody></table></div></details><details class="market">
+    <summary><span class="mname">Lindale</span><span class="mmeta">5.4 mi from Rome</span>
+    <span class="mscore mid">5/20 showing</span></summary>
+    <div class="tblwrap"><table class="detail">
+      <thead><tr><th>The search</th><th>Journey Home's spot</th><th>Who ranks first</th></tr></thead>
+      <tbody><tr>
+      <td class="q">Handyman Lindale GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Handyman Tom LLC <i>5 / 10</i></td>
+    </tr><tr>
+      <td class="q">Handyman Services Lindale GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Handyman Tom LLC <i>5 / 10</i></td>
+    </tr><tr>
+      <td class="q">Home Repair Lindale GA</td>
+      <td class="pos mid">#19</td>
+      <td class="lead">Moonlight Restoration and Repair LLC <i>5 / 19</i></td>
+    </tr><tr>
+      <td class="q">Tv Mounting Lindale GA</td>
+      <td class="pos mid">#16</td>
+      <td class="lead">Shorty’s TV Mounting Services <i>5 / 607</i></td>
+    </tr><tr>
+      <td class="q">Drywall Repair Lindale GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Weaver Drywall, Inc <i>5 / 1</i></td>
+    </tr><tr>
+      <td class="q">Interior Painting Lindale GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Pro Fix Paint <i>5 / 9</i></td>
+    </tr><tr>
+      <td class="q">Painting Services Lindale GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Chacon Quality Paint <i>5 / 17</i></td>
+    </tr><tr>
+      <td class="q">Gutter Cleaning Lindale GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Affordable Gutter Cleaning Service <i>4.9 / 54</i></td>
+    </tr><tr>
+      <td class="q">Gutter Repair Lindale GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Cornerstone Roofing Specialist &amp; Gutters <i>4.6 / 43</i></td>
+    </tr><tr>
+      <td class="q">Door Installation Lindale GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Focus Garage Door &amp; Service <i>4.9 / 173</i></td>
+    </tr><tr>
+      <td class="q">Deck Repair Lindale GA</td>
+      <td class="pos mid">#17</td>
+      <td class="lead">Ramirez Services Unlimited LLC <i>5 / 24</i></td>
+    </tr><tr>
+      <td class="q">Siding Repair Lindale GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Soto Siding Construction <i>5 / 11</i></td>
+    </tr><tr>
+      <td class="q">Fence Repair Lindale GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">RAMÍREZ FENCING LLC AND LANDSCAPING <i>4.9 / 72</i></td>
+    </tr><tr>
+      <td class="q">Soffit Repair Lindale GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">AP Exteriors LLC <i>5 / 9</i></td>
+    </tr><tr>
+      <td class="q">Subfloor Repair Lindale GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Pro Fix Paint <i>5 / 9</i></td>
+    </tr><tr>
+      <td class="q">Door Repair Lindale GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Romega Garage Doors <i>4.9 / 71</i></td>
+    </tr><tr>
+      <td class="q">Ceiling Fan Installation Lindale GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Matthews Lighting and Electric, LLC <i>5 / 246</i></td>
+    </tr><tr>
+      <td class="q">Recessed Lighting Installation Lindale GA</td>
+      <td class="pos mid">#17</td>
+      <td class="lead">Lighting Installation ATL LLC <i>5 / 68</i></td>
+    </tr><tr>
+      <td class="q">Light Fixture Installation Lindale GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Matthews Lighting and Electric, LLC <i>5 / 246</i></td>
+    </tr><tr>
+      <td class="q">Outlet Installation Lindale GA</td>
+      <td class="pos near">#5</td>
+      <td class="lead">Matthews Lighting and Electric, LLC <i>5 / 246</i></td>
+    </tr></tbody></table></div></details><details class="market">
+    <summary><span class="mname">Adairsville</span><span class="mmeta">15.3 mi from Rome</span>
+    <span class="mscore bad">0/20 showing</span></summary>
+    <div class="tblwrap"><table class="detail">
+      <thead><tr><th>The search</th><th>Journey Home's spot</th><th>Who ranks first</th></tr></thead>
+      <tbody><tr>
+      <td class="q">Handyman Adairsville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Steele Handyman Services, LLC <i>5 / 8</i></td>
+    </tr><tr>
+      <td class="q">Handyman Services Adairsville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Steele Handyman Services, LLC <i>5 / 8</i></td>
+    </tr><tr>
+      <td class="q">Home Repair Adairsville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Simerly Home Services LLC <i>5 / 18</i></td>
+    </tr><tr>
+      <td class="q">Tv Mounting Adairsville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Jakes Pro TV Installs - TV Mounting <i>5 / 428</i></td>
+    </tr><tr>
+      <td class="q">Drywall Repair Adairsville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Mr Do It All Drywall <i>4.9 / 28</i></td>
+    </tr><tr>
+      <td class="q">Interior Painting Adairsville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Affordable Painting LLC <i>5 / 52</i></td>
+    </tr><tr>
+      <td class="q">Painting Services Adairsville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Affordable Painting LLC <i>5 / 52</i></td>
+    </tr><tr>
+      <td class="q">Gutter Cleaning Adairsville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Me &amp; My Sons Gutter Cleaning <i>4.8 / 26</i></td>
+    </tr><tr>
+      <td class="q">Gutter Repair Adairsville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Me &amp; My Sons Gutter Cleaning <i>4.8 / 26</i></td>
+    </tr><tr>
+      <td class="q">Door Installation Adairsville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Revived Windows and Doors LLC <i>5 / 17</i></td>
+    </tr><tr>
+      <td class="q">Deck Repair Adairsville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Ramirez Services Unlimited LLC <i>5 / 24</i></td>
+    </tr><tr>
+      <td class="q">Siding Repair Adairsville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Home Services at The Home Depot <i>4.2 / 6</i></td>
+    </tr><tr>
+      <td class="q">Fence Repair Adairsville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Ramirez Services Unlimited LLC <i>5 / 24</i></td>
+    </tr><tr>
+      <td class="q">Soffit Repair Adairsville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Simerly Home Services LLC <i>5 / 18</i></td>
+    </tr><tr>
+      <td class="q">Subfloor Repair Adairsville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Hurlburt Handyman Services (Al Hurlburt) <i>5 / 2</i></td>
+    </tr><tr>
+      <td class="q">Door Repair Adairsville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">All American Garage Door and Repair <i>5 / 15</i></td>
+    </tr><tr>
+      <td class="q">Ceiling Fan Installation Adairsville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Rocket Electric <i>5 / 1</i></td>
+    </tr><tr>
+      <td class="q">Recessed Lighting Installation Adairsville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">EaZy Pros <i>4.9 / 554</i></td>
+    </tr><tr>
+      <td class="q">Light Fixture Installation Adairsville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">EaZy Pros <i>4.9 / 554</i></td>
+    </tr><tr>
+      <td class="q">Outlet Installation Adairsville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">EaZy Pros <i>4.9 / 554</i></td>
+    </tr></tbody></table></div></details><details class="market">
+    <summary><span class="mname">Cedartown</span><span class="mmeta">17.8 mi from Rome</span>
+    <span class="mscore bad">0/20 showing</span></summary>
+    <div class="tblwrap"><table class="detail">
+      <thead><tr><th>The search</th><th>Journey Home's spot</th><th>Who ranks first</th></tr></thead>
+      <tbody><tr>
+      <td class="q">Handyman Cedartown GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Daniel's Green Services And Handyman <i>4.8 / 61</i></td>
+    </tr><tr>
+      <td class="q">Handyman Services Cedartown GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Daniel's Green Services And Handyman <i>4.8 / 61</i></td>
+    </tr><tr>
+      <td class="q">Home Repair Cedartown GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Daniel's Green Services And Handyman <i>4.8 / 61</i></td>
+    </tr><tr>
+      <td class="q">Tv Mounting Cedartown GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Asaptvmounting <i>4.9 / 96</i></td>
+    </tr><tr>
+      <td class="q">Drywall Repair Cedartown GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Weaver Drywall, Inc <i>5 / 1</i></td>
+    </tr><tr>
+      <td class="q">Interior Painting Cedartown GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">quality painting &amp; home repairs llc <i>5 / 5</i></td>
+    </tr><tr>
+      <td class="q">Painting Services Cedartown GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">CertaPro Painters of Douglasville-Rome, GA <i>4.8 / 127</i></td>
+    </tr><tr>
+      <td class="q">Gutter Cleaning Cedartown GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Land’s Gutter Cleaning &amp; Pressure Washing Service <i>5 / 2</i></td>
+    </tr><tr>
+      <td class="q">Gutter Repair Cedartown GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Land’s Gutter Cleaning &amp; Pressure Washing Service <i>5 / 2</i></td>
+    </tr><tr>
+      <td class="q">Door Installation Cedartown GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Phoenix Garage Doors <i>5 / 28</i></td>
+    </tr><tr>
+      <td class="q">Deck Repair Cedartown GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Daniel's Green Services And Handyman <i>4.8 / 61</i></td>
+    </tr><tr>
+      <td class="q">Siding Repair Cedartown GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">quality painting &amp; home repairs llc <i>5 / 5</i></td>
+    </tr><tr>
+      <td class="q">Fence Repair Cedartown GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Superior Fence &amp; Rail of Northwest Georgia <i>4.9 / 182</i></td>
+    </tr><tr>
+      <td class="q">Soffit Repair Cedartown GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Oak Ridge Roofing <i>5 / 54</i></td>
+    </tr><tr>
+      <td class="q">Subfloor Repair Cedartown GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Barners Floor Covering <i>5 / 1</i></td>
+    </tr><tr>
+      <td class="q">Door Repair Cedartown GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Home Services at The Home Depot</td>
+    </tr><tr>
+      <td class="q">Ceiling Fan Installation Cedartown GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Livewire Solutions <i>5 / 137</i></td>
+    </tr><tr>
+      <td class="q">Recessed Lighting Installation Cedartown GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">TET Light Solutions LLC <i>5 / 6</i></td>
+    </tr><tr>
+      <td class="q">Light Fixture Installation Cedartown GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">TET Light Solutions LLC <i>5 / 6</i></td>
+    </tr><tr>
+      <td class="q">Outlet Installation Cedartown GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Livewire Surplus <i>4.2 / 179</i></td>
+    </tr></tbody></table></div></details><details class="market">
+    <summary><span class="mname">Summerville</span><span class="mmeta">18.6 mi from Rome</span>
+    <span class="mscore mid">4/20 showing</span></summary>
+    <div class="tblwrap"><table class="detail">
+      <thead><tr><th>The search</th><th>Journey Home's spot</th><th>Who ranks first</th></tr></thead>
+      <tbody><tr>
+      <td class="q">Handyman Summerville GA</td>
+      <td class="pos mid">#15</td>
+      <td class="lead">WILL-DO-SERVICES <i>5 / 7</i></td>
+    </tr><tr>
+      <td class="q">Handyman Services Summerville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">WILL-DO-SERVICES <i>5 / 7</i></td>
+    </tr><tr>
+      <td class="q">Home Repair Summerville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">A&amp;J Handyman Solutions</td>
+    </tr><tr>
+      <td class="q">Tv Mounting Summerville GA</td>
+      <td class="pos near">#7</td>
+      <td class="lead">WILL-DO-SERVICES <i>5 / 7</i></td>
+    </tr><tr>
+      <td class="q">Drywall Repair Summerville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Mr Do It All Drywall <i>4.9 / 28</i></td>
+    </tr><tr>
+      <td class="q">Interior Painting Summerville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">HandyPro Home Painting and Flooring LLC <i>5 / 37</i></td>
+    </tr><tr>
+      <td class="q">Painting Services Summerville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">HandyPro Home Painting and Flooring LLC <i>5 / 37</i></td>
+    </tr><tr>
+      <td class="q">Gutter Cleaning Summerville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Johnston Seamless Gutters <i>4.2 / 6</i></td>
+    </tr><tr>
+      <td class="q">Gutter Repair Summerville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Johnston Seamless Gutters <i>4.2 / 6</i></td>
+    </tr><tr>
+      <td class="q">Door Installation Summerville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Martin Door Company <i>5 / 53</i></td>
+    </tr><tr>
+      <td class="q">Deck Repair Summerville GA</td>
+      <td class="pos near">#5</td>
+      <td class="lead">Moonlight Restoration and Repair LLC <i>5 / 19</i></td>
+    </tr><tr>
+      <td class="q">Siding Repair Summerville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Pro Roof Ga <i>5 / 41</i></td>
+    </tr><tr>
+      <td class="q">Fence Repair Summerville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Goodson Fencing, LLC <i>4.8 / 52</i></td>
+    </tr><tr>
+      <td class="q">Soffit Repair Summerville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Pro Roof Ga <i>5 / 41</i></td>
+    </tr><tr>
+      <td class="q">Subfloor Repair Summerville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">1st Class Flooring LLC <i>5 / 81</i></td>
+    </tr><tr>
+      <td class="q">Door Repair Summerville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Herring's Dock &amp; Door LLC <i>4.3 / 6</i></td>
+    </tr><tr>
+      <td class="q">Ceiling Fan Installation Summerville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Phillip's Electrical Services <i>5 / 60</i></td>
+    </tr><tr>
+      <td class="q">Recessed Lighting Installation Summerville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Ayers Electrical LLC <i>5 / 7</i></td>
+    </tr><tr>
+      <td class="q">Light Fixture Installation Summerville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Matthews Lighting and Electric, LLC <i>5 / 246</i></td>
+    </tr><tr>
+      <td class="q">Outlet Installation Summerville GA</td>
+      <td class="pos near">#7</td>
+      <td class="lead">Matthews Lighting and Electric, LLC <i>5 / 246</i></td>
+    </tr></tbody></table></div></details><details class="market">
+    <summary><span class="mname">Rockmart</span><span class="mmeta">19.1 mi from Rome</span>
+    <span class="mscore bad">0/20 showing</span></summary>
+    <div class="tblwrap"><table class="detail">
+      <thead><tr><th>The search</th><th>Journey Home's spot</th><th>Who ranks first</th></tr></thead>
+      <tbody><tr>
+      <td class="q">Handyman Rockmart GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Daniel's Green Services And Handyman <i>4.8 / 61</i></td>
+    </tr><tr>
+      <td class="q">Handyman Services Rockmart GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Southern Style Solutions Handyman Services <i>5 / 2</i></td>
+    </tr><tr>
+      <td class="q">Home Repair Rockmart GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Rockmart Home and Land Man, LLC <i>5 / 2</i></td>
+    </tr><tr>
+      <td class="q">Tv Mounting Rockmart GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Mount Atlanta $99 TV Mounting | Same-Day Install | New Deals In Atlanta, Ga <i>5 / 298</i></td>
+    </tr><tr>
+      <td class="q">Drywall Repair Rockmart GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Mr Do It All Drywall <i>4.9 / 28</i></td>
+    </tr><tr>
+      <td class="q">Interior Painting Rockmart GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">TSB Painting LLC <i>5 / 51</i></td>
+    </tr><tr>
+      <td class="q">Painting Services Rockmart GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">TSB Painting LLC <i>5 / 51</i></td>
+    </tr><tr>
+      <td class="q">Gutter Cleaning Rockmart GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Affordable Gutter Cleaning Service <i>4.9 / 54</i></td>
+    </tr><tr>
+      <td class="q">Gutter Repair Rockmart GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Affordable Gutter Cleaning Service <i>4.9 / 54</i></td>
+    </tr><tr>
+      <td class="q">Door Installation Rockmart GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Lovvorn Door &amp; Window Co <i>5 / 1</i></td>
+    </tr><tr>
+      <td class="q">Deck Repair Rockmart GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Dependable Painting &amp; Remodeling <i>4.8 / 246</i></td>
+    </tr><tr>
+      <td class="q">Siding Repair Rockmart GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">1Source Industries <i>4.9 / 118</i></td>
+    </tr><tr>
+      <td class="q">Fence Repair Rockmart GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Superior Fence &amp; Rail of Northwest Georgia <i>4.9 / 182</i></td>
+    </tr><tr>
+      <td class="q">Soffit Repair Rockmart GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Roof Works Integrity <i>4.9 / 28</i></td>
+    </tr><tr>
+      <td class="q">Subfloor Repair Rockmart GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Atlanta Concrete <i>5 / 14</i></td>
+    </tr><tr>
+      <td class="q">Door Repair Rockmart GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Focus Garage Door &amp; Service <i>4.9 / 173</i></td>
+    </tr><tr>
+      <td class="q">Ceiling Fan Installation Rockmart GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">All Grounded Electric Rockmart GA <i>5 / 23</i></td>
+    </tr><tr>
+      <td class="q">Recessed Lighting Installation Rockmart GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">All Grounded Electric Rockmart GA <i>5 / 23</i></td>
+    </tr><tr>
+      <td class="q">Light Fixture Installation Rockmart GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">All Grounded Electric Rockmart GA <i>5 / 23</i></td>
+    </tr><tr>
+      <td class="q">Outlet Installation Rockmart GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">All Grounded Electric Rockmart GA <i>5 / 23</i></td>
+    </tr></tbody></table></div></details><details class="market">
+    <summary><span class="mname">Calhoun</span><span class="mmeta">20.9 mi from Rome</span>
+    <span class="mscore bad">0/20 showing</span></summary>
+    <div class="tblwrap"><table class="detail">
+      <thead><tr><th>The search</th><th>Journey Home's spot</th><th>Who ranks first</th></tr></thead>
+      <tbody><tr>
+      <td class="q">Handyman Calhoun GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Husbands Helper Handyman Service <i>5 / 39</i></td>
+    </tr><tr>
+      <td class="q">Handyman Services Calhoun GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Husbands Helper Handyman Service <i>5 / 39</i></td>
+    </tr><tr>
+      <td class="q">Home Repair Calhoun GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Husbands Helper Handyman Service <i>5 / 39</i></td>
+    </tr><tr>
+      <td class="q">Tv Mounting Calhoun GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Complete Outdoors <i>5 / 1</i></td>
+    </tr><tr>
+      <td class="q">Drywall Repair Calhoun GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Husbands Helper Handyman Service <i>5 / 39</i></td>
+    </tr><tr>
+      <td class="q">Interior Painting Calhoun GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">HandyPro Home Painting and Flooring LLC <i>5 / 37</i></td>
+    </tr><tr>
+      <td class="q">Painting Services Calhoun GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">HandyPro Home Painting and Flooring LLC <i>5 / 37</i></td>
+    </tr><tr>
+      <td class="q">Gutter Cleaning Calhoun GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Gutter Guys <i>4.4 / 28</i></td>
+    </tr><tr>
+      <td class="q">Gutter Repair Calhoun GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Hernandez Roofing &amp; Construction <i>4.9 / 294</i></td>
+    </tr><tr>
+      <td class="q">Door Installation Calhoun GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Industrial Door &amp; Dock LLC, A Garage Door Co <i>4.7 / 14</i></td>
+    </tr><tr>
+      <td class="q">Deck Repair Calhoun GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">HGS Contractors LLC <i>4.4 / 23</i></td>
+    </tr><tr>
+      <td class="q">Siding Repair Calhoun GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">M&amp;M Windows Roofing And Siding <i>5 / 3</i></td>
+    </tr><tr>
+      <td class="q">Fence Repair Calhoun GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Southern Fencing Solutions, LLC <i>4.9 / 160</i></td>
+    </tr><tr>
+      <td class="q">Soffit Repair Calhoun GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Eminent Roofing and Restoration LLC <i>5 / 44</i></td>
+    </tr><tr>
+      <td class="q">Subfloor Repair Calhoun GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Southern Style Hardwood Flooring <i>4 / 11</i></td>
+    </tr><tr>
+      <td class="q">Door Repair Calhoun GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Industrial Door &amp; Dock LLC, A Garage Door Co <i>4.7 / 14</i></td>
+    </tr><tr>
+      <td class="q">Ceiling Fan Installation Calhoun GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Phoenix Electrical <i>4.9 / 136</i></td>
+    </tr><tr>
+      <td class="q">Recessed Lighting Installation Calhoun GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Phoenix Electrical <i>4.9 / 136</i></td>
+    </tr><tr>
+      <td class="q">Light Fixture Installation Calhoun GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Phoenix Electrical <i>4.9 / 136</i></td>
+    </tr><tr>
+      <td class="q">Outlet Installation Calhoun GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Phoenix Electrical <i>4.9 / 136</i></td>
+    </tr></tbody></table></div></details><details class="market">
+    <summary><span class="mname">Cartersville</span><span class="mmeta">21.8 mi from Rome</span>
+    <span class="mscore bad">0/20 showing</span></summary>
+    <div class="tblwrap"><table class="detail">
+      <thead><tr><th>The search</th><th>Journey Home's spot</th><th>Who ranks first</th></tr></thead>
+      <tbody><tr>
+      <td class="q">Handyman Cartersville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Marshall's Handyman Service <i>4.8 / 214</i></td>
+    </tr><tr>
+      <td class="q">Handyman Services Cartersville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Marshall's Handyman Service <i>4.8 / 214</i></td>
+    </tr><tr>
+      <td class="q">Home Repair Cartersville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">North Georgia Home Repairs <i>4.2 / 14</i></td>
+    </tr><tr>
+      <td class="q">Tv Mounting Cartersville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Mount Atlanta $99 TV Mounting | Same-Day Install | New Deals In Atlanta, Ga <i>5 / 298</i></td>
+    </tr><tr>
+      <td class="q">Drywall Repair Cartersville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Mr Do It All Drywall <i>4.9 / 28</i></td>
+    </tr><tr>
+      <td class="q">Interior Painting Cartersville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">CertaPro Painters of Douglasville-Rome, GA <i>4.8 / 127</i></td>
+    </tr><tr>
+      <td class="q">Painting Services Cartersville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">All American Painting <i>5 / 18</i></td>
+    </tr><tr>
+      <td class="q">Gutter Cleaning Cartersville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Skilled Pugs Pressure Wash &amp; Gutter Cleaning <i>5 / 108</i></td>
+    </tr><tr>
+      <td class="q">Gutter Repair Cartersville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">JCB Gutter Service, LLC <i>5 / 37</i></td>
+    </tr><tr>
+      <td class="q">Door Installation Cartersville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Revived Windows and Doors LLC <i>5 / 17</i></td>
+    </tr><tr>
+      <td class="q">Deck Repair Cartersville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">DECKsclusive, LLC <i>5 / 1</i></td>
+    </tr><tr>
+      <td class="q">Siding Repair Cartersville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Exterior Solutions By: Darrell Pressley <i>4.9 / 59</i></td>
+    </tr><tr>
+      <td class="q">Fence Repair Cartersville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Southern Fencing Solutions, LLC <i>4.9 / 160</i></td>
+    </tr><tr>
+      <td class="q">Soffit Repair Cartersville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">My Go-to Roofer <i>5 / 17</i></td>
+    </tr><tr>
+      <td class="q">Subfloor Repair Cartersville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Fast Floors Now, LLC <i>5 / 1</i></td>
+    </tr><tr>
+      <td class="q">Door Repair Cartersville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Southern Door Supply <i>5 / 2</i></td>
+    </tr><tr>
+      <td class="q">Ceiling Fan Installation Cartersville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">1 Best Electric LLC <i>5 / 211</i></td>
+    </tr><tr>
+      <td class="q">Recessed Lighting Installation Cartersville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Custom Lighting Solutions <i>5 / 4</i></td>
+    </tr><tr>
+      <td class="q">Light Fixture Installation Cartersville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">Rich Lighting Co <i>5 / 70</i></td>
+    </tr><tr>
+      <td class="q">Outlet Installation Cartersville GA</td>
+      <td class="pos far">Not shown</td>
+      <td class="lead">1 Best Electric LLC <i>5 / 211</i></td>
+    </tr></tbody></table></div></details></div>
   <div class="note"><b>Rome is unusually fragmented.</b> Across the 20 services measured there, <b>16 different businesses</b> hold first place, the most frequent one taking only 4. No handyman business owns this market by service. Each individual trade search is held by somebody who specialises in that one thing.</div>
 </div></section>
 
 <section><div class="wrap">
   <h2>Organic results, the blue links below the map</h2>
-  <p class="lede">The map pack and the ordinary web results are two separate systems, and a business can hold one while being invisible in the other. This is how the website performs on the same twenty services.</p>
+  <p class="lede">The map pack and the ordinary web results are two separate systems, and a business can hold one while being invisible in the other. This is how the website performs, ordered by where it ranks: best placement first, then everything it does not rank for at all.</p>
+  <div class="note"><b>Four searches here are not services currently offered.</b> They are included because the demand behind them is real and it is worth seeing what is being left on the table, not because they are being recommended. Each is marked, and general contractor in particular is a regulated category in Georgia that would need checking against what the business is licensed to take on.</div>
   <div class="scroll"><table class="tbl">
-    <thead><tr><th>Service</th><th class="c">Georgia<br>per mo</th><th class="c">Rome<br>per mo</th><th class="c">Website position</th><th>Who holds first place</th></tr></thead>
+    <thead><tr><th>Service</th><th class="c">Rome<br>per mo</th><th class="c">Georgia<br>per mo</th><th class="c">Website position</th><th>Who holds first place</th></tr></thead>
     <tbody><tr>
-    <td class="q">Handyman</td>
-    <td class="c">8,280</td>
-    <td class="c">50</td>
-    <td class="c mid">#13</td>
-    <td class="dim">handymantomllc.godaddysites.com</td>
-  </tr><tr>
-    <td class="q">Handyman Services</td>
-    <td class="c">2,320</td>
+    <td class="q">Handyman Services </td>
     <td class="c">20</td>
+    <td class="c">2,320</td>
     <td class="c near">#9</td>
     <td class="dim">handymantomllc.godaddysites.com</td>
   </tr><tr>
-    <td class="q">Home Repair</td>
-    <td class="c">800</td>
-    <td class="c">20</td>
-    <td class="c far">not in top 30</td>
-    <td class="dim">www.yelp.com</td>
+    <td class="q">Handyman </td>
+    <td class="c">50</td>
+    <td class="c">8,280</td>
+    <td class="c mid">#13</td>
+    <td class="dim">handymantomllc.godaddysites.com</td>
   </tr><tr>
-    <td class="q">Tv Mounting</td>
-    <td class="c">4,880</td>
+    <td class="q">Pressure Washing <span class="flag no">not offered</span><span class="fnote">not listed on the site</span></td>
+    <td class="c">110</td>
+    <td class="c">18,100</td>
+    <td class="c far">No presence</td>
+    <td class="dim">blastoffrome.com</td>
+  </tr><tr>
+    <td class="q">Tv Mounting </td>
     <td class="c">30</td>
-    <td class="c far">not in top 30</td>
+    <td class="c">4,880</td>
+    <td class="c far">No presence</td>
     <td class="dim">www.walmart.com</td>
   </tr><tr>
-    <td class="q">Drywall Repair</td>
-    <td class="c">3,280</td>
+    <td class="q">Drywall Repair </td>
     <td class="c">20</td>
-    <td class="c far">not in top 30</td>
+    <td class="c">3,280</td>
+    <td class="c far">No presence</td>
     <td class="dim">www.yelp.com</td>
   </tr><tr>
-    <td class="q">Interior Painting</td>
-    <td class="c">3,600</td>
+    <td class="q">Home Repair </td>
+    <td class="c">20</td>
+    <td class="c">800</td>
+    <td class="c far">No presence</td>
+    <td class="dim">www.yelp.com</td>
+  </tr><tr>
+    <td class="q">Interior Painting </td>
     <td class="c">10</td>
-    <td class="c far">not in top 30</td>
+    <td class="c">3,600</td>
+    <td class="c far">No presence</td>
     <td class="dim">www.embreepainting.com</td>
   </tr><tr>
-    <td class="q">Painting Services</td>
-    <td class="c">480</td>
+    <td class="q">General Contractor <span class="flag no">not offered</span><span class="fnote">regulated category in Georgia, worth confirming against what the business is licensed to take on</span></td>
     <td class="c">10</td>
-    <td class="c far">not in top 30</td>
+    <td class="c">3,600</td>
+    <td class="c far">No presence</td>
     <td class="dim">www.yelp.com</td>
   </tr><tr>
-    <td class="q">Gutter Cleaning</td>
-    <td class="c">2,400</td>
+    <td class="q">Gutter Cleaning </td>
     <td class="c">10</td>
-    <td class="c far">not in top 30</td>
+    <td class="c">2,400</td>
+    <td class="c far">No presence</td>
     <td class="dim">ensleyxteriors.com</td>
   </tr><tr>
-    <td class="q">Gutter Repair</td>
-    <td class="c">590</td>
+    <td class="q">Deck Building <span class="flag partial">partly offered</span><span class="fnote">the site lists deck rehabs, which is repair rather than new build</span></td>
     <td class="c">10</td>
-    <td class="c far">not in top 30</td>
+    <td class="c">2,400</td>
+    <td class="c far">No presence</td>
+    <td class="dim">www.prestigeconstructionga.com</td>
+  </tr><tr>
+    <td class="q">Contractors Near Me <span class="flag no">not offered</span><span class="fnote">not listed on the site</span></td>
+    <td class="c">10</td>
+    <td class="c">1,600</td>
+    <td class="c far">No presence</td>
     <td class="dim">www.yelp.com</td>
   </tr><tr>
-    <td class="q">Door Installation</td>
-    <td class="c">390</td>
+    <td class="q">Ceiling Fan Installation </td>
     <td class="c">10</td>
-    <td class="c far">not in top 30</td>
-    <td class="dim">www.lowes.com</td>
-  </tr><tr>
-    <td class="q">Deck Repair</td>
-    <td class="c">480</td>
-    <td class="c">10</td>
-    <td class="c far">not in top 30</td>
-    <td class="dim">www.houzz.com</td>
-  </tr><tr>
-    <td class="q">Siding Repair</td>
-    <td class="c">590</td>
-    <td class="c">10</td>
-    <td class="c far">not in top 30</td>
-    <td class="dim">www.yelp.com</td>
-  </tr><tr>
-    <td class="q">Fence Repair</td>
-    <td class="c">390</td>
-    <td class="c">10</td>
-    <td class="c far">not in top 30</td>
-    <td class="dim">ramirezfencingllc.com</td>
-  </tr><tr>
-    <td class="q">Soffit Repair</td>
-    <td class="c">210</td>
-    <td class="c">10</td>
-    <td class="c far">not in top 30</td>
-    <td class="dim">www.yelp.com</td>
-  </tr><tr>
-    <td class="q">Subfloor Repair</td>
-    <td class="c">140</td>
-    <td class="c">10</td>
-    <td class="c far">not in top 30</td>
-    <td class="dim">mrhardwoodinc.com</td>
-  </tr><tr>
-    <td class="q">Door Repair</td>
-    <td class="c">260</td>
-    <td class="c">10</td>
-    <td class="c far">not in top 30</td>
-    <td class="dim">www.romegadoors.com</td>
-  </tr><tr>
-    <td class="q">Ceiling Fan Installation</td>
     <td class="c">720</td>
-    <td class="c">10</td>
-    <td class="c far">not in top 30</td>
+    <td class="c far">No presence</td>
     <td class="dim">www.facebook.com</td>
   </tr><tr>
-    <td class="q">Recessed Lighting Installation</td>
+    <td class="q">Gutter Repair </td>
+    <td class="c">10</td>
+    <td class="c">590</td>
+    <td class="c far">No presence</td>
+    <td class="dim">www.yelp.com</td>
+  </tr><tr>
+    <td class="q">Siding Repair </td>
+    <td class="c">10</td>
+    <td class="c">590</td>
+    <td class="c far">No presence</td>
+    <td class="dim">www.yelp.com</td>
+  </tr><tr>
+    <td class="q">Painting Services </td>
+    <td class="c">10</td>
+    <td class="c">480</td>
+    <td class="c far">No presence</td>
+    <td class="dim">www.yelp.com</td>
+  </tr><tr>
+    <td class="q">Deck Repair </td>
+    <td class="c">10</td>
+    <td class="c">480</td>
+    <td class="c far">No presence</td>
+    <td class="dim">www.houzz.com</td>
+  </tr><tr>
+    <td class="q">Door Installation </td>
+    <td class="c">10</td>
+    <td class="c">390</td>
+    <td class="c far">No presence</td>
+    <td class="dim">www.lowes.com</td>
+  </tr><tr>
+    <td class="q">Fence Repair </td>
+    <td class="c">10</td>
+    <td class="c">390</td>
+    <td class="c far">No presence</td>
+    <td class="dim">ramirezfencingllc.com</td>
+  </tr><tr>
+    <td class="q">Door Repair </td>
+    <td class="c">10</td>
+    <td class="c">260</td>
+    <td class="c far">No presence</td>
+    <td class="dim">www.romegadoors.com</td>
+  </tr><tr>
+    <td class="q">Soffit Repair </td>
+    <td class="c">10</td>
     <td class="c">210</td>
+    <td class="c far">No presence</td>
+    <td class="dim">www.yelp.com</td>
+  </tr><tr>
+    <td class="q">Recessed Lighting Installation </td>
     <td class="c">10</td>
-    <td class="c far">not in top 30</td>
+    <td class="c">210</td>
+    <td class="c far">No presence</td>
     <td class="dim">www.matthewselectricpros.com</td>
   </tr><tr>
-    <td class="q">Light Fixture Installation</td>
-    <td class="c">70</td>
+    <td class="q">Subfloor Repair </td>
     <td class="c">10</td>
-    <td class="c far">not in top 30</td>
+    <td class="c">140</td>
+    <td class="c far">No presence</td>
+    <td class="dim">mrhardwoodinc.com</td>
+  </tr><tr>
+    <td class="q">Light Fixture Installation </td>
+    <td class="c">10</td>
+    <td class="c">70</td>
+    <td class="c far">No presence</td>
     <td class="dim">www.matthewselectricpros.com</td>
   </tr><tr>
-    <td class="q">Outlet Installation</td>
-    <td class="c">70</td>
+    <td class="q">Outlet Installation </td>
     <td class="c">10</td>
-    <td class="c far">not in top 30</td>
+    <td class="c">70</td>
+    <td class="c far">No presence</td>
     <td class="dim">www.yelp.com</td>
   </tr></tbody>
   </table></div>
-  <div class="note">Of the 20 services tracked, the website reaches the top 30 for <b>2</b> and page one for <b>1</b>. Directory sites such as Yelp, Facebook, Thumbtack and Angi take <b>51%</b> of the top five web positions across these searches.</div>
+  <div class="note">Of the 24 searches listed, the website appears in the top 30 for <b>2</b> and has <b>no presence at all for 22</b>. Directory sites such as Yelp, Facebook, Thumbtack and Angi take <b>51%</b> of the top five web positions across the tracked services. The single largest term on this list, pressure washing at 110 Rome searches a month, is held by blastoffrome.com.</div>
 </div></section>
 
 <section><div class="wrap">
