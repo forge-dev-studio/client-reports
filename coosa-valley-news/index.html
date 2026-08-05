@@ -236,10 +236,10 @@ code{font-family:var(--mono);font-size:.83em;background:var(--line-2);color:var(
       <div class="big"><span class="num">36</span><span class="den">/100</span></div>
     </div>
     <div>
-      <p class="hl">We reviewed 106 separate items across five areas. The publishing operation underneath this site is strong: roughly 400 stories a month and an archive going back to 2015. Most of what follows is configuration sitting on top of that work, not a problem with the journalism.</p>
+      <p class="hl">We reviewed 107 separate items across five areas. The publishing operation underneath this site is strong: roughly 400 stories a month and an archive going back to 2015. Most of what follows is configuration sitting on top of that work, not a problem with the journalism.</p>
       <div class="tally">
         <span class="pill"><i class="sw" style="background:var(--crit)"></i><b>13</b> Critical</span>
-        <span class="pill"><i class="sw" style="background:var(--high)"></i><b>33</b> High</span>
+        <span class="pill"><i class="sw" style="background:var(--high)"></i><b>34</b> High</span>
         <span class="pill"><i class="sw" style="background:var(--med)"></i><b>38</b> Medium</span>
         <span class="pill"><i class="sw" style="background:var(--low)"></i><b>22</b> Low</span>
         <span class="pill"><i class="sw" style="background:var(--good)"></i><b>18</b> Opportunities</span>
@@ -301,7 +301,7 @@ code{font-family:var(--mono);font-size:.83em;background:var(--line-2);color:var(
   <div class="sec-h">
     <p class="eyebrow">If you read nothing else</p>
     <h2>The ten that matter most</h2>
-    <p>We logged 106 items in total, and the full list is further down. These are the ten worth your time in this meeting, ordered by what they cost you. Every one was independently re-checked before it went on this page.</p>
+    <p>We logged 107 items in total, and the full list is further down. These are the ten worth your time in this meeting, ordered by what they cost you. Every one was independently re-checked before it went on this page.</p>
   </div>
   <div class="leads"><article class="lead crit">
       <div class="lead-n">01</div>
@@ -609,7 +609,7 @@ code{font-family:var(--mono);font-size:.83em;background:var(--line-2);color:var(
     <div class="fbody">
       <p class="impact">Arrest reports are among the highest-demand local queries there are. People search names. Right now none of those names are on the HTML page, so the site cannot rank for a single one of them. Meanwhile the site is publishing thousands of near-empty pages whose only differentiator is a date in the title, which is exactly the shape of a thin-content footprint. This is simultaneously the biggest wasted traffic opportunity and the biggest thin-content liability on the domain.</p>
       
-      <div class="ev"><span class="ev-l">What we found</span><p>24,635 sitemap URLs, of which 2,666 (10.8%) match 'arrest-report' (Floyd 1,684; Gordon 395; Polk 366; Chattooga 192; Bartow 7; Cherokee 3). On <code>https://c</code>oosavalleynews.com/2026/08/floyd-county-arrest-report-tuesday-august-4-2026/ the entry-content region contains only the headline repeated plus a link to <code>https://c</code>oosavalleynews.com/wp-content/uploads/2026/08/Floyd-County-Arrest-Report-Tuesday-August-4-2026.pdf - the meta description is literally 'Floyd County Arrest Report Tuesday August 4 2026...'. Same pattern verified on the Polk and Gordon 2026-08-04 reports (both meta descriptions are just the headline; both link only to a same-named PDF). Reference for the policy frame: Google's scaled content abuse policy is method-agnostic and targets pages that provide little value to users (<code>https://devel</code>opers.google.com/search/docs/essentials/spam-policies , checked 2026-08-05).</p></div>
+      <div class="ev"><span class="ev-l">What we found</span><p>24,635 sitemap URLs, of which 2,666 (10.8%) match 'arrest-report' (Floyd 1,684; Gordon 395; Polk 366; Chattooga 192; Bartow 7; Cherokee 3). On <code>https://c</code>oosavalleynews.com/2026/08/floyd-county-arrest-report-tuesday-august-4-2026/ the entry-content region contains only the headline repeated plus a link to <code>https://c</code>oosavalleynews.com/wp-content/uploads/2026/08/Floyd-County-Arrest-Report-Tuesday-August-4-2026.pdf - Confirmed against Google directly on 2026-08-05, which settles how much this costs them. A site:coosavalleynews.com filetype:pdf query on Google returns ZERO results, so Google has indexed none of these PDFs going back to 2015, even though the files return <code>HTTP 200</code> to Googlebot and carry no X-Robots-Tag header to prevent it. Searching a full name taken from inside one of those PDFs likewise returns nothing from this domain. So the practical position is that the outlet ranks at or near the top for the head term 'floyd county arrest reports' via its category page, and captures none of the name-level searches underneath it. In a county of roughly 100,000 people with daily arrests, name searches are the higher-volume and higher-intent half of that demand. The meta description is literally 'Floyd County Arrest Report Tuesday August 4 2026...'. Same pattern verified on the Polk and Gordon 2026-08-04 reports (both meta descriptions are just the headline; both link only to a same-named PDF). Reference for the policy frame: Google's scaled content abuse policy is method-agnostic and targets pages that provide little value to users (<code>https://devel</code>opers.google.com/search/docs/essentials/spam-policies , checked 2026-08-05).</p></div>
     </div>
   </details>
 <details class="f high">
@@ -1152,6 +1152,19 @@ code{font-family:var(--mono);font-size:.83em;background:var(--line-2);color:var(
       <p class="impact">This is the accessibility failure most likely to be cited in an automated scan report, and it is also a real reading-experience problem: five things move on your homepage at once with no way to stop any of them.</p>
       <p class="law"><span>Standard</span> WCAG 2.2 Level A SC 2.2.2 Pause, Stop, Hide: for any moving, blinking or scrolling information that starts automatically, lasts more than five seconds, and is presented in parallel with other content, there must be a mechanism for the user to pause, stop, or hide it.</p><p class="applies"><span>Does this apply to them?</span> Yes, and this is one of the cleanest failures in the report because every element of the success criterion is met: the motion starts automatically, it lasts indefinitely, it runs alongside your news content, and there is no pause mechanism reachable by keyboard. Hover-to-pause does not satisfy 2.2.2 because it is not operable without a mouse. This affects readers with vestibular disorders, ADHD, low vision, and anyone using a screen reader, and it is also simply annoying for readers who lose a headline mid-read.</p>
       <div class="ev"><span class="ev-l">What we found</span><p>The homepage runs five independently auto-rotating carousels. Four are Advanced Ads Slider (unslider) instances; their inline initialisers are identical in form: '$coosaslider2195576530.unslider({ delay:6000, autoplay:true, nav:false, arrows:false, infinite:true })' with delays of 6000ms (three instances) and 3000ms (the in-article ad slider). 'nav:false, arrows:false' means no navigation dots and no arrow controls are rendered at all. The only pause is '.on(&quot;mouseover&quot;, ... unslider(&quot;stop&quot;)).on(&quot;mouseout&quot;, ... unslider(&quot;start&quot;))', a mouse-only handler that never fires for a keyboard or screen-reader user. The fifth is the Extra theme featured-posts carousel, '&lt;div class=&quot;module featured-posts-slider-module ...&quot; data-autoplay=&quot;5&quot;&gt;', which rotates every 5 seconds and renders only '&lt;a class=&quot;prev arrow&quot; href=&quot;#&quot;&gt;&lt;/a&gt;' and '&lt;a class=&quot;next arrow&quot; href=&quot;#&quot;&gt;&lt;/a&gt;', both with empty link text. A DOM scan for any pause, play or stop control returned zero matches. The theme stylesheet (992,738 bytes) contains zero occurrences of 'prefers-reduced-motion', and the theme JavaScript (316,537 bytes) contains none either, so users who have set the OS-level reduce-motion preference get the full animation.</p></div>
+    </div>
+  </details>
+<details class="f high">
+    <summary>
+      <span class="sev">High</span>
+      <span class="ftitle">The daily arrest PDFs publish full home street addresses of people who have been arrested, not convicted</span>
+      
+      <span class="chev" aria-hidden="true"></span>
+    </summary>
+    <div class="fbody">
+      <p class="impact">Publishing a home address of someone who has been accused but not convicted creates a personal-safety and reputational exposure that goes well beyond reporting the arrest itself, and it is the detail most likely to turn a routine removal request into an angry one or a lawyer's letter. It also carries an important interaction with the biggest opportunity in this audit: the recommended fix for the arrest content is to publish it as real text on the page instead of inside a PDF. Doing that without stripping the address field would convert a dormant risk into an indexed, permanent, searchable one. The two changes have to be designed together.</p>
+      <p class="law"><span>Standard</span> Privacy / reputational harm; interacts with O.C.G.A. 10-1-393.5 booking-photo removal duty; general negligence exposure</p><p class="applies"><span>Does this apply to them?</span> Yes, though currently latent rather than active. The source document is the Sheriff Office public media report, so the underlying data is public record and republishing it is not itself unlawful. The exposure is that a person arrested and later cleared has their home address sitting in a permanently hosted, crawler-accessible file on this domain, alongside the booking photo that IS covered by the 10-1-393.5 removal duty. Today Google has not indexed these files, which keeps the practical risk low. That is a fragile protection rather than a safeguard, since it depends on a search engine continuing to decline to crawl them.</p>
+      <div class="ev"><span class="ev-l">What we found</span><p>Downloaded <code>https://c</code>oosavalleynews.com/wp-content/uploads/2026/08/Floyd-County-Arrest-Report-Tuesday-August-4-2026.pdf and extracted its text on 2026-08-05. The document is not a scanned image: it carries 16 embedded font objects and yields fully machine-readable text. Each entry contains surname and first/middle name, age, sex, race, a complete residential street address including city, state and ZIP, arrest date, arresting officer, agency, charge and release reason. Two representative address fields from page 1 are a street address in Rome GA 30165 and another in Marietta GA 30008. The same structure appears in the January 8 2026 file, which yielded 45 distinct name lines across 5 pages. These files return <code>HTTP 200</code> to a Googlebot user agent and carry NO X-Robots-Tag header, so nothing technically prevents a search engine or scraper from reading them. Mitigating fact, verified against Google the same day: a site:coosavalleynews.com filetype:pdf query returns zero results, so Google has not in fact indexed them.</p></div>
     </div>
   </details>
 <details class="f med">
@@ -1932,7 +1945,7 @@ code{font-family:var(--mono);font-size:.83em;background:var(--line-2);color:var(
     <span class="fact">Static pages <b>1</b></span>
     <span class="fact">Server response <b>0.097-0.131s</b></span>
     <span class="fact">Platform <b>WordPress / Divi Extra 4.27.5</b></span>
-    <span class="fact">Findings <b>106</b></span>
+    <span class="fact">Findings <b>107</b></span>
   </div>
 </section>
 
