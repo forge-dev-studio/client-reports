@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Carter Custom Carpets | Proposal | Synergy Telecom</title>
+<meta name="description" content="A website proposal for Carter Custom Carpets, Inc. of Rome, Georgia.">
+<style>
+  :root {
+    --undyed:#F6F3ED; --ash:#E2DED4; --sand:#D9CDB6; --straw:#C9B283;
+    --camel:#A9834F; --moss:#6B7355; --storm:#5A6670; --indigo:#2B3A5C; --bark:#6B4A33;
+    --ground:var(--undyed); --surface:#FCFAF6; --ink:#232320; --ink-mute:#6A6558;
+    --rule:var(--ash); --rule-soft:#EDE9E0; --accent:var(--indigo); --accent-w:#E7E9F0;
+    --gold:var(--camel);
+    --display:Didot,"Bodoni 72","Hoefler Text",Garamond,"Times New Roman",serif;
+    --body:Optima,Candara,"Gill Sans","Gill Sans MT","Trebuchet MS",sans-serif;
+    --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+    --measure:64ch;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground:#191815; --surface:#211F1B; --ink:#EFEAE0; --ink-mute:#A69E8D;
+      --rule:#35322B; --rule-soft:#2A2823; --accent:#93A6CC; --accent-w:#22262F; --gold:#C79B63;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground:#191815; --surface:#211F1B; --ink:#EFEAE0; --ink-mute:#A69E8D;
+    --rule:#35322B; --rule-soft:#2A2823; --accent:#93A6CC; --accent-w:#22262F; --gold:#C79B63;
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    background:var(--ground); color:var(--ink); font-family:var(--body);
+    font-size:1.08rem; line-height:1.65; margin:0; padding:0 1.5rem 6rem;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap { max-width:var(--measure); margin:0 auto; }
+  .warp {
+    height:10px; margin:0 0 3.5rem;
+    background:repeating-linear-gradient(90deg,
+      var(--undyed) 0 7px, var(--ash) 7px 12px, var(--sand) 12px 19px,
+      var(--straw) 19px 24px, var(--camel) 24px 30px, var(--moss) 30px 36px,
+      var(--storm) 36px 43px, var(--indigo) 43px 49px, var(--bark) 49px 55px);
+  }
+  .warp-thin { height:4px; margin:3.5rem 0; }
+  header { padding:4.5rem 0 0; }
+  .eyebrow {
+    font-family:var(--mono); font-size:0.68rem; letter-spacing:0.18em;
+    text-transform:uppercase; color:var(--ink-mute); margin:0 0 2rem;
+  }
+  h1 {
+    font-family:var(--display); font-size:clamp(2.9rem,8vw,4.6rem); line-height:1;
+    letter-spacing:-0.02em; font-weight:400; text-wrap:balance; margin:0 0 1.5rem;
+  }
+  .standfirst { font-size:1.3rem; line-height:1.5; margin:0 0 2rem; text-wrap:pretty; }
+  .byline {
+    font-family:var(--mono); font-size:0.72rem; line-height:1.8; color:var(--ink-mute);
+    border-top:1px solid var(--rule); padding-top:1.1rem; margin:0;
+  }
+  section { margin:0 0 3rem; }
+  h2 {
+    font-family:var(--display); font-size:clamp(1.9rem,5vw,2.7rem); line-height:1.1;
+    font-weight:400; letter-spacing:-0.012em; text-wrap:balance; margin:0 0 1.3rem;
+  }
+  p { margin:0 0 1.2rem; text-wrap:pretty; }
+  strong { font-weight:600; }
+  a { color:var(--accent); text-underline-offset:3px; }
+  a:focus-visible { outline:2px solid var(--accent); outline-offset:3px; }
+  .big {
+    font-family:var(--display); font-size:clamp(1.5rem,4vw,2.05rem);
+    line-height:1.3; margin:0 0 1.4rem; text-wrap:pretty;
+  }
+  .kicker {
+    font-family:var(--display); font-size:clamp(1.7rem,4.5vw,2.3rem); line-height:1.24;
+    border-left:3px solid var(--gold); padding-left:1.4rem; margin:2rem 0; text-wrap:pretty;
+  }
+  .assets { display:grid; gap:1px; background:var(--rule); border:1px solid var(--rule); margin:0 0 1.6rem; }
+  @media (min-width:640px) { .assets { grid-template-columns:1fr 1fr; } }
+  .asset { background:var(--surface); padding:1.25rem 1.4rem; }
+  .asset b { font-family:var(--display); font-size:1.45rem; font-weight:400; display:block; line-height:1.15; margin-bottom:0.35rem; }
+  .asset span { font-size:0.94rem; color:var(--ink-mute); line-height:1.45; display:block; }
+  .stack { border-top:1px solid var(--rule); margin:0 0 1.6rem; }
+  .stack-row { display:flex; gap:1.2rem; align-items:baseline; border-bottom:1px solid var(--rule); padding:0.95rem 0; }
+  .stack-row .n { font-family:var(--mono); font-size:0.7rem; color:var(--gold); flex:0 0 2rem; letter-spacing:0.06em; }
+  .stack-row .t { flex:1; }
+  .stack-row .t b { display:block; font-weight:600; margin-bottom:0.15rem; }
+  .stack-row .t span { font-size:0.95rem; color:var(--ink-mute); line-height:1.45; }
+  .offer { border:2px solid var(--ink); padding:2rem 1.8rem; margin:0 0 1.6rem; background:var(--surface); }
+  .offer > :last-child { margin-bottom:0; }
+  .offer-price { display:flex; flex-wrap:wrap; gap:2.5rem; margin:0 0 1.4rem; }
+  .offer-price div { min-width:9rem; }
+  .offer-n { font-family:var(--display); font-size:clamp(2.5rem,7vw,3.4rem); line-height:1; display:block; letter-spacing:-0.02em; }
+  .offer-t { font-family:var(--mono); font-size:0.7rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--ink-mute); display:block; margin-top:0.5rem; }
+  .guarantee { background:var(--accent-w); border-left:3px solid var(--accent); padding:1.5rem 1.6rem; margin:0 0 1.6rem; }
+  .guarantee > :last-child { margin-bottom:0; }
+  .guarantee-l { font-family:var(--mono); font-size:0.66rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--ink-mute); display:block; margin-bottom:0.7rem; }
+  ul { margin:0 0 1.2rem; padding-left:1.25rem; }
+  li { margin-bottom:0.5rem; }
+  li::marker { color:var(--gold); }
+  .steps { counter-reset:step; list-style:none; padding:0; margin:0 0 1.2rem; }
+  .steps li { counter-increment:step; position:relative; padding-left:2.5rem; margin-bottom:0.85rem; }
+  .steps li::before {
+    content:counter(step,decimal-leading-zero); position:absolute; left:0; top:0.2rem;
+    font-family:var(--mono); font-size:0.72rem; color:var(--gold); letter-spacing:0.06em;
+  }
+  footer { border-top:1px solid var(--rule); padding-top:1.2rem; margin-top:3.5rem; font-size:0.88rem; line-height:1.7; color:var(--ink-mute); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <p class="eyebrow">For Carter Custom Carpets, Inc.</p>
+    <h1>107 years invisible</h1>
+    <p class="standfirst">Carter has spent a century building advantages that no competitor in this category can match. Right now not one of them is visible at the moment a buyer decides.</p>
+    <p class="byline">
+      For Eugenio Barnet-Cortina, President and CEO<br>
+      From Eric Kirby, Synergy Telecom and Medical Systems<br>
+      19 August 2026
+    </p>
+  </header>
+
+  <div class="warp"></div>
+
+  <section>
+    <h2>What you already own</h2>
+    <p>We studied the three competitors you named, and the customers you sell through. Here is what came back.</p>
+    <div class="assets">
+      <div class="asset"><b>1919</b><span>The oldest story in the category, and it is documented. Carter Brothers pioneered chenille in the United States.</span></div>
+      <div class="asset"><b>One property</b><span>Dyeing, winding, twisting, tufting, weaving, shearing and finishing on a single site. Most of this industry outsources stages.</span></div>
+      <div class="asset"><b>16 feet</b><span>Seamless. A technical advantage that a specifier can measure, and that competitors have to explain around.</span></div>
+      <div class="asset"><b>401+ colors</b><span>With 212+ textures, dyed in your own dyehouse, matched from a swatch or a Pantone reference.</span></div>
+      <div class="asset"><b>Made in America</b><span>By a 100% minority owned business. Large hospitality groups and federal buyers run formal supplier diversity programs. Almost nobody in this category can answer them.</span></div>
+      <div class="asset"><b>Nine people</b><span>In 90,000 square feet. The whole operation answers a color question in one conversation instead of three.</span></div>
+    </div>
+    <p class="big">Every one of those is a reason to specify Carter. Today a buyer can verify none of them, because there is nothing to look at.</p>
+  </section>
+
+  <div class="warp-thin"></div>
+
+  <section>
+    <h2>What a buyer finds today</h2>
+    <p>We ran the search a specifier would run. Here is the result, in order.</p>
+    <p>Search <strong>Carter Custom Carpets</strong> and the first result is your Facebook page. Below it: Bloomberg, Yelp, MapQuest, LinkedIn, ZoomInfo, and a customs shipping records site listing your import history.</p>
+    <p class="kicker">Every result on that page is a third party describing Carter. Not one of them is Carter.</p>
+    <p>Google has also started writing its own summary answer at the top of that page, assembled from those same directory listings, because there is no primary source for it to use instead. Whatever those directories got wrong is now the answer.</p>
+    <p>The name is a second problem. Search <strong>Carter carpets</strong> and both the first result and Google's business panel belong to Carter Carpets and Vinyl, a flooring store in Temperance, Michigan, on a domain one letter away from yours. Carter Custom Carpets appears twelfth, through Facebook again.</p>
+    <p>That search happens after something else already worked. A rep mentioned you. A designer found an old specification sheet. A purchasing office is confirming that a nine person mill in Georgia is real before committing to a first order. It is the last step before a decision, and Carter does not control a single thing on it.</p>
+    <p>The three competitors you sent us are not making better carpet than Carter. Scott Group, Delos and Kalogridis are winning the moment of decision by default, because when a specifier looks them up, the company answers for itself.</p>
+  </section>
+
+  <div class="warp-thin"></div>
+
+  <section>
+    <h2>About recovering the old site</h2>
+    <p>You asked whether it could be brought back. We went through every saved copy in the Internet Archive, 165 pages going back to 1998.</p>
+    <p>It should not be restored. From early 2024 onward, every saved copy carries advertising spam injected into Carter's own pages, hidden runs of unrelated keywords attached to your real text. Someone had access to the site and was using it to host content that had nothing to do with your business. That is also a likely reason it went offline, because hosts suspend accounts serving spam.</p>
+    <p>We recovered everything worth keeping from those pages and used it. The rest stays in the archive where it belongs.</p>
+  </section>
+
+  <div class="warp-thin"></div>
+
+  <section>
+    <h2>The strategy</h2>
+    <p class="big">Own the moment of specification.</p>
+    <p>Not advertising. Not chasing shoppers. Carter does not sell to the person browsing for a rug, and it should not try.</p>
+    <p>The buyer who matters has already heard your name and is deciding whether to specify you. A designer settling a color and a width. A purchasing office confirming a supplier exists. A showroom needing the real construction detail behind a product they sell under their own label.</p>
+    <p>Win that moment and everything upstream gets easier. Your reps stop sending folders of attachments and start sending a link. Your customers' salespeople can answer a specification question without calling Rome. And the supplier diversity programs that hotel groups and federal buyers run have a place to point.</p>
+    <p>That is the whole strategy, and it happens to be the one thing a website is genuinely good at.</p>
+  </section>
+
+  <div class="warp-thin"></div>
+
+  <section>
+    <h2>So we built you a demo before asking for anything</h2>
+    <p>Not a sample page or a picture of a layout. A complete working demo, built from your own documents, that you can click through today. Every part of it is customizable, and nothing in it is fixed until you say so.</p>
+    <div class="stack">
+      <div class="stack-row">
+        <span class="n">01</span>
+        <span class="t"><b>All 194 styles, each with its own page</b><span>Real quality number, fiber, texture, face weight, pile height, seamless width and colorway count, parsed directly from the style list you sent.</span></span>
+      </div>
+      <div class="stack-row">
+        <span class="n">02</span>
+        <span class="t"><b>A catalog a designer can search</b><span>Filter all 194 by collection, texture, fiber and pile height, or search by name or quality number. None of the competitors you named has this.</span></span>
+      </div>
+      <div class="stack-row">
+        <span class="n">03</span>
+        <span class="t"><b>Color, shown rather than described</b><span>Click any color and the construction redraws in it, because that is true of the real product.</span></span>
+      </div>
+      <div class="stack-row">
+        <span class="n">04</span>
+        <span class="t"><b>The company, made verifiable</b><span>1919, the mill, the integration, the property. What a purchasing office looks for before a first order.</span></span>
+      </div>
+      <div class="stack-row">
+        <span class="n">05</span>
+        <span class="t"><b>Your three domains consolidated, and the name defended</b><span>One address carrying the name, the other two pointed at it, and a clean start free of what happened to the old site. It also puts a real Carter Custom Carpets page where the directories and the Michigan flooring store currently answer for you.</span></span>
+      </div>
+      <div class="stack-row">
+        <span class="n">06</span>
+        <span class="t"><b>Built to be updated, not rebuilt</b><span>The catalog is generated from your documents. When styles change, the pages change. No content system, no plugins, no monthly platform fee, nothing that can be compromised again.</span></span>
+      </div>
+    </div>
+    <p><a href="https://forgedev.studio/demos/carter-custom-carpets/">Look at it before you decide anything.</a> It is private and cannot be found in search, so nothing competes with what Carter publishes later.</p>
+  </section>
+
+  <div class="warp-thin"></div>
+
+  <section>
+    <h2>The offer</h2>
+    <div class="offer">
+      <div class="offer-price">
+        <div>
+          <span class="offer-n">$4,500</span>
+          <span class="offer-t">One time, to launch</span>
+        </div>
+        <div>
+          <span class="offer-n">$497</span>
+          <span class="offer-t">Per month, everything after</span>
+        </div>
+      </div>
+      <p>The monthly is <strong>full administration</strong>. Hosting, security, backups, monitoring, and every edit you need, without limit. New styles, retired styles, corrected specifications, changed lead times, new pages, photography swapped in as you supply it.</p>
+      <p>Carter never hires anyone to run the website, and never waits on anyone to change it.</p>
+    </div>
+    <p>One specified job pays for the year. That is the entire financial case, and we would rather state it plainly than dress it up.</p>
+  </section>
+
+  <section>
+    <div class="guarantee">
+      <span class="guarantee-l">Our end of it</span>
+      <p><strong>You do not pay until you have seen the demo and told us it is right.</strong> It is already built, so there is nothing to take on faith and nothing to imagine. Review it, tell us what to change, and we change it before launch rather than after.</p>
+      <p>No long term contract on the monthly. If the work stops being worth $497, stop paying for it.</p>
+    </div>
+    <div class="guarantee">
+      <span class="guarantee-l">One condition</span>
+      <p>We will not build for another custom wool mill. This category is small enough that the research behind your site would be worth too much to a competitor, so it is yours exclusively for as long as we work together.</p>
+    </div>
+  </section>
+
+  <div class="warp-thin"></div>
+
+  <section>
+    <h2>What we need from you</h2>
+    <p>Launch does not depend on any of these. Each one makes it materially better, and only Carter has them.</p>
+    <ul>
+      <li><strong>The original photography</strong>, and an architect folder if one can be spared. Original files rather than web sized exports.</li>
+      <li><strong>The dye book.</strong> The color library shows a representative palette carrying no reference codes, deliberately, because an invented code could be quoted back to the mill as orderable. Your real G numbers belong there.</li>
+      <li><strong>A decision on naming customers.</strong> None appear in the demo, on purpose, since several resell Carter product under their own brands. Even a general phrase would carry weight if you can stand behind it.</li>
+      <li><strong>Confirmation of lead times.</strong> Your signature gives 5 to 7 weeks for wool. Carter's own Instagram has given longer. The demo uses your signature.</li>
+      <li><strong>Etienne and Bellagio.</strong> Your draft site map leaves both out, and together they are 107 of the 194 styles. We assumed an oversight and included them.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Next step</h2>
+    <ol class="steps">
+      <li>Spend twenty minutes with the demo. You know this product and we do not.</li>
+      <li>One call to settle the questions above.</li>
+      <li>We correct, you approve, and Carter goes live on cartercarpets.com.</li>
+    </ol>
+  </section>
+
+  <footer>
+    Everything factual in the demo traces to the documents you sent or to Carter's own public channels. Where we could not verify something, we left it out rather than guess.<br>
+    Prepared by Eric Kirby, Synergy Telecom and Medical Systems. Rome, Georgia.
+  </footer>
+
+</div>
+</body>
+</html>
