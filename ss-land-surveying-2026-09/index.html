@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>S&amp;S Performance &amp; Plan</title>
+<style>
+  :root{
+    --bg:#fbfaf8; --surface:#ffffff; --line:#e5e1da; --line-soft:#efece6;
+    --ink:#1c1a17; --ink-2:#57514a; --ink-3:#8a827a;
+    --accent:#1f5d4c; --accent-soft:#e8f1ee;
+    --paid:#b4643a; --organic:#1f5d4c;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --bg:#14130f; --surface:#1c1a17; --line:#312d28; --line-soft:#26231f;
+      --ink:#f2efe9; --ink-2:#b3aca3; --ink-3:#867e75;
+      --accent:#63b39c; --accent-soft:#17332c;
+      --paid:#e08a5c; --organic:#63b39c;
+    }
+  }
+  *{box-sizing:border-box}
+  body{
+    background:var(--bg); color:var(--ink); margin:0;
+    font:16px/1.6 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:840px;margin:0 auto;padding:44px 22px 80px}
+  header{border-bottom:2px solid var(--ink);padding-bottom:20px;margin-bottom:8px}
+  h1{font-size:1.75rem;letter-spacing:-.02em;margin:0 0 6px}
+  .sub{color:var(--ink-2);font-size:.9rem;margin:0}
+  .windows{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0 8px}
+  .windows a{font-size:.8rem;color:var(--accent);background:var(--accent-soft);border-radius:999px;
+             padding:5px 13px;text-decoration:none;font-weight:600}
+  h2{font-size:1.3rem;letter-spacing:-.01em;margin:56px 0 2px}
+  .win{color:var(--ink-3);font-size:.78rem;text-transform:uppercase;letter-spacing:.07em;margin:0 0 18px}
+  h3{font-size:1rem;margin:30px 0 10px}
+  p{margin:0 0 14px;color:var(--ink-2)}
+  p strong,td strong,li strong{color:var(--ink);font-weight:600}
+  .band{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:1px;background:var(--line);
+        border:1px solid var(--line);border-radius:10px;overflow:hidden;margin:20px 0 24px}
+  .cell{background:var(--surface);padding:15px 16px}
+  .cell .k{font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-3);margin-bottom:5px}
+  .cell .v{font-size:1.55rem;font-weight:650;letter-spacing:-.02em;line-height:1.15}
+  .cell .n{font-size:.76rem;color:var(--ink-3);margin-top:3px}
+  .scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 0 20px;
+          border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+  table{border-collapse:collapse;width:100%;min-width:440px;font-size:.9rem}
+  th,td{padding:10px 14px;text-align:right;border-bottom:1px solid var(--line-soft);white-space:nowrap}
+  th:first-child,td:first-child{text-align:left;white-space:normal}
+  thead th{font-size:.73rem;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-3);
+           font-weight:600;border-bottom:1px solid var(--line)}
+  tbody tr:last-child td{border-bottom:0}
+  .vs{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);
+      border-radius:10px;overflow:hidden;margin:22px 0}
+  .vs>div{background:var(--surface);padding:18px}
+  .vs .lab{font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px;font-weight:600}
+  .vs .o .lab{color:var(--organic)} .vs .p .lab{color:var(--paid)}
+  .vs .big{font-size:1.9rem;font-weight:650;letter-spacing:-.02em;line-height:1.1}
+  .vs .sm{font-size:.83rem;color:var(--ink-3);margin-top:4px}
+  .vs ul{margin:12px 0 0;padding-left:0;list-style:none;font-size:.86rem;color:var(--ink-2)}
+  .vs li{display:flex;justify-content:space-between;gap:10px;padding:5px 0;border-top:1px solid var(--line-soft)}
+  .vs li span:last-child{color:var(--ink);font-weight:600;white-space:nowrap}
+  .steps{counter-reset:step;list-style:none;margin:22px 0 0;padding:0}
+  .steps>li{counter-increment:step;position:relative;padding:18px 18px 18px 62px;background:var(--surface);
+            border:1px solid var(--line);border-radius:10px;margin-bottom:12px}
+  .steps>li::before{content:counter(step);position:absolute;left:18px;top:18px;width:30px;height:30px;
+            border-radius:999px;background:var(--accent-soft);color:var(--accent);font-weight:700;
+            display:flex;align-items:center;justify-content:center;font-size:.95rem}
+  .steps h3{margin:2px 0 8px}
+  .steps p{margin:0 0 10px;font-size:.92rem}
+  .steps p:last-child{margin-bottom:0}
+  .note{background:var(--accent-soft);border-left:3px solid var(--accent);padding:14px 16px;
+        border-radius:0 8px 8px 0;margin:26px 0 0;font-size:.89rem}
+  .note p{margin:0;color:var(--ink-2)}
+  .note p+p{margin-top:9px}
+  hr.sec{border:0;border-top:1px solid var(--line);margin:52px 0 0}
+  @media (max-width:560px){ .vs{grid-template-columns:1fr} .wrap{padding:30px 16px 60px} .steps>li{padding-left:56px} }
+  @media print{ .windows{display:none} body{background:#fff} }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>S&amp;S Land Surveying</h1>
+  <p class="sub">Performance since launch and the plan from here &middot; April 15 through September 2, 2026</p>
+</header>
+
+<nav class="windows">
+  <a href="#launch">Since launch</a>
+  <a href="#august">August</a>
+  <a href="#reach">How far it reaches</a>
+  <a href="#next">Next steps</a>
+</nav>
+
+<h2 id="launch">Since launch</h2>
+<p class="win">April 15 to September 2, 2026</p>
+
+<div class="band">
+  <div class="cell"><div class="k">Form leads</div><div class="v">297</div><div class="n">12 have come back again</div></div>
+  <div class="cell"><div class="k">Search clicks</div><div class="v">912</div><div class="n">68,100 appearances</div></div>
+  <div class="cell"><div class="k">Avg CTR</div><div class="v">1.3%</div><div class="n">avg position 14.2</div></div>
+  <div class="cell"><div class="k">Counties</div><div class="v">35</div><div class="n">named on inquiries</div></div>
+</div>
+
+<h3>Month by month</h3>
+<div class="scroll">
+<table>
+  <thead><tr><th>Month</th><th>Form leads</th><th>Search clicks</th><th>Search appearances</th></tr></thead>
+  <tbody>
+    <tr><td>April 15 to 30</td><td>35</td><td>54</td><td>1,390</td></tr>
+    <tr><td>May</td><td>36</td><td>99</td><td>3,320</td></tr>
+    <tr><td>June</td><td>57</td><td>141</td><td>7,800</td></tr>
+    <tr><td>July</td><td>76</td><td>260</td><td>23,200</td></tr>
+    <tr><td>August</td><td><strong>91</strong></td><td><strong>343</strong></td><td><strong>31,700</strong></td></tr>
+    <tr><td>September 1 to 2</td><td>2</td><td colspan="2" style="text-align:right;color:var(--ink-3)">two days in, search data still settling</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p>Leads have risen every single month since the site went live: 35, 36, 57, 76, 91. August alone produced more leads than the first two months combined, and the site now appears in Google search results about eleven times as often each day as it did in its first two weeks. <strong>297 people have submitted the form since April 15, and 12 of them have already come back with another project.</strong></p>
+
+<h3>What people ask for</h3>
+<p><strong>Boundary surveys are 71 percent of everything that comes in</strong>: 212 of the 297 inquiries. The rest splits across other and general requests (39), parcel work (13), ALTA surveys (10), construction staking (10), topographic (8) and site plans (5).</p>
+
+<h3>What carried it</h3>
+<p>The home page has earned <strong>374 search clicks</strong>, the most of any page. The guide on what a land survey costs in Georgia is next at <strong>165 clicks from 18,000 appearances</strong>, followed by the guides on reading a survey plat, finding your property lines and subdividing land. People also search for the firm by name: the top queries of the whole period are all variations of S&amp;S Land Surveying, which together account for 93 clicks. A growing share of people are looking for this firm specifically, not just any surveyor.</p>
+
+<h3>The Business Profile this week</h3>
+<p>The Google Business Profile stands at <strong>4.9 stars across 58 reviews</strong>. This week we completed a full pass on the profile itself: the website link now points to the secure address, ten services are listed instead of two, a book-online link now goes straight to the contact page, the year established is on file, and the service-area list was cleaned up and extended to the towns the site actually serves, which is awaiting Google review. Two profile posts Google had quietly declined were rewritten and are live, and the two scheduled for September were corrected before they publish.</p>
+
+<hr class="sec">
+
+<h2 id="august">August</h2>
+<p class="win">August 1 to 31, 2026</p>
+
+<div class="band">
+  <div class="cell"><div class="k">Form leads</div><div class="v">91</div><div class="n">a fifth straight monthly high</div></div>
+  <div class="cell"><div class="k">Sessions</div><div class="v">1,991</div><div class="n">64 a day</div></div>
+  <div class="cell"><div class="k">Search clicks</div><div class="v">343</div><div class="n">31,700 appearances</div></div>
+  <div class="cell"><div class="k">Calls started</div><div class="v">31</div><div class="n">taps on the number</div></div>
+</div>
+
+<p>August produced <strong>91 form leads</strong>, the most of any month so far and the fifth month in a row to set a new high. The site took 1,991 visits and earned 343 clicks from Google search. Another 31 visitors started a phone call by tapping the number on the site. Lead quality held up as well: a review of all 91 August inquiries found exactly one junk submission; the other 90 were genuine requests.</p>
+
+<h3>Paid traffic against everything else</h3>
+<p>Paid covers Google Ads search and its cross network placements. Everything else covers Google search results, direct visits, referrals, social and AI assistants, none of which cost per click. Where the analytics could identify a source, the two groups split like this:</p>
+
+<div class="vs">
+  <div class="o">
+    <div class="lab">Not paid for</div>
+    <div class="big">37</div>
+    <div class="sm">leads and calls from 945 sessions</div>
+    <ul>
+      <li><span>Form leads</span><span>24</span></li>
+      <li><span>Calls started</span><span>13</span></li>
+      <li><span>Engaged visits</span><span>37.9%</span></li>
+      <li><span>Conversion</span><span>3.92%</span></li>
+    </ul>
+  </div>
+  <div class="p">
+    <div class="lab">Paid</div>
+    <div class="big">28</div>
+    <div class="sm">leads and calls from 1,045 sessions</div>
+    <ul>
+      <li><span>Form leads</span><span>10</span></li>
+      <li><span>Calls started</span><span>18</span></li>
+      <li><span>Engaged visits</span><span>27.1%</span></li>
+      <li><span>Conversion</span><span>2.68%</span></li>
+    </ul>
+  </div>
+</div>
+
+<p>Paid brought slightly more visits; unpaid traffic produced more results from fewer of them. The two also behave differently: form submissions ran 24 to 10 in favor of unpaid traffic, while phone taps ran 18 to 13 in favor of paid. People arriving from an ad tend to call, and people arriving from search results tend to fill out the form.</p>
+
+<p>As of September 1 the website stamps every new lead with the traffic source that produced it, right on the contact record. From here forward this split comes from the customer records themselves rather than from analytics sampling, so the September report will show exactly which leads came from ads and which came from search, by name.</p>
+
+<hr class="sec">
+
+<h2 id="reach">How far the website reaches, and where ads take over</h2>
+<p class="win">Inquiries April 15 to September 2 &middot; 208 of 297 named a county</p>
+
+<div class="scroll">
+<table>
+  <thead><tr><th>Distance from the Cedartown office</th><th>Inquiries</th><th>Share</th></tr></thead>
+  <tbody>
+    <tr><td>Within 30 miles (Polk, Floyd, Paulding, Haralson, Bartow)</td><td>73</td><td>35%</td></tr>
+    <tr><td>30 to 60 miles (Cobb, Fulton, Cherokee, Carroll, Douglas&hellip;)</td><td>92</td><td>44%</td></tr>
+    <tr><td>60 to 90 miles (Gwinnett, Henry, Forsyth, Hall&hellip;)</td><td>35</td><td>17%</td></tr>
+    <tr><td>Beyond 90 miles</td><td>8</td><td>4%</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p>Distance is measured to the county seat of the county each inquiry named. The county question was added to the form in June, so this covers the 208 inquiries that answered it.</p>
+
+<p>Two different engines produce this footprint. We measured Google visibility from 134 points across the region: in the <strong>map pack</strong>, S&amp;S holds a top three spot close to the office and disappears entirely beyond roughly ten miles, because the pack is ruled by proximity. <strong>Organic search results</strong> are what stretch the footprint; they carried S&amp;S onto page one at 52 of the 134 points measured, fading gradually with distance rather than cutting off. That is the website doing exactly what it was built to do: four out of five inquiries come from within 60 miles, well beyond what the map pack alone would ever deliver.</p>
+
+<p>Beyond roughly 60 miles the picture changes. Organic visibility thins out there, yet one inquiry in five still comes from that range, and Google Ads is the engine with reach into it. Over June through August, ads bought 1,213 visits against 702 from search results, and ads can be pointed at any geography regardless of how Google ranks the site there. The practical division of labor: the website owns the core service area, and ads extend it.</p>
+
+<h3>One firm per market: the referral opportunity</h3>
+<p>The reach data is also why we are taking this model to other Georgia surveyors, one firm per market with a protected 80 mile territory, so no two clients ever compete for the same ground. S&amp;S is the proof case, and there is a referral incentive attached: <strong>an introduction that turns into a signed firm earns S&amp;S a free month, every time it happens.</strong></p>
+
+<p>These are the firms we have identified as the strongest candidate in each market. If Bart knows any of them, or would recommend someone we have not listed, that introduction is worth making:</p>
+
+<div class="scroll">
+<table>
+  <thead><tr><th>Market</th><th>Firm</th><th>Google rating</th></tr></thead>
+  <tbody>
+    <tr><td>Winder</td><td>W T Dunahoo &amp; Associates</td><td>4.3 (25)</td></tr>
+    <tr><td>Forsyth</td><td>Horne Land Surveying</td><td>5.0 (44)</td></tr>
+    <tr><td>Americus</td><td>Trinity Land Surveying</td><td>5.0 (91)</td></tr>
+    <tr><td>Dublin</td><td>Tanner &amp; Associates</td><td>4.8 (14)</td></tr>
+    <tr><td>Valdosta</td><td>Folsom Surveying</td><td>4.8 (15)</td></tr>
+    <tr><td>Alma</td><td>Meeks Land Surveying</td><td>5.0 (16)</td></tr>
+    <tr><td>Augusta</td><td>Toole Surveying Company</td><td>5.0 (8)</td></tr>
+    <tr><td>Savannah</td><td>Coleman Company</td><td>4.6 (10)</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p>Every firm on the list holds an active Georgia license, and every territory sits outside the S&amp;S protected radius.</p>
+
+<hr class="sec">
+
+<h2 id="next">Next steps</h2>
+<p class="win">For discussion September 2026</p>
+
+<ol class="steps">
+  <li>
+    <h3>Connect the Quo phone system to the CRM</h3>
+    <p>Today, calls are the blind spot: analytics counts taps on the phone number, but no call ever becomes a record we can follow up on. Connecting Quo puts every call into the customer system alongside the form leads.</p>
+    <p>That unlocks the two campaigns we want to run: <strong>seasonal text campaigns</strong> to past customers, and <strong>automatic review requests</strong> sent the moment a job wraps up, which is what grows the review count from 58 without anyone having to remember to ask.</p>
+  </li>
+  <li>
+    <h3>Pick the trigger for review requests</h3>
+    <p>The request should go out when the job is done. The cleanest trigger is the <strong>calendar</strong>: when the appointment for the fieldwork passes, the request sends. Alternatives worth discussing: marking the job complete in the CRM (one tap, most accurate), or sending on invoice or payment (fires exactly when the customer is happiest or least happy, depending on the job). We can start with one and change it later.</p>
+  </li>
+  <li>
+    <h3>Put pricing back on the survey cost pages</h3>
+    <p>The cost guide is the single most read piece of content on the site, 165 clicks from 18,000 appearances, and it currently answers the question without numbers. Restoring price ranges to the cost guides gives those readers the answer they searched for and filters out callers whose budget was never close.</p>
+  </li>
+  <li>
+    <h3>The surveyor referral program</h3>
+    <p>Covered above: one firm per market, 80 mile protected territories, and a free month for every introduction that turns into a signed firm. The ask for this meeting is simple: look at the candidate list and tell us who Bart knows.</p>
+  </li>
+  <li>
+    <h3>Link the Google Ads account, view only</h3>
+    <p>The ads run independently and that does not change: <strong>we would not manage or touch the campaigns.</strong> A view only link lets the reporting show ad spend context next to results, ties ad clicks to the leads they produce, and completes the paid side of the analytics, which currently flags the account as unlinked. Ten minutes of granting access, no operational change.</p>
+  </li>
+  <li>
+    <h3>Complete the customer list</h3>
+    <p>To finish the customer database, we need <strong>first name, last name and email for each client sold since April 15</strong>. That backfills the records behind the older inquiries, and it is the list the seasonal campaigns and review requests in step 1 will actually send to. A simple spreadsheet works; we will handle the import.</p>
+  </li>
+</ol>
+
+<div class="note">
+  <p><strong>How the numbers are counted.</strong> Lead totals come from the customer record system, which holds every form submission; April 15 is the first day the form existed, and nothing predates it. Website analytics identifies a source for some but not all leads, so it is used to compare traffic sources against each other rather than to count leads, and its conversion percentages understate the true rate. Analytics visit counts cover June onward.</p>
+  <p>Calls are counted as taps on the phone number on the website; a tap is not necessarily a connected conversation. Google finalizes search data about two days behind, so search figures run through September 1. Distance bands measure to the county seat of the county named on each inquiry.</p>
+</div>
+
+</div>
+</body>
+</html>
