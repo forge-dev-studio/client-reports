@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>S&amp;S Website Performance</title>
+<style>
+  :root{
+    --bg:#fbfaf8; --surface:#ffffff; --line:#e5e1da; --line-soft:#efece6;
+    --ink:#1c1a17; --ink-2:#57514a; --ink-3:#8a827a;
+    --accent:#1f5d4c; --accent-soft:#e8f1ee;
+    --paid:#b4643a; --organic:#1f5d4c;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --bg:#14130f; --surface:#1c1a17; --line:#312d28; --line-soft:#26231f;
+      --ink:#f2efe9; --ink-2:#b3aca3; --ink-3:#867e75;
+      --accent:#63b39c; --accent-soft:#17332c;
+      --paid:#e08a5c; --organic:#63b39c;
+    }
+  }
+  *{box-sizing:border-box}
+  body{
+    background:var(--bg); color:var(--ink); margin:0;
+    font:16px/1.6 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:840px;margin:0 auto;padding:44px 22px 80px}
+  header{border-bottom:2px solid var(--ink);padding-bottom:20px;margin-bottom:8px}
+  h1{font-size:1.75rem;letter-spacing:-.02em;margin:0 0 6px}
+  .sub{color:var(--ink-2);font-size:.9rem;margin:0}
+  .windows{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0 8px}
+  .windows a{font-size:.8rem;color:var(--accent);background:var(--accent-soft);border-radius:999px;
+             padding:5px 13px;text-decoration:none;font-weight:600}
+  h2{font-size:1.3rem;letter-spacing:-.01em;margin:56px 0 2px}
+  .win{color:var(--ink-3);font-size:.78rem;text-transform:uppercase;letter-spacing:.07em;margin:0 0 18px}
+  h3{font-size:1rem;margin:30px 0 10px}
+  p{margin:0 0 14px;color:var(--ink-2)}
+  p strong,td strong{color:var(--ink);font-weight:600}
+  .band{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:1px;background:var(--line);
+        border:1px solid var(--line);border-radius:10px;overflow:hidden;margin:20px 0 24px}
+  .cell{background:var(--surface);padding:15px 16px}
+  .cell .k{font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-3);margin-bottom:5px}
+  .cell .v{font-size:1.55rem;font-weight:650;letter-spacing:-.02em;line-height:1.15}
+  .cell .n{font-size:.76rem;color:var(--ink-3);margin-top:3px}
+  .scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 0 20px;
+          border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+  table{border-collapse:collapse;width:100%;min-width:440px;font-size:.9rem}
+  th,td{padding:10px 14px;text-align:right;border-bottom:1px solid var(--line-soft);white-space:nowrap}
+  th:first-child,td:first-child{text-align:left;white-space:normal}
+  thead th{font-size:.73rem;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-3);
+           font-weight:600;border-bottom:1px solid var(--line)}
+  tbody tr:last-child td{border-bottom:0}
+  .vs{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);
+      border-radius:10px;overflow:hidden;margin:22px 0}
+  .vs>div{background:var(--surface);padding:18px}
+  .vs .lab{font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px;font-weight:600}
+  .vs .o .lab{color:var(--organic)} .vs .p .lab{color:var(--paid)}
+  .vs .big{font-size:1.9rem;font-weight:650;letter-spacing:-.02em;line-height:1.1}
+  .vs .sm{font-size:.83rem;color:var(--ink-3);margin-top:4px}
+  .vs ul{margin:12px 0 0;padding-left:0;list-style:none;font-size:.86rem;color:var(--ink-2)}
+  .vs li{display:flex;justify-content:space-between;gap:10px;padding:5px 0;border-top:1px solid var(--line-soft)}
+  .vs li span:last-child{color:var(--ink);font-weight:600;white-space:nowrap}
+  .note{background:var(--accent-soft);border-left:3px solid var(--accent);padding:14px 16px;
+        border-radius:0 8px 8px 0;margin:26px 0 0;font-size:.89rem}
+  .note p{margin:0;color:var(--ink-2)}
+  .note p+p{margin-top:9px}
+  hr.sec{border:0;border-top:1px solid var(--line);margin:52px 0 0}
+  @media (max-width:560px){ .vs{grid-template-columns:1fr} .wrap{padding:30px 16px 60px} }
+  @media print{ .windows{display:none} body{background:#fff} }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>S&amp;S Land Surveying</h1>
+  <p class="sub">Website performance through August 31, 2026</p>
+</header>
+
+<nav class="windows">
+  <a href="#month">This month</a>
+  <a href="#quarter">Last three months</a>
+  <a href="#launch">Since launch</a>
+</nav>
+
+<h2 id="month">August</h2>
+<p class="win">August 1 to 31, 2026</p>
+
+<div class="band">
+  <div class="cell"><div class="k">Form leads</div><div class="v">91</div><div class="n">a fifth straight monthly high</div></div>
+  <div class="cell"><div class="k">Sessions</div><div class="v">1,991</div><div class="n">64 a day</div></div>
+  <div class="cell"><div class="k">Search clicks</div><div class="v">343</div><div class="n">31,700 appearances</div></div>
+  <div class="cell"><div class="k">Calls started</div><div class="v">31</div><div class="n">taps on the number</div></div>
+</div>
+
+<p>August produced <strong>91 form leads</strong>, the most of any month so far and the fifth month in a row to set a new high. The site took 1,991 visits and earned 343 clicks from Google search. Another 31 visitors started a phone call by tapping the number on the site.</p>
+
+<h3>Paid traffic against everything else</h3>
+<p>Paid covers Google Ads search and its cross network placements. Everything else covers Google search results, direct visits, referrals, social and AI assistants, none of which cost per click. Where the analytics could identify a source, the two groups split like this:</p>
+
+<div class="vs">
+  <div class="o">
+    <div class="lab">Not paid for</div>
+    <div class="big">37</div>
+    <div class="sm">leads and calls from 945 sessions</div>
+    <ul>
+      <li><span>Form leads</span><span>24</span></li>
+      <li><span>Calls started</span><span>13</span></li>
+      <li><span>Engaged visits</span><span>37.9%</span></li>
+      <li><span>Conversion</span><span>3.92%</span></li>
+    </ul>
+  </div>
+  <div class="p">
+    <div class="lab">Paid</div>
+    <div class="big">28</div>
+    <div class="sm">leads and calls from 1,045 sessions</div>
+    <ul>
+      <li><span>Form leads</span><span>10</span></li>
+      <li><span>Calls started</span><span>18</span></li>
+      <li><span>Engaged visits</span><span>27.1%</span></li>
+      <li><span>Conversion</span><span>2.68%</span></li>
+    </ul>
+  </div>
+</div>
+
+<p>Paid brought slightly more visits; unpaid traffic produced more results from fewer of them. The two also behave differently: form submissions ran 24 to 10 in favor of unpaid traffic, while phone taps ran 18 to 13 in favor of paid. People arriving from an ad tend to call, and people arriving from search results tend to fill out the form.</p>
+
+<hr class="sec">
+
+<h2 id="quarter">Last three months</h2>
+<p class="win">June 1 to August 31, 2026</p>
+
+<div class="band">
+  <div class="cell"><div class="k">Form leads</div><div class="v">224</div><div class="n">2.4 a day</div></div>
+  <div class="cell"><div class="k">Sessions</div><div class="v">2,797</div><div class="n">946 engaged</div></div>
+  <div class="cell"><div class="k">Search clicks</div><div class="v">744</div><div class="n">62,600 appearances</div></div>
+  <div class="cell"><div class="k">Counties served</div><div class="v">35</div><div class="n">named on inquiries</div></div>
+</div>
+
+<h3>Where visitors come from, and what each source is worth</h3>
+<div class="scroll">
+<table>
+  <thead><tr><th>Source</th><th>Sessions</th><th>Engaged</th><th>Avg time</th></tr></thead>
+  <tbody>
+    <tr><td>Google Ads</td><td>1,213</td><td>30.3%</td><td>20s</td></tr>
+    <tr><td>Google search results</td><td>702</td><td><strong>62.5%</strong></td><td><strong>1m 04s</strong></td></tr>
+    <tr><td>Direct</td><td>785</td><td>13.1%</td><td>7s</td></tr>
+    <tr><td>All other</td><td>95</td><td>37.9%</td><td></td></tr>
+  </tbody>
+</table>
+</div>
+
+<p>Search visitors are the most valuable people who reach the site. They engage on 62.5 percent of visits and stay just over a minute, against 30.3 percent and 20 seconds for ad traffic. Ads bought 1.7 times as many visits as search delivered. In August, the one full month where lead sources were measured, search traffic also produced more leads, as shown above.</p>
+
+<h3>What the work is</h3>
+<p><strong>Boundary surveys are 74 percent of demand</strong>: 165 of the 224 inquiries. The rest splits across ALTA surveys (8), parcel work (8), topographic (6), construction staking (6), site plans (4) and other requests (27).</p>
+
+<h3>Where the work is</h3>
+<p>Inquiries named <strong>35 Georgia counties</strong> in the last three months. Fulton led with 28, ahead of Floyd and Paulding at 20 each, Polk at 16 and Cobb at 13. The metro Atlanta counties now produce more inquiries than the home county, which is what the service area expansion was built to do. Nearly half of all inquiries arrive on a Monday or Tuesday.</p>
+
+<hr class="sec">
+
+<h2 id="launch">Since launch</h2>
+<p class="win">April 16 to August 31, 2026</p>
+
+<div class="band">
+  <div class="cell"><div class="k">Form leads</div><div class="v">295</div><div class="n">12 have come back again</div></div>
+  <div class="cell"><div class="k">Search clicks</div><div class="v">897</div><div class="n">67,300 appearances</div></div>
+  <div class="cell"><div class="k">Avg CTR</div><div class="v">1.3%</div><div class="n">avg position 14.2</div></div>
+  <div class="cell"><div class="k">Months</div><div class="v">4.5</div><div class="n">every month a new high</div></div>
+</div>
+
+<h3>Month by month</h3>
+<div class="scroll">
+<table>
+  <thead><tr><th>Month</th><th>Form leads</th><th>Search clicks</th><th>Search appearances</th></tr></thead>
+  <tbody>
+    <tr><td>April 16 to 30</td><td>35</td><td>54</td><td>1,390</td></tr>
+    <tr><td>May</td><td>36</td><td>99</td><td>3,320</td></tr>
+    <tr><td>June</td><td>57</td><td>141</td><td>7,800</td></tr>
+    <tr><td>July</td><td>76</td><td>260</td><td>23,200</td></tr>
+    <tr><td>August</td><td><strong>91</strong></td><td><strong>343</strong></td><td><strong>31,700</strong></td></tr>
+  </tbody>
+</table>
+</div>
+
+<p>Leads have risen every single month since the site went live: 35, 36, 57, 76, 91. August produced more leads than the first two months combined, and the site now appears in Google search results about eleven times as often each day as it did in its first two weeks. <strong>295 people have submitted the form since April 16, and 12 of them have already come back with another project.</strong></p>
+
+<h3>What carried it</h3>
+<p>The home page has earned <strong>372 search clicks</strong> since launch, the most of any page. The guide on what a land survey costs in Georgia is next at <strong>162</strong>, and the guide on reading a survey plat has drawn 24. People also search for the firm by name: the top search queries of the whole period are all variations of S&amp;S Land Surveying, which together account for 91 of the top ten queries' clicks. A growing share of people are looking for this firm specifically, not just any surveyor.</p>
+
+<div class="note">
+  <p><strong>How the numbers are counted.</strong> Lead totals come from the customer record system, which holds every form submission. Website analytics identifies a source for some but not all of them, so it is used to compare traffic sources against each other rather than to count leads, and its conversion percentages understate the true rate. Analytics tracking has been live since the start of June, so visit counts cover June onward.</p>
+  <p>Calls are counted as taps on the phone number on the website. A tap is not necessarily a connected conversation, so 30 is a ceiling rather than a count of calls answered. Google finalizes search data about two days behind; the August figures here are final as of September 2.</p>
+</div>
+
+</div>
+</body>
+</html>
