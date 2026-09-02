@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+  html{color-scheme:light dark}
+  body{margin:0}
+  img{max-width:100%}
+  [hidden]{display:none!important}
+</style>
+<title>Steele Mealz Viability</title>
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="googlebot" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+
+<style>
+:root{
+  --paper:#F7F5F0; --card:#FFFDF9; --ink:#1B1915; --muted:#6E6759; --faint:#918977;
+  --rule:#E2DDD2; --rule-soft:#EDE9E0;
+  --pine:#24544A; --pine-ink:#1B4038; --brass:#A0761F; --brass-soft:#F0E6CE;
+  --good:#2F6B4F; --warn:#9A6A16; --stop:#8C3A2B;
+  --band-a:#CBB477; --band-b:#A98A45; --band-c:#7E6524; --band-d:#4A3D13;
+  --map-ring:#DBD5C7; --map-face:#FCFAF5;
+  --shadow:0 1px 2px rgba(27,25,21,.05),0 8px 24px -12px rgba(27,25,21,.18);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#14161A; --card:#1A1D22; --ink:#E9E6DF; --muted:#9A958A; --faint:#7C776D;
+    --rule:#2A2E35; --rule-soft:#22262C;
+    --pine:#6FB6A1; --pine-ink:#8ECBB7; --brass:#D9A94A; --brass-soft:#33301F;
+    --good:#6FBF92; --warn:#D9A94A; --stop:#DB8570;
+    --band-a:#8A7434; --band-b:#A98F4B; --band-c:#C9AD68; --band-d:#E8D49A;
+    --map-ring:#2E333B; --map-face:#181B20;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -12px rgba(0,0,0,.7);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14161A; --card:#1A1D22; --ink:#E9E6DF; --muted:#9A958A; --faint:#7C776D;
+  --rule:#2A2E35; --rule-soft:#22262C;
+  --pine:#6FB6A1; --pine-ink:#8ECBB7; --brass:#D9A94A; --brass-soft:#33301F;
+  --good:#6FBF92; --warn:#D9A94A; --stop:#DB8570;
+  --band-a:#8A7434; --band-b:#A98F4B; --band-c:#C9AD68; --band-d:#E8D49A;
+  --map-ring:#2E333B; --map-face:#181B20;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -12px rgba(0,0,0,.7);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper); color:var(--ink);
+  font-family:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-size:16px; line-height:1.6; margin:0;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1080px; margin:0 auto; padding:0 28px 96px}
+.col{max-width:68ch}
+
+/* ---------- masthead ---------- */
+.mast{border-bottom:2px solid var(--ink); padding:56px 0 22px; margin-bottom:44px}
+.eyebrow{
+  font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:11.5px; font-weight:500;
+  letter-spacing:.13em; text-transform:uppercase; color:var(--brass); margin:0 0 18px;
+}
+h1{
+  font-family:Fraunces,Georgia,serif; font-weight:600; font-size:clamp(2.4rem,5.6vw,3.9rem);
+  line-height:1.02; letter-spacing:-.02em; margin:0 0 14px; text-wrap:balance;
+}
+.dek{font-size:1.18rem; color:var(--muted); margin:0 0 26px; max-width:60ch; text-wrap:pretty}
+.meta{
+  display:flex; flex-wrap:wrap; gap:8px 26px;
+  font-family:"IBM Plex Mono",monospace; font-size:12px; color:var(--faint);
+  font-variant-numeric:tabular-nums;
+}
+.meta b{color:var(--muted); font-weight:500}
+
+/* ---------- verdict ---------- */
+.verdict{
+  background:var(--card); border:1px solid var(--rule); border-left:5px solid var(--pine);
+  border-radius:3px; padding:30px 34px; margin:0 0 52px; box-shadow:var(--shadow);
+}
+.verdict-tag{
+  display:inline-flex; align-items:center; gap:9px;
+  font-family:"IBM Plex Mono",monospace; font-size:12px; font-weight:600;
+  letter-spacing:.1em; text-transform:uppercase; color:var(--pine); margin-bottom:14px;
+}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--pine);flex:none}
+.verdict h2{
+  font-family:Fraunces,Georgia,serif; font-weight:600; font-size:clamp(1.5rem,3vw,2rem);
+  line-height:1.22; margin:0 0 14px; letter-spacing:-.015em; text-wrap:balance;
+}
+.verdict p{margin:0 0 12px; color:var(--muted); max-width:64ch}
+.verdict p:last-child{margin-bottom:0}
+.verdict strong{color:var(--ink); font-weight:600}
+
+/* ---------- stat strip ---------- */
+.stats{
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(158px,1fr));
+  gap:1px; background:var(--rule); border:1px solid var(--rule);
+  border-radius:3px; overflow:hidden; margin:0 0 60px;
+}
+.stat{background:var(--card); padding:20px 22px}
+.stat .n{
+  font-family:"IBM Plex Mono",monospace; font-size:1.72rem; font-weight:600;
+  letter-spacing:-.02em; font-variant-numeric:tabular-nums; line-height:1.1; color:var(--ink);
+}
+.stat .n span{font-size:.86rem; color:var(--faint); font-weight:400; letter-spacing:0}
+.stat .l{
+  font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.09em;
+  text-transform:uppercase; color:var(--faint); margin-top:7px; line-height:1.45;
+}
+
+/* ---------- sections ---------- */
+section{margin:0 0 62px}
+h2.sec{
+  font-family:Fraunces,Georgia,serif; font-weight:600; font-size:1.85rem; letter-spacing:-.015em;
+  margin:0 0 8px; text-wrap:balance;
+}
+.sub{color:var(--muted); margin:0 0 26px; max-width:66ch; text-wrap:pretty}
+p{margin:0 0 16px; text-wrap:pretty}
+.col p{max-width:68ch}
+strong{font-weight:600}
+.kw{font-family:"IBM Plex Mono",monospace; font-size:.9em; background:var(--brass-soft);
+    color:var(--ink); padding:1px 5px; border-radius:2px}
+.num{font-family:"IBM Plex Mono",monospace; font-variant-numeric:tabular-nums; font-weight:500}
+
+/* ---------- map ---------- */
+.maprow{display:grid; grid-template-columns:minmax(0,1.55fr) minmax(250px,1fr); gap:20px; align-items:start}
+@media (max-width:860px){.maprow{grid-template-columns:1fr}}
+.mapwrap{
+  background:var(--card); border:1px solid var(--rule); border-radius:3px;
+  padding:10px 10px 0; box-shadow:var(--shadow); overflow:hidden;
+}
+.mapwrap svg{display:block; width:100%; height:auto}
+.legend{
+  display:flex; flex-wrap:wrap; gap:10px 20px; padding:14px 12px 16px;
+  font-family:"IBM Plex Mono",monospace; font-size:11px; color:var(--muted);
+  border-top:1px solid var(--rule-soft);
+}
+.legend i{width:10px;height:10px;border-radius:2px;display:inline-block;margin-right:6px;vertical-align:-1px}
+
+.rank{background:var(--card); border:1px solid var(--rule); border-radius:3px; padding:22px 24px; box-shadow:var(--shadow)}
+.rank h3{
+  font-family:"IBM Plex Mono",monospace; font-size:10.5px; font-weight:600; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--faint); margin:0 0 16px;
+}
+.rank ol{list-style:none; margin:0; padding:0; counter-reset:r}
+.rank li{
+  display:grid; grid-template-columns:1.4rem 1fr auto; gap:10px; align-items:baseline;
+  padding:0 0 9px; margin:0; color:var(--ink);
+  font-size:13.5px; border-bottom:1px solid var(--rule-soft); margin-bottom:9px;
+}
+.rank li::before{
+  content:counter(r); counter-increment:r; position:static;
+  font-family:"IBM Plex Mono",monospace; font-size:10.5px; color:var(--faint);
+  background:none; width:auto; height:auto; font-variant-numeric:tabular-nums;
+}
+.rank li:last-of-type{border-bottom:none; margin-bottom:0}
+.rank .tn{color:var(--ink)}
+.rank .tn em{font-style:normal; color:var(--faint); font-family:"IBM Plex Mono",monospace; font-size:10.5px; margin-left:6px}
+.rank .tv{font-family:"IBM Plex Mono",monospace; font-variant-numeric:tabular-nums; font-weight:600; font-size:13px}
+.rank-note{
+  margin:16px 0 0; padding-top:14px; border-top:1px solid var(--rule);
+  font-size:12.5px; color:var(--muted);
+}
+.rank-note b{color:var(--ink)}
+h3.mini{
+  font-family:"IBM Plex Mono",monospace; font-size:11px; font-weight:600; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--faint); margin:0 0 12px;
+}
+
+/* ---------- tables ---------- */
+.tw{overflow-x:auto; border:1px solid var(--rule); border-radius:3px; background:var(--card)}
+table{border-collapse:collapse; width:100%; font-size:14px; min-width:520px}
+th,td{padding:11px 16px; text-align:left; border-bottom:1px solid var(--rule-soft)}
+th{
+  font-family:"IBM Plex Mono",monospace; font-size:10.5px; font-weight:600;
+  letter-spacing:.08em; text-transform:uppercase; color:var(--faint);
+  background:var(--paper); border-bottom:1px solid var(--rule); white-space:nowrap;
+}
+tbody tr:last-child td{border-bottom:none}
+td.n,th.n{text-align:right; font-family:"IBM Plex Mono",monospace;
+          font-variant-numeric:tabular-nums; white-space:nowrap}
+td.n b{font-weight:600}
+.swatch{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:9px;vertical-align:0}
+.q{font-family:"IBM Plex Mono",monospace; font-size:13px}
+.bar{height:6px;border-radius:1px;display:block;min-width:2px}
+
+/* ---------- callouts ---------- */
+.note{
+  border-left:3px solid var(--brass); background:var(--card);
+  padding:18px 22px; margin:26px 0; border-radius:0 3px 3px 0;
+}
+.note p{margin:0; color:var(--muted); max-width:64ch}
+.note p+p{margin-top:10px}
+.note b{color:var(--ink)}
+
+.grid2{display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:20px}
+.panel{background:var(--card); border:1px solid var(--rule); border-radius:3px; padding:24px 26px}
+.panel h3{
+  font-family:"IBM Plex Mono",monospace; font-size:11px; font-weight:600; letter-spacing:.1em;
+  text-transform:uppercase; margin:0 0 16px; color:var(--faint);
+}
+.panel.for h3{color:var(--good)} .panel.against h3{color:var(--warn)}
+ul{margin:0; padding-left:0; list-style:none}
+li{position:relative; padding-left:20px; margin-bottom:12px; color:var(--muted); max-width:60ch}
+li:last-child{margin-bottom:0}
+li::before{
+  content:""; position:absolute; left:0; top:.62em; width:7px; height:1.5px; background:var(--brass);
+}
+li b{color:var(--ink); font-weight:600}
+
+.foot{border-top:1px solid var(--rule); padding-top:26px; margin-top:70px;
+      font-size:13.5px; color:var(--faint); max-width:72ch}
+.foot p{margin:0 0 10px}
+a{color:var(--pine)}
+:focus-visible{outline:2px solid var(--brass); outline-offset:3px; border-radius:2px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+@media (max-width:640px){
+  .wrap{padding:0 18px 64px}
+  .verdict{padding:24px 22px}
+  .mast{padding-top:38px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="mast">
+  <p class="eyebrow">Georgia SEO Company · Market Viability Assessment</p>
+  <h1>Steele Mealz</h1>
+  <p class="dek">Can a brand-new catering business in Rome, Georgia be built on search? Measured demand across a 60-mile service radius, plus the Rome competitive field up close.</p>
+  <div class="meta">
+    <span><b>Client</b> Chef Russell Steele</span>
+    <span><b>Entity</b> Steel Food Service LLC, dba Steele Mealz Catering</span>
+    <span><b>Measured</b> 2026-09-02</span>
+    <span><b>Coverage</b> 60 towns · 3 states</span>
+  </div>
+</header>
+
+<div class="verdict">
+  <p class="verdict-tag"><span class="dot"></span>Verdict — Proceed</p>
+  <h2>The demand is real, the competition is thin, and the field is open. Build it as an organic play, not a map-pack play.</h2>
+  <p>Georgia generates <strong>25,260 catering searches a month</strong> across 319 distinct queries, and <strong>1,470 of those are reachable from Rome</strong>. Nearly half the query set carries a difficulty score of <strong>zero</strong>, the head term sits at 8, and advertisers pay a median of $3.17 a click for this traffic — three independent signals that the demand converts and nobody has claimed it.</p>
+  <p>The condition on that verdict: <strong>the bulk of the money sits 30 to 60 miles out</strong>, in the band where the map pack stops reaching and only organic search does. The Rome pack is real and worth winning &mdash; all eight core queries return one, and position one is held on 51 to 67 reviews &mdash; but it is the near market, not the market.</p>
+</div>
+
+<div class="stats">
+  <div class="stat"><div class="n">25,260<span>/mo</span></div><div class="l">Georgia catering demand</div></div>
+  <div class="stat"><div class="n">1,470<span>/mo</span></div><div class="l">Reachable from Rome</div></div>
+  <div class="stat"><div class="n">319</div><div class="l">Distinct queries</div></div>
+  <div class="stat"><div class="n">148</div><div class="l">Queries at zero difficulty</div></div>
+  <div class="stat"><div class="n">$3.17</div><div class="l">Median cost per click</div></div>
+  <div class="stat"><div class="n">1,267</div><div class="l">Largest review moat in GA</div></div>
+</div>
+
+<section>
+  <h2 class="sec">Where the demand actually sits</h2>
+  <p class="sub">Every town in the 60-mile radius, plotted at its true bearing from Rome. Dot area is measured monthly catering demand. Rings mark the four distance bands.</p>
+
+  <div class="maprow">
+    <div class="mapwrap">
+      <svg id="map" viewBox="0 0 560 540" role="img" aria-label="Radial map of catering demand across 60 towns within 60 miles of Rome, Georgia. Demand increases with distance from Rome and concentrates toward metro Atlanta to the southeast and Chattanooga to the north."></svg>
+      <div class="legend">
+        <span><i style="background:var(--band-a)"></i>A · 0–15mi</span>
+        <span><i style="background:var(--band-b)"></i>B · 15–30mi</span>
+        <span><i style="background:var(--band-c)"></i>C · 30–50mi</span>
+        <span><i style="background:var(--band-d)"></i>D · 50–60mi</span>
+        <span style="color:var(--faint)">Dot area = monthly demand</span>
+      </div>
+    </div>
+
+    <div class="rank">
+      <h3>Strongest markets in the radius</h3>
+      <ol id="ranklist"></ol>
+      <p class="rank-note">Rome ranks <b>20th of 60</b> by measured demand. Of the 19 towns ahead of it, all but Cartersville (22mi) and Dallas (30mi) sit more than 30 miles out.</p>
+    </div>
+  </div>
+
+  <div class="note">
+    <p><b>Do not add the town figures together.</b> Google's city targets are radius-based and overlap heavily — the 46 Georgia towns sum to 63,320/mo against a state total of 25,260, which is 2.5x double-counting. The town numbers are valid for comparing towns to each other. The non-overlapping market size is the state figure.</p>
+    <p>For the same reason, read Rome's 1,470/mo as <b>demand reachable from Rome</b> rather than demand inside the city limits. Google's Rome target returns 5.8% of Georgia's catering demand while Rome-Floyd holds roughly 0.9% of the state's population, so the target clearly extends well past the county line.</p>
+  </div>
+</section>
+
+<section>
+  <h2 class="sec">The distance problem, stated plainly</h2>
+  <div class="col">
+    <p>Map-pack presence decays with distance in a way that is measured, not assumed. On a prior Forge build the rate of holding pack position one collapsed from <strong>62% to 5%</strong> between the 0–10 mile band and the 30–45 mile band. Organic position one fell far more gently, and <em>ranking organically at all</em> held at <strong>43%</strong> out at 30–45 miles.</p>
+    <p>Set that against where this market's demand lives and the strategy writes itself.</p>
+  </div>
+
+  <div class="tw" style="margin-top:24px">
+    <table>
+      <thead><tr>
+        <th>Band</th><th>Distance</th><th class="n">Towns</th><th class="n">Demand/mo</th>
+        <th style="width:26%">Share</th><th>Surface that works</th>
+      </tr></thead>
+      <tbody>
+        <tr><td><span class="swatch" style="background:var(--band-a)"></span>A</td><td>0–15 mi</td><td class="n">4</td><td class="n"><b>2,300</b></td><td><span class="bar" style="background:var(--band-a);width:6.8%"></span></td><td>GBP and map pack</td></tr>
+        <tr><td><span class="swatch" style="background:var(--band-b)"></span>B</td><td>15–30 mi</td><td class="n">12</td><td class="n"><b>9,490</b></td><td><span class="bar" style="background:var(--band-b);width:28%"></span></td><td>Pack fringe, then organic</td></tr>
+        <tr><td><span class="swatch" style="background:var(--band-c)"></span>C</td><td>30–50 mi</td><td class="n">27</td><td class="n"><b>33,820</b></td><td><span class="bar" style="background:var(--band-c);width:100%"></span></td><td>Organic and AI Overviews</td></tr>
+        <tr><td><span class="swatch" style="background:var(--band-d)"></span>D</td><td>50–60 mi</td><td class="n">17</td><td class="n"><b>28,620</b></td><td><span class="bar" style="background:var(--band-d);width:84.6%"></span></td><td>Organic long-tail only</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="col">
+    <p style="margin-top:24px">The outer ring holds <strong>62,440/mo against 11,790/mo</strong> for the near ring — better than five to one. That ratio is the single most important number for how this build gets scoped, because it says the reachable money is in the band a map pack cannot serve.</p>
+    <p>It also sets a boundary worth stating at the sale rather than at the ninety-day review: <strong>Atlanta and Chattanooga are inside the drive radius, not the year-one ranking target.</strong> A brand-new site with no authority does not rank for catering in either metro. They belong in the service-area schema and the copy, not in the forecast.</p>
+  </div>
+</section>
+
+<section>
+  <h2 class="sec">Which parts of the business the demand favors</h2>
+  <p class="sub">Nine keyword families were seeded and measured. Two findings run against the intuitive pitch.</p>
+
+  <div class="tw">
+    <table>
+      <thead><tr><th>Family</th><th class="n">Queries</th><th class="n">Demand/mo</th><th style="width:30%">Share</th></tr></thead>
+      <tbody>
+        <tr><td>Core head terms</td><td class="n">144</td><td class="n"><b>16,190</b></td><td><span class="bar" style="background:var(--brass);width:100%"></span></td></tr>
+        <tr><td>Cuisine</td><td class="n">60</td><td class="n"><b>4,820</b></td><td><span class="bar" style="background:var(--brass);width:29.8%"></span></td></tr>
+        <tr><td>Event type</td><td class="n">52</td><td class="n"><b>2,700</b></td><td><span class="bar" style="background:var(--brass);width:16.7%"></span></td></tr>
+        <tr><td>Food truck, hire intent</td><td class="n">16</td><td class="n"><b>520</b></td><td><span class="bar" style="background:var(--brass);width:3.2%"></span></td></tr>
+        <tr><td>Corporate and workplace</td><td class="n">21</td><td class="n"><b>510</b></td><td><span class="bar" style="background:var(--brass);width:3.1%"></span></td></tr>
+        <tr><td>Service model</td><td class="n">16</td><td class="n"><b>380</b></td><td><span class="bar" style="background:var(--brass);width:2.3%"></span></td></tr>
+        <tr><td>Cost and pricing</td><td class="n">10</td><td class="n"><b>140</b></td><td><span class="bar" style="background:var(--brass);width:0.9%"></span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="grid2" style="margin-top:26px">
+    <div class="panel">
+      <h3>Corporate catering underdelivered</h3>
+      <p style="color:var(--muted);margin:0">It was the largest block in the seed taxonomy — 80 of 378 seeds — and the most intuitive thing to sell: recurring revenue, a ten-person minimum that matches an office lunch order exactly, and a Rome employer base of three colleges and two hospital systems. It measured <strong style="color:var(--ink)">510 searches a month, 2% of demand</strong>. The queries are real and uncontested, and they may convert well, but they are not an engine and should not be pitched as one.</p>
+    </div>
+    <div class="panel">
+      <h3>Cuisine beat event type</h3>
+      <p style="color:var(--muted);margin:0">Cuisine-anchored queries carry <strong style="color:var(--ink)">roughly twice</strong> the demand of event-type queries — <span class="kw">breakfast catering</span> at 480, <span class="kw">bbq catering near me</span> at 480, <span class="kw">mexican food catering near me</span> at 390. For a chef whose range runs from fine dining to soul food, that is a fortunate result: the pages that carry the most demand are the ones he is best placed to write.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="sec">How contested is it</h2>
+  <p class="sub">Three independent measures say this vertical is not defended.</p>
+
+  <div class="tw">
+    <table>
+      <thead><tr><th>Query</th><th class="n">Georgia/mo</th><th class="n">US/mo</th><th class="n">CPC</th><th class="n">Difficulty</th></tr></thead>
+      <tbody>
+        <tr><td class="q">cater</td><td class="n">4,400</td><td class="n">135,000</td><td class="n">$6.81</td><td class="n">33</td></tr>
+        <tr><td class="q">catering near me</td><td class="n">3,600</td><td class="n">135,000</td><td class="n">$5.04</td><td class="n"><b style="color:var(--good)">8</b></td></tr>
+        <tr><td class="q">cater food near me</td><td class="n">720</td><td class="n">27,100</td><td class="n">$4.29</td><td class="n">13</td></tr>
+        <tr><td class="q">wedding catering</td><td class="n">590</td><td class="n">18,100</td><td class="n">$3.24</td><td class="n">30</td></tr>
+        <tr><td class="q">food catering</td><td class="n">480</td><td class="n">18,100</td><td class="n">$5.35</td><td class="n">11</td></tr>
+        <tr><td class="q">bbq catering near me</td><td class="n">480</td><td class="n">14,800</td><td class="n">$2.63</td><td class="n">24</td></tr>
+        <tr><td class="q">breakfast catering</td><td class="n">480</td><td class="n">12,100</td><td class="n">$3.42</td><td class="n"><b style="color:var(--good)">0</b></td></tr>
+        <tr><td class="q">breakfast catering near me</td><td class="n">390</td><td class="n">12,100</td><td class="n">$3.70</td><td class="n"><b style="color:var(--good)">0</b></td></tr>
+        <tr><td class="q">mexican food catering near me</td><td class="n">390</td><td class="n">4,400</td><td class="n">$3.17</td><td class="n"><b style="color:var(--good)">0</b></td></tr>
+        <tr><td class="q">catering thanksgiving near me</td><td class="n">320</td><td class="n">9,900</td><td class="n">$0.92</td><td class="n"><b style="color:var(--good)">0</b></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="col">
+    <p style="margin-top:24px"><strong>Difficulty is near zero.</strong> Of 319 queries, <strong>148 score 0</strong> and 214 score 15 or below. The largest local-intent term in the market, <span class="kw">catering near me</span> at 3,600 a month, scores 8.</p>
+    <p><strong>The review moat is shallow.</strong> Filtering Google's Georgia business listings to companies whose primary category is actually catering, the largest has <strong>1,267 reviews</strong> and most sit under 200. The restaurants that crowd an unfiltered list carry five to nine thousand. Starting from zero reviews is a far smaller handicap in catering than in most local trades.</p>
+    <p><strong>No dominant regional operator exists.</strong> The largest single category in Georgia's catering listings is "mobile caterer" — 88 of 414 — and it is populated by coffee, dessert and taco trucks. Small operators, no consolidator.</p>
+  </div>
+</section>
+
+<section>
+  <h2 class="sec">The Rome field, up close</h2>
+  <p class="sub">Every business holding a catering listing within 30 miles of Rome, and every business holding the Rome search results. This is the field Steele actually enters.</p>
+
+  <div class="stats" style="margin-bottom:34px">
+    <div class="stat"><div class="n">19</div><div class="l">Caterers within 30 miles</div></div>
+    <div class="stat"><div class="n">8</div><div class="l">Of them with no website</div></div>
+    <div class="stat"><div class="n">16</div><div class="l">Median review count</div></div>
+    <div class="stat"><div class="n">5</div><div class="l">With 50+ reviews</div></div>
+    <div class="stat"><div class="n">8<span>/8</span></div><div class="l">Queries returning a map pack</div></div>
+    <div class="stat"><div class="n">0<span>/8</span></div><div class="l">Queries with an AI Overview</div></div>
+  </div>
+
+  <h3 class="mini">Google Business listings — the whole catering field near Rome</h3>
+  <div class="tw">
+    <table>
+      <thead><tr><th>#</th><th>Business</th><th class="n">Reviews</th><th class="n">Rating</th><th class="n">Miles</th><th>Primary category</th><th>Website</th></tr></thead>
+      <tbody>
+        <tr><td class="n">1</td><td>Kona Ice of North Georgia</td><td class="n">109</td><td class="n">4.8</td><td class="n">21.3</td><td>Mobile caterer</td><td class="q">kona-ice.com</td></tr>
+        <tr><td class="n">2</td><td>R &amp; R Catering</td><td class="n">91</td><td class="n">4.6</td><td class="n">17.3</td><td>Caterer</td><td class="q">randrcateringevents.com</td></tr>
+        <tr><td class="n">3</td><td>Season Events</td><td class="n">65</td><td class="n">4.9</td><td class="n">0.6</td><td>Caterer</td><td class="q">theseasonevents.com</td></tr>
+        <tr><td class="n">4</td><td>Helecia's Dinners &amp; Catering</td><td class="n">61</td><td class="n">4.9</td><td class="n">0.8</td><td>Caterer</td><td class="q" style="color:var(--stop)">none</td></tr>
+        <tr><td class="n">5</td><td>Fūd Vybez</td><td class="n">50</td><td class="n">4.7</td><td class="n">20.3</td><td>Mobile caterer</td><td class="q">fudvybez.com</td></tr>
+        <tr><td class="n">6</td><td>El Arco</td><td class="n">48</td><td class="n">4.8</td><td class="n">1.6</td><td>Mobile caterer</td><td class="q">el-arco.com</td></tr>
+        <tr><td class="n">7</td><td>Shake, Stir, Serve</td><td class="n">33</td><td class="n">5.0</td><td class="n">26.4</td><td>Mobile caterer</td><td class="q">shakestirservega.com</td></tr>
+        <tr><td class="n">8</td><td>Her Sweets Bakery</td><td class="n">24</td><td class="n">5.0</td><td class="n">8.0</td><td>Mobile caterer</td><td class="q">hersweetsbakery.com</td></tr>
+        <tr><td class="n">9</td><td>Taqueria De Leon</td><td class="n">23</td><td class="n">4.6</td><td class="n">2.1</td><td>Mobile caterer</td><td class="q" style="color:var(--stop)">none</td></tr>
+        <tr><td class="n">10</td><td>Butterfly Mountain Coffee</td><td class="n">16</td><td class="n">5.0</td><td class="n">18.6</td><td>Mobile caterer</td><td class="q">square.site</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:13px;color:var(--faint);margin-top:10px">Nine further listings sit below 16 reviews, four of them with none at all. Restaurants that merely carry catering as a secondary category are excluded; including them would put three Chick-fil-A locations at the top of this table.</p>
+
+  <h3 class="mini" style="margin-top:36px">Who holds the Rome map pack</h3>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Business</th><th class="n">Pack appearances</th><th class="n">Best position</th><th class="n">Rating</th><th class="n">Reviews</th></tr></thead>
+      <tbody>
+        <tr><td>Helecia's Dinners &amp; Catering</td><td class="n"><b>6 of 8</b></td><td class="n">1</td><td class="n">4.9</td><td class="n">62</td></tr>
+        <tr><td>Season Events</td><td class="n"><b>5 of 8</b></td><td class="n">1</td><td class="n">4.9</td><td class="n">67</td></tr>
+        <tr><td>El Arco</td><td class="n"><b>4 of 8</b></td><td class="n">1</td><td class="n">4.8</td><td class="n">51</td></tr>
+        <tr><td>Ana's by the River</td><td class="n">2 of 8</td><td class="n">2</td><td class="n">4.6</td><td class="n">301</td></tr>
+        <tr><td>Grace Events</td><td class="n">2 of 8</td><td class="n">3</td><td class="n">5.0</td><td class="n">11</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="mini" style="margin-top:36px">How strong are their websites</h3>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Competitor</th><th class="n">Organic keywords</th><th class="n">Est. traffic/mo</th><th class="n">Referring domains</th><th class="n">Domain rank</th><th class="n">Online since</th></tr></thead>
+      <tbody>
+        <tr><td>Helecia's Dinners &amp; Catering</td><td class="n" colspan="5" style="text-align:left;color:var(--stop)">No website. Holds pack position 1 on six of eight queries anyway.</td></tr>
+        <tr><td>EWT Caters</td><td class="n">786</td><td class="n">1,018</td><td class="n">143</td><td class="n">153</td><td class="n">2019</td></tr>
+        <tr><td>Season Events</td><td class="n">41</td><td class="n">660</td><td class="n">100</td><td class="n">308</td><td class="n">2019</td></tr>
+        <tr><td>El Arco</td><td class="n">37</td><td class="n">157</td><td class="n">57</td><td class="n">33</td><td class="n">2022</td></tr>
+        <tr><td>R &amp; R Catering</td><td class="n">11</td><td class="n">46</td><td class="n">38</td><td class="n">27</td><td class="n">2021</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="note">
+    <p><b>Three findings that change how this gets built.</b></p>
+    <p><b>1. The map pack is real and it is winnable.</b> All eight core catering queries return a local pack in Rome, so GBP work is not optional — it is the near-market engine. And the bar is low: pack position one is held by businesses with <b>51 to 67 reviews</b>, not hundreds.</p>
+    <p><b>2. The number one pack holder has no website at all.</b> Helecia's takes position one on six of eight queries with zero web presence. Pack rank in Rome is being decided on category, proximity and reviews — which means a competitor can be outranked in the pack before a single page is written, and separately outranked in organic where they cannot compete at all.</p>
+    <p><b>3. Organic in Rome is unclaimed by caterers.</b> Three of the four local caterers with websites rank for fewer than 45 keywords each. The organic results are held instead by aggregators — Facebook on 13 of the placements, Yelp on 9, The Knot on 9, ezCater on 7 — and by businesses that are not caterers at all, including the Rome city government site and an Applebee's location page.</p>
+  </div>
+</section>
+
+<section>
+  <h2 class="sec">The case, both ways</h2>
+  <div class="grid2">
+    <div class="panel for">
+      <h3>What argues for building</h3>
+      <ul>
+        <li><b>25,260 searches a month</b> in Georgia across 319 distinct queries, with 1,470 reachable from Rome.</li>
+        <li><b>148 queries at zero difficulty</b>, and the head term at 8. Nobody has defended this vertical.</li>
+        <li><b>Advertisers pay $3.17 median</b> per click, up to $18.69 on corporate lunch terms. Independent evidence the traffic converts.</li>
+        <li><b>Shallow review moat.</b> Georgia's biggest genuine caterer holds 1,267 reviews; most hold under 200.</li>
+        <li><b>Greenfield.</b> Zero existing web presence means no legacy site, no bad citations, and no migration risk.</li>
+        <li><b>The Rome field is thin.</b> 19 caterers within 30 miles, median 16 reviews, 8 with no website at all &mdash; including the business currently holding pack position one.</li>
+        <li><b>An uncopyable content angle.</b> He runs both a kitchen and a truck, so he can answer <span class="kw">food truck vs catering</span> credibly, which neither a pure caterer nor a pure truck operator can.</li>
+      </ul>
+    </div>
+    <div class="panel against">
+      <h3>What has to be accepted</h3>
+      <ul>
+        <li><b>This is an organic build.</b> 62,440/mo sits outside the pack's reach against 11,790/mo inside it. Budget and timeline follow content, not GBP alone.</li>
+        <li><b>Corporate catering is not the engine</b> at 2% of demand, despite being the most natural pitch.</li>
+        <li><b>Atlanta and Chattanooga are drive radius, not ranking targets</b> in year one.</li>
+        <li><b>Wedding catering is aggregator territory.</b> The organic results belong to The Knot, WeddingWire and Zola; a new domain will not displace them quickly.</li>
+        <li><b>Venue keywords are off the table.</b> His Callahan Street space is also an event space, but River Arts Venue is a live Forge retainer a mile away. 398 venue queries were excluded on that basis.</li>
+        <li><b>No AI Overview surface.</b> Zero of eight Rome catering queries return one, so there is no overview citation play here, unlike other trades.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="sec">What is now answered, and what still is not</h2>
+  <div class="col">
+    <p>An earlier draft of this report listed three open questions. The Rome audit answered two of them, and one answer reverses a recommendation.</p>
+    <p><strong>Answered — a local pack exists.</strong> All eight core catering queries return one in Rome. GBP work is the near-market engine, not a formality.</p>
+    <p><strong>Answered — who holds it.</strong> Helecia's, Season Events and El Arco, on 51 to 67 reviews between them.</p>
+    <p><strong>Answered, and it reverses a recommendation.</strong> The earlier draft called AI Overview capture the highest-value follow-up, reasoning from a prior build where overviews fired on 48% of measured cells. <strong>Zero of the eight Rome catering queries return an AI Overview.</strong> Catering is a local transactional intent that Google is still answering with a map pack and links, so there is no overview to be cited in and no work to do there. That recommendation is withdrawn.</p>
+    <p><strong>Still open.</strong> Pack existence was measured in Rome only. Whether the same holds across bands C and D — where the demand concentrates and where the pack decays anyway — is unmeasured, though it matters less given the pack does not reach those towns regardless. Measuring the outer ring would cost roughly <strong>$1.50</strong> at $0.004 per cell.</p>
+  </div>
+</section>
+
+<footer class="foot">
+  <p><strong style="color:var(--muted)">Method.</strong> 378 hand-built seed keywords across nine families expanded to 26,033 candidates via DataForSEO's keyword database, mined against 40 Georgia catering domains, filtered to 13,635 catering-relevant terms, then reduced to 319 distinct queries. Search volume measured at United States, Georgia state and 60 individual town scopes. A Rome audit added the full Google Business listings roster within 30 miles, live SERPs for eight core catering queries at Rome, and authority profiles of the ranking competitors. 337 API calls, $18.34.</p>
+  <p><strong style="color:var(--muted)">On the filtering.</strong> A raw pull of this market reads 814,000/mo, which is wrong by 32x. Chain brands contributed 305,090/mo — <span class="kw">cookout menu</span> is a restaurant chain, and <span class="kw">chick-fil-a catering</span> appeared in nine spellings at 12,100 each. Diner intent contributed 42,650/mo. The largest distortion was close variants: <span class="kw">catering near me</span> returned six spellings each reporting 3,600/mo, and Google reports one volume per variant cluster. The final figures count each cluster once, and admit a query only when every token in it is known catering vocabulary.</p>
+  <p><strong style="color:var(--muted)">Confidence.</strong> Volume figures are Google Ads data via DataForSEO and carry that source's rounding. Difficulty scores are DataForSEO estimates. Town-level figures reflect Google's radius-based city targets and overlap; the Georgia state figure does not. Business name unconfirmed at time of writing.</p>
+</footer>
+
+</div>
+
+<script>
+const TOWNS = [{"n":"Rome","s":"Ge","b":"A","mi":0,"d":1470,"q":145,"lat":34.257,"lng":-85.1647},{"n":"Lindale","s":"Ge","b":"A","mi":5,"d":370,"q":37,"lat":34.1834,"lng":-85.1747},{"n":"Kingston","s":"Ge","b":"A","mi":13,"d":270,"q":26,"lat":34.2359,"lng":-84.9463},{"n":"Cave Spring","s":"Ge","b":"A","mi":14,"d":190,"q":19,"lat":34.1073,"lng":-85.3369},{"n":"Adairsville","s":"Ge","b":"B","mi":15,"d":710,"q":71,"lat":34.3684,"lng":-84.9341},{"n":"Euharlee","s":"Ge","b":"B","mi":15,"d":1170,"q":116,"lat":34.144,"lng":-84.9316},{"n":"Cedartown","s":"Ge","b":"B","mi":18,"d":640,"q":64,"lat":34.0112,"lng":-85.2547},{"n":"Rockmart","s":"Ge","b":"B","mi":19,"d":900,"q":90,"lat":34.0026,"lng":-85.0416},{"n":"Calhoun","s":"Ge","b":"B","mi":21,"d":1240,"q":123,"lat":34.5026,"lng":-84.951},{"n":"Trion","s":"Ge","b":"B","mi":22,"d":200,"q":20,"lat":34.5445,"lng":-85.3097},{"n":"Cartersville","s":"Ge","b":"B","mi":22,"d":1690,"q":166,"lat":34.1651,"lng":-84.8001},{"n":"Cedar Bluff","s":"Al","b":"B","mi":24,"d":130,"q":13,"lat":34.2262,"lng":-85.5886},{"n":"Emerson","s":"Ge","b":"B","mi":25,"d":360,"q":36,"lat":34.1276,"lng":-84.7527},{"n":"Resaca","s":"Ge","b":"B","mi":25,"d":370,"q":37,"lat":34.5776,"lng":-84.9455},{"n":"Fairmount","s":"Ge","b":"B","mi":29,"d":170,"q":17,"lat":34.4406,"lng":-84.7002},{"n":"Dallas","s":"Ge","b":"B","mi":30,"d":1910,"q":187,"lat":33.9237,"lng":-84.8408},{"n":"Centre","s":"Al","b":"C","mi":30,"d":440,"q":44,"lat":34.152,"lng":-85.6786},{"n":"Acworth","s":"Ge","b":"C","mi":31,"d":2030,"q":198,"lat":34.0662,"lng":-84.6769},{"n":"Buchanan","s":"Ge","b":"C","mi":31,"d":510,"q":51,"lat":33.8026,"lng":-85.1866},{"n":"LaFayette","s":"Ge","b":"C","mi":32,"d":650,"q":65,"lat":34.7048,"lng":-85.2819},{"n":"Fort Payne","s":"Al","b":"C","mi":34,"d":570,"q":57,"lat":34.4443,"lng":-85.7197},{"n":"Piedmont","s":"Al","b":"C","mi":34,"d":360,"q":36,"lat":33.9245,"lng":-85.6119},{"n":"Hiram","s":"Ge","b":"C","mi":35,"d":1240,"q":124,"lat":33.8737,"lng":-84.7616},{"n":"Kennesaw","s":"Ge","b":"C","mi":35,"d":2230,"q":213,"lat":34.0234,"lng":-84.6155},{"n":"Tallapoosa","s":"Ge","b":"C","mi":36,"d":280,"q":28,"lat":33.7443,"lng":-85.288},{"n":"Bremen","s":"Ge","b":"C","mi":37,"d":730,"q":73,"lat":33.7215,"lng":-85.1455},{"n":"Dalton","s":"Ge","b":"C","mi":37,"d":1570,"q":153,"lat":34.7698,"lng":-84.9702},{"n":"Woodstock","s":"Ge","b":"C","mi":38,"d":1960,"q":191,"lat":34.1015,"lng":-84.5194},{"n":"Canton","s":"Ge","b":"C","mi":39,"d":1780,"q":174,"lat":34.2367,"lng":-84.4908},{"n":"Powder Springs","s":"Ge","b":"C","mi":39,"d":1730,"q":171,"lat":33.8595,"lng":-84.6835},{"n":"Villa Rica","s":"Ge","b":"C","mi":39,"d":1370,"q":137,"lat":33.7315,"lng":-84.9177},{"n":"Marietta","s":"Ge","b":"C","mi":41,"d":2780,"q":256,"lat":33.9526,"lng":-84.5499},{"n":"Chatsworth","s":"Ge","b":"C","mi":42,"d":890,"q":89,"lat":34.7659,"lng":-84.7702},{"n":"Douglasville","s":"Ge","b":"C","mi":42,"d":2060,"q":202,"lat":33.7515,"lng":-84.7477},{"n":"Chickamauga","s":"Ge","b":"C","mi":43,"d":570,"q":57,"lat":34.8712,"lng":-85.2905},{"n":"Austell","s":"Ge","b":"C","mi":43,"d":1220,"q":122,"lat":33.8134,"lng":-84.6344},{"n":"Jasper","s":"Ge","b":"C","mi":44,"d":780,"q":78,"lat":34.4681,"lng":-84.4291},{"n":"Smyrna","s":"Ge","b":"C","mi":45,"d":1810,"q":178,"lat":33.884,"lng":-84.5144},{"n":"Ringgold","s":"Ge","b":"C","mi":46,"d":1120,"q":112,"lat":34.9159,"lng":-85.1091},{"n":"Carrollton","s":"Ge","b":"C","mi":47,"d":1440,"q":142,"lat":33.5801,"lng":-85.0766},{"n":"Fort Oglethorpe","s":"Ge","b":"C","mi":48,"d":690,"q":69,"lat":34.9484,"lng":-85.2569},{"n":"Roswell","s":"Ge","b":"C","mi":49,"d":2300,"q":224,"lat":34.0232,"lng":-84.3616},{"n":"Ellijay","s":"Ge","b":"C","mi":49,"d":710,"q":71,"lat":34.6951,"lng":-84.4821},{"n":"Sandy Springs","s":"Ge","b":"D","mi":51,"d":3090,"q":276,"lat":33.9304,"lng":-84.3733},{"n":"Rossville","s":"Ge","b":"D","mi":51,"d":960,"q":96,"lat":34.9834,"lng":-85.2841},{"n":"Gadsden","s":"Al","b":"D","mi":51,"d":1220,"q":121,"lat":34.0143,"lng":-86.0066},{"n":"East Ridge","s":"Te","b":"D","mi":51,"d":1010,"q":101,"lat":34.9943,"lng":-85.2213},{"n":"Alpharetta","s":"Ge","b":"D","mi":51,"d":2540,"q":237,"lat":34.0754,"lng":-84.2941},{"n":"Rainbow City","s":"Al","b":"D","mi":54,"d":460,"q":46,"lat":33.9548,"lng":-86.0424},{"n":"Chattanooga","s":"Te","b":"D","mi":55,"d":2670,"q":248,"lat":35.0456,"lng":-85.3097},{"n":"Attalla","s":"Al","b":"D","mi":55,"d":320,"q":32,"lat":34.0198,"lng":-86.0902},{"n":"Anniston","s":"Al","b":"D","mi":56,"d":910,"q":90,"lat":33.6598,"lng":-85.8316},{"n":"Atlanta","s":"Ge","b":"D","mi":57,"d":6030,"q":309,"lat":33.749,"lng":-84.388},{"n":"Scottsboro","s":"Al","b":"D","mi":57,"d":710,"q":71,"lat":34.6723,"lng":-86.0341},{"n":"Peachtree Corners","s":"Ge","b":"D","mi":57,"d":1940,"q":188,"lat":33.9698,"lng":-84.2216},{"n":"Cumming","s":"Ge","b":"D","mi":59,"d":2440,"q":232,"lat":34.2073,"lng":-84.1402},{"n":"Oxford","s":"Al","b":"D","mi":59,"d":790,"q":79,"lat":33.614,"lng":-85.8349},{"n":"Red Bank","s":"Te","b":"D","mi":60,"d":630,"q":63,"lat":35.112,"lng":-85.2977},{"n":"Albertville","s":"Al","b":"D","mi":60,"d":690,"q":69,"lat":34.2676,"lng":-86.2089},{"n":"Decatur","s":"Ge","b":"D","mi":60,"d":2210,"q":215,"lat":33.7748,"lng":-84.2963}];
+
+(function(){
+  const svg = document.getElementById('map');
+  const NS = 'http://www.w3.org/2000/svg';
+  const CX = 280, CY = 272, R60 = 232;           // 60mi ring radius in px
+  const LAT0 = 34.2570, LNG0 = -85.1647;
+  const MI_PER_DEG = 69.05;
+  const k = R60 / 60;
+  const kx = MI_PER_DEG * Math.cos(LAT0 * Math.PI / 180) * k;
+  const ky = MI_PER_DEG * k;
+  const el = (t, a) => { const e = document.createElementNS(NS, t); for (const p in a) e.setAttribute(p, a[p]); return e; };
+  const BAND = { A:'var(--band-a)', B:'var(--band-b)', C:'var(--band-c)', D:'var(--band-d)' };
+
+  [60, 50, 30, 15].forEach(mi => {
+    svg.appendChild(el('circle', { cx:CX, cy:CY, r:mi*k, fill:'var(--map-face)',
+      stroke:'var(--map-ring)', 'stroke-width':1 }));
+  });
+  // axes
+  svg.appendChild(el('line',{ x1:CX, y1:CY-R60, x2:CX, y2:CY+R60, stroke:'var(--map-ring)',
+    'stroke-width':1, 'stroke-dasharray':'2 5' }));
+  svg.appendChild(el('line',{ x1:CX-R60, y1:CY, x2:CX+R60, y2:CY, stroke:'var(--map-ring)',
+    'stroke-width':1, 'stroke-dasharray':'2 5' }));
+  // ring distances on the WEST-NORTHWEST diagonal, the emptiest quadrant.
+  // (The demand clusters south-east toward metro Atlanta, so labels must avoid it.)
+  [[15,'15'],[30,'30'],[50,'50'],[60,'60 mi']].forEach(([mi,lab]) => {
+    const t = el('text', { x:CX - 0.80*mi*k, y:CY - 0.60*mi*k + 3,
+      fill:'var(--faint)', 'text-anchor':'middle',
+      'font-family':'"IBM Plex Mono",monospace', 'font-size':'9.5' });
+    t.textContent = lab; svg.appendChild(t);
+  });
+
+  // Only three anchors get labels — enough to orient the reader. Exact values live
+  // in the ranked list beside the map, which is where labels would otherwise collide.
+  const ANCHOR = { Rome:[10,4], Chattanooga:[-13,-6], Atlanta:[13,13] };
+
+  [...TOWNS].sort((a,b) => a.d - b.d).forEach(t => {
+    const x = CX + (t.lng - LNG0) * kx;
+    const y = CY - (t.lat - LAT0) * ky;
+    const r = 2.6 + Math.sqrt(t.d) / 6.4;
+    const g = el('g', {});
+    g.appendChild(el('circle', { cx:x, cy:y, r:r, fill:BAND[t.b],
+      stroke:'var(--map-face)', 'stroke-width':1.4, opacity:.94 }));
+    const title = el('title', {});
+    title.textContent = `${t.n}, ${t.s} — ${t.d.toLocaleString()}/mo across ${t.q} queries, ${t.mi} mi from Rome`;
+    g.appendChild(title);
+    svg.appendChild(g);
+  });
+
+  Object.entries(ANCHOR).forEach(([name, [dx, dy]]) => {
+    const t = TOWNS.find(v => v.n === name);
+    const x = CX + (t.lng - LNG0) * kx, y = CY - (t.lat - LAT0) * ky;
+    const isRome = name === 'Rome';
+    if (isRome) svg.appendChild(el('circle', { cx:x, cy:y, r:3.5, fill:'none',
+      stroke:'var(--pine)', 'stroke-width':1.6 }));
+    const lab = el('text', { x:x + dx, y:y + dy, fill:'var(--ink)',
+      'font-family':'"IBM Plex Mono",monospace', 'font-size':'11',
+      'font-weight':'600', 'text-anchor': dx < 0 ? 'end' : 'start' });
+    lab.textContent = `${name} ${t.d.toLocaleString()}`;
+    svg.appendChild(lab);
+  });
+
+  const n = el('text', { x:CX, y:20, fill:'var(--faint)', 'text-anchor':'middle',
+    'font-family':'"IBM Plex Mono",monospace', 'font-size':'10', 'letter-spacing':'1.5' });
+  n.textContent = 'N'; svg.appendChild(n);
+
+  // ranked list beside the map
+  const ol = document.getElementById('ranklist');
+  [...TOWNS].sort((a,b) => b.d - a.d).slice(0,10).forEach(t => {
+    const li = document.createElement('li');
+    li.innerHTML = `<span class="tn">${t.n}<em>${t.mi}mi</em></span><span class="tv">${t.d.toLocaleString()}</span>`;
+    ol.appendChild(li);
+  });
+})();
+</script>
+</body>
+</html>
