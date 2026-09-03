@@ -1,3 +1,4 @@
 User-agent: *
 Disallow: /bni-2026/
 Disallow: /steele-mealz-2026-09/
+Disallow: /standings-2026-09/
