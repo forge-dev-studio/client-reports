@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Better View Operating Agreement Review</title>
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="googlebot" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+
+<style>
+:root{
+  --paper:#F7F5F0; --card:#FFFDF9; --ink:#1B1915; --muted:#6E6759; --faint:#918977;
+  --rule:#E2DDD2; --rule-soft:#EDE9E0;
+  --pine:#24544A; --pine-soft:#E3ECE8; --brass:#A0761F; --brass-soft:#F3EAD5;
+  --good:#2F6B4F; --warn:#9A6A16; --warn-soft:#F5EAD3; --stop:#8C3A2B; --stop-soft:#F4E1DC;
+  --low-soft:#ECE9E1;
+  --shadow:0 1px 2px rgba(27,25,21,.05),0 8px 24px -12px rgba(27,25,21,.18);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#14161A; --card:#1A1D22; --ink:#E9E6DF; --muted:#9A958A; --faint:#7C776D;
+    --rule:#2A2E35; --rule-soft:#22262C;
+    --pine:#6FB6A1; --pine-soft:#1E2D29; --brass:#D9A94A; --brass-soft:#33301F;
+    --good:#6FBF92; --warn:#D9A94A; --warn-soft:#332B18; --stop:#DB8570; --stop-soft:#35211C;
+    --low-soft:#23262B;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -12px rgba(0,0,0,.7);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14161A; --card:#1A1D22; --ink:#E9E6DF; --muted:#9A958A; --faint:#7C776D;
+  --rule:#2A2E35; --rule-soft:#22262C;
+  --pine:#6FB6A1; --pine-soft:#1E2D29; --brass:#D9A94A; --brass-soft:#33301F;
+  --good:#6FBF92; --warn:#D9A94A; --warn-soft:#332B18; --stop:#DB8570; --stop-soft:#35211C;
+  --low-soft:#23262B;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -12px rgba(0,0,0,.7);
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--paper); color:var(--ink);
+  font-family:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-size:17px; line-height:1.65; margin:0; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:940px; margin:0 auto; padding:0 28px 90px}
+
+.mast{border-bottom:2px solid var(--ink); padding:56px 0 24px; margin-bottom:44px}
+.eyebrow{
+  font-family:"IBM Plex Mono",monospace; font-size:11.5px; font-weight:500;
+  letter-spacing:.13em; text-transform:uppercase; color:var(--brass); margin:0 0 18px;
+}
+h1{
+  font-family:Fraunces,Georgia,serif; font-weight:600; font-size:clamp(2.1rem,5vw,3.3rem);
+  line-height:1.06; letter-spacing:-.02em; margin:0 0 14px; text-wrap:balance;
+}
+.dek{font-size:1.2rem; color:var(--muted); margin:0; max-width:58ch; text-wrap:pretty}
+
+.headline{
+  background:var(--card); border:1px solid var(--rule); border-left:5px solid var(--stop);
+  border-radius:3px; padding:32px 36px; margin:0 0 54px; box-shadow:var(--shadow);
+}
+.headline .tag{
+  font-family:"IBM Plex Mono",monospace; font-size:12px; font-weight:600;
+  letter-spacing:.1em; text-transform:uppercase; color:var(--stop); margin:0 0 14px;
+}
+.headline h2{
+  font-family:Fraunces,Georgia,serif; font-weight:600; font-size:clamp(1.5rem,3.1vw,2.05rem);
+  line-height:1.24; margin:0 0 16px; letter-spacing:-.015em; text-wrap:balance;
+}
+.headline p{margin:0 0 13px; color:var(--muted); max-width:64ch; font-size:1.02rem}
+.headline p:last-child{margin-bottom:0}
+.headline strong{color:var(--ink); font-weight:600}
+
+section{margin:0 0 58px}
+h2.sec{
+  font-family:Fraunces,Georgia,serif; font-weight:600; font-size:1.75rem; letter-spacing:-.015em;
+  margin:0 0 10px; text-wrap:balance;
+}
+.sub{color:var(--muted); margin:0 0 28px; max-width:64ch; text-wrap:pretty}
+p{margin:0 0 17px; text-wrap:pretty}
+h3.grp{
+  font-family:"IBM Plex Mono",monospace; font-size:11px; font-weight:600; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--faint); margin:34px 0 14px;
+}
+h3.grp.crit{color:var(--stop)} h3.grp.high{color:var(--warn)} h3.grp.med{color:var(--pine)}
+
+.bignums{display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:20px}
+.big{background:var(--card); border:1px solid var(--rule); border-radius:3px; padding:26px 28px; box-shadow:var(--shadow)}
+.big .n{
+  font-family:Fraunces,Georgia,serif; font-size:2.9rem; font-weight:600; line-height:1;
+  letter-spacing:-.03em; color:var(--pine); font-variant-numeric:tabular-nums;
+}
+.big.crit .n{color:var(--stop)} .big.high .n{color:var(--warn)} .big.rest .n{color:var(--muted)}
+.big .t{font-weight:600; margin:12px 0 5px; font-size:1rem}
+.big .d{color:var(--muted); font-size:.92rem; line-height:1.5}
+
+.toc{display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:8px 24px; margin:0; padding:0; list-style:none;
+  font-size:.95rem}
+.toc a{color:var(--pine); text-decoration:none; border-bottom:1px solid var(--rule)}
+.toc a:hover{border-bottom-color:var(--pine)}
+
+.good{display:grid; gap:12px; margin:0; padding:0; list-style:none}
+.good li{background:var(--card); border:1px solid var(--rule); border-left:4px solid var(--good); border-radius:3px;
+  padding:14px 20px; color:var(--muted)}
+.good li b{color:var(--ink)}
+
+.f{background:var(--card); border:1px solid var(--rule); border-left:5px solid var(--rule); border-radius:3px;
+  padding:22px 26px; margin:0 0 16px; box-shadow:var(--shadow)}
+.f.crit{border-left-color:var(--stop)} .f.high{border-left-color:var(--warn)}
+.f.med{border-left-color:var(--pine)} .f.low{border-left-color:var(--faint)}
+.fh{display:flex; flex-wrap:wrap; gap:8px 14px; align-items:center; margin:0 0 10px;
+  font-family:"IBM Plex Mono",monospace; font-size:11px; color:var(--faint); letter-spacing:.06em; text-transform:uppercase}
+.pill{display:inline-block; font-family:"IBM Plex Mono",monospace; font-size:10px; font-weight:600;
+  letter-spacing:.08em; text-transform:uppercase; padding:3px 9px; border-radius:2px; white-space:nowrap}
+.pill.crit{background:var(--stop-soft); color:var(--stop)}
+.pill.high{background:var(--warn-soft); color:var(--warn)}
+.pill.med{background:var(--pine-soft); color:var(--pine)}
+.pill.low{background:var(--low-soft); color:var(--muted)}
+.f h3{font-family:Fraunces,Georgia,serif; font-weight:600; font-size:1.28rem; line-height:1.28; letter-spacing:-.01em; margin:0 0 10px; text-wrap:balance}
+.f p{margin:0 0 12px; color:var(--muted); font-size:.98rem}
+.f p:last-child{margin-bottom:0}
+.f p b{color:var(--ink)}
+.f .fix{border-top:1px solid var(--rule-soft); padding-top:12px; margin-top:4px; color:var(--ink)}
+.f .fix b{color:var(--pine)}
+.f .cite{color:var(--faint); font-size:.9em}
+
+.ex{background:var(--paper); border:1px solid var(--rule); border-radius:3px; padding:16px 20px; margin:6px 0 14px}
+.ex .lab{font-family:"IBM Plex Mono",monospace; font-size:10.5px; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--brass); margin:0 0 8px}
+.ex p{color:var(--muted); margin:0 0 10px; font-size:.95rem}
+.ex table{border-collapse:collapse; width:100%; font-size:14px}
+.ex td{padding:6px 0; border-bottom:1px solid var(--rule-soft); color:var(--muted)}
+.ex td.n{text-align:right; font-family:"IBM Plex Mono",monospace; font-variant-numeric:tabular-nums; color:var(--ink); white-space:nowrap; padding-left:12px}
+.ex tr:last-child td{border-bottom:none}
+.ex tr.tot td{color:var(--ink); font-weight:600}
+
+.tw{overflow-x:auto; border:1px solid var(--rule); border-radius:3px; background:var(--card)}
+table.con{border-collapse:collapse; width:100%; font-size:14.5px; min-width:560px}
+table.con th,table.con td{padding:11px 16px; text-align:left; border-bottom:1px solid var(--rule-soft); vertical-align:top}
+table.con th{font-family:"IBM Plex Mono",monospace; font-size:10.5px; font-weight:600; letter-spacing:.08em;
+  text-transform:uppercase; color:var(--faint); background:var(--paper);
+  border-bottom:1px solid var(--rule); white-space:nowrap}
+table.con tbody tr:last-child td{border-bottom:none}
+table.con td.w{font-family:"IBM Plex Mono",monospace; font-size:12.5px; white-space:nowrap; color:var(--ink)}
+table.con td{color:var(--muted)}
+
+.note{border-left:3px solid var(--brass); background:var(--card);
+  padding:20px 24px; margin:26px 0 0; border-radius:0 3px 3px 0}
+.note p{margin:0; color:var(--muted); max-width:64ch}
+.note b{color:var(--ink)}
+
+.steps{display:grid; gap:14px; counter-reset:s}
+.step{background:var(--card); border:1px solid var(--rule); border-radius:3px;
+  padding:20px 24px; display:grid; grid-template-columns:1.8rem 1fr; gap:16px; align-items:start}
+.step::before{content:counter(s); counter-increment:s;
+  font-family:Fraunces,Georgia,serif; font-size:1.5rem; font-weight:600; color:var(--brass); line-height:1.1}
+.step b{display:block; margin-bottom:4px}
+.step span{color:var(--muted); font-size:.95rem}
+
+.qs{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px}
+.q{background:var(--card); border:1px solid var(--rule); border-top:3px solid var(--brass); border-radius:3px; padding:18px 20px}
+.q b{display:block; margin-bottom:6px; font-size:1rem}
+.q span{color:var(--muted); font-size:.93rem; line-height:1.55}
+
+.foot{border-top:1px solid var(--rule); padding-top:24px; margin-top:64px;
+  font-size:13.5px; color:var(--faint); max-width:72ch}
+.foot p{margin:0 0 10px}
+:focus-visible{outline:2px solid var(--brass); outline-offset:3px; border-radius:2px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+@media (max-width:640px){.wrap{padding:0 18px 60px} .headline{padding:24px 22px} .mast{padding-top:38px} .f{padding:18px 18px}}
+@media print{.f,.big,.step,.q{box-shadow:none;break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="mast">
+  <p class="eyebrow">Forge Dev Studio &middot; Document Review &middot; September 2026</p>
+  <h1>Better View Investment Group LLC</h1>
+  <p class="dek">A plain-language review of the draft operating agreement: what it gets right, where it will break, and what to fix before five people sign it.</p>
+</header>
+
+<div class="headline">
+  <p class="tag">The short version</p>
+  <h2>The draft has the right instincts and about a third of the machinery. As written, one death, divorce, or falling-out can freeze the company, and nobody can leave.</h2>
+  <p>Five equal owners, and <strong>every purchase, sale, loan, and surprise expense over $5,000 needs all five votes</strong>. There is no tie-breaker and no deadlock procedure. If one member says no, the company does nothing, and the only remedy is asking a judge to dissolve it.</p>
+  <p>There is also <strong>no exit</strong>. The agreement's own heading promises a resignation section that does not exist, the death buyout is optional rather than required, and divorce, a member's personal creditors, and a member who simply stops paying are not covered at all. Georgia's default rules do not fill those gaps in your favor.</p>
+  <p>The money mechanics need work before the first project. <strong>The initial contributions are not written down</strong>, capital calls have no cap and no real penalty, there are no tax distributions, and the dissolution clause fires by itself the day the last house sells.</p>
+  <p>None of this is unusual for a first draft, and all of it is fixable in one redraft with a Georgia business attorney. This is a business and drafting review, not legal advice.</p>
+</div>
+
+<section>
+  <h2 class="sec">What we found</h2>
+  <p class="sub">Thirty-five findings, sorted by what they would cost you. Article numbers refer to the draft as provided.</p>
+  <div class="bignums">
+    <div class="big crit">
+      <div class="n">6</div>
+      <div class="t">Critical</div>
+      <div class="d">Can freeze the company, end it by accident, or trap a member. Fix before anyone signs.</div>
+    </div>
+    <div class="big high">
+      <div class="n">12</div>
+      <div class="t">High</div>
+      <div class="d">Will bite at the first closing, the first capital call, or the first tax return.</div>
+    </div>
+    <div class="big rest">
+      <div class="n">17</div>
+      <div class="t">Medium and low</div>
+      <div class="d">Ambiguities that turn into arguments, and drafting cleanup.</div>
+    </div>
+  </div>
+  <div class="note">
+    <p><b>Jump to:</b> <a href="#right" style="color:var(--pine)">what is right</a> &middot; <a href="#critical" style="color:var(--pine)">critical</a> &middot; <a href="#high" style="color:var(--pine)">high</a> &middot; <a href="#medium" style="color:var(--pine)">medium</a> &middot; <a href="#low" style="color:var(--pine)">low</a> &middot; <a href="#conflicts" style="color:var(--pine)">where the draft contradicts itself</a> &middot; <a href="#decide" style="color:var(--pine)">decisions the agreement cannot make for you</a> &middot; <a href="#next" style="color:var(--pine)">what to fix first</a></p>
+  </div>
+</section>
+
+<section id="right">
+  <h2 class="sec">What the draft gets right</h2>
+  <p class="sub">Worth keeping. The redraft should build on these rather than start over.</p>
+  <ul class="good">
+    <li><b>Manager-managed is the right shape.</b> Five owners cannot all sign contracts and run contractors. Putting day-to-day work in named managers and reserving big decisions for the members is the standard structure for a group like this.</li>
+    <li><b>The reserved-decisions list shows good instincts.</b> Nobody wants a partner buying a house, signing a loan, or bringing in a sixth owner without them. The list in 4.3 is the right list; the threshold is the problem (see finding 1).</li>
+    <li><b>Member loans ahead of profit distributions is sound.</b> A member who steps in with cash should be made whole before profits are split. The mechanics need repair (findings 7 and 8), but the idea is right.</li>
+    <li><b>A deceased member's estate gets money rights, not a vote.</b> That is exactly the separation a small company needs, and it matches how Georgia treats an assignee.</li>
+    <li><b>Equal shares and equal tax allocations keep the books simple.</b> As long as contributions stay equal, there is nothing to argue about at tax time.</li>
+    <li><b>Georgia law, severability, and an integration clause are present.</b> The boilerplate is thin, but the essentials are there.</li>
+  </ul>
+</section>
+
+<section id="critical">
+  <h2 class="sec">The findings</h2>
+  <p class="sub">Each one names the clause, explains what goes wrong in practice, and says what to change.</p>
+
+  <h3 class="grp crit">Critical: can freeze or break the company</h3>
+
+  <article class="f crit" id="f1">
+    <div class="fh"><span class="pill crit">Critical</span><span>Finding 1</span><span>Article 4.3</span></div>
+    <h3>Every deal needs all five votes, and there is no way to break a tie</h3>
+    <p>The company exists to buy, borrow against, renovate, and sell property. Each of those acts requires five of five votes, and so does any unbudgeted expense over $5,000. Any single member can veto any purchase, any sale, any refinance, and any change order, for any reason or for no reason. The agreement has no deadlock procedure: no cooling-off period, no mediation, no buy-sell trigger, no casting vote. The only legal exit from a stalemate is judicial dissolution, which a court grants when it is no longer practicable to run the business under the agreement <span class="cite">(O.C.G.A. &sect; 14-11-603)</span>. That is slow, public, and expensive, and it ends the company.</p>
+    <p>It gets worse after a death. Under 5.3 a deceased member's estate keeps the interest but loses the vote, yet 4.3 still defines unanimity as "5 out of 5 Members." Until that interest is bought out, and the buyout is optional, the company may be unable to reach unanimity on anything.</p>
+    <p class="fix"><b>Fix.</b> Keep unanimity only for changing the economics, admitting members, and amending the agreement. Move purchases, sales, loans, and guarantees to a supermajority of four of five (80% of interests). Define unanimity as all Members entitled to vote. Add a deadlock clause: a short cooling-off period, then mediation, then either a buy-sell (one side names a price and the other chooses whether to buy or sell at it) or a forced sale of the property in dispute.</p>
+  </article>
+
+  <article class="f crit" id="f2">
+    <div class="fh"><span class="pill crit">Critical</span><span>Finding 2</span><span>Article 5</span></div>
+    <h3>There is no exit</h3>
+    <p>Article 5 is titled "Buy-Sell, Transfers, and Resignation," but resignation never appears. For companies formed after mid-1999, Georgia's Act lets a member withdraw only at the times or on the events the written operating agreement specifies <span class="cite">(O.C.G.A. &sect; 14-11-601.1)</span>. As drafted, no member can leave voluntarily, ever.</p>
+    <p>The death and disability clause gives the other members an <b>option</b> to buy, not an obligation. A surviving spouse can be left holding a non-voting 20% interest with no control over when cash is distributed and no way to sell it. Divorce, a member's personal creditors (who can get a charging order against the member's distributions under <span class="cite">O.C.G.A. &sect; 14-11-504</span>), expulsion for fraud or a felony, and a member who stops funding capital calls are not triggers at all.</p>
+    <p class="fix"><b>Fix.</b> Add a complete buy-sell. Mandatory purchase on death, funded with life insurance owned by the company or cross-owned by the members. Purchase options on disability, divorce, bankruptcy, a charging order, expulsion for cause, and capital-call default. A resignation path with a notice period and a price. Payment terms, for example 20% at closing and the balance over five years at a stated rate, secured by the interest being bought. And a valuation method with a tie-breaker (finding 17).</p>
+  </article>
+
+  <article class="f crit" id="f3">
+    <div class="fh"><span class="pill crit">Critical</span><span>Finding 3</span><span>Articles 1.4 and 6.1</span></div>
+    <h3>The company dissolves itself the day the last house sells</h3>
+    <p>Section 6.1 dissolves the company on "the complete liquidation and sale of all company real estate assets and discharge of liabilities." For a company that buys and sells houses, that state occurs between every project. Read literally, the company is dissolved the first time inventory hits zero and the hard-money loan is paid off. That contradicts the perpetual term in 1.4, and it hands any unhappy member an argument that the company has already ended and must be wound up.</p>
+    <p class="fix"><b>Fix.</b> Delete the third trigger, or replace it with "the sale of all or substantially all of the Company's assets followed by a vote of the Members to wind up." State expressly that the death, resignation, bankruptcy, or expulsion of a member does not dissolve the company.</p>
+  </article>
+
+  <article class="f crit" id="f4">
+    <div class="fh"><span class="pill crit">Critical</span><span>Finding 4</span><span>Articles 2.2, 3.1, 3.2, 4.3, 5.1, 5.3, 6.1, 6.2</span></div>
+    <h3>Everything is hard-coded to five members and 20%</h3>
+    <p>"Five Members," "20% each," "3 out of 5," "5 out of 5," "the remaining four Members," and "20% equity interest" appear in eight sections. The first buyout, death, or admission makes all of them wrong at once. If four members buy out the fifth under 5.3, each owns 25%, "3 out of 5" is no longer a majority of anyone, and "20% each" no longer adds up to anything. Section 2.2 also ends in a colon with nothing after it; the member table that was meant to follow was dropped.</p>
+    <p class="fix"><b>Fix.</b> Put names, addresses, contributions, and Percentage Interests on a Schedule A that is updated on each change. Define "Majority in Interest" (more than 50% of Percentage Interests) and "Supermajority" (say, 80%), and use those defined terms everywhere. Distribute, allocate, and vote "in proportion to Percentage Interests."</p>
+  </article>
+
+  <article class="f crit" id="f5">
+    <div class="fh"><span class="pill crit">Critical</span><span>Finding 5</span><span>Article 4 (missing)</span></div>
+    <h3>Nothing about outside deals, self-dealing, or competing</h3>
+    <p>Five people who invest in real estate will keep investing in real estate. The draft does not say whether a member who finds a good house must offer it to the company first, whether a member may buy on the side, whether a member's own contracting or property-management business can do the company's work and at what price, or whether managers may pay themselves. Georgia lets a written operating agreement set these rules and define what members and managers owe each other <span class="cite">(O.C.G.A. &sect; 14-11-305)</span>. Silence means default fiduciary duties apply, and nobody finds out how they apply until there is a lawsuit. In small real estate partnerships this is the most common cause of a breakup.</p>
+    <p class="fix"><b>Fix.</b> Add an outside-activities clause that says what the group actually wants: either members may invest independently without restriction, or deals inside a defined territory or price band must be offered to the company first. Add a related-party rule: full disclosure, approval by the disinterested members, and market terms. Add a manager compensation clause (finding 12).</p>
+  </article>
+
+  <article class="f crit" id="f6">
+    <div class="fh"><span class="pill crit">Critical</span><span>Finding 6</span><span>Article 2.1 and signature page</span></div>
+    <h3>The members are never named and the money is never stated</h3>
+    <p>The agreement identifies the members only by blank signature lines, and sets the initial contribution as "an equal initial capital contribution as agreed upon by all Members." No amount, no due date, no form (cash, property, or services). Georgia enforces a member's promise to contribute only if it is set out in a writing signed by that member <span class="cite">(O.C.G.A. &sect; 14-11-402)</span>, so a handshake number may not be collectible from a member who later declines to pay. The entire-agreement clause in 7.3 makes it worse by excluding any side agreement that holds the number.</p>
+    <p class="fix"><b>Fix.</b> Schedule A with each member's name, address, contribution amount, contribution deadline, and Percentage Interest, signed by all five. If anyone is contributing property or services rather than cash, state the agreed value and get tax advice on it before signing.</p>
+  </article>
+
+  <h3 class="grp high" id="high">High: will bite at the first closing, capital call, or tax return</h3>
+
+  <article class="f high" id="f7">
+    <div class="fh"><span class="pill high">High</span><span>Finding 7</span><span>Article 2.3</span></div>
+    <h3>Capital calls have no cap, no approval, and no teeth</h3>
+    <p>Managers can call capital for any amount, any number of times, with no member vote and no ceiling on any member's total exposure. The draft never says a member must pay, yet labels a non-payer a "defaulting Member." The only consequence of not paying is that the other members may lend the shortfall at 8%. The non-payer keeps a full 20% of profits and a full vote.</p>
+    <div class="ex">
+      <p class="lab">Worked example</p>
+      <p>The company needs $50,000 more for a renovation: $10,000 per member. Four pay. The fifth does not, and the four advance the fifth's $10,000 as a loan at 8%. A year later the project clears $100,000.</p>
+      <table>
+        <tr><td>Loan repaid first, to the four who advanced it ($2,700 each)</td><td class="n">$10,800</td></tr>
+        <tr><td>Remaining cash, split five ways at $17,840 each</td><td class="n">$89,200</td></tr>
+        <tr class="tot"><td>Each of the four who put in $12,500 more receives</td><td class="n">$20,540</td></tr>
+        <tr class="tot"><td>The member who put in nothing more receives</td><td class="n">$17,840</td></tr>
+      </table>
+      <p style="margin-top:10px">Had the project lost money instead, the four would have lost their extra $12,500 each and the fifth nothing. The non-payer gets nearly the full upside on other people's money and none of the downside.</p>
+    </div>
+    <p class="fix"><b>Fix.</b> Decide whether calls are mandatory or voluntary and say so. Cap each member's total commitment. Require a Majority in Interest (or Supermajority) to approve calls above a threshold. Make dilution the consequence of not paying: the non-payer's Percentage Interest shrinks in proportion to the capital they did not put in, with the 8% loan as an alternative the funding members can choose instead. Suspend a defaulting member's vote while in default.</p>
+  </article>
+
+  <article class="f high" id="f8">
+    <div class="fh"><span class="pill high">High</span><span>Finding 8</span><span>Articles 2.3 and 3.1</span></div>
+    <h3>The two loan-priority clauses contradict each other</h3>
+    <p>Section 2.3 says a member loan is repaid "prior to any standard profit distributions to the defaulting Member," which reads as holding back only the non-payer's share. Section 3.1 puts member loans ahead of all pro-rata distributions to everyone. Under the 3.1 reading, the lending members repay 80% of their own loan out of their own distributions. The loan also has no maturity date, no repayment path if there are never "company profits," no security, and no rule for how several members split the advance or the interest.</p>
+    <p class="fix"><b>Fix.</b> Pick one mechanism. The cleanest is to treat the advance as a loan to the defaulting member, repaid from that member's distributions only, or to use dilution (finding 7). State the maturity, whether interest is simple or compounded, and that the loan is payable on the next sale or refinance regardless of "profits."</p>
+  </article>
+
+  <article class="f high" id="f9">
+    <div class="fh"><span class="pill high">High</span><span>Finding 9</span><span>Articles 3.1 and 3.2</span></div>
+    <h3>Taxable profit with no cash to pay the tax</h3>
+    <p>Profits are allocated 20% each for tax whether or not any cash is paid out, and managers decide how much cash to hold as "reasonable working capital reserves" with no cap and no member vote. A manager team elected by three members can hold every dollar for the next project while all five members owe income tax on this year's flip. There is no tax-distribution clause, no distribution timing, and no statement of who decides to distribute.</p>
+    <p class="fix"><b>Fix.</b> Add a mandatory tax distribution (a set percentage of each member's allocated taxable income, paid before the estimated-tax deadlines). Add a reserve policy: reserves above a stated amount, or beyond a set number of months of carrying costs, require a Majority in Interest. Add timing: within a set number of days after each sale or refinance, and quarterly for rental income.</p>
+  </article>
+
+  <article class="f high" id="f10">
+    <div class="fh"><span class="pill high">High</span><span>Finding 10</span><span>Article 3.1</span></div>
+    <h3>The waterfall mixes cash with profit and skips return of capital</h3>
+    <p>The lead-in distributes "available cash flow" but tier three distributes "net profits." Cash and accounting profit differ by depreciation, loan principal payments, and capital spending, so the two words produce two different numbers. There is no tier returning members' capital before profits are split, which matters the moment contributions become unequal (finding 7). And there is no reference to Georgia's limit on distributions that leave the company unable to cover its liabilities <span class="cite">(O.C.G.A. &sect; 14-11-407)</span>, or to a member's obligation to return a distribution received in knowing violation of it <span class="cite">(&sect; 14-11-408)</span>.</p>
+    <p class="fix"><b>Fix.</b> Define "Distributable Cash." Order it: expenses and approved reserves, member loans, return of unreturned capital contributions, then Percentage Interests. Add the statutory solvency limit and make the managers responsible for applying it.</p>
+  </article>
+
+  <article class="f high" id="f11">
+    <div class="fh"><span class="pill high">High</span><span>Finding 11</span><span>Article 3.2</span></div>
+    <h3>Missing tax machinery</h3>
+    <p>No partnership representative is designated for IRS audits. Every partnership must name one on its return, and that person can bind the company and every member in an audit <span class="cite">(IRC &sect; 6223)</span>. No capital-account rules under the federal regulations, no treatment of contributed property <span class="cite">(&sect; 704(c))</span>, no statement that the company is taxed as a partnership and will not elect otherwise, no fiscal year, no accounting method, no deadline for delivering K-1s. With five individual members the company can likely elect out of the centralized audit regime each year <span class="cite">(&sect; 6221(b))</span>; the agreement should say whether it will.</p>
+    <p class="fix"><b>Fix.</b> Add a tax article. Designate the partnership representative, require notice to all members and Majority consent before settling an audit, require capital accounts maintained under <span class="cite">Treas. Reg. &sect; 1.704-1(b)(2)(iv)</span> with the standard regulatory allocations, and set K-1 delivery by a fixed date each year.</p>
+  </article>
+
+  <article class="f high" id="f12">
+    <div class="fh"><span class="pill high">High</span><span>Finding 12</span><span>Articles 4.1 and 4.2</span></div>
+    <h3>The managers are not named and the job is not defined</h3>
+    <p>The initial managers are not identified. There is no term, no removal procedure, no vacancy rule, no compensation, and no statement of how two or more managers act (together, by majority, or any one alone). The authority list in 4.2 omits what a real estate manager does every week: opening and signing on bank accounts, signing leases (leasing is a stated purpose in 1.2), hiring property managers, buying insurance, engaging the attorney and CPA, filing tax returns, and the annual registration with the Secretary of State.</p>
+    <p>Renovation is labor. If one member finds the deals and runs the contractors for the same 20% as four people who do nothing, that is the second most common cause of a breakup.</p>
+    <p class="fix"><b>Fix.</b> Name the initial managers on Schedule B. Managers serve until removed by a Majority in Interest, with or without cause, and vacancies are filled the same way. Say how multiple managers act. Grant general ordinary-course authority subject to the reserved decisions in 4.3. State manager compensation (a fee per project, a monthly amount, or a guaranteed payment) and expense reimbursement, or state expressly that managers serve without pay.</p>
+  </article>
+
+  <article class="f high" id="f13">
+    <div class="fh"><span class="pill high">High</span><span>Finding 13</span><span>Article 4.3(2)</span></div>
+    <h3>Personal guarantees are treated as a company decision</h3>
+    <p>The company cannot bind a member to a personal guarantee; only that member can. Hard-money lenders will require guarantees, usually from whichever members have the strongest credit. If one member guarantees a $300,000 loan and the lender calls it, the draft gives that member no right to be reimbursed by the other four.</p>
+    <p class="fix"><b>Fix.</b> State that no member is required to guarantee any company debt. If a member does, the company indemnifies them, the other members contribute pro rata to any amount paid on the guarantee, and the group may agree on a guarantee fee.</p>
+  </article>
+
+  <article class="f high" id="f14">
+    <div class="fh"><span class="pill high">High</span><span>Finding 14</span><span>Article 4 (missing)</span></div>
+    <h3>No indemnification, no exculpation, no liability statement, no insurance</h3>
+    <p>Nothing protects a manager who acts in good faith from personal exposure, and nothing limits the company's duty to cover a manager who acts in bad faith. Georgia lets the written operating agreement set both <span class="cite">(O.C.G.A. &sect;&sect; 14-11-305 and 14-11-306)</span> and provides limited liability by default <span class="cite">(&sect; 14-11-303)</span>, but lenders, closing attorneys, and the members themselves expect to see it written down.</p>
+    <p class="fix"><b>Fix.</b> Add a limited-liability statement, an exculpation clause (no personal liability except for bad faith, intentional misconduct, knowing violation of law, or an improper personal benefit), indemnification with advancement of legal expenses, and a covenant to carry general liability, property, and builder's risk coverage on every project.</p>
+  </article>
+
+  <article class="f high" id="f15">
+    <div class="fh"><span class="pill high">High</span><span>Finding 15</span><span>Article 4.3</span></div>
+    <h3>No way to actually take a vote</h3>
+    <p>There are no rules for meetings, notice, quorum, written consents, electronic signatures, or proxies. Every closing under 4.3 needs proof of unanimous approval. A Georgia closing attorney will ask for a signed consent or resolution and evidence of who the managers are, and the draft gives the members nothing to hand over.</p>
+    <p class="fix"><b>Fix.</b> Allow action by written consent signed, including electronically, by the required percentage, with copies to all members. Set notice periods for meetings. Attach a form of member consent and a manager's certificate of authority as exhibits.</p>
+  </article>
+
+  <article class="f high" id="f16">
+    <div class="fh"><span class="pill high">High</span><span>Finding 16</span><span>Articles 5.1 and 5.2</span></div>
+    <h3>The transfer rules do not work together</h3>
+    <p>Section 5.1 bars any transfer without unanimous consent. Section 5.2 then gives the other members a right of first refusal on a third-party offer "at the offered terms or fair market value," without saying who picks which, how long the members have to decide, what happens to the portion some members decline, or whether the seller may close with the buyer if everyone passes. Under 5.1 the answer is no, so the right of first refusal is decorative.</p>
+    <p>There are no permitted transfers to a member's own revocable trust for estate planning, nothing on divorce, nothing on a creditor's charging order, and no spousal acknowledgment. Georgia's default makes an unapproved transferee an assignee with money rights only <span class="cite">(O.C.G.A. &sect;&sect; 14-11-502 and 14-11-503)</span>; the agreement should say whether that is what the group wants.</p>
+    <p class="fix"><b>Fix.</b> Make the sequence explicit: notice of the offer, a 30-day member right of first refusal at the same price and terms with over-allotment, then a 60-day window to close with the third party as an assignee (money rights only) unless admitted by Supermajority vote. Add permitted estate-planning transfers, a divorce buyout option, and a spousal consent page.</p>
+  </article>
+
+  <article class="f high" id="f17">
+    <div class="fh"><span class="pill high">High</span><span>Finding 17</span><span>Article 5.3</span></div>
+    <h3>The valuation clause names a formula that does not exist</h3>
+    <p>The buyout price is set "by a certified independent appraiser or agreed-upon valuation formula." No formula is in the agreement. It does not say what gets appraised: the real estate, or a 20% non-voting interest in a company, which an appraiser would discount heavily for minority position and lack of a market. It does not say who chooses the appraiser, who pays, or what happens when the two sides disagree.</p>
+    <p class="fix"><b>Fix.</b> Define value as net asset value: each property appraised by a Georgia-licensed appraiser, less all liabilities, times the Percentage Interest, and say whether minority and marketability discounts apply. One appraiser chosen by the company; if the selling side objects, a second appraiser and a third to break the tie. The company pays. Set the option window, the closing deadline, and payment terms.</p>
+  </article>
+
+  <article class="f high" id="f18">
+    <div class="fh"><span class="pill high">High</span><span>Finding 18</span><span>Article 6.2</span></div>
+    <h3>Winding up is one sentence</h3>
+    <p>No one is named to wind up the company. There is no reserve for liabilities that surface later (a buyer's warranty claim, a contractor lien, a tenant suit), no return of capital before the profit split, and no rule for distributing a property in kind to a member who wants to keep it. Georgia requires creditors, including members who are creditors, to be paid first <span class="cite">(O.C.G.A. &sect; 14-11-605)</span>, and a certificate of termination must be filed with the Secretary of State.</p>
+    <p class="fix"><b>Fix.</b> Managers wind up, or a liquidator chosen by Majority in Interest. Pay creditors, set aside reserves, return capital, distribute the balance by Percentage Interests. Allow in-kind distributions at appraised value on a Supermajority vote. File the certificate of termination.</p>
+  </article>
+
+  <h3 class="grp med" id="medium">Medium: ambiguities that turn into arguments</h3>
+
+  <article class="f med" id="f19">
+    <div class="fh"><span class="pill med">Medium</span><span>Finding 19</span><span>Article 4.3</span></div>
+    <h3>The heading says supermajority, the text says unanimous</h3>
+    <p>"Major Decisions (Supermajority / Unanimous Consent)" names two different thresholds. The body uses unanimity. Pick one and define it (finding 1 recommends a four-of-five supermajority for deals and unanimity for structural changes).</p>
+  </article>
+
+  <article class="f med" id="f20">
+    <div class="fh"><span class="pill med">Medium</span><span>Finding 20</span><span>Article 4.3</span></div>
+    <h3>"Simple Majority (60.0%)" is only a majority while there are exactly five equal members</h3>
+    <p>Define Majority in Interest as more than 50% of Percentage Interests and drop the hard-coded percentage and head count.</p>
+  </article>
+
+  <article class="f med" id="f21">
+    <div class="fh"><span class="pill med">Medium</span><span>Finding 21</span><span>Article 4.3(5)</span></div>
+    <h3>A $5,000 unanimous threshold does not survive a renovation</h3>
+    <p>A roof, a foundation, or an HVAC surprise over $5,000 is routine, and stopping work until all five members sign off costs carrying interest every day. The threshold is also easy to evade by splitting one invoice into two $4,900 pieces, and nothing prohibits that. "Budget" is never defined and no budget approval process exists; 4.3 mentions "standard operating budgets" under majority vote and nothing more.</p>
+    <p class="fix"><b>Fix.</b> Majority in Interest approves each project budget. Managers may exceed a line item by the greater of 10% or $5,000 without a vote; larger overruns need a Majority; emergencies (safety, code, protecting the property, lender deadlines) may be handled by the managers with notice to all members within 48 hours. Aggregate related expenses when applying any threshold.</p>
+  </article>
+
+  <article class="f med" id="f22">
+    <div class="fh"><span class="pill med">Medium</span><span>Finding 22</span><span>Article 1.3</span></div>
+    <h3>Two decision-makers for the principal office</h3>
+    <p>"As the Members or Managers may determine" names two bodies with no rule for when they disagree. Give it to the managers, and add the registered agent and registered office, which Georgia requires the company to maintain.</p>
+  </article>
+
+  <article class="f med" id="f23">
+    <div class="fh"><span class="pill med">Medium</span><span>Finding 23</span><span>Preamble</span></div>
+    <h3>Five signature dates means five effective dates</h3>
+    <p>"Made effective as of the date signed below" with five separate date lines leaves the effective date undefined. State one Effective Date in the first paragraph.</p>
+  </article>
+
+  <article class="f med" id="f24">
+    <div class="fh"><span class="pill med">Medium</span><span>Finding 24</span><span>Preamble</span></div>
+    <h3>"Founding partners"</h3>
+    <p>LLC members are not partners, and calling them partners invites confusion about liability and about who can bind the company. Use "Members" throughout.</p>
+  </article>
+
+  <article class="f med" id="f25">
+    <div class="fh"><span class="pill med">Medium</span><span>Finding 25</span><span>Throughout</span></div>
+    <h3>Capitalized terms with no definitions</h3>
+    <p>Designated Managers, Capital Call, Debt Priority Loan, Simple Majority, Membership Interest, Percentage Interest, Available Cash Flow, and Budget are all used as defined terms and none is defined. Add a definitions article.</p>
+  </article>
+
+  <article class="f med" id="f26">
+    <div class="fh"><span class="pill med">Medium</span><span>Finding 26</span><span>Article 5.3</span></div>
+    <h3>"Legal incapacity" and "bankruptcy" have no tests</h3>
+    <p>Incapacity needs a trigger: a court order, certification by two physicians, or a stated period of inability to participate. Provisions that strip rights on a bankruptcy filing may be limited by federal bankruptcy law, so counsel should structure the purchase option so it does not depend only on the filing itself.</p>
+  </article>
+
+  <article class="f med" id="f27">
+    <div class="fh"><span class="pill med">Medium</span><span>Finding 27</span><span>Articles 2.1 and 7.3</span></div>
+    <h3>The contribution clause points outside the document that claims to be the whole deal</h3>
+    <p>Section 2.1 relies on an amount "as agreed upon by all Members," and 7.3 says this document is the complete agreement. One of them has to give. Put the number in the document (finding 6).</p>
+  </article>
+
+  <article class="f med" id="f28">
+    <div class="fh"><span class="pill med">Medium</span><span>Finding 28</span><span>Article 4.3(4) and Article 7</span></div>
+    <h3>Thin boilerplate</h3>
+    <p>Amendments require unanimity but not a writing; add "in a writing signed by all Members." Article 7 has no notices clause (addresses, email, when notice is effective), no counterparts or electronic-signature clause, no binding effect on heirs and successors, no third-party-beneficiary exclusion, no waiver clause, and no dispute resolution. For five owners, venue in a named Georgia county or mediation followed by arbitration, with attorney's fees to the prevailing party, keeps a disagreement from becoming a multi-year case.</p>
+  </article>
+
+  <article class="f med" id="f29">
+    <div class="fh"><span class="pill med">Medium</span><span>Finding 29</span><span>Missing</span></div>
+    <h3>No books, bank accounts, or reporting</h3>
+    <p>No books-and-records clause, no rule that company funds stay in company accounts with no commingling, no fiscal year, no accountant, no annual financial statements to members, and no statement of members' inspection rights (Georgia provides some by default, <span class="cite">O.C.G.A. &sect; 14-11-313</span>). Add all of it; it is a page.</p>
+  </article>
+
+  <article class="f med" id="f30">
+    <div class="fh"><span class="pill med">Medium</span><span>Finding 30</span><span>Missing</span></div>
+    <h3>No admission procedure, no property statement, no confidentiality</h3>
+    <p>Nothing says what a new member signs, what they pay, or that they join this agreement. Nothing says that members have no interest in specific company property and that the interest is personal property <span class="cite">(O.C.G.A. &sect; 14-11-501)</span>. Nothing keeps deal terms, lender relationships, and financials inside the group.</p>
+  </article>
+
+  <h3 class="grp" id="low">Low: drafting cleanup</h3>
+
+  <article class="f low" id="f31">
+    <div class="fh"><span class="pill low">Low</span><span>Finding 31</span><span>Article 2.2</span></div>
+    <h3>The section ends in a colon</h3>
+    <p>The member table that was meant to follow is missing. Replace it with a reference to Schedule A.</p>
+  </article>
+
+  <article class="f low" id="f32">
+    <div class="fh"><span class="pill low">Low</span><span>Finding 32</span><span>Signature page</span></div>
+    <h3>Signature block is incomplete</h3>
+    <p>"IN WITNESS WHEREOF" sits as an orphan heading with no sentence after it. Add the Company as a signatory acting through its managers, printed addresses under each name, a reference to Schedule A, and a spousal acknowledgment page for married members.</p>
+  </article>
+
+  <article class="f low" id="f33">
+    <div class="fh"><span class="pill low">Low</span><span>Finding 33</span><span>Articles 5.1 and 5.3</span></div>
+    <h3>Three names for the same thing</h3>
+    <p>"Membership Interest," "20% interest," and "equity interest" all describe the same asset. Use one defined term.</p>
+  </article>
+
+  <article class="f low" id="f34">
+    <div class="fh"><span class="pill low">Low</span><span>Finding 34</span><span>Article 1.1</span></div>
+    <h3>Tie the agreement to the public filing</h3>
+    <p>Add the Secretary of State control number and the filing date of the Articles of Organization. If the Articles do not state that the company is manager-managed, consider amending them so the public record matches the agreement; lenders and closing attorneys look at the filing first.</p>
+  </article>
+
+  <article class="f low" id="f35">
+    <div class="fh"><span class="pill low">Low</span><span>Finding 35</span><span>Article 4.2</span></div>
+    <h3>The manager authority list reads as exhaustive</h3>
+    <p>Vendor agreements, contractor scopes, utilities, and timelines are examples, not the whole job. Add "including without limitation" and a general grant of ordinary-course authority (finding 12).</p>
+  </article>
+</section>
+
+<section id="conflicts">
+  <h2 class="sec">Where the draft contradicts itself</h2>
+  <p class="sub">Each of these is a clause that says one thing next to a clause that says another. In a dispute, both sides get to quote the draft.</p>
+  <div class="tw"><table class="con">
+    <thead><tr><th>Where</th><th>One clause says</th><th>Another says</th></tr></thead>
+    <tbody>
+      <tr><td class="w">1.4 vs 6.1</td><td>The company exists perpetually.</td><td>The company dissolves when all real estate is sold and debts are paid.</td></tr>
+      <tr><td class="w">2.3 vs 3.1</td><td>A member loan is repaid before distributions to the defaulting member.</td><td>Member loans are repaid before distributions to anyone.</td></tr>
+      <tr><td class="w">4.3 heading vs text</td><td>Major decisions need a supermajority.</td><td>Major decisions need unanimous consent.</td></tr>
+      <tr><td class="w">4.3 vs 5.3</td><td>Unanimity is 5 out of 5 Members.</td><td>A deceased member's estate is a Member with no vote.</td></tr>
+      <tr><td class="w">5.1 vs 5.2</td><td>No transfer without unanimous consent.</td><td>A right of first refusal on third-party offers, which assumes a transfer can proceed.</td></tr>
+      <tr><td class="w">3.1 lead-in vs tier 3</td><td>Distribute available cash flow.</td><td>Distribute net profits.</td></tr>
+      <tr><td class="w">2.1 vs 7.3</td><td>Contributions are as agreed outside the document.</td><td>This document is the entire agreement.</td></tr>
+      <tr><td class="w">Article 5 title vs body</td><td>The article covers resignation.</td><td>No resignation provision exists.</td></tr>
+      <tr><td class="w">2.2 vs 5.3</td><td>Five members at 20% each.</td><td>Four remaining members buy out the fifth.</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section id="decide">
+  <h2 class="sec">Decisions the agreement cannot make for you</h2>
+  <p class="sub">These are business questions. The attorney can only write down what the five of you decide, so settle them before the redraft starts.</p>
+  <div class="qs">
+    <div class="q"><b>Who does the work, and what is it worth?</b><span>Finding deals, running contractors, and managing tenants is a job. Decide whether the managers are paid, how much, and whether the other members are expected to contribute time at all.</span></div>
+    <div class="q"><b>One company, or one per property?</b><span>A tenant's injury claim at a rental can reach the flips if they share an entity. Flipping produces ordinary "dealer" income for tax, and mixing flips with long-term rentals in one entity can affect how the rentals are taxed when sold. Many groups use a parent company with a separate LLC per property, and keep flips and holds apart. Ask the attorney and the CPA together.</span></div>
+    <div class="q"><b>Who signs the guarantees?</b><span>Hard-money lenders will want personal guarantees. Decide now whether everyone signs, whether only some do, and how the others make a guarantor whole if the lender collects.</span></div>
+    <div class="q"><b>How much is each member willing to put in, total?</b><span>A capital-call cap protects everyone's personal finances and tells the managers how big a project the group can actually fund.</span></div>
+    <div class="q"><b>What happens when someone finds a deal on their own?</b><span>Offer it to the group first, or keep it. Either answer works if it is written down. No answer is what starts the fight.</span></div>
+    <div class="q"><b>How would a deceased member's family get paid?</b><span>A required buyout is only fair if the money exists. Term life insurance on each member, owned by the company or cross-owned, is the usual answer and is inexpensive at most ages.</span></div>
+    <div class="q"><b>Will you ever bring in passive investors?</b><span>Interests in a manager-managed company sold to people who will not be involved are likely securities under federal and Georgia law. That changes how you can raise money. Talk to counsel before offering an interest to anyone outside the five.</span></div>
+  </div>
+</section>
+
+<section id="next">
+  <h2 class="sec">What to fix first</h2>
+  <p class="sub">In order. The first five change the deal; the rest make it enforceable.</p>
+  <div class="steps">
+    <div class="step"><div><b>Fill in the people and the money.</b><span>Schedule A with names, addresses, contributions, deadlines, and Percentage Interests. Schedule B naming the initial managers. Fix 2.2. (Findings 4, 6, 12, 31)</span></div></div>
+    <div class="step"><div><b>Replace unanimity with a supermajority for deals, and add a deadlock clause.</b><span>Four of five for purchases, sales, loans, and guarantees. Unanimity only for economics, admissions, and amendments. Mediation, then a buy-sell or forced sale. (Findings 1, 19, 20)</span></div></div>
+    <div class="step"><div><b>Write real capital-call rules.</b><span>Mandatory or voluntary, a per-member cap, member approval above a threshold, and dilution as the consequence of not paying. One loan mechanism, not two. (Findings 7, 8)</span></div></div>
+    <div class="step"><div><b>Fix the money out.</b><span>Tax distributions, a reserve policy, a return-of-capital tier, distribution timing, and the statutory solvency limit. Designate the partnership representative. (Findings 9, 10, 11)</span></div></div>
+    <div class="step"><div><b>Build the exit door.</b><span>Mandatory buyout on death funded by life insurance; options on disability, divorce, bankruptcy, charging order, expulsion, and default; a resignation path; a valuation method with a tie-breaker; payment terms. (Findings 2, 16, 17, 26)</span></div></div>
+    <div class="step"><div><b>Write the rules for outside deals, self-dealing, and guarantees.</b><span>Outside-activities clause, related-party approvals, manager compensation, and guarantee contribution rights. Add limited liability, exculpation, indemnification, and insurance. (Findings 5, 13, 14)</span></div></div>
+    <div class="step"><div><b>Fix dissolution.</b><span>Delete the sold-everything trigger, name the liquidator, add reserves, return of capital, and in-kind distributions. (Findings 3, 18)</span></div></div>
+    <div class="step"><div><b>Add the boilerplate and the voting mechanics.</b><span>Definitions, notices, written consents and electronic signatures, amendments in writing, dispute resolution, books and bank accounts, admission procedure, spousal consents, a complete signature page. (Findings 15, 21 through 25, 27 through 30, 32 through 35)</span></div></div>
+  </div>
+  <div class="note">
+    <p><b>Then have a Georgia business attorney produce the redraft.</b> Bring this review and your answers to the seven questions above. A redraft from a clear set of decisions is a few hours of attorney time; a redraft that starts with the attorney asking those questions is many more.</p>
+  </div>
+</section>
+
+<footer class="foot">
+  <p><strong style="color:var(--muted)">Forge Dev Studio</strong> &middot; Prepared for Better View Investment Group LLC, September 2026, from the draft operating agreement as provided. Not for redistribution outside the Members and their advisors.</p>
+  <p>This is a business and drafting review of a draft document. It is not legal or tax advice and does not create an attorney-client relationship. Statute references are to the Georgia Limited Liability Company Act (O.C.G.A. &sect; 14-11-100 and following), the Internal Revenue Code, and Treasury Regulations as understood on the review date. A Georgia attorney should confirm each reference against the current text and the company's filed Articles of Organization before anyone relies on it.</p>
+</footer>
+
+</div>
+</body>
+</html>
