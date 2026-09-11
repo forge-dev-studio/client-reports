@@ -21,7 +21,7 @@ export const notes = {
   remove: 'Remove this page before signing.',
   intro: [
     'This is a full redraft of the September 2026 draft operating agreement. It applies the thirty-five findings in the review that accompanies it, and it is written to be handed to a Georgia business attorney as the base for the signing version. It is not legal advice and it has not been reviewed by an attorney. Where the review said a business decision had to be made before the redraft could be written, this draft makes a reasonable default choice and lists it below so the five of you can change it.',
-    'Every bracketed item, for example [__________], is a fact only the Members can supply. Nothing in the agreement works until Schedule A and Schedule B are filled in and every Member has signed.',
+    'Every bracketed item, for example [__________], is a fact only the Members can supply. Nothing in the agreement works until Schedule A and Schedule B are filled in and every Member has signed. The web version of this draft carries a plain-English note under every section for the Members; the notes are a reading aid and are not part of the agreement.',
   ],
   decisionsHeading: 'Decisions this draft makes for you (change any of them)',
   decisions: [

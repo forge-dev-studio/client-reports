@@ -6,6 +6,7 @@ import path from 'node:path';
 import { createRequire } from 'node:module';
 import { fileURLToPath } from 'node:url';
 import { meta, notes, preamble, articles, signaturePage, schedules, exhibits } from './agreement.mjs';
+import { plain } from './plain.mjs';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(here, '..');
@@ -33,6 +34,10 @@ for (const x of [...schedules, ...exhibits]) {
 }
 
 const problems = [];
+// Plain-English notes: one for every article, section, schedule, and exhibit, and none for unknown ids.
+for (const id of refs.keys()) if (!plain[id] || plain[id].trim().length < 20) problems.push(`no plain-English note for ${id}`);
+for (const k of Object.keys(plain)) if (!refs.has(k)) problems.push(`plain note for unknown id ${k}`);
+const plainText = Object.values(plain).join('\n');
 function resolve(text, mode /* 'html' | 'text' */) {
   return text.replace(/\{\{(ref|art):([a-z0-9-]+)\}\}/g, (m, kind, id) => {
     const r = refs.get(id);
@@ -75,9 +80,9 @@ for (const x of [...schedules, ...exhibits]) collectBody(x.body);
 const allText = proseChunks.map(t => resolve(t, 'text')).join('\n');
 
 // ---------------------------------------------------------------- gates
-const dashes = allText.match(/[—–]/g);
+const dashes = (allText + '\n' + plainText).match(/[—–]/g);
 if (dashes) problems.push(`${dashes.length} em/en dashes found`);
-const british = allText.match(/\b\w*(colour|favour|honour|labour|behaviour|centre\b|licence|defence|offence|organis(e|ation)|realis(e|ation)|recognis(e|ation)|analyse|catalogue|programme|cheque|travell|modell|cancell|judgement|practise\b|grey\b|whilst|amongst)\w*\b/gi);
+const british = (allText + '\n' + plainText).match(/\b\w*(colour|favour|honour|labour|behaviour|centre\b|licence|defence|offence|organis(e|ation)|realis(e|ation)|recognis(e|ation)|analyse|catalogue|programme|cheque|travell|modell|cancell|judgement|practise\b|grey\b|whilst|amongst)\w*\b/gi);
 if (british) problems.push(`British spellings: ${[...new Set(british)].join(', ')}`);
 
 // Defined-term gate: every capitalized term from the watch list must be defined
@@ -108,7 +113,7 @@ if (problems.length) {
   for (const p of problems) console.error(' - ' + p);
   process.exit(1);
 }
-console.log(`gates ok: ${articles.length} articles, ${articles.reduce((n, a) => n + a.sections.length, 0)} sections, ${refs.size} anchors, ${words} words, ${definedTerms.size} defined terms`);
+console.log(`gates ok: ${articles.length} articles, ${articles.reduce((n, a) => n + a.sections.length, 0)} sections, ${refs.size} anchors, ${words} words, ${definedTerms.size} defined terms, ${Object.keys(plain).length} plain notes (${plainText.split(/\s+/).length} words)`);
 
 // ---------------------------------------------------------------- HTML
 const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -220,7 +225,13 @@ th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--fain
 tr.tot td{font-weight:600}
 footer.foot{margin-top:64px;padding-top:22px;border-top:1px solid var(--rule);font-size:13.5px;color:var(--muted)}
 footer.foot p{margin:0 0 8px}
-@media print{body{background:#fff;color:#000;font-size:11.5pt}.btns,nav.toc,footer.foot{display:none}.note{border:1px solid #999;box-shadow:none;page-break-after:always}.wrap{max-width:none;padding:0}article.art,.page{page-break-inside:auto}.page{page-break-before:always}a{color:#000;border:0}.blank{background:none;color:#000}}
+.plain,.art-plain{margin:14px 0 0;padding:12px 16px;background:var(--pine-soft);border-left:3px solid var(--pine);border-radius:0 8px 8px 0;font-size:15.5px;line-height:1.55;color:var(--ink)}
+.art-plain{margin-top:10px}
+.plain .pl-l{display:block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--pine);font-weight:700;margin-bottom:4px}
+.toggle{display:inline-flex;align-items:center;gap:8px;font-size:14px;color:var(--muted);margin-top:16px;cursor:pointer;user-select:none}
+.toggle input{width:16px;height:16px;accent-color:var(--pine);margin:0}
+body.hide-plain .plain,body.hide-plain .art-plain{display:none}
+@media print{body{background:#fff;color:#000;font-size:11.5pt}.btns,nav.toc,footer.foot,.toggle{display:none}.plain,.art-plain{background:#f3f3f3;border-left-color:#666;color:#000}.note{border:1px solid #999;box-shadow:none;page-break-after:always}.wrap{max-width:none;padding:0}article.art,.page{page-break-inside:auto}.page{page-break-before:always}a{color:#000;border:0}.blank{background:none;color:#000}}
 `;
 
 const decisionsHtml = notes.decisions.map(([q, a, where]) => {
@@ -248,8 +259,9 @@ const html = `<!doctype html>
 <header class="top">
   <p class="eyebrow">Georgia SEO Company &middot; Document Redraft &middot; ${esc(meta.date)}</p>
   <h1>Operating Agreement of ${esc(meta.company)}</h1>
-  <p class="sub">${esc(meta.version)}. A complete rewrite of the September 2026 draft that applies all thirty-five findings in the review. Bracketed items are for the Members to fill in.</p>
+  <p class="sub">${esc(meta.version)}. A complete rewrite of the September 2026 draft that applies all thirty-five findings in the review. Under every section there is a plain-English note saying what it means for the five of you; the notes are a reading aid, not part of the agreement. Bracketed items are for the Members to fill in.</p>
   <div class="btns"><a class="btn" href="${esc(meta.docxFile)}">Download the Word file</a><a class="btn alt" href="../">Read the review</a></div>
+  <label class="toggle"><input type="checkbox" id="plainToggle" checked> Show the plain-English notes</label>
 </header>
 
 <section class="note" id="note">
@@ -270,8 +282,10 @@ const html = `<!doctype html>
 <div class="preamble">${preamble.map(p => `<p>${H(p)}</p>`).join('\n')}</div>
 
 ${articles.map(a => `<article class="art" id="${a.anchor}"><h2>Article ${a.num}<span>${esc(a.title)}</span></h2>
+<p class="art-plain">${esc(plain[a.id])}</p>
 ${a.sections.map(s => `<section class="sec" id="${s.anchor}"><h3><span class="n">${s.num}</span>${esc(s.title)}</h3>
 ${htmlBody(s.body)}
+<aside class="plain"><span class="pl-l">In plain English</span>${esc(plain[s.id])}</aside>
 </section>`).join('\n')}
 </article>`).join('\n')}
 
@@ -282,6 +296,7 @@ ${Array.from({ length: signaturePage.members }, (_, i) => `<div class="sig"><div
 </div>
 
 ${[...schedules, ...exhibits].map(x => `<div class="page" id="${x.anchor}"><h2>${esc(x.label)}<span>${esc(x.title)}</span></h2>
+<p class="art-plain">${esc(plain[x.id])}</p>
 ${htmlBody(x.body)}
 </div>`).join('\n')}
 
@@ -290,6 +305,12 @@ ${htmlBody(x.body)}
   <p>This is a working draft for review by a Georgia attorney. It is not legal or tax advice, it has not been reviewed by an attorney, and it does not create an attorney-client relationship. Statute references are to the Georgia Limited Liability Company Act (O.C.G.A. &sect; 14-11-100 and following), the Internal Revenue Code, and Treasury Regulations as understood on the drafting date, and should be confirmed against current law before anyone signs.</p>
 </footer>
 </div>
+<script>
+(function(){var cb=document.getElementById('plainToggle');if(!cb)return;var key='bv-plain-notes';
+try{if(localStorage.getItem(key)==='off'){cb.checked=false;document.body.classList.add('hide-plain');}}catch(e){}
+cb.addEventListener('change',function(){document.body.classList.toggle('hide-plain',!cb.checked);try{localStorage.setItem(key,cb.checked?'on':'off');}catch(e){}});
+})();
+</script>
 </body>
 </html>
 `;
