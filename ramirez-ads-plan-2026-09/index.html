@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Ramirez Google Ads Plan</title>
+<style>
+  :root{
+    --bg:#fbfaf8; --surface:#ffffff; --line:#e5e1da; --line-soft:#efece6;
+    --ink:#1c1a17; --ink-2:#57514a; --ink-3:#7d756d;
+    --accent:#a53709; --accent-strong:#c54a0d; --accent-soft:#fef4ec;
+    --pick:#fff6df; --pick-line:#e9c46a;
+    --note:#2a3038; --note-soft:#eef0f2;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --bg:#14130f; --surface:#1c1a17; --line:#312d28; --line-soft:#26231f;
+      --ink:#f2efe9; --ink-2:#b8b1a8; --ink-3:#8f877e;
+      --accent:#f49a62; --accent-strong:#f07a33; --accent-soft:#2e1d12;
+      --pick:#2b2515; --pick-line:#8a6d22;
+      --note:#d3d9de; --note-soft:#20252b;
+    }
+  }
+  *{box-sizing:border-box}
+  body{
+    background:var(--bg); color:var(--ink); margin:0;
+    font:16px/1.6 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:840px;margin:0 auto;padding:40px 22px 80px}
+  header{border-bottom:2px solid var(--ink);padding-bottom:20px;margin-bottom:8px}
+  .by{font-size:.85rem;color:var(--ink-3);margin:0 0 14px}
+  .by b{color:var(--ink);font-weight:650}
+  h1{font-size:1.8rem;line-height:1.2;letter-spacing:-.02em;margin:0 0 8px}
+  .sub{color:var(--ink-2);font-size:1rem;margin:0}
+  .jump{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0 8px}
+  .jump a{font-size:.82rem;color:var(--accent);background:var(--accent-soft);border-radius:999px;
+          padding:5px 13px;text-decoration:none;font-weight:600}
+  h2{font-size:1.35rem;letter-spacing:-.01em;margin:56px 0 6px;scroll-margin-top:16px}
+  .when{color:var(--ink-3);font-size:.85rem;margin:0 0 18px}
+  h3{font-size:1.02rem;margin:28px 0 8px}
+  p{margin:0 0 14px;color:var(--ink-2)}
+  p strong,td strong,li strong,dd strong{color:var(--ink);font-weight:600}
+  a{color:var(--accent)}
+  ul,ol{margin:0 0 16px;padding-left:22px;color:var(--ink-2)}
+  li{margin:0 0 8px}
+
+  .notice{border:1px solid var(--line);border-left:4px solid var(--accent-strong);background:var(--surface);
+          border-radius:10px;padding:16px 18px;margin:24px 0}
+  .notice p{margin:0}
+  .notice p + p{margin-top:8px}
+  .notice .t{color:var(--ink);font-weight:650;font-size:1rem}
+
+  .short{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:18px 0 8px}
+  .short div{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+  .short .k{font-size:.85rem;color:var(--accent);font-weight:650;margin:0 0 4px}
+  .short p{margin:0;font-size:.93rem}
+
+  .band{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--line);
+        border:1px solid var(--line);border-radius:10px;overflow:hidden;margin:18px 0 24px}
+  .cell{background:var(--surface);padding:15px 16px}
+  .cell .k{font-size:.82rem;color:var(--ink-3);margin-bottom:4px}
+  .cell .v{font-size:1.55rem;font-weight:650;letter-spacing:-.02em;line-height:1.15}
+  .cell .n{font-size:.8rem;color:var(--ink-3);margin-top:4px}
+
+  .scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 0 18px;
+          border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+  table{border-collapse:collapse;width:100%;min-width:560px;font-size:.92rem}
+  th,td{padding:10px 14px;text-align:right;border-bottom:1px solid var(--line-soft);white-space:nowrap}
+  th:first-child,td:first-child{text-align:left;white-space:normal}
+  thead th{font-size:.8rem;color:var(--ink-3);font-weight:600;background:var(--surface)}
+  tbody tr:last-child td{border-bottom:0}
+  tr.pick td{background:var(--pick)}
+  tr.pick td:first-child{box-shadow:inset 4px 0 0 var(--pick-line)}
+  .tag{display:inline-block;font-size:.72rem;font-weight:650;color:var(--accent);background:var(--accent-soft);
+       border-radius:999px;padding:1px 8px;margin-left:6px;vertical-align:1px}
+  .fine{font-size:.85rem;color:var(--ink-3)}
+
+  .tiers{display:grid;gap:10px;margin:14px 0 18px}
+  .tier{display:grid;grid-template-columns:150px 1fr;gap:12px;background:var(--surface);border:1px solid var(--line);
+        border-radius:10px;padding:12px 16px}
+  .tier b{color:var(--ink);font-weight:650;display:block}
+  .tier span{font-size:.85rem;color:var(--ink-3)}
+  .tier p{margin:0}
+  @media (max-width:560px){ .tier{grid-template-columns:1fr;gap:4px} }
+
+  .ads{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 18px;padding:0;list-style:none}
+  .ads li{margin:0;font-size:.88rem;color:var(--ink);background:var(--surface);border:1px solid var(--line);
+          border-radius:6px;padding:5px 10px}
+
+  .steps{counter-reset:s;list-style:none;padding:0;margin:14px 0 18px}
+  .steps li{counter-increment:s;position:relative;padding:0 0 0 40px;margin:0 0 14px}
+  .steps li::before{content:counter(s);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;
+                    background:var(--accent-soft);color:var(--accent);font-weight:700;font-size:.85rem;
+                    display:flex;align-items:center;justify-content:center}
+  .steps li b{color:var(--ink);font-weight:650}
+
+  dl.timeline{margin:14px 0 18px;display:grid;grid-template-columns:110px 1fr;gap:0;border:1px solid var(--line);
+              border-radius:10px;overflow:hidden;background:var(--surface)}
+  dl.timeline dt,dl.timeline dd{margin:0;padding:12px 16px;border-bottom:1px solid var(--line-soft)}
+  dl.timeline dt{font-weight:650;color:var(--ink)}
+  dl.timeline dd{color:var(--ink-2)}
+  dl.timeline dt:last-of-type,dl.timeline dd:last-of-type{border-bottom:0}
+  @media (max-width:560px){ dl.timeline{grid-template-columns:1fr} dl.timeline dt{border-bottom:0;padding-bottom:0} }
+
+  .checks{list-style:none;padding:0;margin:14px 0 18px}
+  .checks li{position:relative;padding:10px 14px 10px 44px;margin:0 0 8px;background:var(--surface);
+             border:1px solid var(--line);border-radius:10px}
+  .checks li::before{content:"";position:absolute;left:14px;top:13px;width:16px;height:16px;border:2px solid var(--ink-3);
+                     border-radius:4px}
+
+  .done{list-style:none;padding:0;margin:14px 0 18px}
+  .done li{position:relative;padding-left:28px}
+  .done li::before{content:"";position:absolute;left:4px;top:.45em;width:12px;height:7px;border-left:2.5px solid var(--accent-strong);
+                   border-bottom:2.5px solid var(--accent-strong);transform:rotate(-45deg)}
+
+  footer{margin-top:64px;padding-top:18px;border-top:2px solid var(--ink)}
+  footer p{font-size:.88rem}
+  @media print{
+    .jump{display:none}
+    h2{break-after:avoid}
+    .notice,.band,.scroll,.tier,dl.timeline,.checks li{break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="by">Prepared by <b>Georgia SEO Company</b> for Hervin Ramirez, Ramirez Services Unlimited LLC &middot; September 12, 2026</p>
+  <h1>Your Google Ads plan for decks, fences and retaining walls</h1>
+  <p class="sub">A rebuilt Search campaign for the 20 towns on your Google profile, what we think it can bring in at different budgets, and what we need from you to switch it on.</p>
+</header>
+
+<nav class="jump" aria-label="Sections">
+  <a href="#today">Where the account stands</a>
+  <a href="#done">Already done</a>
+  <a href="#campaign">The campaign</a>
+  <a href="#budget">Budget and estimates</a>
+  <a href="#launch">Launch and first 30 days</a>
+  <a href="#site">Website changes</a>
+  <a href="#you">What we need from you</a>
+</nav>
+
+<div class="notice">
+  <p class="t">Every result in this plan is an estimate, not a guarantee.</p>
+  <p>Google sets the price of each click in a live auction, the number of people searching moves with the seasons, and whether a lead becomes a job depends on the conversation you have with them. We built these numbers from your own Google Ads history and our August keyword research. Thirty days after launch, your real numbers replace ours.</p>
+</div>
+
+<h2 id="short">The short version</h2>
+<div class="short">
+  <div><p class="k">What we'll run</p><p>One Search campaign for decks, deck repair, fences and retaining walls, in the 20 towns on your Google profile, with the most money close to home.</p></div>
+  <div><p class="k">Budget we recommend</p><p>$20 a day, about $608 a month, paid to Google. $10 a day also works; it just reaches fewer of the people searching.</p></div>
+  <div><p class="k">What we estimate</p><p>At $20 a day, about 50 clicks and roughly 2 to 5 leads a month, or about 7 to 13 leads over the first three months.</p></div>
+  <div><p class="k">What we need from you</p><p>A yes on the budget, ten minutes for a test call and a test form, and a quick text whenever a lead turns into a job.</p></div>
+</div>
+
+<h2 id="today">Where your account stands today</h2>
+<p class="when">Every campaign in the account, from the first ad through September 11, 2026. We looked; we didn't change anything.</p>
+<div class="band">
+  <div class="cell"><div class="k">Spent on ads</div><div class="v">$3,794</div><div class="n">Search and Performance Max</div></div>
+  <div class="cell"><div class="k">Clicks</div><div class="v">991</div><div class="n">about $3.83 each overall</div></div>
+  <div class="cell"><div class="k">Leads Google recorded</div><div class="v">0</div><div class="n">nothing was set up to count them</div></div>
+  <div class="cell"><div class="k">Calls from the ads</div><div class="v">3</div><div class="n">the longest lasted 20 seconds</div></div>
+</div>
+
+<h3>What's working for you</h3>
+<p>Your reputation is the strongest thing in this plan. You're at <strong>5.0 on Google from 28 reviews, every one of them five stars</strong>, and your profile already shows in Google's map results for deck searches in four of the towns we checked in August. Ads bring people to your page; your reviews are what get them to call.</p>
+
+<h3>What held the account back</h3>
+<ul>
+  <li><strong>Most of the money went far from home.</strong> Four metro Atlanta targets (Atlanta, Fulton County, Cobb County and Marietta) took 73% of the Search clicks and $2,224 of the $3,326 spent on Search. Atlanta alone took half the clicks. Bartow County got 2 clicks in seven months, Cartersville 7.</li>
+  <li><strong>Nobody could tell what worked.</strong> Google counted calls placed straight from an ad, and there were three. Nothing on the website was counted: no form sends, no taps on your number. The Search campaign was set to let Google bid automatically for calls, and with almost nothing counted, it had nothing to learn from. Neither did you.</li>
+  <li><strong>The ads were rarely seen.</strong> They showed for fewer than 1 in 10 of the searches they qualified for. Angi showed for about 12%, and Thumbtack was in most of the same auctions. Two of the five regular competitors sell leads rather than build anything.</li>
+  <li><strong>The call button never ran on Search.</strong> The Search campaign's call extension didn't serve once, so phone-first customers only saw a link to the website.</li>
+</ul>
+
+<h2 id="done">What's already done</h2>
+<p class="when">Live on ramirezdecks.com as of September 12, 2026, and tested on the live site.</p>
+<ul class="done">
+  <li><strong>Lead tracking.</strong> Every estimate form and every tap on your phone number from the website now counts in Google Ads and Google Analytics. Each request also records how the person found you: one of the ads, a Google search, or typing your address in.</li>
+  <li><strong>A website ready for ad traffic.</strong> Seven changes, listed in <a href="#site">Website changes</a> below, so the people the ads send have the shortest path to calling you.</li>
+</ul>
+
+<h2 id="campaign">The campaign we'll build</h2>
+<p>One Google Search campaign. Search ads show to people typing what they want into Google, which is the moment someone is looking for a builder. We're leaving Performance Max out: it spreads money across YouTube, Gmail and display sites, and it's where all three of your past ad calls came from and none lasted a minute.</p>
+
+<h3>What it advertises</h3>
+<p>Decks, deck repair, fences and retaining walls, and nothing else, so every dollar goes to the work you asked for. About 39 keywords in four groups. Concrete, pergolas, porches and patios stay with your website and Google profile.</p>
+
+<h3>Where it shows</h3>
+<p>The 20 towns on your Google profile, with bids set higher close to home and lower farther out:</p>
+<div class="tiers">
+  <div class="tier"><div><b>Home</b><span>bids 20% higher</span></div><p>Five-mile circles around Adairsville, White, Cartersville, Calhoun and Rome. The circles catch the homeowners just outside town limits, which in Bartow, Gordon and Floyd is most of them.</p></div>
+  <div class="tier"><div><b>Near</b><span>normal bids</span></div><p>Dalton, Tunnel Hill, Chatsworth, Kennesaw, Woodstock, Marietta and Dallas.</p></div>
+  <div class="tier"><div><b>Farther</b><span>bids 10% lower</span></div><p>Smyrna, Villa Rica, Ellijay and Blue Ridge.</p></div>
+  <div class="tier"><div><b>Metro</b><span>bids 20% lower</span></div><p>Buford, Norcross, Gainesville and McDonough. About 70% of the searches in your towns come from the metro side, so these stay in, at a lower price.</p></div>
+</div>
+
+<h3>How it spends</h3>
+<p>We set the top price for each keyword ourselves instead of letting Google decide. People ready to hire, searching things like "deck builder near me" or "fence company near me", get the most room. We block searches that aren't customers: price-only and do-it-yourself searches, lumber and supplies, job seekers, rentals, and the card games that also use the words "deck builder".</p>
+<p>The money splits about <strong>45% fences, 45% decks, 10% deck repair and walls</strong>. Fences are more than half of the searches in your towns, and your profile doesn't show in the map results for fence searches yet, so ads are where fence customers will find you first.</p>
+
+<h3>What the ads say</h3>
+<p>The first line names the searcher's town, like "Deck Builder in Calhoun". The rest answer Angi and Thumbtack head on:</p>
+<ul class="ads">
+  <li>Deal Directly With the Owner</li>
+  <li>No Middleman, Call Hervin</li>
+  <li>Call Any Time, We Call Back</li>
+  <li>5-Star Google Reviews</li>
+  <li>English and Spanish Spoken</li>
+  <li>Free Estimates</li>
+</ul>
+
+<h3>Calls</h3>
+<p>The ads run around the clock. People who come from an ad see a Google forwarding number on the ad and on your website; it rings straight through to your phone and lets us count calls that last a minute or longer. Everyone else, and anyone who wants to text, still sees your regular number. We recommend leaving call recording off.</p>
+
+<h2 id="budget">Budget options and what we estimate</h2>
+<p class="when">Estimates, not promises. How we got them is right below the table.</p>
+<div class="scroll">
+<table>
+  <thead>
+    <tr><th>Daily budget</th><th>About a month</th><th>Clicks a month</th><th>Leads over 3 months</th><th>Cost per lead</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>$10</td><td>$304</td><td>about 30</td><td>4 to 8</td><td>$115 to $205</td></tr>
+    <tr><td>$15</td><td>$456</td><td>about 42</td><td>6 to 11</td><td>$120 to $215</td></tr>
+    <tr class="pick"><td><strong>$20</strong><span class="tag">Recommended</span></td><td><strong>$608</strong></td><td><strong>about 50</strong></td><td><strong>7 to 13</strong></td><td><strong>$135 to $245</strong></td></tr>
+    <tr><td>$30</td><td>$912</td><td>about 58</td><td>9 to 16</td><td>$175 to $315</td></tr>
+    <tr><td>$40</td><td>$1,216</td><td>about 60</td><td>9 to 16</td><td>$225 to $405</td></tr>
+  </tbody>
+</table>
+</div>
+<p class="fine">A lead is an estimate form sent or a call of a minute or longer. Cost per lead is what Google charges divided by leads; it doesn't include what a job is worth to you. Google bills the daily budget as an average, so a single day can run higher while the month stays at about 30 times the daily figure.</p>
+
+<h3>Why $20 a day</h3>
+<ul>
+  <li><strong>It reaches most of the people actually searching.</strong> There are about 1,500 searches a month for these services in your 20 towns. At $20 a day we expect the ads to show for most of the ones that matter.</li>
+  <li><strong>The extra leads still cost a sensible amount.</strong> Going from $10 to $20 a day, each added lead costs about $220. Past $20, each added lead costs $540 or more, because the extra money mostly raises the price of the same clicks.</li>
+  <li><strong>We learn faster.</strong> Close to twice the leads in the first three months gives us, and Google, more to judge the campaign by.</li>
+</ul>
+<p>If you'd rather start at $10 a day, the plan stays the same. It just shows for fewer searches, and the 30-day review tells us whether to move up.</p>
+
+<h3>What that could mean in jobs</h3>
+<p>Leads aren't jobs. As an example only: if you win about 1 in 5 of the people who reach out, $20 a day points to roughly one job every one to two months from ads, and $10 a day to roughly one every two to three months. Tell us how many of your estimates usually turn into jobs, and your average job size, and we'll put real numbers here.</p>
+
+<h3>What the estimates assume</h3>
+<ul>
+  <li><strong>Searches:</strong> about 1,500 a month in your 20 towns for the keywords in this plan. Fences about 830, deck building about 540, deck repair about 80, retaining walls about 80. Our estimate from Google keyword data for the Atlanta and Chattanooga markets, scaled to the share of people who live in your towns.</li>
+  <li><strong>Click price:</strong> about $10 to $16 on average, depending on budget. Google's own planner lists $16 to $22 for these searches; we bid below that and accept fewer clicks.</li>
+  <li><strong>Lead rate:</strong> 5% to 9% of clicks become a form or a call of a minute or longer. Your account has never measured this, so it's the biggest unknown. A local service business we manage measured about 8% from calls alone.</li>
+  <li><strong>Season:</strong> searches for outdoor projects move with the weather, so any single month can land above or below these ranges.</li>
+  <li><strong>Answering:</strong> the ranges assume calls get answered or returned quickly. If calls go unanswered, a bigger budget just buys more missed calls.</li>
+</ul>
+
+<h2 id="launch">Launch and the first 30 days</h2>
+<h3>Before any money is spent</h3>
+<ol class="steps">
+  <li><b>You pick the daily budget.</b> $20 is our recommendation.</li>
+  <li><b>We set up call counting.</b> The Google forwarding number, with recording off unless you want it on.</li>
+  <li><b>We connect Google Analytics to Google Ads,</b> with personalized advertising turned off, so both tools see the same leads.</li>
+  <li><b>We test together.</b> One test form and one test call, to confirm every lead reaches your phone, your email and your customer records.</li>
+  <li><b>We build the campaign, you look over the ads,</b> and it goes live.</li>
+</ol>
+
+<h3>After it's live</h3>
+<dl class="timeline">
+  <dt>Week 1</dt><dd>We read the actual searches every few days and block anything that isn't a customer.</dd>
+  <dt>Day 14</dt><dd>We see when calls really connect and set the call button to those hours; outside them, the ad points to the form. We rebalance money between decks and fences.</dd>
+  <dt>Day 21</dt><dd>We replace the weakest ad lines with new ones.</dd>
+  <dt>Day 30</dt><dd>We go over the real numbers with you: cost per click, how often the ads showed, leads, and which leads became jobs.</dd>
+</dl>
+
+<h3>At day 30, one of three moves</h3>
+<ul>
+  <li><strong>Leads cost about what we expected and the budget runs out early in the day:</strong> go to $25 to $30 a day and add Bartow, Gordon and Floyd counties, your home counties and the least expensive new searches. Only with your OK.</li>
+  <li><strong>The ads show too rarely because other advertisers outbid us:</strong> raise bids on the best keywords rather than the budget.</li>
+  <li><strong>Leads cost more than expected:</strong> tighten keywords and towns before spending more.</li>
+</ul>
+
+<h3>Next, if you want it: Local Services Ads</h3>
+<p>These are the boxes at the very top of Google, above the regular ads, and you pay per lead instead of per click. Google offers them for decking and for fencing. To join, Google asks for proof of liability insurance and runs background checks, which takes about three to four weeks. If you have a current insurance certificate, send it over and we'll start the application alongside this campaign.</p>
+
+<h2 id="site">What we changed on your website</h2>
+<p class="when">All live on ramirezdecks.com as of September 12, 2026.</p>
+<ol>
+  <li><strong>Every town on your Google profile is in the estimate form.</strong> Buford, Ellijay, Gainesville, Norcross, Tunnel Hill, Villa Rica and White were missing, and all 20 towns are in the ads.</li>
+  <li><strong>The form already knows what they came for.</strong> Someone who taps "Get a free estimate" on the fence page lands on the form with Fence already checked.</li>
+  <li><strong>Proof in the first screen.</strong> Every service page now shows "5.0 on Google, 28 reviews, all five stars" and one real customer review right under the heading, matched to the work where a review mentions it.</li>
+  <li><strong>An estimate button wherever they are.</strong> On computers, a "Free estimate" button now follows visitors down the page (it used to disappear on larger screens), and every service page asks again halfway down.</li>
+  <li><strong>A plain privacy page.</strong> It now says exactly where a request goes: your phone, your email, your customer records, and a copy to us.</li>
+  <li><strong>The right review count.</strong> 28 everywhere, up from 27.</li>
+  <li><strong>Repair photos on the repair page.</strong> The deck repair page opens on finished repair jobs instead of new decks.</li>
+</ol>
+<p>Your street address also shows on the site now, matching your Google profile.</p>
+
+<h2 id="you">What we need from you</h2>
+<ul class="checks">
+  <li><strong>Your daily budget:</strong> $20 (our recommendation) or $10.</li>
+  <li><strong>Call recording:</strong> off (our recommendation) or on.</li>
+  <li><strong>An OK to connect</strong> Google Analytics and Google Ads.</li>
+  <li><strong>Ten minutes before launch</strong> for one test form and one test call.</li>
+  <li><strong>Two rough numbers:</strong> how many estimates turn into jobs, and your average job size.</li>
+  <li><strong>A quick text each time a lead becomes a job,</strong> so we can move money toward what works.</li>
+  <li><strong>Your insurance certificate,</strong> if you'd like Local Services Ads.</li>
+  <li><strong>Photos:</strong> before and after shots of deck repairs, and a few more retaining wall jobs.</li>
+  <li><strong>An OK to refresh your Google profile description,</strong> which still names Marietta and Cobb County rather than the 20 towns you serve now.</li>
+  <li><strong>Leave the campaign settings to us.</strong> To spend more or less, change only the daily budget, or just tell us.</li>
+</ul>
+
+<footer>
+  <p><strong>About this plan.</strong> Prepared September 12, 2026 by Georgia SEO Company from your Google Ads account (read only), your Google Business Profile and our August 2026 keyword research. It describes what we plan to do and what we expect. It isn't a guarantee of clicks, calls, leads, jobs or revenue: Google controls the ad auction, ad approval and where ads appear, and results vary with the season, the competition and how quickly calls are answered. Ad spend is billed by Google to the card on your Google Ads account.</p>
+  <p>Questions: Eric Kirby, Georgia SEO Company, <a href="mailto:eric@georgiaseocompany.com">eric@georgiaseocompany.com</a>.</p>
+</footer>
+
+</div>
+</body>
+</html>
