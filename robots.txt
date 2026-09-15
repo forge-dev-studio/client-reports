@@ -5,3 +5,4 @@ Disallow: /standings-2026-09/
 Disallow: /better-view-operating-agreement/
 Disallow: /ramirez-ads-plan-2026-09/
 Disallow: /ramirez-ads-strategy-2026-09/
+Disallow: /pinturas-ads-plan-2026-09/
