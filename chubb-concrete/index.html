@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Chubb Concrete | Local Search Visibility Report</title>
-<meta name="description" content="110 measured Google searches across 11 towns and 10 services near Cedartown, Georgia: exactly where Chubb Concrete appears in the local pack and in organic results, and where it does not.">
+<meta name="description" content="A two-minute visibility snapshot for Chubb Concrete: local search results across 11 towns and 10 services near Cedartown, Georgia, a website score out of 100, and AI search presence.">
 <meta name="theme-color" content="#303030">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23303030'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='17' font-weight='700' fill='%23d84848' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -25,7 +25,6 @@
 @media (prefers-color-scheme:dark){:root{
   --text:#ece9e4; --muted:#a8a29a; --muted2:#b6b1a9;
   --paper:#171615; --card:#221f1e; --line:#38342f;
-  --card2:#2a2726;
   --miss-bg:#3a2222; --miss-fg:#f0a7a7; --miss-bd:#5b3232;
   --none-bg:#2b2a27; --none-fg:#aca69d; --none-bd:#3b3733;
 }}
@@ -40,8 +39,6 @@ h3{font-size:1.05rem;font-weight:600;margin:0 0 .5rem}
 p{margin:0 0 1rem}
 strong{font-weight:600}
 a{color:var(--red-dark)}
-ul.plain{margin:0 0 1rem;padding-left:1.15em}
-ul.plain li{margin:0 0 .55rem}
 
 header{background:var(--ink);color:var(--on-dark);padding:40px 0 46px;text-align:center;border-bottom:5px solid var(--red)}
 .wordmark{font-family:var(--head);font-weight:700;letter-spacing:.07em;font-size:1.15rem;margin-bottom:20px;color:#fff}
@@ -51,12 +48,20 @@ header .sub{color:#c9c4bf;max-width:60ch;margin:0 auto 18px}
 .brandline{display:flex;justify-content:center;flex-wrap:wrap;gap:8px 16px;font-size:.88rem;color:#a39d96}
 .brandline b{color:#fff;font-weight:600}
 
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin:-30px 0 0;position:relative;z-index:2}
+.scorehero{background:var(--ink);color:#fff;border-radius:6px;padding:28px 24px;text-align:center;margin:-30px 0 16px;position:relative;z-index:2;box-shadow:0 1px 4px rgba(0,0,0,.15)}
+.scorehero .n{font-family:var(--head);font-weight:700;font-size:3.4rem;line-height:1;color:#fff}
+.scorehero .n span{font-size:1.2rem;font-weight:400;color:#c9c4bf}
+.scorehero .l{max-width:50ch;margin:10px auto 0;color:#c9c4bf;font-size:.92rem}
+
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;margin:0}
 .stat{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:16px 16px 14px;box-shadow:0 1px 4px rgba(0,0,0,.07)}
 .stat .n{font-family:var(--head);font-weight:700;font-size:1.85rem;line-height:1;font-variant-numeric:tabular-nums}
-.stat.hi .n{color:var(--red-deep)}
-@media (prefers-color-scheme:dark){.stat.hi .n{color:#e77a7a}}
-.stat .l{font-size:13px;color:var(--muted);margin-top:7px;line-height:1.4}
+.stat .n .of100{font-size:1rem;font-weight:400;color:var(--muted)}
+.stat.bad .n{color:var(--red-deep)}
+.stat.mid .n{color:#93650c}
+@media (prefers-color-scheme:dark){.stat.mid .n{color:#e0ab4a}}
+.stat .l{font-size:13px;color:var(--muted);margin-top:7px;line-height:1.45}
+.stat .l strong{color:var(--text)}
 
 section{padding:40px 0}
 section+section{border-top:1px solid var(--line)}
@@ -77,11 +82,9 @@ table{border-collapse:collapse;width:100%}
 .grid{font-size:13px}
 .grid th,.grid td{padding:8px 7px;border-bottom:1px solid var(--line);text-align:center}
 .grid thead th{font-family:var(--head);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.03em;vertical-align:bottom;background:var(--card);line-height:1.3}
-.grid thead tr.fam th{font-weight:700;font-size:12px;letter-spacing:.06em;color:var(--red-dark);background:var(--paper)}
-@media (prefers-color-scheme:dark){.grid thead tr.fam th{color:#e6a6a6}}
+.grid .mi{display:block;font-family:var(--body);font-weight:400;font-size:11px;text-transform:none;letter-spacing:0;color:var(--muted);margin-top:2px}
 .grid th[scope=row]{position:sticky;left:0;background:var(--card);text-align:left;font-weight:600;font-size:13px;white-space:nowrap;border-right:1px solid var(--line);z-index:1;padding:8px 10px}
-.grid th[scope=row] .mi{display:block;font-family:var(--body);font-weight:400;font-size:12px;color:var(--muted);margin-top:2px}
-.grid td{font-weight:700;font-size:13px;min-width:58px;font-variant-numeric:tabular-nums}
+.grid td{font-weight:700;font-size:13px;min-width:56px;font-variant-numeric:tabular-nums}
 .grid td.pos1{background:var(--pos1-bg);color:var(--pos1-fg)}
 .grid td.pos23{background:var(--pos23-bg);color:var(--pos23-fg)}
 .grid td.miss{background:var(--miss-bg);color:var(--miss-fg);border:1px solid var(--miss-bd);font-weight:600;font-size:12px}
@@ -91,48 +94,11 @@ table{border-collapse:collapse;width:100%}
 .grid tr.totals td.grand{color:var(--red-dark)}
 @media (prefers-color-scheme:dark){.grid tr.totals td.grand{color:#e6a6a6}}
 
-.call{border-left:3px solid var(--red);background:var(--card);padding:18px 20px;border-radius:0 6px 6px 0;margin:18px 0}
-.evidence td,.evidence th{padding:8px 10px;font-size:.92rem;text-align:left;border-bottom:1px solid var(--line)}
-.evidence td.num,.evidence th.num{text-align:right;font-variant-numeric:tabular-nums}
-.evidence tr.you td{font-weight:700;background:var(--red-tint);color:var(--red-dark)}
-@media (prefers-color-scheme:dark){.evidence tr.you td{background:#3a2222;color:#f0a7a7}}
-.evidence td.towns{color:var(--muted2);font-size:.85rem}
-.demand td,.demand th{padding:8px 10px;font-size:.92rem;text-align:left;border-bottom:1px solid var(--line)}
-.demand td.num,.demand th.num{text-align:right;font-variant-numeric:tabular-nums}
-
-.profiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:16px 0}
-.profile{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:16px 18px}
-.profile h3{font-size:.98rem}
-.profile dl{margin:0;font-size:.9rem;color:var(--muted2)}
-.profile dl div{display:flex;justify-content:space-between;gap:10px;padding:5px 0;border-top:1px solid var(--line)}
-.profile dl div:first-of-type{border-top:0}
-.profile dt{color:var(--muted)}
-.profile dd{margin:0;text-align:right;color:var(--text);font-weight:500}
+.call{border-left:3px solid var(--red);background:var(--card);padding:18px 20px;border-radius:0 6px 6px 0;margin:18px 0 0}
 
 ul.findings{margin:0;padding-left:0;list-style:none}
 ul.findings li{margin:0 0 12px;padding-left:22px;position:relative}
 ul.findings li::before{content:"";position:absolute;left:0;top:.5em;width:8px;height:8px;border-radius:50%;background:var(--red)}
-
-.market{border:1px solid var(--line);border-radius:6px;background:var(--card);margin-bottom:10px}
-.market summary{cursor:pointer;padding:13px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;list-style:none}
-.market summary::-webkit-details-marker{display:none}
-.market summary::before{content:"\25B8";color:var(--red-dark);font-size:.8rem}
-.market[open] summary::before{content:"\25BE"}
-.mname{font-family:var(--head);font-weight:600;font-size:1rem}
-.mmeta{color:var(--muted);font-size:.85rem}
-.mscore{margin-left:auto;font-size:.76rem;font-weight:600;padding:3px 10px;border-radius:100px;white-space:nowrap}
-.mscore.good{background:var(--red-tint);color:var(--red-dark)}
-.mscore.mid{background:#fdf0d8;color:#93650c}
-.mscore.bad{background:var(--none-bg);color:var(--none-fg)}
-@media (prefers-color-scheme:dark){.mscore.mid{background:#3a2e10;color:#e0ab4a}}
-.market .tblwrap{border:0;border-top:1px solid var(--line);border-radius:0}
-.detail td.q{font-family:var(--body);color:var(--text);font-size:.88rem}
-.detail th{font-size:.78rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);text-align:left;padding:8px 10px;border-bottom:1px solid var(--line)}
-.detail td{padding:8px 10px;font-size:.85rem;border-bottom:1px solid var(--line);vertical-align:top}
-.detail td.pos{font-weight:600;white-space:nowrap;width:130px}
-.detail td.pos1{color:var(--red-deep)}.detail td.pos23{color:var(--red-dark)}
-.detail td.miss{color:var(--red-dark)}.detail td.none{color:var(--none-fg)}
-.detail td.lead{color:var(--muted2);font-size:.82rem}
 
 .act{display:grid;gap:12px;margin-top:18px}
 .step{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:16px 20px;display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:start}
@@ -140,25 +106,17 @@ ul.findings li::before{content:"";position:absolute;left:0;top:.5em;width:8px;he
 .step p{margin:.3rem 0 0;color:var(--muted2);font-size:.94rem}
 
 footer{background:var(--ink);color:#a89f97;padding:32px 0;font-size:.85rem;margin-top:10px}
-footer .wrap>p{max-width:78ch}
+footer .wrap>p{max-width:78ch;margin:0}
 footer strong{color:#f4f1ea}
 
-@media (max-width:640px){
-  .profile dl div{flex-direction:column;gap:2px}
-  .profile dd{text-align:left}
-}
 @media print{
   :root{color-scheme:light}
   body{background:#fff}
   a{color:var(--red-dark) !important}
-  header,footer{background:var(--ink) !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  header,footer,.scorehero{background:var(--ink) !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
   *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
-  .stats{margin-top:14px}
   .tblwrap{overflow-x:visible !important}
   section{padding:22px 0}
-  .market{break-inside:avoid}
-  details,details>*{display:block !important}
-  .market summary::before{display:none}
 }
 </style>
 </head>
@@ -170,38 +128,59 @@ footer strong{color:#f4f1ea}
     <div class="wordmark">CHUBB CONCRETE</div>
     <div class="eyebrow">Local Search Visibility Report</div>
     <h1>Where Chubb Concrete Shows Up<br>When People Search</h1>
-    <p class="sub">110 real Google searches, run one at a time across 11 towns and 10 concrete, foundation and site work services within 39 miles of Cedartown, Georgia. This shows exactly where you appear in Google's local pack and organic results, and where you do not.</p>
+    <p class="sub">110 Google searches across 11 towns and 10 services near Cedartown, Georgia: where you show up, where you don't, a website score, and how often AI answers appear.</p>
     <div class="brandline">
       <span><b>110</b> searches measured</span><span>&middot;</span>
-      <span><b>11</b> towns</span><span>&middot;</span>
-      <span><b>10</b> services</span><span>&middot;</span>
       <span><b>September 23, 2026</b></span>
     </div>
   </div>
 </header>
 
+<!-- 2. Where you stand -->
 <div class="wrap">
-  <!-- 2. Stat cards -->
-  <div class="stats"><div class="stat hi"><div class="n">9</div><div class="l">results ranked #1 in the local pack</div></div><div class="stat hi"><div class="n">71/110</div><div class="l">searches where the site ranks in Google's top 20 results</div></div><div class="stat hi"><div class="n">120ms</div><div class="l">slowest page response time measured on the site</div></div><div class="stat hi"><div class="n">190KB</div><div class="l">heaviest page on the site, all 33 pages included</div></div><div class="stat"><div class="n">15/86</div><div class="l">pack appearances, out of every search where Google showed a pack at all</div></div><div class="stat"><div class="n">7/11</div><div class="l">towns measured with zero pack appearances</div></div><div class="stat"><div class="n">62-63%</div><div class="l">how closely the eight town pages read like one another</div></div><div class="stat"><div class="n">35</div><div class="l">days the address Google indexes has carried a browser security warning</div></div><div class="stat"><div class="n">0/6</div><div class="l">analytics or tracking tools installed on the site</div></div></div>
+  <div class="scorehero"><div class="n">34<span>/100</span></div>
+    <div class="l">Your website's score, a weighted average across the six measures below. Secure access and local business signals carry the most weight.</div></div>
+  <div class="stats"><div class="stat bad">
+      <div class="n">0<span class="of100">/100</span></div>
+      <div class="l"><strong>Secure access.</strong> The address Google indexes fails its security certificate. Only the unencrypted version of the site loads.</div>
+    </div><div class="stat mid">
+      <div class="n">35<span class="of100">/100</span></div>
+      <div class="l"><strong>Search engine hygiene.</strong> The canonical tag, social preview and sitemap all point at that failing address, and Google has both versions of the site indexed.</div>
+    </div><div class="stat bad">
+      <div class="n">25<span class="of100">/100</span></div>
+      <div class="l"><strong>Local business signals.</strong> Two Google profiles share one phone number, the second filed under flooring, and page markup carries blank address fields, 0,0 coordinates and borrowed reviews.</div>
+    </div><div class="stat mid">
+      <div class="n">55<span class="of100">/100</span></div>
+      <div class="l"><strong>Content.</strong> 33 pages with real depth, but the eight town pages are 62 to 63 percent identical to each other and the blog page is empty.</div>
+    </div><div class="stat bad">
+      <div class="n">0<span class="of100">/100</span></div>
+      <div class="l"><strong>Measurement.</strong> No analytics, tag manager, advertising pixel or call tracking anywhere on the site.</div>
+    </div><div class="stat good">
+      <div class="n">90<span class="of100">/100</span></div>
+      <div class="l"><strong>Build quality and speed.</strong> Modern build. Every page answers in 120 milliseconds or less.</div>
+    </div></div>
 </div>
-
-<!-- 3. What this measures -->
 <section><div class="wrap narrow">
-  <h2>What this measures</h2>
-  <p class="lede">A Google "local pack" is the short list of three businesses Google shows above the
-  regular results when someone searches for a service near them. Being fourth means being invisible.</p>
-  <p>This report measured 110 searches: every one of your 10 services paired
-  with every one of 11 towns, each search run against Google's local pack for that town's
-  exact location, not a generic statewide result. Four of the same searches were then checked by hand in
-  a browser the same day, and reproduced exactly: your Cedartown "concrete contractor" and "concrete
-  driveway" searches both showed you at #1.</p>
+  <h2>Where you stand</h2>
+  <p class="lede">Chubb Concrete wins its home market outright, first place in the pack across Cedartown and Cave Spring. That strength stops within about 12.6 miles, the website scores 34/100 against the six measures above, and Google's AI answers barely touch these searches at all, appearing on just 3 of 20 and never naming a business.</p>
 </div></section>
 
-<!-- 4. The grid -->
+<!-- 3. What's working -->
+<section><div class="wrap narrow">
+  <h2>What's working</h2>
+  <ul class="findings"><li>9 first-place pack rankings out of 15 pack appearances in total.</li><li>In Cedartown, 8/9 searches that show a pack at all, first place on 7 of those.</li><li>In Cave Spring, 4/6, including one pack with both your profiles in it, at #1 and #2.</li><li>Organic listings reach further than the pack: the site ranks in Google's top 10 on 58/110 searches overall.</li><li>Every page answers in 119 milliseconds or less. Even the heaviest page on the site is 188KB, and the eight town pages run lighter still, 164KB at most.</li><li>5.0 from 23 reviews, ahead of 49 of the 77 businesses holding packs you're not in.</li></ul>
+</div></section>
+
+<!-- 4. What's costing you -->
+<section><div class="wrap narrow">
+  <h2>What's costing you</h2>
+  <ul class="findings"><li>Pack appearances stop at 12.6 miles, in Lindale. The other 7 of 11 towns measured, out to Calhoun at 39 miles, show none.</li><li>A second Google profile shares your phone number under Flooring contractor and carries 9 reviews; its website link opens a parked domain page, not a site.</li><li>Grading and drainage draws 20 searches a month statewide, against 1,900 for concrete contractor: demand is not spread evenly across the 10 services measured.</li></ul>
+</div></section>
+
+<!-- 5. The grid -->
 <section><div class="wrap">
   <h2>Every search, at a glance</h2>
-  <p class="lede narrow">Rows are towns, ordered by distance from Cedartown. Columns are your ten
-  services, grouped by family. Darker means stronger.</p>
+  <p class="lede narrow">Rows are your ten services. Columns are the eleven towns measured, nearest to farthest from Cedartown. Darker means stronger.</p>
   <div class="legend">
     <span class="key"><span class="sw pos1"></span> 1 (you rank first in the pack)</span>
     <span class="key"><span class="sw pos23"></span> 2 or 3 (you're in the pack, not first)</span>
@@ -209,753 +188,34 @@ footer strong{color:#f4f1ea}
     <span class="key"><span class="sw none"></span> np (no pack rendered for that search)</span>
   </div>
   <div class="tblwrap"><table class="grid">
-    <caption class="sr-only">Chubb Concrete local pack position by town and service</caption>
-    <thead><tr class="fam"><th rowspan="2">Town</th><th scope="colgroup" colspan="7">Concrete</th><th scope="colgroup" colspan="2">Foundation</th><th scope="colgroup" colspan="1">Site work</th><th rowspan="2">In the<br>pack</th></tr><tr><th scope="col">Concrete Contractor</th><th scope="col">Concrete Company</th><th scope="col">Concrete Driveway</th><th scope="col">Concrete Patio</th><th scope="col">Concrete Slab</th><th scope="col">Stamped Concrete</th><th scope="col">Concrete Sidewalk</th><th scope="col">Foundation Repair</th><th scope="col">Foundation Contractor</th><th scope="col">Grading And Drainage</th></tr></thead>
-    <tbody><tr><th scope="row">Cedartown<span class="mi">0 mi</span></th><td class="pos1">1</td><td class="pos1">1</td><td class="pos1">1</td><td class="pos1">1</td><td class="pos1">1</td><td class="pos1">1</td><td class="none">np</td><td class="pos23">3</td><td class="pos1">1</td><td class="miss">out</td><td class="tot">8/10</td></tr><tr><th scope="row">Cave Spring<span class="mi">8 mi</span></th><td class="pos1">1</td><td class="none">np</td><td class="pos1">1</td><td class="pos23">2</td><td class="none">np</td><td class="miss">out</td><td class="pos23">2</td><td class="miss">out</td><td class="none">np</td><td class="none">np</td><td class="tot">4/10</td></tr><tr><th scope="row">Aragon<span class="mi">11.6 mi</span></th><td class="miss">out</td><td class="none">np</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="none">np</td><td class="none">np</td><td class="none">np</td><td class="none">np</td><td class="tot">0/10</td></tr><tr><th scope="row">Rockmart<span class="mi">12.3 mi</span></th><td class="miss">out</td><td class="miss">out</td><td class="pos23">3</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="none">np</td><td class="miss">out</td><td class="pos23">2</td><td class="miss">out</td><td class="tot">2/10</td></tr><tr><th scope="row">Lindale<span class="mi">12.6 mi</span></th><td class="pos23">3</td><td class="none">np</td><td class="miss">out</td><td class="miss">out</td><td class="none">np</td><td class="miss">out</td><td class="miss">out</td><td class="none">np</td><td class="none">np</td><td class="miss">out</td><td class="tot">1/10</td></tr><tr><th scope="row">Buchanan<span class="mi">14.8 mi</span></th><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="none">np</td><td class="miss">out</td><td class="none">np</td><td class="tot">0/10</td></tr><tr><th scope="row">Rome<span class="mi">17.6 mi</span></th><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="none">np</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="none">np</td><td class="tot">0/10</td></tr><tr><th scope="row">Bremen<span class="mi">21 mi</span></th><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="none">np</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="none">np</td><td class="miss">out</td><td class="tot">0/10</td></tr><tr><th scope="row">Dallas<span class="mi">24.2 mi</span></th><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="tot">0/10</td></tr><tr><th scope="row">Cartersville<span class="mi">28.5 mi</span></th><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="none">np</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="tot">0/10</td></tr><tr><th scope="row">Calhoun<span class="mi">39 mi</span></th><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="none">np</td><td class="miss">out</td><td class="none">np</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="tot">0/10</td></tr><tr class="totals"><th scope="row">In the pack</th><td class="tot">3/11</td><td class="tot">1/11</td><td class="tot">3/11</td><td class="tot">2/11</td><td class="tot">1/11</td><td class="tot">1/11</td><td class="tot">1/11</td><td class="tot">1/11</td><td class="tot">2/11</td><td class="tot">0/11</td><td class="tot grand">15/110</td></tr></tbody>
+    <caption class="sr-only">Chubb Concrete local pack position by service and town</caption>
+    <thead><tr><th scope="col">Search</th><th scope="col">Cedartown<span class="mi">0 mi</span></th><th scope="col">Cave Spring<span class="mi">8 mi</span></th><th scope="col">Aragon<span class="mi">11.6 mi</span></th><th scope="col">Rockmart<span class="mi">12.3 mi</span></th><th scope="col">Lindale<span class="mi">12.6 mi</span></th><th scope="col">Buchanan<span class="mi">14.8 mi</span></th><th scope="col">Rome<span class="mi">17.6 mi</span></th><th scope="col">Bremen<span class="mi">21 mi</span></th><th scope="col">Dallas<span class="mi">24.2 mi</span></th><th scope="col">Cartersville<span class="mi">28.5 mi</span></th><th scope="col">Calhoun<span class="mi">39 mi</span></th><th scope="col">In the<br>pack</th></tr></thead>
+    <tbody><tr><th scope="row">Concrete Contractor<span class="mi">Concrete</span></th><td class="pos1">1</td><td class="pos1">1</td><td class="miss">out</td><td class="miss">out</td><td class="pos23">3</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="tot">3/11</td></tr><tr><th scope="row">Concrete Company<span class="mi">Concrete</span></th><td class="pos1">1</td><td class="none">np</td><td class="none">np</td><td class="miss">out</td><td class="none">np</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="tot">1/11</td></tr><tr><th scope="row">Concrete Driveway<span class="mi">Concrete</span></th><td class="pos1">1</td><td class="pos1">1</td><td class="miss">out</td><td class="pos23">3</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="tot">3/11</td></tr><tr><th scope="row">Concrete Patio<span class="mi">Concrete</span></th><td class="pos1">1</td><td class="pos23">2</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="none">np</td><td class="miss">out</td><td class="none">np</td><td class="miss">out</td><td class="tot">2/11</td></tr><tr><th scope="row">Concrete Slab<span class="mi">Concrete</span></th><td class="pos1">1</td><td class="none">np</td><td class="miss">out</td><td class="miss">out</td><td class="none">np</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="none">np</td><td class="tot">1/11</td></tr><tr><th scope="row">Stamped Concrete<span class="mi">Concrete</span></th><td class="pos1">1</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="none">np</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="tot">1/11</td></tr><tr><th scope="row">Concrete Sidewalk<span class="mi">Concrete</span></th><td class="none">np</td><td class="pos23">2</td><td class="none">np</td><td class="none">np</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="none">np</td><td class="tot">1/11</td></tr><tr><th scope="row">Foundation Repair<span class="mi">Foundation</span></th><td class="pos23">3</td><td class="miss">out</td><td class="none">np</td><td class="miss">out</td><td class="none">np</td><td class="none">np</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="tot">1/11</td></tr><tr><th scope="row">Foundation Contractor<span class="mi">Foundation</span></th><td class="pos1">1</td><td class="none">np</td><td class="none">np</td><td class="pos23">2</td><td class="none">np</td><td class="miss">out</td><td class="miss">out</td><td class="none">np</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="tot">2/11</td></tr><tr><th scope="row">Grading And Drainage<span class="mi">Site work</span></th><td class="miss">out</td><td class="none">np</td><td class="none">np</td><td class="miss">out</td><td class="miss">out</td><td class="none">np</td><td class="none">np</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="miss">out</td><td class="tot">0/11</td></tr><tr class="totals"><th scope="row">In the pack</th><td class="tot">8/10</td><td class="tot">4/10</td><td class="tot">0/10</td><td class="tot">2/10</td><td class="tot">1/10</td><td class="tot">0/10</td><td class="tot">0/10</td><td class="tot">0/10</td><td class="tot">0/10</td><td class="tot">0/10</td><td class="tot">0/10</td><td class="tot grand">15/110</td></tr></tbody>
   </table></div>
 </div></section>
 
-<!-- 5. Strength: Cedartown and Cave Spring -->
+<!-- 6. AI search presence -->
 <section><div class="wrap narrow">
-  <h2>Cedartown and Cave Spring are yours</h2>
-  <p>In Cedartown, you're in the pack for 8 of the
-  9 searches that show one at all, and you rank #1 on
-  7 of those 8.</p>
-  <p>Eight miles out in Cave Spring you're in 4 of
-  6, including a "concrete contractor" search where you hold
-  #1 and your second profile, Chubb Construction, holds
-  #2 in the very same pack: two of the three seats are yours. These are
-  your two strongest towns, both by distance and by result.</p>
+  <h2>AI search presence</h2>
+  <p class="lede">The same 10 services were searched in Cedartown and in Rome, 20 searches in total, checking whether Google showed an AI answer above the results.</p>
+  <ul class="findings"><li>An AI answer appeared on 3 of 20 searches: all in Rome, none in Cedartown.</li><li>None of those 3 named Chubb Concrete, and none cited chubbconcrete.com.</li><li>Your robots file allows GPTBot, PerplexityBot, ClaudeBot and Google-Extended: nothing on your side blocks AI engines from reading the site.</li></ul>
+  <div class="call"><p>AI answers are still rare on these searches, a small surface today. The pages Google already ranks in the results above are what an AI answer would likely draw on.</p></div>
 </div></section>
 
-<!-- 6. Evidence: the review comparison -->
-<section><div class="wrap narrow">
-  <h2>The reviews don't explain the gap</h2>
-  <p>Chubb Concrete carries <strong>5.0 from 23 reviews</strong>.
-  Below are the businesses holding the packs you're missing, the same way they'd appear to a searcher.
-  4 of these 9 carry fewer reviews than you do.</p>
-  <div class="tblwrap"><table class="evidence">
-    <thead><tr><th>Business</th><th class="num">Rating</th><th class="num">Reviews</th><th class="num">Cells held</th><th>Towns</th></tr></thead>
-    <tbody>
-      <tr class="you"><td>Chubb Concrete (you)</td><td class="num">5.0</td><td class="num">23</td><td class="num">n/a</td><td>n/a</td></tr>
-      <tr>
-        <td class="q">Randy Henson Concrete, Inc.</td>
-        <td class="num">5.0</td>
-        <td class="num">8</td>
-        <td class="num">16</td>
-        <td class="towns">Aragon, Rockmart, Buchanan, Bremen</td>
-      </tr><tr>
-        <td class="q">Pro One Concrete</td>
-        <td class="num">5.0</td>
-        <td class="num">13</td>
-        <td class="num">13</td>
-        <td class="towns">Aragon, Buchanan, Bremen, Dallas</td>
-      </tr><tr>
-        <td class="q">GreenWay Concrete Finishing, LLC.</td>
-        <td class="num">5.0</td>
-        <td class="num">138</td>
-        <td class="num">13</td>
-        <td class="towns">Aragon, Lindale, Rome, Calhoun</td>
-      </tr><tr>
-        <td class="q">ASG Concrete Solutions llc</td>
-        <td class="num">5.0</td>
-        <td class="num">10</td>
-        <td class="num">12</td>
-        <td class="towns">Rockmart, Aragon, Dallas</td>
-      </tr><tr>
-        <td class="q">360 Grading and Concrete</td>
-        <td class="num">5.0</td>
-        <td class="num">9</td>
-        <td class="num">9</td>
-        <td class="towns">Buchanan, Bremen</td>
-      </tr><tr>
-        <td class="q">Georgia Foundation Solutions</td>
-        <td class="num">5.0</td>
-        <td class="num">63</td>
-        <td class="num">7</td>
-        <td class="towns">Rockmart, Cave Spring, Rome, Cartersville, Calhoun</td>
-      </tr><tr>
-        <td class="q">West Georgia Contracting</td>
-        <td class="num">4.7</td>
-        <td class="num">31</td>
-        <td class="num">7</td>
-        <td class="towns">Buchanan</td>
-      </tr><tr>
-        <td class="q">Medina Concrete LLC</td>
-        <td class="num">4.8</td>
-        <td class="num">23</td>
-        <td class="num">7</td>
-        <td class="towns">Dallas</td>
-      </tr><tr>
-        <td class="q">Concrete Comfort &amp; Construction</td>
-        <td class="num">5.0</td>
-        <td class="num">27</td>
-        <td class="num">7</td>
-        <td class="towns">Calhoun</td>
-      </tr>
-    </tbody>
-  </table></div>
-</div></section>
-
-<!-- 7. The reach pattern -->
+<!-- 7. How we would help -->
 <section><div class="wrap">
-  <div class="narrow"><h2>The pack stops early; the website doesn't</h2>
-  <p class="lede">Pack appearances happen in 4 of the 11 towns measured:
-  Cedartown, Cave Spring, Rockmart, Lindale, all within 12.6 miles.
-  The other 7, from Aragon at 11.6 miles out to
-  Calhoun at 39, show zero.</p></div>
-  <div class="call">
-    <p>Your organic listings reach much farther than your pack appearances do. The site ranks in
-    Google's top 10 on <strong>58 of 110</strong> searches overall (top 3 on
-    21, #1 at best), including <strong>7 of
-    10</strong> in Dallas (24.2 miles) and <strong>6 of 10</strong> in
-    Calhoun (39 miles): two of the towns where your pack presence is zero. Distance alone does not
-    explain the difference between the two.</p>
-  </div>
+  <div class="narrow"><h2>How we would help</h2>
+  <p class="lede">Four areas this measurement points to, at a high level, not a how-to.</p></div>
+  <div class="act"><div class="step"><div class="num">1</div><div>
+      <h3>Confirm which markets are worth winning</h3><p>Demand ranges from 20 to 1,900 searches a month across the 10 services measured, and pack activity is not spread evenly across the 11 towns. A short list of what actually matters narrows where attention belongs.</p></div></div><div class="step"><div class="num">2</div><div>
+      <h3>Fix what a new visitor meets first</h3><p>Before anyone reads about concrete work, they can meet a browser security warning, or a listing whose website opens a parked domain page. What happens in those first seconds is worth its own review.</p></div></div><div class="step"><div class="num">3</div><div>
+      <h3>Bring the two profiles and the town pages into line</h3><p>One phone number sits under two inconsistent Google listings, and the eight town pages read 62 to 63 percent alike. Both are worth sorting out.</p></div></div><div class="step"><div class="num">4</div><div>
+      <h3>Put basic measurement in place, then re-check this on a schedule</h3><p>Nothing on the site tracks a call or a lead today. This report is one snapshot, taken September 23, 2026: repeating the same search set on a schedule is what shows movement.</p></div></div></div>
 </div></section>
 
-<!-- 8. Worth stepping back from -->
-<section><div class="wrap narrow">
-  <h2>Not every service carries the same demand</h2>
-  <p>Grading And Drainage totals <strong>20 searches a month</strong> across
-  the whole state of Georgia, and Chubb shows in none of the 7 packs measured for
-  it. Concrete Sidewalk reaches <strong>110 a month</strong>.
-  Both sit far below Concrete Contractor, the highest-demand service measured, at
-  <strong>1,900 a month</strong>.</p>
-  <div class="tblwrap"><table class="demand">
-    <thead><tr><th>Service</th><th class="num">Georgia searches / month</th><th class="num">In the pack</th></tr></thead>
-    <tbody><tr>
-        <td class="q">Grading And Drainage</td>
-        <td class="num">20/mo</td>
-        <td class="num">0/7</td>
-      </tr><tr>
-        <td class="q">Concrete Sidewalk</td>
-        <td class="num">110/mo</td>
-        <td class="num">1/7</td>
-      </tr><tr>
-        <td class="q">Foundation Contractor</td>
-        <td class="num">170/mo</td>
-        <td class="num">2/7</td>
-      </tr><tr>
-        <td class="q">Concrete Company</td>
-        <td class="num">390/mo</td>
-        <td class="num">1/8</td>
-      </tr><tr>
-        <td class="q">Concrete Patio</td>
-        <td class="num">390/mo</td>
-        <td class="num">2/9</td>
-      </tr><tr>
-        <td class="q">Concrete Driveway</td>
-        <td class="num">480/mo</td>
-        <td class="num">3/11</td>
-      </tr><tr>
-        <td class="q">Concrete Slab</td>
-        <td class="num">590/mo</td>
-        <td class="num">1/8</td>
-      </tr><tr>
-        <td class="q">Stamped Concrete</td>
-        <td class="num">720/mo</td>
-        <td class="num">1/10</td>
-      </tr><tr>
-        <td class="q">Foundation Repair</td>
-        <td class="num">1,300/mo</td>
-        <td class="num">1/8</td>
-      </tr><tr>
-        <td class="q">Concrete Contractor</td>
-        <td class="num">1,900/mo</td>
-        <td class="num">3/11</td>
-      </tr></tbody>
-  </table></div>
-</div></section>
-
-<!-- 9. What a customer runs into today -->
-<section><div class="wrap narrow">
-  <h2>What a customer runs into today</h2>
-  <p class="lede">Your site, chubbconcrete.com, is 33 pages built with Astro. Two separate
-  Google profiles share one phone number: (470) 999-1497.</p>
-  <div class="profiles">
-    <div class="profile"><h3>Chubb Concrete, LLC.</h3><dl>
-      <div><dt>Category</dt><dd>Concrete contractor</dd></div>
-      <div><dt>Rating</dt><dd>5.0 from 23 reviews</dd></div>
-      <div><dt>Newest review</dt><dd>6 days old</dd></div>
-      <div><dt>Website</dt><dd>chubbconcrete.com</dd></div>
-      <div><dt>Address shown</dt><dd>None</dd></div>
-      <div><dt>Closes</dt><dd>6 PM</dd></div>
-    </dl></div>
-    <div class="profile"><h3>Chubb Construction, LLC.</h3><dl>
-      <div><dt>Category</dt><dd>Flooring contractor</dd></div>
-      <div><dt>Rating</dt><dd>4.6 from 9 reviews</dd></div>
-      <div><dt>Address shown</dt><dd>591 Michael Blvd, Cedartown</dd></div>
-      <div><dt>Website</dt><dd>chubb-construction.com (parked)</dd></div>
-      <div><dt>Closes</dt><dd>5 PM</dd></div>
-    </dl></div>
-  </div>
-  <ul class="findings">
-    <li>The second profile's website link, chubb-construction.com, opens to a hosting company's "domain
-    parked" page rather than any business content. Across the whole 110-cell grid it
-    appears in a pack exactly once:
-    Cave Spring, "concrete contractor," at #2.</li>
-    <li>Your reviews are split across the two profiles: 23 on the concrete profile,
-    9 on the construction one, under a category (flooring) that isn't your
-    business.</li>
-    <li>The address Google indexes, www.chubbconcrete.com, carries a security certificate that expired
-    35 days before this report, so a visitor gets the browser's "your connection is not private"
-    warning. The non-www address serves a different, also-failing certificate belonging to the site's
-    content delivery vendor. Only the unencrypted version loads.</li>
-    <li>The site's own canonical tag, social preview address and sitemap all point at that same www
-    address, the one with the expired certificate, and Google has pages from both versions indexed.</li>
-    <li>Every page carries business listing markup naming "Chubb Construction," with blank address
-    fields, map coordinates of 0,0, and a rating of 4.8 from 4 reviews whose text describes roofing and
-    chimney work.</li>
-    <li>The file that tells search engines what to crawl still names a different company entirely,
-    left over from the template the site was built from ("Acme Weighted Plumbing LLC").</li>
-    <li>The 8 town pages read 62 to 63 percent identical to one
-    another.</li>
-    <li>The blog page is 8 words long, with no heading and no description, and it is listed
-    in the sitemap.</li>
-    <li>The About page headline reads "Concrete Contractor backed by 2026+ years of local experience."</li>
-    <li>4 page titles run longer than Google typically displays, and the phone number
-    appears in 3 different formats ("4709991497", "470-999-1497", "(470) 999-1497")
-    across the site.</li>
-  </ul>
-</div></section>
-
-<!-- 10. Town by town detail -->
-<section><div class="wrap">
-  <h2>Every search, town by town</h2>
-  <p class="lede narrow">Open any town to see all 10 searches, your result, and who holds
-  the pack where you don't.</p>
-  <div style="margin-top:18px"><details class="market" open>
-      <summary><span class="mname">Cedartown</span><span class="mmeta">0 mi &middot; pop 10,190</span>
-      <span class="mscore good">8/10 in the pack</span></summary>
-      <div class="tblwrap"><table class="detail">
-        <thead><tr><th>Search</th><th>Result</th><th>Who is in it</th></tr></thead>
-        <tbody><tr>
-        <td class="q">Concrete Contractor</td>
-        <td class="pos1 pos">Ranked #1</td>
-        <td class="lead">Chubb Concrete (you)</td>
-      </tr><tr>
-        <td class="q">Concrete Company</td>
-        <td class="pos1 pos">Ranked #1</td>
-        <td class="lead">Chubb Concrete (you)</td>
-      </tr><tr>
-        <td class="q">Concrete Driveway</td>
-        <td class="pos1 pos">Ranked #1</td>
-        <td class="lead">Chubb Concrete (you)</td>
-      </tr><tr>
-        <td class="q">Concrete Patio</td>
-        <td class="pos1 pos">Ranked #1</td>
-        <td class="lead">Chubb Concrete (you)</td>
-      </tr><tr>
-        <td class="q">Concrete Slab</td>
-        <td class="pos1 pos">Ranked #1</td>
-        <td class="lead">Chubb Concrete (you)</td>
-      </tr><tr>
-        <td class="q">Stamped Concrete</td>
-        <td class="pos1 pos">Ranked #1</td>
-        <td class="lead">Chubb Concrete (you)</td>
-      </tr><tr>
-        <td class="q">Concrete Sidewalk</td>
-        <td class="none pos">No pack shown</td>
-        <td class="lead"></td>
-      </tr><tr>
-        <td class="q">Foundation Repair</td>
-        <td class="pos23 pos">Ranked #3</td>
-        <td class="lead">Chubb Concrete (you)</td>
-      </tr><tr>
-        <td class="q">Foundation Contractor</td>
-        <td class="pos1 pos">Ranked #1</td>
-        <td class="lead">Chubb Concrete (you)</td>
-      </tr><tr>
-        <td class="q">Grading And Drainage</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. Ruff's Grading (4.8/4) &middot; 2. Summit Grading Services (4.6/11) &middot; 3. J &amp; J Landscape and Services LLC (4.9/72)</td>
-      </tr></tbody></table></div></details><details class="market">
-      <summary><span class="mname">Cave Spring</span><span class="mmeta">8 mi &middot; pop 1,200</span>
-      <span class="mscore mid">4/10 in the pack</span></summary>
-      <div class="tblwrap"><table class="detail">
-        <thead><tr><th>Search</th><th>Result</th><th>Who is in it</th></tr></thead>
-        <tbody><tr>
-        <td class="q">Concrete Contractor</td>
-        <td class="pos1 pos">Ranked #1</td>
-        <td class="lead">Chubb Concrete (you)</td>
-      </tr><tr>
-        <td class="q">Concrete Company</td>
-        <td class="none pos">No pack shown</td>
-        <td class="lead"></td>
-      </tr><tr>
-        <td class="q">Concrete Driveway</td>
-        <td class="pos1 pos">Ranked #1</td>
-        <td class="lead">Chubb Concrete (you)</td>
-      </tr><tr>
-        <td class="q">Concrete Patio</td>
-        <td class="pos23 pos">Ranked #2</td>
-        <td class="lead">Chubb Concrete (you)</td>
-      </tr><tr>
-        <td class="q">Concrete Slab</td>
-        <td class="none pos">No pack shown</td>
-        <td class="lead"></td>
-      </tr><tr>
-        <td class="q">Stamped Concrete</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. North Georgia Decorative Concrete (5.0/7) &middot; 2. Georgia Concrete Company (5.0/33) &middot; 3. Piedmont Concrete Works LLC (5.0/3)</td>
-      </tr><tr>
-        <td class="q">Concrete Sidewalk</td>
-        <td class="pos23 pos">Ranked #2</td>
-        <td class="lead">Chubb Concrete (you)</td>
-      </tr><tr>
-        <td class="q">Foundation Repair</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. Georgia Foundation Solutions (5.0/63) &middot; 2. Roggio Foundation Repair (5.0/6) &middot; 3. Atlanta Foundation Crack Repair (5.0/1)</td>
-      </tr><tr>
-        <td class="q">Foundation Contractor</td>
-        <td class="none pos">No pack shown</td>
-        <td class="lead"></td>
-      </tr><tr>
-        <td class="q">Grading And Drainage</td>
-        <td class="none pos">No pack shown</td>
-        <td class="lead"></td>
-      </tr></tbody></table></div></details><details class="market">
-      <summary><span class="mname">Aragon</span><span class="mmeta">11.6 mi &middot; pop 1,163</span>
-      <span class="mscore bad">0/10 in the pack</span></summary>
-      <div class="tblwrap"><table class="detail">
-        <thead><tr><th>Search</th><th>Result</th><th>Who is in it</th></tr></thead>
-        <tbody><tr>
-        <td class="q">Concrete Contractor</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. Pro One Concrete (5.0/13) &middot; 2. Arreguin Concrete Construction LLC (5.0/1) &middot; 3. GreenWay Concrete Finishing, LLC. (5.0/138)</td>
-      </tr><tr>
-        <td class="q">Concrete Company</td>
-        <td class="none pos">No pack shown</td>
-        <td class="lead"></td>
-      </tr><tr>
-        <td class="q">Concrete Driveway</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. Pro One Concrete (5.0/13) &middot; 2. ASG Concrete Solutions llc (5.0/10) &middot; 3. GreenWay Concrete Finishing, LLC. (5.0/138)</td>
-      </tr><tr>
-        <td class="q">Concrete Patio</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. Atlanta Concrete (5.0/12) &middot; 2. Pro One Concrete (5.0/13) &middot; 3. Curb Apeal Systems (5.0/14)</td>
-      </tr><tr>
-        <td class="q">Concrete Slab</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. Pro One Concrete (5.0/13) &middot; 2. ASG Concrete Solutions llc (5.0/10) &middot; 3. Atlanta Concrete (5.0/12)</td>
-      </tr><tr>
-        <td class="q">Stamped Concrete</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. ASG Concrete Solutions llc (5.0/10) &middot; 2. Noels concrete LLC (5.0/14) &middot; 3. Randy Henson Concrete, Inc. (5.0/8)</td>
-      </tr><tr>
-        <td class="q">Concrete Sidewalk</td>
-        <td class="none pos">No pack shown</td>
-        <td class="lead"></td>
-      </tr><tr>
-        <td class="q">Foundation Repair</td>
-        <td class="none pos">No pack shown</td>
-        <td class="lead"></td>
-      </tr><tr>
-        <td class="q">Foundation Contractor</td>
-        <td class="none pos">No pack shown</td>
-        <td class="lead"></td>
-      </tr><tr>
-        <td class="q">Grading And Drainage</td>
-        <td class="none pos">No pack shown</td>
-        <td class="lead"></td>
-      </tr></tbody></table></div></details><details class="market">
-      <summary><span class="mname">Rockmart</span><span class="mmeta">12.3 mi &middot; pop 4,732</span>
-      <span class="mscore mid">2/10 in the pack</span></summary>
-      <div class="tblwrap"><table class="detail">
-        <thead><tr><th>Search</th><th>Result</th><th>Who is in it</th></tr></thead>
-        <tbody><tr>
-        <td class="q">Concrete Contractor</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. Atlanta Concrete (5.0/12) &middot; 2. ASG Concrete Solutions llc (5.0/10) &middot; 3. Curb Apeal Systems (5.0/14)</td>
-      </tr><tr>
-        <td class="q">Concrete Company</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. Wayne Davis Concrete Co. (5.0/3) &middot; 2. Ready Mix USA Rockmart Cement Terminal (4.0/4) &middot; 3. Atlanta Concrete (5.0/12)</td>
-      </tr><tr>
-        <td class="q">Concrete Driveway</td>
-        <td class="pos23 pos">Ranked #3</td>
-        <td class="lead">Chubb Concrete (you)</td>
-      </tr><tr>
-        <td class="q">Concrete Patio</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. Atlanta Concrete (5.0/12) &middot; 2. Curb Apeal Systems (5.0/14) &middot; 3. ASG Concrete Solutions llc (5.0/10)</td>
-      </tr><tr>
-        <td class="q">Concrete Slab</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. Atlanta Concrete (5.0/12) &middot; 2. ASG Concrete Solutions llc (5.0/10) &middot; 3. Curb Apeal Systems (5.0/14)</td>
-      </tr><tr>
-        <td class="q">Stamped Concrete</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. North Georgia Decorative Concrete (5.0/7) &middot; 2. Randy Henson Concrete, Inc. (5.0/8) &middot; 3. Southern Edge Concrete (5.0/12)</td>
-      </tr><tr>
-        <td class="q">Concrete Sidewalk</td>
-        <td class="none pos">No pack shown</td>
-        <td class="lead"></td>
-      </tr><tr>
-        <td class="q">Foundation Repair</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. 58 Foundations &amp; Waterproofing        My Ad Center (4.8/470) &middot; 2. Roggio Foundation Repair (5.0/6) &middot; 3. Georgia Foundation Solutions (5.0/63)</td>
-      </tr><tr>
-        <td class="q">Foundation Contractor</td>
-        <td class="pos23 pos">Ranked #2</td>
-        <td class="lead">Chubb Concrete (you)</td>
-      </tr><tr>
-        <td class="q">Grading And Drainage</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. Ruff's Grading (4.8/4) &middot; 2. Summit Grading Services (4.6/11) &middot; 3. Johnny's Grading &amp; Hauling (5.0/7)</td>
-      </tr></tbody></table></div></details><details class="market">
-      <summary><span class="mname">Lindale</span><span class="mmeta">12.6 mi &middot; pop 4,088</span>
-      <span class="mscore mid">1/10 in the pack</span></summary>
-      <div class="tblwrap"><table class="detail">
-        <thead><tr><th>Search</th><th>Result</th><th>Who is in it</th></tr></thead>
-        <tbody><tr>
-        <td class="q">Concrete Contractor</td>
-        <td class="pos23 pos">Ranked #3</td>
-        <td class="lead">Chubb Concrete (you)</td>
-      </tr><tr>
-        <td class="q">Concrete Company</td>
-        <td class="none pos">No pack shown</td>
-        <td class="lead"></td>
-      </tr><tr>
-        <td class="q">Concrete Driveway</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. GreenWay Concrete Finishing, LLC. (5.0/138) &middot; 2. Sizemore Concrete Designs, LLC (5.0/11) &middot; 3. Viking Concrete Contractors (5.0/2)</td>
-      </tr><tr>
-        <td class="q">Concrete Patio</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. GreenWay Concrete Finishing, LLC. (5.0/138) &middot; 2. Viking Concrete Contractors (5.0/2) &middot; 3. North Georgia Decorative Concrete (5.0/7)</td>
-      </tr><tr>
-        <td class="q">Concrete Slab</td>
-        <td class="none pos">No pack shown</td>
-        <td class="lead"></td>
-      </tr><tr>
-        <td class="q">Stamped Concrete</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. Noels concrete LLC (5.0/14) &middot; 2. North Georgia Decorative Concrete (5.0/7) &middot; 3. Sizemore Concrete Designs, LLC (5.0/11)</td>
-      </tr><tr>
-        <td class="q">Concrete Sidewalk</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. GreenWay Concrete Finishing, LLC. (5.0/138) &middot; 2. Sizemore Concrete Designs, LLC (5.0/11) &middot; 3. Noels concrete LLC (5.0/14)</td>
-      </tr><tr>
-        <td class="q">Foundation Repair</td>
-        <td class="none pos">No pack shown</td>
-        <td class="lead"></td>
-      </tr><tr>
-        <td class="q">Foundation Contractor</td>
-        <td class="none pos">No pack shown</td>
-        <td class="lead"></td>
-      </tr><tr>
-        <td class="q">Grading And Drainage</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. S&amp;T Grading (5.0/35) &middot; 2. Silver Creek Dirt Works LLC (5.0/7) &middot; 3. Post Brothers Earthworks LLC (5.0/83)</td>
-      </tr></tbody></table></div></details><details class="market">
-      <summary><span class="mname">Buchanan</span><span class="mmeta">14.8 mi &middot; pop 1,100</span>
-      <span class="mscore bad">0/10 in the pack</span></summary>
-      <div class="tblwrap"><table class="detail">
-        <thead><tr><th>Search</th><th>Result</th><th>Who is in it</th></tr></thead>
-        <tbody><tr>
-        <td class="q">Concrete Contractor</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. Randy Henson Concrete, Inc. (5.0/8) &middot; 2. West Georgia Contracting (4.7/31) &middot; 3. Pro One Concrete (5.0/13)</td>
-      </tr><tr>
-        <td class="q">Concrete Company</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. Atlanta Structural Concrete Company (3.9/10) &middot; 2. Randy Henson Concrete, Inc. (5.0/8) &middot; 3. West Georgia Contracting (4.7/31)</td>
-      </tr><tr>
-        <td class="q">Concrete Driveway</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. Randy Henson Concrete, Inc. (5.0/8) &middot; 2. West Georgia Contracting (4.7/31) &middot; 3. Pro One Concrete (5.0/13)</td>
-      </tr><tr>
-        <td class="q">Concrete Patio</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. Randy Henson Concrete, Inc. (5.0/8) &middot; 2. West Georgia Contracting (4.7/31) &middot; 3. 360 Grading and Concrete (5.0/9)</td>
-      </tr><tr>
-        <td class="q">Concrete Slab</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. Randy Henson Concrete, Inc. (5.0/8) &middot; 2. Pro One Concrete (5.0/13) &middot; 3. 360 Grading and Concrete (5.0/9)</td>
-      </tr><tr>
-        <td class="q">Stamped Concrete</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. West Georgia Contracting (4.7/31) &middot; 2. Randy Henson Concrete, Inc. (5.0/8) &middot; 3. Atlanta Structural Concrete Company (3.9/10)</td>
-      </tr><tr>
-        <td class="q">Concrete Sidewalk</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. Randy Henson Concrete, Inc. (5.0/8) &middot; 2. West Georgia Contracting (4.7/31) &middot; 3. Hernandez Legacy Concrete LLC (5.0/1)</td>
-      </tr><tr>
-        <td class="q">Foundation Repair</td>
-        <td class="none pos">No pack shown</td>
-        <td class="lead"></td>
-      </tr><tr>
-        <td class="q">Foundation Contractor</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. West Georgia Contracting (4.7/31) &middot; 2. Randy Henson Concrete, Inc. (5.0/8) &middot; 3. 360 Grading and Concrete (5.0/9)</td>
-      </tr><tr>
-        <td class="q">Grading And Drainage</td>
-        <td class="none pos">No pack shown</td>
-        <td class="lead"></td>
-      </tr></tbody></table></div></details><details class="market">
-      <summary><span class="mname">Rome</span><span class="mmeta">17.6 mi &middot; pop 37,713</span>
-      <span class="mscore bad">0/10 in the pack</span></summary>
-      <div class="tblwrap"><table class="detail">
-        <thead><tr><th>Search</th><th>Result</th><th>Who is in it</th></tr></thead>
-        <tbody><tr>
-        <td class="q">Concrete Contractor</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. GreenWay Concrete Finishing, LLC. (5.0/138) &middot; 2. Viking Concrete Contractors (5.0/2) &middot; 3. Sizemore Concrete Designs, LLC (5.0/11)</td>
-      </tr><tr>
-        <td class="q">Concrete Company</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. Cornerstone Concrete Development L.L.C. (4.1/7) &middot; 2. GreenWay Concrete Finishing, LLC. (5.0/138) &middot; 3. Ready Mix USA Rome Concrete Plant (3.7/3)</td>
-      </tr><tr>
-        <td class="q">Concrete Driveway</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. GreenWay Concrete Finishing, LLC. (5.0/138) &middot; 2. Viking Concrete Contractors (5.0/2) &middot; 3. Peach State Paving, Striping &amp; Sealcoating - Rome (5.0/25)</td>
-      </tr><tr>
-        <td class="q">Concrete Patio</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. Viking Concrete Contractors (5.0/2) &middot; 2. GreenWay Concrete Finishing, LLC. (5.0/138) &middot; 3. Creted (5.0/5)</td>
-      </tr><tr>
-        <td class="q">Concrete Slab</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. GreenWay Concrete Finishing, LLC. (5.0/138) &middot; 2. Cornerstone Concrete Development L.L.C. (4.1/7) &middot; 3. Creted (5.0/5)</td>
-      </tr><tr>
-        <td class="q">Stamped Concrete</td>
-        <td class="none pos">No pack shown</td>
-        <td class="lead"></td>
-      </tr><tr>
-        <td class="q">Concrete Sidewalk</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. GreenWay Concrete Finishing, LLC. (5.0/138) &middot; 2. Sizemore Concrete Designs, LLC (5.0/11) &middot; 3. Viking Concrete Contractors (5.0/2)</td>
-      </tr><tr>
-        <td class="q">Foundation Repair</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. Georgia Foundation Solutions (5.0/63) &middot; 2. Roggio Foundation Repair (5.0/6) &middot; 3. Don Shurley Construction (4.0/28)</td>
-      </tr><tr>
-        <td class="q">Foundation Contractor</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. Georgia Foundation Solutions (5.0/63) &middot; 2. Roggio Foundation Repair (5.0/6) &middot; 3. GreenWay Concrete Finishing, LLC. (5.0/138)</td>
-      </tr><tr>
-        <td class="q">Grading And Drainage</td>
-        <td class="none pos">No pack shown</td>
-        <td class="lead"></td>
-      </tr></tbody></table></div></details><details class="market">
-      <summary><span class="mname">Bremen</span><span class="mmeta">21 mi &middot; pop 6,700</span>
-      <span class="mscore bad">0/10 in the pack</span></summary>
-      <div class="tblwrap"><table class="detail">
-        <thead><tr><th>Search</th><th>Result</th><th>Who is in it</th></tr></thead>
-        <tbody><tr>
-        <td class="q">Concrete Contractor</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. 360 Grading and Concrete (5.0/9) &middot; 2. Pro One Concrete (5.0/13) &middot; 3. Randy Henson Concrete, Inc. (5.0/8)</td>
-      </tr><tr>
-        <td class="q">Concrete Company</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. 360 Grading and Concrete (5.0/9) &middot; 2. Randy Henson Concrete, Inc. (5.0/8) &middot; 3. Wayne Davis Concrete (4.1/16)</td>
-      </tr><tr>
-        <td class="q">Concrete Driveway</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. 360 Grading and Concrete (5.0/9) &middot; 2. Pro One Concrete (5.0/13) &middot; 3. Randy Henson Concrete, Inc. (5.0/8)</td>
-      </tr><tr>
-        <td class="q">Concrete Patio</td>
-        <td class="none pos">No pack shown</td>
-        <td class="lead"></td>
-      </tr><tr>
-        <td class="q">Concrete Slab</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. 360 Grading and Concrete (5.0/9) &middot; 2. Randy Henson Concrete, Inc. (5.0/8) &middot; 3. Pro One Concrete (5.0/13)</td>
-      </tr><tr>
-        <td class="q">Stamped Concrete</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. Randy Henson Concrete, Inc. (5.0/8) &middot; 2. 360 Grading and Concrete (5.0/9) &middot; 3. Custom Concrete Inc. (4.9/105)</td>
-      </tr><tr>
-        <td class="q">Concrete Sidewalk</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. Randy Henson Concrete, Inc. (5.0/8) &middot; 2. Pro One Concrete (5.0/13) &middot; 3. Architectural Concrete Concepts (3.0/1)</td>
-      </tr><tr>
-        <td class="q">Foundation Repair</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. FoundationRX (4.2/5) &middot; 2. 360 Grading and Concrete (5.0/9) &middot; 3. Atlanta Foundation Crack Repair (5.0/1)</td>
-      </tr><tr>
-        <td class="q">Foundation Contractor</td>
-        <td class="none pos">No pack shown</td>
-        <td class="lead"></td>
-      </tr><tr>
-        <td class="q">Grading And Drainage</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. Elsberry Grading &amp; Landscaping, LLC (4.6/18) &middot; 2. Jim Davis Grading (5.0/2) &middot; 3. Keystone Grading and Site work (5.0/9)</td>
-      </tr></tbody></table></div></details><details class="market">
-      <summary><span class="mname">Dallas</span><span class="mmeta">24.2 mi &middot; pop 14,042</span>
-      <span class="mscore bad">0/10 in the pack</span></summary>
-      <div class="tblwrap"><table class="detail">
-        <thead><tr><th>Search</th><th>Result</th><th>Who is in it</th></tr></thead>
-        <tbody><tr>
-        <td class="q">Concrete Contractor</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. Medina Concrete LLC (4.8/23) &middot; 2. Pro One Concrete (5.0/13) &middot; 3. ASG Concrete Solutions llc (5.0/10)</td>
-      </tr><tr>
-        <td class="q">Concrete Company</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. ASG Concrete Solutions llc (5.0/10) &middot; 2. Ready Mix USA Dallas Concrete Plant (3.5/8) &middot; 3. Medina Concrete LLC (4.8/23)</td>
-      </tr><tr>
-        <td class="q">Concrete Driveway</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. Haynes Concrete (5.0/10) &middot; 2. Medina Concrete LLC (4.8/23) &middot; 3. ASG Concrete Solutions llc (5.0/10)</td>
-      </tr><tr>
-        <td class="q">Concrete Patio</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. Medina Concrete LLC (4.8/23) &middot; 2. Haynes Concrete (5.0/10) &middot; 3. ASG Concrete Solutions llc (5.0/10)</td>
-      </tr><tr>
-        <td class="q">Concrete Slab</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. Pro One Concrete (5.0/13) &middot; 2. Haynes Concrete (5.0/10) &middot; 3. Medina Concrete LLC (4.8/23)</td>
-      </tr><tr>
-        <td class="q">Stamped Concrete</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. Medina Concrete LLC (4.8/23) &middot; 2. ASG Concrete Solutions llc (5.0/10) &middot; 3. Haynes Concrete (5.0/10)</td>
-      </tr><tr>
-        <td class="q">Concrete Sidewalk</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. ASG Concrete Solutions llc (5.0/10) &middot; 2. Medina Concrete LLC (4.8/23) &middot; 3. Atlanta Concrete and Masonry, LLC (5.0/8)</td>
-      </tr><tr>
-        <td class="q">Foundation Repair</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. JSA Foundation Repair (5.0/88) &middot; 2. Structural Fix, LLC (5.0/100) &middot; 3. Bedingfield's Grading &amp; Excavation (5.0/1)</td>
-      </tr><tr>
-        <td class="q">Foundation Contractor</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. Penney Brothers Construction (5.0/244) &middot; 2. JSA Foundation Repair (5.0/88) &middot; 3. Walker Construction (4.4/42)</td>
-      </tr><tr>
-        <td class="q">Grading And Drainage</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. Landscape Drainage Solutions (5.0/1) &middot; 2. Do it all grading LLC (5.0/34) &middot; 3. American Hardscapes &amp; Grading LLC (4.9/32)</td>
-      </tr></tbody></table></div></details><details class="market">
-      <summary><span class="mname">Cartersville</span><span class="mmeta">28.5 mi &middot; pop 23,187</span>
-      <span class="mscore bad">0/10 in the pack</span></summary>
-      <div class="tblwrap"><table class="detail">
-        <thead><tr><th>Search</th><th>Result</th><th>Who is in it</th></tr></thead>
-        <tbody><tr>
-        <td class="q">Concrete Contractor</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. JH concrete GA (5.0/3) &middot; 2. Straightedge Contracting (5.0/60) &middot; 3. Reyes Concrete Inc (5.0/19)</td>
-      </tr><tr>
-        <td class="q">Concrete Company</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. JH concrete GA (5.0/3) &middot; 2. Ely Concrete Construction, LLC (4.8/10) &middot; 3. Straightedge Contracting (5.0/60)</td>
-      </tr><tr>
-        <td class="q">Concrete Driveway</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. Reyes Concrete Inc (5.0/19) &middot; 2. Haynes Concrete (5.0/10) &middot; 3. Stonewolf Concrete Services (5.0/7)</td>
-      </tr><tr>
-        <td class="q">Concrete Patio</td>
-        <td class="none pos">No pack shown</td>
-        <td class="lead"></td>
-      </tr><tr>
-        <td class="q">Concrete Slab</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. JH concrete GA (5.0/3) &middot; 2. Advanced Concrete Coatings LLC (5.0/10) &middot; 3. Reyes Concrete Inc (5.0/19)</td>
-      </tr><tr>
-        <td class="q">Stamped Concrete</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. Haynes Concrete (5.0/10) &middot; 2. Stonewolf Concrete Services (5.0/7) &middot; 3. Advanced Concrete Coatings LLC (5.0/10)</td>
-      </tr><tr>
-        <td class="q">Concrete Sidewalk</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. JH concrete GA (5.0/3) &middot; 2. Reyes Concrete Inc (5.0/19) &middot; 3. Stonewolf Concrete Services (5.0/7)</td>
-      </tr><tr>
-        <td class="q">Foundation Repair</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. H2O Proof and Foundation Repair (4.8/47) &middot; 2. JSA Foundation Repair (5.0/88) &middot; 3. Georgia Foundation Solutions (5.0/63)</td>
-      </tr><tr>
-        <td class="q">Foundation Contractor</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. Foundation Fence Solutions (5.0/13) &middot; 2. Straightedge Contracting (5.0/60) &middot; 3. JSA Foundation Repair (5.0/88)</td>
-      </tr><tr>
-        <td class="q">Grading And Drainage</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. Graham &amp; Turner Grading (5.0/5) &middot; 2. Under Grace Transport and Grading (4.9/35) &middot; 3. Cornerstone Demolition &amp; Grading, Inc (5.0/31)</td>
-      </tr></tbody></table></div></details><details class="market">
-      <summary><span class="mname">Calhoun</span><span class="mmeta">39 mi &middot; pop 16,949</span>
-      <span class="mscore bad">0/10 in the pack</span></summary>
-      <div class="tblwrap"><table class="detail">
-        <thead><tr><th>Search</th><th>Result</th><th>Who is in it</th></tr></thead>
-        <tbody><tr>
-        <td class="q">Concrete Contractor</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. Concrete Comfort &amp; Construction (5.0/27) &middot; 2. Wayne Davis Concrete Co (4.2/5) &middot; 3. Basic Ready Mix (3.5/11)</td>
-      </tr><tr>
-        <td class="q">Concrete Company</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. Wayne Davis Concrete Co (4.2/5) &middot; 2. Basic Ready Mix (3.5/11) &middot; 3. Concrete Comfort &amp; Construction (5.0/27)</td>
-      </tr><tr>
-        <td class="q">Concrete Driveway</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. Concrete Comfort &amp; Construction (5.0/27) &middot; 2. Northwest Georgia Paving, Inc (3.7/43) &middot; 3. GreenWay Concrete Finishing, LLC. (5.0/138)</td>
-      </tr><tr>
-        <td class="q">Concrete Patio</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. Concrete Comfort &amp; Construction (5.0/27) &middot; 2. Lozano's Concrete &amp; Repair LLC (4.9/64) &middot; 3. Opus Renovations (5.0/58)</td>
-      </tr><tr>
-        <td class="q">Concrete Slab</td>
-        <td class="none pos">No pack shown</td>
-        <td class="lead"></td>
-      </tr><tr>
-        <td class="q">Stamped Concrete</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. Concrete Comfort &amp; Construction (5.0/27) &middot; 2. North Georgia Decorative Concrete (5.0/7) &middot; 3. Concrete Aesthetics, LLC (4.9/25)</td>
-      </tr><tr>
-        <td class="q">Concrete Sidewalk</td>
-        <td class="none pos">No pack shown</td>
-        <td class="lead"></td>
-      </tr><tr>
-        <td class="q">Foundation Repair</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. Georgia Foundation Solutions (5.0/63) &middot; 2. Concrete Comfort &amp; Construction (5.0/27) &middot; 3. G Gordon construction llc (5.0/4)</td>
-      </tr><tr>
-        <td class="q">Foundation Contractor</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. Concrete Comfort &amp; Construction (5.0/27) &middot; 2. Georgia Foundation Solutions (5.0/63) &middot; 3. G Gordon construction llc (5.0/4)</td>
-      </tr><tr>
-        <td class="q">Grading And Drainage</td>
-        <td class="miss pos">Pack shown, not you</td>
-        <td class="lead">1. Spartan Enterprise (4.8/37) &middot; 2. North west Georgia Grading INC (3.7/3) &middot; 3. Integrated Sitework, Llc (3.7/3)</td>
-      </tr></tbody></table></div></details></div>
-</div></section>
-
-<!-- 11. Next steps -->
-<section><div class="wrap">
-  <div class="narrow"><h2>Where this points next</h2>
-  <p class="lede">Four areas this measurement points to, in order of altitude, not detail.</p></div>
-  <div class="act">
-    <div class="step"><div class="num">1</div><div>
-      <h3>Decide which towns are worth pursuing</h3>
-      <p>11 towns were measured here, and they do not carry equal opportunity. A short list
-      of which of them actually matter to the business narrows where any future attention belongs.</p></div></div>
-    <div class="step"><div class="num">2</div><div>
-      <h3>Look at what a new visitor meets first</h3>
-      <p>Before a visitor reaches anything about concrete work, they can meet a security warning or a
-      parked domain instead. What happens in those first seconds is worth its own review.</p></div></div>
-    <div class="step"><div class="num">3</div><div>
-      <h3>Look at consistency: the town pages and the two profiles</h3>
-      <p>Eight nearly identical town pages and two separate, inconsistent Google profiles are both
-      findings on their own; how much each one matters is worth working out.</p></div></div>
-    <div class="step"><div class="num">4</div><div>
-      <h3>Re-run this exact measurement on a schedule</h3>
-      <p>This report is a single snapshot taken on September 23, 2026. Repeating the same 110
-      searches on a regular schedule is what shows which towns and services move, and by how much.</p></div></div>
-  </div>
-</div></section>
-
-<!-- 12. Method footer -->
+<!-- 8. Method footer -->
 <footer><div class="wrap">
-  <p><strong>How this was measured.</strong> 110 individual Google searches run on
-  September 23, 2026, pairing every one of 10 services with every one of 11
-  towns, reading Google's local pack directly with coordinate targeting centered on each town, through
-  DataForSEO. Checked against four of the same searches by hand in a browser the same day: two
-  reproduced exactly, Cedartown "concrete contractor" and "concrete driveway," both at #1. Local
-  rankings move by a position or so from one day to the next: the pattern across 110
-  searches is the signal, not any single cell.</p>
+  <p><strong>How this was measured.</strong> 110 Google searches run on September 23, 2026, pairing every one of 10 services with every one of 11 towns, reading Google's local pack with coordinate targeting through DataForSEO. Checked by hand against four of the same searches the same day: two reproduced exactly. AI presence checked across the same services in Cedartown and Rome, 20 more searches, the same day. Rankings move day to day: the pattern across 110 searches is the signal, not any single cell.</p>
 </div></footer>
 
 </body>
