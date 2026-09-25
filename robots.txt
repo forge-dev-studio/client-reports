@@ -8,4 +8,4 @@ Disallow: /ramirez-ads-strategy-2026-09/
 Disallow: /pinturas-ads-plan-2026-09/
 Disallow: /chubb-concrete/
 Disallow: /georgia-seo-company/
-Disallow: /handcraft-massage/
+Disallow: /prospects/
