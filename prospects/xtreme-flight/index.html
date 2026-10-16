@@ -83,6 +83,9 @@ table.kw tr.tot td{background:#f3f4f6;font-weight:700;color:var(--navy)}
 .p-list{background:#fef3c7;color:#92400e}
 .p-long{background:#e5e7eb;color:#374151}
 td.target small{display:block;color:var(--muted);font-size:13px}
+h3.sub-sm{font-size:16px;margin-top:26px}
+table.lc td.cost-cell{font-weight:600;color:var(--ink)}
+@media (min-width:761px){table.lc td.term,table.lc td.cost-cell{width:30%}}
 .legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13.5px;color:var(--muted);margin:0 0 12px}
 .legend span.pill{margin-right:6px}
 
@@ -189,8 +192,38 @@ footer a{color:var(--navy);font-weight:600;text-decoration:none}
       <div class="cmp">
         <div class="cmp-head"><div></div><div>Today</div><div>What we'd do</div></div>
         <div class="cmp-row"><div class="topic">"Things to do" and day-trip sites</div><div class="today"><span class="lbl">Today</span>You don't show up on the "things to do" and day-trip searches we checked.</div><div class="fix"><span class="lbl">What we'd do</span>Listed on the tourism and "things to do" sites that rank for them, starting with the free ones.</div></div>
-        <div class="cmp-row"><div class="topic">Experience gift sites</div><div class="today"><span class="lbl">Today</span>Not listed. We found no aerobatic flight on them anywhere in Tennessee, Mississippi, Arkansas or Alabama.</div><div class="fix"><span class="lbl">What we'd do</span>Listed. Any listing with a fee is your call, and we'd bring you the price first.</div></div>
+        <div class="cmp-row"><div class="topic">Experience gift sites</div><div class="today"><span class="lbl">Today</span>Not listed. We found no aerobatic flight on them anywhere in Tennessee, Mississippi, Arkansas or Alabama.</div><div class="fix"><span class="lbl">What we'd do</span>Listed. Any listing with a fee or commission is your call. Prices are below.</div></div>
       </div>
+
+      <h3 class="sub sub-sm">What each listing costs</h3>
+      <table class="kw lc">
+        <thead><tr><th>Listing</th><th>Cost</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr class="grp"><td colspan="3">Tourism and "things to do" sites</td></tr>
+          <tr><td class="term">TripAdvisor</td><td class="cost-cell" data-label="Cost">Free</td><td class="today" data-label="Notes">Basic attraction listing. Bookings on TripAdvisor run through Viator.</td></tr>
+          <tr><td class="term">Tennessee's tourism site (TNVacation.com)</td><td class="cost-cell" data-label="Cost">No fee posted</td><td class="today" data-label="Notes">Listing in the state's trip planner. It asks for regular posted hours. We'd confirm the cost with the state.</td></tr>
+          <tr><td class="term">Tennessee Welcome Center brochure racks</td><td class="cost-cell" data-label="Cost">Free</td><td class="today" data-label="Notes">16 state welcome centers, including the I-40 center in Memphis.</td></tr>
+          <tr><td class="term">Hardeman County Chamber of Commerce</td><td class="cost-cell" data-label="Cost">$175 a year, or $275 a year with a website link</td><td class="today" data-label="Notes">Small-business rates. The $175 level is the lowest that includes a business listing.</td></tr>
+          <tr><td class="term">Memphis Tourism (memphistravel.com)</td><td class="cost-cell" data-label="Cost">Membership dues not published. Enhanced listing $750 a year; ad packages from $1,769</td><td class="today" data-label="Notes">Its site ranks for Memphis "things to do" searches. We'd ask about dues and whether a Hardeman County business can join. Listed prices are its 2024-25 rates.</td></tr>
+          <tr><td class="term">Visit Jackson TN</td><td class="cost-cell" data-label="Cost">Not published</td><td class="today" data-label="Notes">We'd ask.</td></tr>
+          <tr><td class="term">Visit Oxford MS</td><td class="cost-cell" data-label="Cost">No listing fee posted; ads $100 to $200 a month</td><td class="today" data-label="Notes">No stated path for businesses outside Oxford.</td></tr>
+          <tr><td class="term">Visit Mississippi, Tupelo and DeSoto County tourism</td><td class="cost-cell" data-label="Cost">Not open to you</td><td class="today" data-label="Notes">They list businesses in their own state, city or county.</td></tr>
+          <tr class="grp"><td colspan="3">Booking sites</td></tr>
+          <tr><td class="term">Viator</td><td class="cost-cell" data-label="Cost">$29 one time per flight package; commission not published</td><td class="today" data-label="Notes">You're already on it at $499. Other operators report about 20%.</td></tr>
+          <tr><td class="term">Airbnb Experiences</td><td class="cost-cell" data-label="Cost">20% service fee</td><td class="today" data-label="Notes">You appear to be listed already.</td></tr>
+          <tr><td class="term">GetYourGuide</td><td class="cost-cell" data-label="Cost">Free to list; 20% to 30% commission</td><td class="today" data-label="Notes">The rate depends on the country, and the US rate isn't published.</td></tr>
+          <tr><td class="term">Google Things to do</td><td class="cost-cell" data-label="Cost">Free</td><td class="today" data-label="Notes">Needs an online booking system connected to Google, such as FareHarbor. That system has its own fees.</td></tr>
+          <tr><td class="term">Yelp</td><td class="cost-cell" data-label="Cost">Free page; upgrade $180 a month; ads from $150 a month</td><td class="today" data-label="Notes">The free page is all you need for a listing.</td></tr>
+          <tr class="grp"><td colspan="3">Experience gift sites</td></tr>
+          <tr><td class="term">Xperience Days</td><td class="cost-cell" data-label="Cost">No listing or monthly fees</td><td class="today" data-label="Notes">They pay you after the flight.</td></tr>
+          <tr><td class="term">Virgin Experience Gifts (same company as Cloud 9 Living)</td><td class="cost-cell" data-label="Cost">Commission not published</td><td class="today" data-label="Notes">Apply through their partner form.</td></tr>
+          <tr><td class="term">Adrenaline365</td><td class="cost-cell" data-label="Cost">Commission not published</td><td class="today" data-label="Notes">Weekly payouts. Their Memphis page has nothing on it yet.</td></tr>
+          <tr><td class="term">Giftory</td><td class="cost-cell" data-label="Cost">Not published</td><td class="today" data-label="Notes">Refunds the buyer the difference if the same flight is cheaper elsewhere.</td></tr>
+          <tr><td class="term">Tinggly</td><td class="cost-cell" data-label="Cost">Not published</td><td class="today" data-label="Notes">Apply through their provider form.</td></tr>
+          <tr><td class="term">Great American Days</td><td class="cost-cell" data-label="Cost">Commission only; rate not published</td><td class="today" data-label="Notes">Apply by email.</td></tr>
+        </tbody>
+      </table>
+      <p class="fine">Prices are what each site publishes, checked October 16, 2026. Viator and several gift sites ask you to match your lowest price elsewhere, one more reason for one price everywhere.</p>
     </section>
 
     <section>
