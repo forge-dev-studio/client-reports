@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Xtreme Flight | Website and Search Proposal</title>
-<meta name="description" content="A proposal for Xtreme Flight from Georgia SEO Company: one website, a fully set up Google profile and listings where people plan trips and buy gifts.">
+<meta name="description" content="A proposal for Xtreme Flight from Georgia SEO Company: where the website and Google profile stand today, the searches we'd target and what it costs.">
 <meta name="theme-color" content="#15192b">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2315192b'/%3E%3Ctext x='16' y='22' font-family='Arial,sans-serif' font-size='14' font-weight='700' fill='%23a3e635' text-anchor='middle'%3EXF%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,7 @@
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 a{color:var(--navy-2)}
-.wrap{max-width:920px;margin:0 auto;padding:0 16px}
+.wrap{max-width:980px;margin:0 auto;padding:0 16px}
 header.top{background:var(--card);border-bottom:1px solid var(--line)}
 header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:18px;padding-bottom:18px}
 header.top img{height:56px;width:auto;display:block}
@@ -30,17 +30,21 @@ header.top img{height:56px;width:auto;display:block}
 .hero h1 span{color:var(--lime)}
 .hero p{margin:0;color:#cbd5e1;font-size:16px}
 main .wrap{padding-top:36px;padding-bottom:48px}
-section{margin:0 0 36px}
+section{margin:0 0 40px}
 h2{font-size:22px;line-height:1.3;margin:0 0 14px;color:var(--navy);font-weight:800;display:flex;align-items:center;gap:10px}
 h2::before{content:"";width:6px;height:22px;border-radius:3px;background:var(--lime);flex:none}
+h3.sub{font-size:18px;color:var(--navy);margin:34px 0 8px;font-weight:800}
 p{margin:0 0 14px}
-.cmp{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-top:18px}
+.note{font-size:14px;color:var(--muted);margin:0 0 12px}
+
+/* today vs fix comparison */
+.cmp{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-top:12px}
 .cmp-head,.cmp-row{display:grid;grid-template-columns:23% 1fr 1fr}
 .cmp-head{background:var(--navy);color:#fff;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
 .cmp-head div{padding:12px 16px}
 .cmp-head div:last-child{color:var(--lime)}
-.cmp-group{margin:0;padding:10px 16px;background:var(--lime-soft);color:var(--lime-ink);font-size:13px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;border-top:1px solid var(--line)}
 .cmp-row{border-top:1px solid var(--line)}
+.cmp-head + .cmp-row{border-top:0}
 .cmp-row>div{padding:14px 16px;font-size:15px;line-height:1.5}
 .cmp-row .topic{font-weight:700;color:var(--navy)}
 .cmp-row .today,.cmp-row .fix{position:relative;padding-left:42px}
@@ -50,16 +54,37 @@ p{margin:0 0 14px}
 .cmp-row .today::before{background:#fde8e6 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M5 5l6 6M11 5l-6 6' stroke='%23b03a2e' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") center/16px no-repeat}
 .cmp-row .fix::before{background:var(--lime) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4.3 8.4l2.4 2.4 5-5.6' fill='none' stroke='%2315192b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/16px no-repeat}
 .lbl{display:none}
+
+/* keyword tables */
+table.kw{width:100%;border-collapse:separate;border-spacing:0;background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;font-size:14.5px;line-height:1.45}
+table.kw th{background:var(--navy);color:#fff;text-align:left;font-size:12px;letter-spacing:.06em;text-transform:uppercase;padding:11px 12px;font-weight:700;vertical-align:bottom}
+table.kw td{padding:11px 12px;border-top:1px solid var(--line);vertical-align:top}
+table.kw .num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+table.kw td.term{font-weight:700;color:var(--navy)}
+table.kw td.today{color:var(--muted)}
+table.kw tr.grp td{background:var(--lime-soft);color:var(--lime-ink);font-weight:800;font-size:12px;letter-spacing:.06em;text-transform:uppercase;padding:9px 12px}
+table.kw tr.tot td{background:#f3f4f6;font-weight:700;color:var(--navy)}
+.pill{display:inline-block;padding:3px 9px;border-radius:999px;font-size:12px;font-weight:700;white-space:nowrap;margin:0 4px 4px 0}
+.p-hold{background:var(--lime);color:var(--navy)}
+.p-top{background:#d9f99d;color:#365314}
+.p-p1{background:#dbeafe;color:#1e3a8a}
+.p-list{background:#fef3c7;color:#92400e}
+.p-long{background:#e5e7eb;color:#374151}
+td.target small{display:block;color:var(--muted);font-size:13px}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13.5px;color:var(--muted);margin:0 0 12px}
+.legend span.pill{margin-right:6px}
+
 .cost{background:var(--navy);color:#fff;border-radius:18px;padding:26px 24px;display:grid;gap:14px}
 .cost .row{display:flex;gap:14px;align-items:baseline;border-bottom:1px solid rgba(255,255,255,.12);padding-bottom:14px}
 .cost .row:last-child{border-bottom:0;padding-bottom:0}
 .cost .big{flex:none;min-width:200px;font-size:26px;font-weight:800;color:var(--lime);line-height:1.2}
 .cost .txt{color:#e2e8f0}
-.fine{font-size:14px;color:var(--muted);margin-top:4px}
+.fine{font-size:14px;color:var(--muted);margin:4px 0 6px}
 footer{border-top:1px solid var(--line);background:var(--card)}
 footer .wrap{padding-top:18px;padding-bottom:22px;font-size:14px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 14px}
 footer a{color:var(--navy);font-weight:600;text-decoration:none}
-@media (max-width:680px){
+
+@media (max-width:760px){
   .cmp-head{display:none}
   .cmp-row{grid-template-columns:1fr}
   .cmp-row .topic{padding-bottom:2px}
@@ -69,6 +94,17 @@ footer a{color:var(--navy);font-weight:600;text-decoration:none}
   .lbl{display:block;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:2px}
   .today .lbl{color:#9a3412}
   .fix .lbl{color:var(--lime-ink)}
+  table.kw thead{display:none}
+  table.kw,table.kw tbody,table.kw tr,table.kw td{display:block;width:100%}
+  table.kw tr{border-top:1px solid var(--line);padding:10px 14px}
+  table.kw tbody tr:first-child{border-top:0}
+  table.kw td{border:0;padding:2px 0;text-align:left!important;white-space:normal}
+  table.kw td[data-label]::before{content:attr(data-label) ": ";font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+  table.kw td.term{font-size:16px;padding-bottom:4px}
+  table.kw tr.grp{padding:8px 14px;background:var(--lime-soft)}
+  table.kw tr.grp td{padding:0}
+  table.kw tr.tot{background:#f3f4f6}
+  table.kw tr.tot td{background:none}
 }
 @media (max-width:560px){
   body{font-size:16px}
@@ -101,10 +137,9 @@ footer a{color:var(--navy);font-weight:600;text-decoration:none}
       <h2>Where your site stands, and what we'd fix</h2>
       <p>Almost nobody searches "aerobatic flight": about 10 a month within a 3-hour drive of Whiteville, and you already show up when they do. The searches with real volume are people looking for something to do, a day trip or a gift. Here's your setup today next to what we'd do.</p>
 
+      <h3 class="sub">Your website</h3>
       <div class="cmp">
         <div class="cmp-head"><div></div><div>Today</div><div>What we'd do</div></div>
-
-        <h3 class="cmp-group">Your website</h3>
         <div class="cmp-row"><div class="topic">Number of sites</div><div class="today"><span class="lbl">Today</span>Two near-copies, xtreme-flight.com and xtremeflight.aero, each telling Google it's the original.</div><div class="fix"><span class="lbl">What we'd do</span>One site. The other address forwards to it.</div></div>
         <div class="cmp-row"><div class="topic">Where Google sends people</div><div class="today"><span class="lbl">Today</span>Your Google profile links to xtreme-flight.com, the copy with no search setup.</div><div class="fix"><span class="lbl">What we'd do</span>Your profile links to the one site, fully set up.</div></div>
         <div class="cmp-row"><div class="topic">How you look in Google</div><div class="today"><span class="lbl">Today</span>Page titles just say "Xtreme Flight" or "Packages | Xtreme Flight," with no description under them.</div><div class="fix"><span class="lbl">What we'd do</span>Every title says what you sell and where, with a description written for each page.</div></div>
@@ -116,12 +151,91 @@ footer a{color:var(--navy);font-weight:600;text-decoration:none}
         <div class="cmp-row"><div class="topic">Price</div><div class="today"><span class="lbl">Today</span>$600 on xtreme-flight.com, $499 on xtremeflight.aero and Viator.</div><div class="fix"><span class="lbl">What we'd do</span>One price everywhere.</div></div>
         <div class="cmp-row"><div class="topic">Map button</div><div class="today"><span class="lbl">Today</span>Searches for the airfield's address.</div><div class="fix"><span class="lbl">What we'd do</span>Opens your Google profile and its 5-star reviews.</div></div>
         <div class="cmp-row"><div class="topic">Leftovers</div><div class="today"><span class="lbl">Today</span>A WordPress "Sample Page" is live on both sites.</div><div class="fix"><span class="lbl">What we'd do</span>Removed.</div></div>
+      </div>
 
-        <h3 class="cmp-group">Your Google profile</h3>
-        <div class="cmp-row"><div class="topic">Categories</div><div class="today"><span class="lbl">Today</span>Listed only as a flight school.</div><div class="fix"><span class="lbl">What we'd do</span>Also a tourist attraction and adventure sports center, so you can show up when people nearby look for things to do. Plus a full description, services, a booking link and posts timed to Veterans Day, Christmas and Father's Day.</div></div>
+      <h3 class="sub">Search terms your sites target today</h3>
+      <p class="note">Monthly Google searches within a 3-hour drive of Whiteville, and nationwide. Google rounds small numbers: 10 means anywhere from 0 to about 15, and "too few" means Google has no number for it.</p>
+      <table class="kw">
+        <thead><tr><th>Search term</th><th>Where it's targeted</th><th class="num">3-hour drive</th><th class="num">Nationwide</th></tr></thead>
+        <tbody>
+          <tr><td class="term">aerobatic flight</td><td data-label="Targeted">Both homepages</td><td class="num" data-label="3-hour drive">10</td><td class="num" data-label="Nationwide">390</td></tr>
+          <tr><td class="term">aerobatic flight experience (near me)</td><td data-label="Targeted">xtremeflight.aero homepage title</td><td class="num" data-label="3-hour drive">10</td><td class="num" data-label="Nationwide">70</td></tr>
+          <tr><td class="term">airshow pilot</td><td data-label="Targeted">xtreme-flight.com homepage headline</td><td class="num" data-label="3-hour drive">10</td><td class="num" data-label="Nationwide">30</td></tr>
+          <tr><td class="term">aerobatic flights for kids</td><td data-label="Targeted">Kids page, both sites</td><td class="num" data-label="3-hour drive">too few</td><td class="num" data-label="Nationwide">too few</td></tr>
+          <tr><td class="term">aerobatic flight prices / cost</td><td data-label="Targeted">xtremeflight.aero Packages page</td><td class="num" data-label="3-hour drive">too few</td><td class="num" data-label="Nationwide">too few</td></tr>
+          <tr><td class="term">aerobatic flight gift certificates / gift ideas</td><td data-label="Targeted">xtremeflight.aero gift page and post</td><td class="num" data-label="3-hour drive">too few</td><td class="num" data-label="Nationwide">too few</td></tr>
+          <tr><td class="term">first aerobatic plane ride, is it safe, what is it</td><td data-label="Targeted">xtremeflight.aero blog posts</td><td class="num" data-label="3-hour drive">too few</td><td class="num" data-label="Nationwide">too few</td></tr>
+          <tr class="tot"><td class="term">Total</td><td></td><td class="num" data-label="3-hour drive">under 60</td><td class="num" data-label="Nationwide">about 500</td></tr>
+        </tbody>
+      </table>
+      <p class="note" style="margin-top:12px">Where you stand on these today: searching from Memphis, your Google profile is #1 on the map for "aerobatic flight near me," with xtremeflight.aero #4 in the results below it. For plain "aerobatic flight," neither site is in the top 10.</p>
 
-        <h3 class="cmp-group">Getting found</h3>
-        <div class="cmp-row"><div class="topic">Searches your pages aim at</div><div class="today"><span class="lbl">Today</span>About 10 a month or fewer each, within a 3-hour drive.</div><div class="fix"><span class="lbl">What we'd do</span>More than 1,600 a month your own pages can compete for.</div></div>
+      <h3 class="sub">Search terms we'd target</h3>
+      <div class="legend">
+        <div><span class="pill p-hold">Hold #1</span>already first on Google's map</div>
+        <div><span class="pill p-top">Top 3</span>top 3 on the map</div>
+        <div><span class="pill p-p1">Page 1</span>Google's first 10 results</div>
+        <div><span class="pill p-list">Get listed</span>Google shows lists here; we get you on them</div>
+        <div><span class="pill p-long">Long shot</span>big sites own it; we'd still cover it</div>
+      </div>
+      <table class="kw">
+        <thead><tr><th>Search term</th><th>Page</th><th class="num">3-hour drive</th><th class="num">Nationwide</th><th>Today</th><th>Target</th></tr></thead>
+        <tbody>
+          <tr class="grp"><td colspan="6">Realistic: page 1 or better</td></tr>
+          <tr><td class="term">airplane rides</td><td data-label="Page">Home</td><td class="num" data-label="3-hour drive">50</td><td class="num" data-label="Nationwide">2,900</td><td class="today" data-label="Today">Not in the top results</td><td class="target" data-label="Target"><span class="pill p-p1">Page 1</span><small>TripAdvisor, gift sites and the Commemorative Air Force hold it today</small></td></tr>
+          <tr><td class="term">airplane rides near me</td><td data-label="Page">Home + Google profile</td><td class="num" data-label="3-hour drive">30</td><td class="num" data-label="Nationwide">1,900</td><td class="today" data-label="Today">Site not in the top results</td><td class="target" data-label="Target"><span class="pill p-top">Top 3</span><span class="pill p-p1">Page 1</span><small>On the map within about an hour of Whiteville</small></td></tr>
+          <tr><td class="term">fighter jet ride</td><td data-label="Page">Fighter jet page</td><td class="num" data-label="3-hour drive">20</td><td class="num" data-label="Nationwide">1,000</td><td class="today" data-label="Today">Not shown</td><td class="target" data-label="Target"><span class="pill p-p1">Page 1 (6 to 10)</span><small>National jet-ride companies hold the top spots</small></td></tr>
+          <tr><td class="term">fly a fighter jet</td><td data-label="Page">Fighter jet page</td><td class="num" data-label="3-hour drive">10</td><td class="num" data-label="Nationwide">720</td><td class="today" data-label="Today">Not shown</td><td class="target" data-label="Target"><span class="pill p-p1">Page 1 (6 to 10)</span></td></tr>
+          <tr><td class="term">aerobatic flight</td><td data-label="Page">Home</td><td class="num" data-label="3-hour drive">10</td><td class="num" data-label="Nationwide">390</td><td class="today" data-label="Today">Site not in the top 10</td><td class="target" data-label="Target"><span class="pill p-p1">Page 1 (5 to 10)</span><small>The FAA, Wikipedia and Sky Combat Ace hold the top spots</small></td></tr>
+          <tr><td class="term">stunt plane ride</td><td data-label="Page">Home</td><td class="num" data-label="3-hour drive">10</td><td class="num" data-label="Nationwide">40</td><td class="today" data-label="Today">Your profile #1 on the map in Memphis</td><td class="target" data-label="Target"><span class="pill p-hold">Hold #1</span><span class="pill p-p1">Page 1</span></td></tr>
+          <tr class="tot"><td class="term">Realistic subtotal</td><td></td><td class="num" data-label="3-hour drive">about 100*</td><td class="num" data-label="Nationwide">6,950</td><td></td><td></td></tr>
+          <tr class="grp"><td colspan="6">Longer shots</td></tr>
+          <tr><td class="term">airshow</td><td data-label="Page">Air show page</td><td class="num" data-label="3-hour drive">260</td><td class="num" data-label="Nationwide">22,200</td><td class="today" data-label="Today">Not shown</td><td class="target" data-label="Target"><span class="pill p-long">Long shot</span><small>Only if you fly shows</small></td></tr>
+          <tr><td class="term">things to do near memphis</td><td data-label="Page">Worth-the-drive page</td><td class="num" data-label="3-hour drive">260</td><td class="num" data-label="Nationwide">720</td><td class="today" data-label="Today">Not shown</td><td class="target" data-label="Target"><span class="pill p-list">Get listed</span><small>On the articles that rank</small></td></tr>
+          <tr><td class="term">air show near me</td><td data-label="Page">Air show page</td><td class="num" data-label="3-hour drive">210</td><td class="num" data-label="Nationwide">9,900</td><td class="today" data-label="Today">Not shown</td><td class="target" data-label="Target"><span class="pill p-long">Long shot</span><small>Same air show page</small></td></tr>
+          <tr><td class="term">day trips from memphis</td><td data-label="Page">Worth-the-drive page</td><td class="num" data-label="3-hour drive">170</td><td class="num" data-label="Nationwide">260</td><td class="today" data-label="Today">Not shown</td><td class="target" data-label="Target"><span class="pill p-list">Get listed</span><small>On the day-trip articles that rank</small></td></tr>
+          <tr><td class="term">bachelor party ideas</td><td data-label="Page">Occasions page</td><td class="num" data-label="3-hour drive">140</td><td class="num" data-label="Nationwide">9,900</td><td class="today" data-label="Today">Not shown</td><td class="target" data-label="Target"><span class="pill p-list">Get listed</span><small>In the wedding and bachelor guides</small></td></tr>
+          <tr><td class="term">veterans day gifts</td><td data-label="Page">Occasions page</td><td class="num" data-label="3-hour drive">140</td><td class="num" data-label="Nationwide">6,600</td><td class="today" data-label="Today">Not shown</td><td class="target" data-label="Target"><span class="pill p-long">Long shot</span><small>A Veterans Day page and profile post each November</small></td></tr>
+          <tr><td class="term">bachelor party nashville</td><td data-label="Page">Occasions page</td><td class="num" data-label="3-hour drive">90</td><td class="num" data-label="Nationwide">880</td><td class="today" data-label="Today">Not shown</td><td class="target" data-label="Target"><span class="pill p-list">Get listed</span><small>In the Nashville bachelor guides</small></td></tr>
+          <tr><td class="term">birthday ideas for men</td><td data-label="Page">Occasions page</td><td class="num" data-label="3-hour drive">70</td><td class="num" data-label="Nationwide">2,400</td><td class="today" data-label="Today">Not shown</td><td class="target" data-label="Target"><span class="pill p-long">Long shot</span></td></tr>
+          <tr><td class="term">gifts for pilots</td><td data-label="Page">Gift page</td><td class="num" data-label="3-hour drive">70</td><td class="num" data-label="Nationwide">2,400</td><td class="today" data-label="Today">Not shown</td><td class="target" data-label="Target"><span class="pill p-long">Long shot</span></td></tr>
+          <tr><td class="term">experience gifts for men</td><td data-label="Page">Gift page</td><td class="num" data-label="3-hour drive">40</td><td class="num" data-label="Nationwide">1,900</td><td class="today" data-label="Today">Not shown</td><td class="target" data-label="Target"><span class="pill p-list">Get listed</span><small>Through the experience gift sites</small></td></tr>
+          <tr class="tot"><td class="term">Longer-shot subtotal</td><td></td><td class="num" data-label="3-hour drive">1,450</td><td class="num" data-label="Nationwide">57,160</td><td></td><td></td></tr>
+        </tbody>
+      </table>
+      <p class="fine">* Plus three terms at 0 to 15 each (fly a fighter jet, aerobatic flight, stunt plane ride).</p>
+
+      <h3 class="sub">Your Google profile</h3>
+      <div class="cmp">
+        <div class="cmp-head"><div></div><div>Today</div><div>What we'd do</div></div>
+        <div class="cmp-row"><div class="topic">Categories</div><div class="today"><span class="lbl">Today</span>Flight school is the only one showing.</div><div class="fix"><span class="lbl">What we'd do</span>Keep Flight school (the biggest ride operators use it). Add Tourist attraction and Adventure sports center.</div></div>
+        <div class="cmp-row"><div class="topic">Description and services</div><div class="today"><span class="lbl">Today</span>No description showing when we checked.</div><div class="fix"><span class="lbl">What we'd do</span>A full description of the flight, the XA-42 and gift certificates, plus your services: aerobatic flight, flight with video, You Fly, gift certificates, event flights and kids flights.</div></div>
+        <div class="cmp-row"><div class="topic">Website link</div><div class="today"><span class="lbl">Today</span>Goes to xtreme-flight.com, the copy with no search setup.</div><div class="fix"><span class="lbl">What we'd do</span>Goes to the one site.</div></div>
+        <div class="cmp-row"><div class="topic">Hours</div><div class="today"><span class="lbl">Today</span>Showed "Closed, opens 9 AM Saturday" on a Thursday.</div><div class="fix"><span class="lbl">What we'd do</span>Hours that match the days you fly.</div></div>
+        <div class="cmp-row"><div class="topic">Updates</div><div class="today"><span class="lbl">Today</span>Latest owner update: September 28.</div><div class="fix"><span class="lbl">What we'd do</span>Posts timed to Veterans Day, Christmas and Father's Day.</div></div>
+        <div class="cmp-row"><div class="topic">Photos</div><div class="today"><span class="lbl">Today</span>30 photos.</div><div class="fix"><span class="lbl">What we'd do</span>Your customers in the front seat (with their OK), the XA-42 and Wings Field.</div></div>
+        <div class="cmp-row"><div class="topic">Reviews</div><div class="today"><span class="lbl">Today</span>5.0 stars from 11 reviews.</div><div class="fix"><span class="lbl">What we'd do</span>Ask every flyer for a review.</div></div>
+      </div>
+
+      <h3 class="sub">Map searches your Google profile can win</h3>
+      <p class="note">"Near Whiteville" is Hardeman, Fayette, Haywood, Madison, McNairy and Chester counties, the people close enough for Google's map to show you.</p>
+      <table class="kw">
+        <thead><tr><th>Search term</th><th class="num">Near Whiteville</th><th class="num">3-hour drive</th><th>Today</th><th>Target</th></tr></thead>
+        <tbody>
+          <tr><td class="term">things to do near me</td><td class="num" data-label="Near Whiteville">720</td><td class="num" data-label="3-hour drive">49,500</td><td class="today" data-label="Today">Not shown in Jackson TN. Facebook, Visit Jackson TN, Reddit and TripAdvisor rank there</td><td class="target" data-label="Target"><span class="pill p-list">Get listed</span><span class="pill p-top">Top 3</span><small>On those lists, and on the map near Whiteville</small></td></tr>
+          <tr><td class="term">attractions near me</td><td class="num" data-label="Near Whiteville">390</td><td class="num" data-label="3-hour drive">22,200</td><td class="today" data-label="Today">Not shown near Whiteville. TripAdvisor, Yelp, Visit Jackson TN and Tennessee's tourism site rank there</td><td class="target" data-label="Target"><span class="pill p-list">Get listed</span><span class="pill p-top">Top 3</span></td></tr>
+          <tr><td class="term">airplane rides near me</td><td class="num" data-label="Near Whiteville">10</td><td class="num" data-label="3-hour drive">30</td><td class="today" data-label="Today">Your profile showed in Memphis on one of two checks; not in Tupelo, Oxford or Jackson TN</td><td class="target" data-label="Target"><span class="pill p-top">Top 3</span><small>Within about an hour</small></td></tr>
+          <tr><td class="term">aerobatic flight near me</td><td class="num" data-label="Near Whiteville">10</td><td class="num" data-label="3-hour drive">10</td><td class="today" data-label="Today">#1 on the map in Memphis. Also shows in Tupelo, Oxford, Southaven and Jackson TN; not in Nashville</td><td class="target" data-label="Target"><span class="pill p-hold">Hold #1</span></td></tr>
+          <tr><td class="term">stunt plane ride</td><td class="num" data-label="Near Whiteville">too few</td><td class="num" data-label="3-hour drive">10</td><td class="today" data-label="Today">#1 on the map in Memphis. Also shows in Tupelo, Southaven, Jackson TN and Nashville; not in Oxford</td><td class="target" data-label="Target"><span class="pill p-hold">Hold #1</span></td></tr>
+          <tr class="tot"><td class="term">Total</td><td class="num" data-label="Near Whiteville">about 1,110*</td><td class="num" data-label="3-hour drive">71,730</td><td></td><td></td></tr>
+        </tbody>
+      </table>
+      <p class="fine">* Plus two terms at 0 to 15. Most of the 3-hour total is too far away for the map; we reach it through the "things to do" lists below.</p>
+
+      <h3 class="sub">Getting found</h3>
+      <div class="cmp">
+        <div class="cmp-head"><div></div><div>Today</div><div>What we'd do</div></div>
+        <div class="cmp-row"><div class="topic">Searches your pages aim at</div><div class="today"><span class="lbl">Today</span>Under 60 a month combined, within a 3-hour drive.</div><div class="fix"><span class="lbl">What we'd do</span>About 100 a month where page 1 is realistic, plus about 1,450 a month of longer shots.</div></div>
         <div class="cmp-row"><div class="topic">"Things to do" and day trips</div><div class="today"><span class="lbl">Today</span>You don't show up.</div><div class="fix"><span class="lbl">What we'd do</span>Listed on the tourism and "things to do" pages that rank for more than 69,000 of these searches a month within a 3-hour drive.</div></div>
         <div class="cmp-row"><div class="topic">Experience gift sites</div><div class="today"><span class="lbl">Today</span>Not listed. We found no aerobatic flight on them anywhere in Tennessee, Mississippi, Arkansas or Alabama.</div><div class="fix"><span class="lbl">What we'd do</span>Listed. Any listing with a fee is your call, and we'd bring you the price first.</div></div>
       </div>
@@ -141,7 +255,7 @@ footer a{color:var(--navy);font-weight:600;text-decoration:none}
       </div>
     </section>
 
-    <p class="fine">Search numbers are Google's monthly averages from October 2025 to September 2026. They show demand, not a promise of bookings.</p>
+    <p class="fine">Search numbers are Google's monthly averages from October 2025 to September 2026. They show demand, not a promise of bookings. Target ranges are our estimates from who ranks on Google today, not a guarantee. Rankings were checked October 15 and 16, 2026, as a searcher in each town.</p>
   </div>
 </main>
 
